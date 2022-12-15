@@ -4,5 +4,6 @@ site_url: https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocum
 nav:
     - Home: index.md
     - About: about.md
+    - Email: administrator\email.md
 
 theme: readthedocs
