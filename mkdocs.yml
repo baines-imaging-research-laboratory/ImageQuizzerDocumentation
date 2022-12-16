@@ -2,8 +2,7 @@ site_name: Image Quizzer Documentation
 site_url: https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/
 
 nav:
-    - Home: index.md
+    - Administrator Guide: administrator\index.md
     - About: about.md
-    - Email: administrator\email.md
 
 theme: readthedocs
