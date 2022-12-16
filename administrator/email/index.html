@@ -72,7 +72,35 @@
             <div class="section" itemprop="articleBody">
               
                 <h2 id="automatic-e-mail-of-results">Automatic e-mail of results</h2>
-<p>Enter 'To' e-mail addresses into contacts.txt found in ImageQuizzer/Resources/Email.</p>
+<p>A feature of the Image Quizzer is to have a user's results folder emailed to the administrator upon completion of the quiz.</p>
+<p>In order to activate this feature, there are 2 steps required.</p>
+<ul>
+<li>A smtp_config.txt file must be created in the directory: <strong>.../ImageQuizzer/Resources/Config</strong>
+Currently in this directory, you will find smtp_config_template.txt.</li>
+</ul>
+<p>smtp_config_template.txt</p>
+<pre><code>#Image Quizzer email utility smtp config file
+
+[smtp]
+host=your_host_server
+username=address_of_your_host_email_account@example.com
+password=app_password_of_your_host_email_account
+port=your_host_server_port_here
+
+
+</code></pre>
+<ul>
+<li>The administrator must add the 'EmailResultsTo' attribute to the Session element in the quiz xml file. </li>
+</ul>
+<pre><code>&lt;Session EmailResultsTo=&quot;youremailaddress@example.com&quot;&gt;
+    &lt;Page ID=&quot;Patient 1&quot; Descriptor=&quot;Multiparametric_MRI&quot;&gt;
+        &lt;Image Type=&quot;Volume&quot; ID=&quot;T2W&quot; &gt;
+    ...
+</code></pre>
+<p>With these pieces in place, once the user has completed the quiz and has pressed the 'Finish' button,
+there will be a pop-up window asking if the user is ready to email the results.</p>
+<p><img alt="FinishButtonPopup" src="../assets/email/FinishButtonPopup.png" /></p>
+<p><img alt="EmailResultsPopup" src="../assets/email/EmailResultsPopup.png" /></p>
               
             </div>
           </div><footer>
