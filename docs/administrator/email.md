@@ -50,12 +50,12 @@ This zip file will be attached to the email contents and sent to the email addre
 
 If the user presses 'No' to the email prompt, the user can still reopen the quiz
 to email the results at a later time. When restarting the Image Quizzer to review
-a completed quiz, the following prompt will appear:
+a completed quiz, the following prompt will appsear:
 
 ![ReopenCompletedQuizWithEmail](../assets/email/ReopenCompletedQuizWithEmail.png)
 
 If 'Yes' is pressed, the user can review the images but recorded responses can not
-be modified. The user can either press Exit to start the exit/email processes or
+be modified. During the review the user can either press Exit to start the exit/email processes or
 press Next until the last Page and QuestionSet is reached to start the exit/email stage.
 
 If 'No' is pressed, the module will take you directly to the exit and email stage.
