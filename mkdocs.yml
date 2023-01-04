@@ -1,5 +1,5 @@
 site_name: Image Quizzer Documentation
-site_url: https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/docs/
+site_url: https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/
 
 nav:
     - Administrator Guide: administrator\index.md
