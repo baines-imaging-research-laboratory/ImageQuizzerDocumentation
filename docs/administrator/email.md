@@ -38,7 +38,10 @@ there will be a pop-up window to confirm that the user wants to exit the quiz.
 Pressing the OK button to exit will mark the quiz as complete and all responses are locked.
 Then the user is then prompted to email the results.
 
-![EmailResultsPopup](../assets/EmailResultsPopup.png)
+![EmailResultsPopup1](../assets/EmailResultsPopup.png)
+![EmailResultsPopup2](assets/EmailResultsPopup.png)
+![EmailResultsPopup3](./assets/EmailResultsPopup.png)
+![EmailResultsPopup4](/administrator/assets/EmailResultsPopup.png)
 
 If 'Yes' is pressed, the module will zip up the user's quiz results folder (quizname.zip)
 and place it in the same folder where the quiz results are located.
