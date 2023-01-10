@@ -3,7 +3,10 @@ site_url: https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocum
 
 nav:
     - Administrator Guide: administrator\index.md
-    - administrator\email.md
+    - User Guide: user\userguide.md
+    - System Notes: extras\codingconventions.md
     - About: about.md
 
-theme: readthedocs
+theme:
+    name: readthedocs
+
