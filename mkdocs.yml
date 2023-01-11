@@ -11,6 +11,8 @@ theme:
     - navigation.footer
     - navigation.tabs
 
+extra:
+  generator: false
 
 # Page tree
 nav:
