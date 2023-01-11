@@ -24,7 +24,7 @@ This example displays questions only - no images.
 
 When run in Image Quizzer, the display will look like this.
 
-![Simple Script](assets/SimpleScript.png)
+![Simple Script](assets/build/SimpleScript.png)
 
 General layout of Image Quizzer
 

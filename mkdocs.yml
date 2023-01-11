@@ -1,14 +1,25 @@
 site_name: Image Quizzer Documentation
 site_url: https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/
 
+copyright: Copyright &copy;  2022 - <script>document.write(new Date().getFullYear())</script> <a href='https://bainesimaging.com' target='_blank'>Baines Imaging Research Laboratories</a>
 
 theme:
   name: material
+  palette:
+    primary: light blue
+  features:
+    - navigation.footer
+    - navigation.tabs
+
 
 # Page tree
 nav:
+  - Home: index.md
   - Administrator Guide:
     - administrator\install.md
+    - administrator\build.md
+    - administrator\randomizing.md
+    - administrator\looping.md
     - administrator\email.md
   - User Guide: user\userguide.md
   - System Notes: extras\codingconventions.md
