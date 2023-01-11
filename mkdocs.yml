@@ -1,12 +1,15 @@
 site_name: Image Quizzer Documentation
 site_url: https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/
 
-nav:
-    - Administrator Guide: administrator\index.md
-    - User Guide: user\userguide.md
-    - System Notes: extras\codingconventions.md
-    - About: about.md
 
 theme:
-    name: readthedocs
+  name: material
 
+# Page tree
+nav:
+  - Administrator Guide:
+    - administrator\install.md
+    - administrator\email.md
+  - User Guide: user\userguide.md
+  - System Notes: extras\codingconventions.md
+  - About: about.md
