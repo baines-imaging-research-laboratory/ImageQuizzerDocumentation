@@ -34,12 +34,13 @@ port=your_host_server_port_here
 With these pieces in place, once the user has completed the quiz and has pressed the 'Finish' button,
 there will be a pop-up window to confirm that the user wants to exit the quiz.
 
-![FinishButtonPopup][FinishButtonPopup]
+![FinishButtonPopup](assets/screenshots/FinishButtonPopup.png)
+
 
 Pressing the OK button to exit will mark the quiz as complete and all responses are locked.
 Then the user is then prompted to email the results.
 
-![EmailResultsPopup2](assets/EmailResultsPopup.png)
+![EmailResultsPopup2](../assets/screenshots/EmailResultsPopup.png)
 
 If 'Yes' is pressed, the module will zip up the user's quiz results folder (quizname.zip)
 and place it in the same folder where the quiz results are located.
@@ -53,7 +54,7 @@ If the user presses 'No' to the email prompt, the user can still reopen the quiz
 to email the results at a later time. When restarting the Image Quizzer to review
 a completed quiz, the following prompt will appsear:
 
-![ReopenCompletedQuizWithEmail]assets/ReopenCompletedQuizWithEmail.png)
+![ReopenCompletedQuizWithEmail](assets/screenshots/ReopenCompletedQuizWithEmail.png)
 
 If 'Yes' is pressed, the user can review the images but recorded responses can not
 be modified. During the review the user can either press Exit to start the exit/email processes or
@@ -61,4 +62,4 @@ press Next until the last Page and QuestionSet is reached to start the exit/emai
 
 If 'No' is pressed, the module will take you directly to the exit and email stage.
 
-  [FinishButtonPopup]: assets/FinishButtonPopup.png
+  [FinishButtonPopup]: assets/email/FinishButtonPopup.png
