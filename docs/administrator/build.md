@@ -1,12 +1,12 @@
 # Build a quiz
 
-The Image Quizzer is controlled by a script that is written using eXtensible Markup Language (xml) formatting. 
+The Image Quizzer is controlled by a script that is written using eXtensible Markup Language (XML) formatting. 
 This script defines what images and questions are to be displayed and in what order. 
 It can be created using a simple editor like Notepad.
 
 !!! tip
-    Notepad++ has a plugin for xml tools that can be downloaded to help check syntax as you build your quiz.
-    This can be used in conjuction with the ImageQuizzer.xsd schema file found in the Resources\XML folder.
+    Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
+    This can be used in conjuction with the *ImageQuizzer.xsd* schema file found in the Resources\XML folder.
 
 ## Simple quiz example
 
@@ -52,5 +52,17 @@ Following describes the basic elements of the script and the screen layout.
 
 
 ![Simple Script Layout](assets/build/SimpleScript_Layout.png)
+
+
+## Expanding your quiz
+
+There are many XML elements and attributes available to customize your quiz.
+Refer to the [Elements and Attributes](elements_attributes.md) table for details.
+
+!!! tip
+    When working on quizzes that have a specific set of questions to be asked for numerous images,
+	start the build process using the basic required elements for one Page. 
+	Test this in Slicer to make sure it displays what you want.
+	Then you can copy/paste the pages, update the Image Path element and the ID & Description attributes.
 
 

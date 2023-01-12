@@ -32,6 +32,7 @@ nav:
     - administrator\randomizing.md
     - administrator\looping.md
     - administrator\email.md
+    - administrator\elements_attributes.md
   - User Guide: user\userguide.md
   - System Notes: extras\codingconventions.md
   - About: about.md
