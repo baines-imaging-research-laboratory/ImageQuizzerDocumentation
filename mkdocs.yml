@@ -26,13 +26,21 @@ extra:
 # Page tree
 nav:
   - Home: index.md
-  - Administrator Guide:
+  - Administrator guide:
     - administrator\install.md
     - administrator\build.md
-    - administrator\randomizing.md
-    - administrator\looping.md
-    - administrator\email.md
-    - administrator\elements_attributes.md
+    - Elements and attributes: 
+      - administrator\elements_attributes.md
+      - Session:
+        - administrator\session\ROIColorFile.md
+        - administrator\session\email.md
+        - administrator\randomizing.md
+      - Page:
+        - administrator\looping.md
+ #     - Image:
+  #      - administrator\looping.md
+#        - QuestionSet:
+#          - Question:
   - User Guide: user\userguide.md
   - System Notes: extras\codingconventions.md
   - About: about.md

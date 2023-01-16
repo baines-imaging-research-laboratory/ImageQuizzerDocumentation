@@ -1,4 +1,4 @@
-# Elements And Attributes
+# Overview
 
 ## Session
 
@@ -26,7 +26,6 @@ capturing the Windows defined user name.
 
 Following are the attributes available for the Session element:
 
-### ROI Color File
 [ROIColorFile](session\roi_colorfile.md)
 
 ### Emailing results
