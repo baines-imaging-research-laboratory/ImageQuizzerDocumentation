@@ -39,11 +39,13 @@ SimpleScript.xml
 
 ## Simple quiz elements and layout
 
-Following describes the basic elements of the script and the screen layout.
+Following describes the basic elements of the above script and the screen layout. 
+See details for each element and their attributes in the [Elements and attributes](elements_attributes/index.md)
+section of this documentation.
 
 | Element | Description |
 | ------- | ----------- |
-| Session | The root of the script containing the entire quiz. |
+| Session | The root of the script containing all elements of the quiz. |
 | Page    | What appears in the 3D Slicer layout. This includes the images on the right side and the quiz on the left side. |
 |QuestionSet | An element that containes a group of questions.|
 | Question | An element that contains a group of options. |
@@ -57,7 +59,7 @@ Following describes the basic elements of the script and the screen layout.
 ## Expanding your quiz
 
 There are many XML elements and attributes available to customize your quiz.
-Refer to the [Elements and Attributes](elements_attributes.md) table for details.
+Refer to the [Elements and attributes](elements_attributes/index.md) section for details.
 
 !!! tip
     When working on quizzes that have a specific set of questions to be asked for numerous images,

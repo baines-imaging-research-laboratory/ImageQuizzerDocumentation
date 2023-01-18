@@ -10,6 +10,7 @@ theme:
   features:
     - navigation.footer
     - navigation.tabs
+    - navigation.indexes
   icon:
     adminition:
       note: octicons/tag-16
@@ -18,6 +19,7 @@ theme:
       
 markdown_extensions:
   - admonition
+  - tables
   
 
 extra:
@@ -27,20 +29,27 @@ extra:
 nav:
   - Home: index.md
   - Administrator guide:
-    - administrator\install.md
-    - administrator\build.md
+    - administrator/index.md
+    - Install: administrator/install.md
+    - Build: administrator/build.md
     - Elements and attributes: 
-      - administrator\elements_attributes.md
+      - administrator/elements_attributes/index.md
       - Session:
-        - administrator\session\ROIColorFile.md
-        - administrator\session\email.md
-        - administrator\randomizing.md
+        - administrator/elements_attributes/session/index.md
+        - ROI Color File: administrator/elements_attributes/session/roi_colorfile.md
+        - Email results: administrator/elements_attributes/session/email.md
+        - Randomize pages: administrator/elements_attributes/session/randomizing.md
+        - Contour visibility: administrator/elements_attributes/session/contour-visibility.md
       - Page:
-        - administrator\looping.md
- #     - Image:
-  #      - administrator\looping.md
+        - administrator/elements_attributes/page/index.md
+        - Looping pages: administrator/elements_attributes/page/looping.md
+#      - Image:
+#        - administrator/page/looping.md
 #        - QuestionSet:
 #          - Question:
-  - User Guide: user\userguide.md
-  - System Notes: extras\codingconventions.md
+    - Results file: administrator/results.md
+  - User Guide: 
+    - user/index.md
+    - ExtraTools: user/extratools.md
+  - System Notes: extras/codingconventions.md
   - About: about.md
