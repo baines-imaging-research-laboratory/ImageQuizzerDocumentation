@@ -1,4 +1,4 @@
-## Randomizing Pages
+# Randomizing Pages
 
 ## Specs
 
