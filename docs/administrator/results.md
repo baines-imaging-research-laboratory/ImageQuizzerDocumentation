@@ -30,7 +30,7 @@ as described below.
     The SlicerDicomDatabase folder is created automatically by Slicer to
 	manage information about DICOM data.
 
-## User name
+## UserName
 
 Once a user has logged in to the Image Quizzer, the attribute _UserName_ will be added to the element
 capturing the Windows defined user name. This allows you to keep track of who the
@@ -57,3 +57,9 @@ When the user completes the assigned quiz, a *QuizComplete="y"* attribute is add
 ```
 <Login LoginTime="20221129_16:35:07.894893" LogoutTime="20221129_17:37:36.548557" QuizComplete="Y"/>
 ``` 
+
+##  RandomizedPageGroupIndices
+
+The <RandomizedPageGroupIndices\> element is added to the results XML file if
+the RandomizePageGroups attribute was set to "Y" in the Session element. The
+element holds the list of integers used to direct the order of display of the quiz pages.

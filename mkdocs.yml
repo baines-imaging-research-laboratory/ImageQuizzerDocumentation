@@ -43,6 +43,7 @@ nav:
       - Page:
         - administrator/elements_attributes/page/index.md
         - Looping pages: administrator/elements_attributes/page/looping.md
+        - Page groups: administrator/elements_attributes/page/pagegroup.md
 #      - Image:
 #        - administrator/page/looping.md
 #        - QuestionSet:

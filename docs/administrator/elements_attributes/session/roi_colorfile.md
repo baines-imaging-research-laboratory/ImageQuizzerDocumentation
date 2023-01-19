@@ -29,6 +29,7 @@ roi# roi_name red green blue alpha
 ```
 
 ## Example
+
 ### Setup
 
 A color file is assigned to a study for PI-Rads segmentation.
@@ -42,7 +43,7 @@ the same directory as the XML for this quiz (PIRADS_SegmentationStudy.xml).
 
 ```
 .
-│
+
 └─ImageQuizzer/
   └─Resources/
     └─XML/
