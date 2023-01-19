@@ -1,0 +1,3 @@
+.md-typeset td:not([class]):not(:last-child) {
+    border-right: 1px solid lightgray;
+}

@@ -2,7 +2,7 @@
 
 ## Specs
 
-| ||Details|
+| |Value|Details|
 |---|---|---|
 | **Name** | PageGroup |  |
 | **Classification** | attribute ||

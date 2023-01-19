@@ -17,7 +17,7 @@ Upon completion of the quiz, the user will be prompted to initiate the email pro
 The user has the option to delay the email process if he/she wants to review the quiz.
 If the user logs back in to review the quiz after quiz completion, the Image Quizzer will automatically
 prompt the user to initiate the email process. This is described in further detail
-in the section [Generating zip results file](#zip-results-file).
+in the section [Zip results file](#zip-results-file).
 
 
 
@@ -62,7 +62,7 @@ password=app_password_of_your_host_email_account
 port=your_host_server_port_here
 ```
 
-### EmailResultsTo attribute
+### attribute assignment
 
 ```
 <Session EmailResultsTo="youremailaddress@example.com">

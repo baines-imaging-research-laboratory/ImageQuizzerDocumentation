@@ -12,7 +12,7 @@
 
 ## Description
 Session is the root element in the XML tree. It is must exist in the XML quiz file as the outermost element. 
-It encompasses all the child Page elements defined for the study.
+It encompasses all the child [Page](../page/index.md) elements defined for the study.
 
 
 ## Example

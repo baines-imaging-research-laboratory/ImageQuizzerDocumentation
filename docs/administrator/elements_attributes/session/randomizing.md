@@ -2,21 +2,21 @@
 
 ## Specs
 
-| ||
-|---|---|
-| **Name** | RandomizePageGroups |
-| **Classification** | attribute |
-| **Parent** | <Session\> |
-| **Required** | no |
-| **Syntax** | RandomizePageGroups="*option*" |
-| **Options** | N (default) |
-|             | Y |
+| || Details |
+|---|---|:---:|
+| **Name** | RandomizePageGroups ||
+| **Classification** | attribute ||
+| **Parent** | <[Session](index.md)\> ||
+| **Required** | no ||
+| **Syntax** | RandomizePageGroups="*option*" ||
+| **Options** | N | (default) pages are not randomized |
+|             | Y | pages are randomized |
 
 ## Description
 
 By setting the RandomizePageGroups attribute to "Y", the Image Quizzer module will to randomize the 
 indices Page elements defined in the quiz XML file. Then when the user runs the quiz,
-the Pages will displayed in the randomized order. This can be useful if your 
+the pages will be displayed in the randomized order. This can be useful if your 
 observer study needs to have images presented to different observers in a random way.
 
 The randomized indices 
@@ -27,7 +27,7 @@ so that the administrator knows the order in which the pages were presented to t
 
 ## Setup
 
-In order to randomize the pages in the quiz, each Page element must have a [PageGroup](../page/pagegroup.md) attribute.
+In order to randomize the pages in the quiz, each [Page](../page/index.md) element must have a [PageGroup](../page/pagegroup.md) attribute.
 
 
 ## Example
@@ -63,6 +63,6 @@ randomizing indeces
 	in the results file reflects the counting of Page elements starting at 0.
 	However, the Page folders stored in the Users results folder starts at index 1.
 	
-!!! note
+!!! bug
     BUG - indices are not updated when reps are added !!!!!!!
 	

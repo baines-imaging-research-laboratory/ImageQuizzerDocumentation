@@ -2,13 +2,13 @@
 
 ## Specs
 
-| ||
-|---|---|
-| **Name** | ROIColorFile |
-| **Classification** | attribute |
-| **Parent** | <Session\> |
-| **Required** | no |
-| **Syntax** | ROIColorFile="*colorfilename.txt*" |
+| ||Details|
+|---|---|:---:|
+| **Name** | ROIColorFile ||
+| **Classification** | attribute ||
+| **Parent** | <Session\> ||
+| **Required** | no ||
+| **Syntax** | ROIColorFile="*colorfilename*" | filename without .txt extension |
 
 ## Description
 

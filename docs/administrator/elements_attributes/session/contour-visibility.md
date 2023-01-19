@@ -2,15 +2,15 @@
 
 ## Specs
 
-| |  |
-|---| ---|
-| **Name** | ContourVisibility |
-| **Classification** | attribute |
-| **Parent** | Session |
-| **Required** | no |
-| **Syntax** | ContourVisibility="*option*" |
-| **Options** | Outline (default) |
-|             | Fill |
+| |  | Details|
+|---| ---|:---:|
+| **Name** | ContourVisibility ||
+| **Classification** | attribute ||
+| **Parent** | Session ||
+| **Required** | no ||
+| **Syntax** | ContourVisibility="*option*" ||
+| **Options** | Outline |(default) contours displayed as outlines|
+|             | Fill |contours displayed as solid color|
 
 
 ## Description
