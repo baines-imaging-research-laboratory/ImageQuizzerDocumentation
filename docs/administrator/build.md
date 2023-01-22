@@ -45,10 +45,11 @@ section of this documentation.
 
 | Element | Description |
 | ------- | ----------- |
-| Session | The root of the script containing all elements of the quiz. |
-| Page    | What appears in the 3D Slicer layout. This includes the images on the right side and the quiz on the left side. |
-|QuestionSet | An element that containes a group of questions.|
-| Question | An element that contains a group of options. |
+| [Session](elements_attributes/session/index.md) | The root of the script containing all elements of the quiz. |
+| [Page](elements_attributes/page/index.md)    | What appears in the 3D Slicer layout. This includes the images on the right side and the quiz on the left side. |
+| Image | An element that defines specifics of the image to display
+|QuestionSet | An element that contains a group of questions.|
+| Question | An element that contains a group of options and specifics on how they are displayed. |
 | Option     | An individual item that forms part of the question. |
 
 
