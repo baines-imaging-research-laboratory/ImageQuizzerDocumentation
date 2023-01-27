@@ -69,3 +69,17 @@ Refer to the [Elements and attributes](elements_attributes/index.md) section for
 	Then you can copy/paste the pages, update the Image Path element and the ID & Description attributes.
 
 
+## Testing your quiz
+
+When you are building your quiz, the general pattern is:
+
+    - modify/create the XML quiz file (aka __Master__ quiz)
+    - run ImageQuizzer for modified quiz (Image Quizzer creates a copy of the Master quiz in the user folder to capture responses.)
+    - make additional modifications to Master quiz
+    - **remove quiz folder under the Users folder**
+    - run ImageQuizzer again on modified Master
+
+!!! Note
+	If you don't remove the quiz folder under the User's folder, Image Quizzer will
+	assume the user is resuming the quiz that was already started. It reads the copied
+	quiz and your new modifications will not be reflected.

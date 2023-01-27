@@ -53,7 +53,7 @@ When the user completes the assigned quiz, a *QuizComplete="y"* attribute is add
 
 The <RandomizedPageGroupIndices\> element is added to the results XML file under the <Session\> element
 if the RandomizePageGroups attribute was set to "Y" in the Session element. The
-element holds the list of integers used to direct the order of display of the quiz pages.
+element holds the list of integers reflecting the randomized order of Page Groups used to direct the order of display of the quiz pages.
 If this element is not present, then randomizing of pages was not done and the Image Quizzer
 presented each page in the order defined in the original XML quiz file.
 

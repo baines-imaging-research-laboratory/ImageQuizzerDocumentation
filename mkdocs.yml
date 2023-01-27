@@ -22,6 +22,8 @@ theme:
 markdown_extensions:
   - admonition
   - tables
+  - pymdownx.betterem:
+      smart_enable: all
   
 extra_css: [stylesheets/extra.css]
 
