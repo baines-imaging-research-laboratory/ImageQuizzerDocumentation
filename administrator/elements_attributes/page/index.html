@@ -14,14 +14,14 @@
         <link rel="prev" href="../session/contour-visibility/">
       
       
-        <link rel="next" href="looping/">
+        <link rel="next" href="id/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
     
     
       
-        <title>Page element - Image Quizzer Documentation</title>
+        <title>Page - Image Quizzer Documentation</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#page-element" class="md-skip">
+        <a href="#page" class="md-skip">
           Skip to content
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Page element
+              Page
             
           </span>
         </div>
@@ -372,7 +372,7 @@
   
     <li class="md-nav__item">
       <a href="../../build/" class="md-nav__link">
-        Build
+        Build a quiz
       </a>
     </li>
   
@@ -563,6 +563,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -583,6 +587,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="id/" class="md-nav__link">
+        ID
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="descriptor/" class="md-nav__link">
+        Descriptor
+      </a>
+    </li>
+  
+
             
           
             
@@ -762,6 +794,28 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#specs" class="md-nav__link">
+    Specs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -776,11 +830,61 @@
 
 
 
-<h1 id="page-element">Page element</h1>
+<h1 id="page">Page</h1>
+<h2 id="specs">Specs</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Value</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>Page</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Classification</strong></td>
+<td>element</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Parent</strong></td>
+<td><a href="../session/">Session</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td>yes</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Syntax</strong></td>
+<td>&lt;Page></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>See also: <a href="ID.md">ID</a>, <a href="descriptor/">Descriptor</a>, <a href="pagegroup/">PageGroup</a></p>
+<h2 id="description">Description</h2>
+<p>The Page element is a child of the Session element. There can be multiple pages in a quiz session.
+Among the many attributes allowed for this element, ID and Descriptor are the ones used to identify the Page.
+The ID attribute is required but the Descriptor is not. However, during quiz validation, the combination of ID_Descriptor
+must be unique throughout all the Page elements.</p>
+<p>In some observer studies, each Page may represent a different patient.
+It could also represent a time point of a Patient's clinical journey (planning, 3 month follow up, 6 month follow up etc.).
+Another example could be that there are multiple pages for one patient, each page holding images that represent different cancer sites (e.g. primary and secondary tumours).</p>
 <pre><code>&lt;Session&gt;
-  &lt;Page&gt;
+  &lt;Page ID=&quot;Patient 1&quot; Descriptor=&quot;CT&quot;&gt;
     ...
   &lt;/Page&gt;
+  &lt;Page ID=&quot;Patient 2&quot; Descriptor=&quot;CT&quot;&gt;
+    ...
+  &lt;/Page&gt;
+
 &lt;/Session&gt;
 </code></pre>
 
@@ -820,13 +924,13 @@
         
         
           
-          <a href="looping/" class="md-footer__link md-footer__link--next" aria-label="Next: Looping pages" rel="next">
+          <a href="id/" class="md-footer__link md-footer__link--next" aria-label="Next: ID" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Looping pages
+                ID
               </div>
             </div>
             <div class="md-footer__button md-icon">

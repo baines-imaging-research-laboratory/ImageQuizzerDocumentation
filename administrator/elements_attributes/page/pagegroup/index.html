@@ -372,7 +372,7 @@
   
     <li class="md-nav__item">
       <a href="../../../build/" class="md-nav__link">
-        Build
+        Build a quiz
       </a>
     </li>
   
@@ -563,6 +563,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -583,6 +587,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../id/" class="md-nav__link">
+        ID
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../descriptor/" class="md-nav__link">
+        Descriptor
+      </a>
+    </li>
+  
+
             
           
             
@@ -648,6 +680,26 @@
         <li class="md-nav__item">
   <a href="#description" class="md-nav__link">
     Description
+  </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pagegroup0" class="md-nav__link">
+    PageGroup="0"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
   
 </li>
@@ -828,6 +880,26 @@
     Description
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pagegroup0" class="md-nav__link">
+    PageGroup="0"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
 </li>
       
     </ul>
@@ -894,7 +966,74 @@
 </tr>
 </tbody>
 </table>
+<p>See also: <a href="../../session/randomizing/">Randomizing pages</a>,  <a href="../../../results/#randomizedpagegroupindices">RandomizedPageGroupIndices</a></p>
 <h2 id="description">Description</h2>
+<p>The PageGroup number is used to keep certain pages together when randomizing is setup. All Pages with the same group number
+will appear consecutively (as read in from the Master quiz file) and not randomized.</p>
+<p>This can be useful when a quiz is set up with a Page holding images that represent a time point in a patient's clinical journey (for example one of a number of follow up images).
+The administrator may want to keep all Pages for one patient in the same group.</p>
+<h3 id="pagegroup0">PageGroup="0"</h3>
+<p>Any pages assigned a group number of 0 will always appear at the beginning of the quiz. 
+If more than one Page has a page group number of 0, these pages will appear in the order read in.
+This is useful if the administrator wishes to present instructional information that applies to the
+quiz that follows. The remaining pages are randomized.</p>
+<h2 id="example">Example</h2>
+<pre><code>Master Quiz:
+
+&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
+    &lt;Page ID=&quot;Intro&quot; Description=&quot;Instructions&quot; PageGroup=&quot;0&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient1&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient1&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient2&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient2&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient3&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient3&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
+        ...
+    &lt;/Page&gt;
+&lt;/Session&gt;
+</code></pre>
+<pre><code>Randomized Page Groups for User 1 :  RandomizedPageGroupIndices=&quot;3,1,2&quot;
+
+The user would see Pages in this order:
+
+&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
+    &lt;Page ID=&quot;Intro&quot; Description=&quot;Instructions&quot; PageGroup=&quot;0&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient3&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient3&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient1&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient1&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient2&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;Patient2&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
+        ...
+    &lt;/Page&gt;
+&lt;/Session&gt;
+
+
+</code></pre>
 
 
 

@@ -21,7 +21,7 @@
     
     
       
-        <title>Build - Image Quizzer Documentation</title>
+        <title>Build a quiz - Image Quizzer Documentation</title>
       
     
     
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Build
+              Build a quiz
             
           </span>
         </div>
@@ -381,12 +381,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Build
+          Build a quiz
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Build
+        Build a quiz
       </a>
       
         
@@ -621,6 +621,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -641,6 +645,34 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements_attributes/page/id/" class="md-nav__link">
+        ID
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements_attributes/page/descriptor/" class="md-nav__link">
+        Descriptor
+      </a>
+    </li>
+  
+
             
           
             
@@ -879,6 +911,13 @@ It can be created using a simple editor like Notepad.</p>
 <p>Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
 This can be used in conjuction with the <em>ImageQuizzer.xsd</em> schema file found in the Resources\XML folder.</p>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When building your quiz, the administrator creates and makes changes to the original XML file.
+This is known throughout the documentation as the <em>Master</em> quiz file.
+When the user starts a quiz session, a copy of this <em>Master</em> quiz file, with the same name is placed in the User's folder
+ready to record the session responses. This is known throughout the documentation as the <em>Results</em> quiz file</p>
+</div>
 <h2 id="simple-quiz-example">Simple quiz example</h2>
 <p>Here is a screenshot of a very simple quiz followed by the script that was used to create it.</p>
 <p><img alt="Simple Script Screenshot" src="../assets/build/SimpleScript_Screenshot.png" /></p>
@@ -960,9 +999,9 @@ Then you can copy/paste the pages, update the Image Path element and the ID &amp
 </code></pre>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you don't remove the quiz folder under the User's folder, Image Quizzer will
+<p>If you don't remove the results quiz folder under the User's folder, Image Quizzer will
 assume the user is resuming the quiz that was already started. It reads the copied
-quiz and your new modifications will not be reflected.</p>
+quiz and your new modifications made to the Master quiz will not be reflected.</p>
 </div>
 
 
