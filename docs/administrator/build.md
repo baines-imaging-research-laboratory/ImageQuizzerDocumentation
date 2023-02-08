@@ -7,6 +7,12 @@ It can be created using a simple editor like Notepad.
 !!! tip
     Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
     This can be used in conjuction with the *ImageQuizzer.xsd* schema file found in the Resources\XML folder.
+	
+!!! Note
+    When building your quiz, the administrator creates and makes changes to the original XML file.
+    This is known throughout the documentation as the *Master* quiz file.
+    When the user starts a quiz session, a copy of this *Master* quiz file, with the same name is placed in the User's folder
+    ready to record the session responses. This is known throughout the documentation as the *Results* quiz file
 
 ## Simple quiz example
 
@@ -80,6 +86,6 @@ When you are building your quiz, the general pattern is:
     - run ImageQuizzer again on modified Master
 
 !!! Note
-	If you don't remove the quiz folder under the User's folder, Image Quizzer will
+	If you don't remove the results quiz folder under the User's folder, Image Quizzer will
 	assume the user is resuming the quiz that was already started. It reads the copied
-	quiz and your new modifications will not be reflected.
+	quiz and your new modifications made to the Master quiz will not be reflected.

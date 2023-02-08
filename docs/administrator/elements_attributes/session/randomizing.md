@@ -12,57 +12,95 @@
 | **Options** | N | (default) pages are not randomized |
 |             | Y | pages are randomized |
 
+
+See also:  [Page](..page/index.md), [PageGroup](../page/pagegroup.md),  [RandomizedPageGroupIndices](../../results.md#randomizedpagegroupindices)
+
 ## Description
 
-By setting the RandomizePageGroups attribute to "Y", the Image Quizzer module will to randomize the 
-indices Page elements defined in the quiz XML file. Then when the user runs the quiz,
-the pages will be displayed in the randomized order. This can be useful if your 
-observer study needs to have images presented to different observers in a random way.
+The Image Quizzer provides the ability to randomize the presentation of images for different observers automatically.
 
-The randomized indices 
-are recorded in the results quiz file in the [RandomizedPageGroupIndices](../../results.md#randomizedpagegroupindices) element 
-so that the administrator knows the order in which the pages were presented to the user.
+By setting the RandomizePageGroups attribute to "Y", and assigning PageGroup numbers 
+to the Page elements, the Pages are presented to each observer in a randomized order. 
+The same randomized page order is maintained throughout the quiz.
+If the user logs out of the quiz session and resumes at a later time, the Pages are not re-randomized.
 
+The randomized PageGroup order is captured and stored in the results quiz file in the RandomizedPageGroupIndices element 
+so that the administrator knows the order in which the pages were presented for any observer and can cross-reference the displayed order 
+with the original Master quiz file Pages.
 
 
 ## Setup
 
-In order to randomize the pages in the quiz, each [Page](../page/index.md) element must have a [PageGroup](../page/pagegroup.md) attribute.
+In order to randomize the pages in the quiz, each Page element must have a PageGroup attribute.
+The quiz validator will make sure that if the RandomizePageGroups attribute is to "Y", there must be at least 2 unique PageGroup numbers
+assigned to different Pages. If not every Page has an assigned PageGroup number, the module will assign the remaining Pages with PageGroup 
+numbers consecutively. 
+
+!!! Note
+    Question sets defined within a Page are never randomized. They will always appear in the order
+    as defined in the Page of the Master quiz file.
 
 
 ## Example
 
 ```
-			This function will shuffle the original list as read in from the quiz xml,  that holds the
-            "[page number,questionset number, page group number, rep number]" according to the randomized index list input.
-            The question sets always follow with the page, they are never randomized.
-            The page groups are randomized. 
-                 If more than one page has the same group number, they will remain in the order they were read in.
-            
-            eg.     Original XML List         Randomized Page Group indices      Shuffled Composite List
-                       Page   QS   Grp   Rep             Indices                   Page   QS   Grp   Rep
-                       0      0     1     0                 2                       2     0     2     0
-                       0      1     1     0                 3                       2     1     2     0
-                       1      0     1     0                 4                       3     0     2     0
-                       2      0     2     0                 0                       4     0     3     0
-                       2      1     2     0                 1                       4     1     3     0
-                       3      0     2     0                                         0     0     1     0
-                       4      0     3     0                                         0     1     1     0
-                       4      1     3     0                                         1     0     1     0
+Master Quiz:
+
+<Session RandomizePageGroups="Y">
+	<Page ID="Intro" Description="Instructions" PageGroup="0">
+		...
+	</Page>
+	<Page ID="Patient1" Description="Planning" PageGroup="1">
+		...
+	</Page>
+	<Page ID="Patient1" Description="FollowUp 1" PageGroup="1">
+		...
+	</Page>
+	<Page ID="Patient2" Description="Planning" PageGroup="2">
+		...
+	</Page>
+	<Page ID="Patient2" Description="FollowUp 1" PageGroup="2">
+		...
+	</Page>
+	<Page ID="Patient3" Description="Planning" PageGroup="3">
+		...
+	</Page>
+	<Page ID="Patient3" Description="FollowUp 1" PageGroup="3">
+		...
+	</Page>
+</Session>
 ```
 
 
-Page 0
+```
+Randomized Page Groups for User 1 :  RandomizedPageGroupIndices="3,1,2"
 
-Grouping of patients (pages) groups and subgroups
+The user would see Pages in this order:
 
-randomizing indeces
+<Session RandomizePageGroups="Y">
+	<Page ID="Intro" Description="Instructions" PageGroup="0">
+		...
+	</Page>
+	<Page ID="Patient3" Description="Planning" PageGroup="3">
+		...
+	</Page>
+	<Page ID="Patient3" Description="FollowUp 1" PageGroup="3">
+		...
+	</Page>
+	<Page ID="Patient1" Description="Planning" PageGroup="1">
+		...
+	</Page>
+	<Page ID="Patient1" Description="FollowUp 1" PageGroup="1">
+		...
+	</Page>
+	<Page ID="Patient2" Description="Planning" PageGroup="2">
+		...
+	</Page>
+	<Page ID="Patient2" Description="FollowUp 1" PageGroup="2">
+		...
+	</Page>
+</Session>
 
-!!! note
-    Pages are coded 0 based in the code and the captured indeces that are stored
-	in the results file reflects the counting of Page elements starting at 0.
-	However, the Page folders stored in the Users results folder starts at index 1.
-	
-!!! bug
-    BUG - indices are not updated when reps are added !!!!!!!
+
+```
 	

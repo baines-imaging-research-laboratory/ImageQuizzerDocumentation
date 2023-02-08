@@ -12,6 +12,83 @@
 | **Syntax** | PageGroup="*option*" ||
 | **Options** | positive integer value | group number assigned to a [Page](./index.md) element
 
+See also: [Randomizing pages](../session/randomizing.md),  [RandomizedPageGroupIndices](../../results.md#randomizedpagegroupindices)
+
 ## Description
+The PageGroup number is used to keep certain pages together when randomizing is setup. All Pages with the same group number
+will appear consecutively (as read in from the Master quiz file) and not randomized.
+
+This can be useful when a quiz is set up with a Page holding images that represent a time point in a patient's clinical journey (for example one of a number of follow up images).
+The administrator may want to keep all Pages for one patient in the same group.
+
+### PageGroup="0"
+
+Any pages assigned a group number of 0 will always appear at the beginning of the quiz. 
+If more than one Page has a page group number of 0, these pages will appear in the order read in.
+This is useful if the administrator wishes to present instructional information that applies to the
+quiz that follows. The remaining pages are randomized.
 
 
+## Example
+
+```
+Master Quiz:
+
+<Session RandomizePageGroups="Y">
+	<Page ID="Intro" Description="Instructions" PageGroup="0">
+		...
+	</Page>
+	<Page ID="Patient1" Description="Planning" PageGroup="1">
+		...
+	</Page>
+	<Page ID="Patient1" Description="FollowUp 1" PageGroup="1">
+		...
+	</Page>
+	<Page ID="Patient2" Description="Planning" PageGroup="2">
+		...
+	</Page>
+	<Page ID="Patient2" Description="FollowUp 1" PageGroup="2">
+		...
+	</Page>
+	<Page ID="Patient3" Description="Planning" PageGroup="3">
+		...
+	</Page>
+	<Page ID="Patient3" Description="FollowUp 1" PageGroup="3">
+		...
+	</Page>
+</Session>
+```
+
+
+```
+Randomized Page Groups for User 1 :  RandomizedPageGroupIndices="3,1,2"
+
+The user would see Pages in this order:
+
+<Session RandomizePageGroups="Y">
+	<Page ID="Intro" Description="Instructions" PageGroup="0">
+		...
+	</Page>
+	<Page ID="Patient3" Description="Planning" PageGroup="3">
+		...
+	</Page>
+	<Page ID="Patient3" Description="FollowUp 1" PageGroup="3">
+		...
+	</Page>
+	<Page ID="Patient1" Description="Planning" PageGroup="1">
+		...
+	</Page>
+	<Page ID="Patient1" Description="FollowUp 1" PageGroup="1">
+		...
+	</Page>
+	<Page ID="Patient2" Description="Planning" PageGroup="2">
+		...
+	</Page>
+	<Page ID="Patient2" Description="FollowUp 1" PageGroup="2">
+		...
+	</Page>
+</Session>
+
+
+```
+	

@@ -36,7 +36,7 @@ nav:
   - Administrator guide:
     - administrator/index.md
     - Install: administrator/install.md
-    - Build: administrator/build.md
+    - Build a quiz: administrator/build.md
     - Elements and attributes: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -47,6 +47,8 @@ nav:
         - Contour visibility: administrator/elements_attributes/session/contour-visibility.md
       - Page:
         - administrator/elements_attributes/page/index.md
+        - ID: administrator/elements_attributes/page/id.md
+        - Descriptor: administrator/elements_attributes/page/descriptor.md
         - Looping pages: administrator/elements_attributes/page/looping.md
         - Page groups: administrator/elements_attributes/page/pagegroup.md
 #      - Image:
