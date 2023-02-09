@@ -14,7 +14,7 @@
         <link rel="prev" href="../email/">
       
       
-        <link rel="next" href="../contour-visibility/">
+        <link rel="next" href="../contour_visibility/">
       
       <link rel="icon" href="../../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
@@ -587,7 +587,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contour-visibility/" class="md-nav__link">
+      <a href="../contour_visibility/" class="md-nav__link">
         Contour visibility
       </a>
     </li>
@@ -954,7 +954,7 @@
 </tr>
 </tbody>
 </table>
-<p>See also:  <a href="..page/index.md">Page</a>, <a href="../../page/pagegroup/">PageGroup</a>,  <a href="../../../results/#randomizedpagegroupindices">RandomizedPageGroupIndices</a></p>
+<p>See also:  <a href="../../page/">Page</a>, <a href="../../page/pagegroup/">PageGroup</a>,  <a href="../../../results/#randomizedpagegroupindices">RandomizedPageGroupIndices</a></p>
 <h2 id="description">Description</h2>
 <p>The Image Quizzer provides the ability to randomize the presentation of images for different observers automatically.</p>
 <p>By setting the RandomizePageGroups attribute to "Y", and assigning PageGroup numbers 
@@ -975,61 +975,40 @@ numbers consecutively. </p>
 as defined in the Page of the Master quiz file.</p>
 </div>
 <h2 id="example">Example</h2>
-<pre><code>Master Quiz:
-
-&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
+<p>Master quiz:</p>
+<pre><code>&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
     &lt;Page ID=&quot;Intro&quot; Description=&quot;Instructions&quot; PageGroup=&quot;0&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient1&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
+    &lt;Page ID=&quot;PatientA&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient1&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
+    &lt;Page ID=&quot;PatientA&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient2&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
+    &lt;Page ID=&quot;PatientB&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient2&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
+    &lt;Page ID=&quot;PatientB&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient3&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
+    &lt;Page ID=&quot;PatientC&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient3&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
+    &lt;Page ID=&quot;PatientC&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
         ...
     &lt;/Page&gt;
 &lt;/Session&gt;
 </code></pre>
-<pre><code>Randomized Page Groups for User 1 :  RandomizedPageGroupIndices=&quot;3,1,2&quot;
-
-The user would see Pages in this order:
-
-&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
-    &lt;Page ID=&quot;Intro&quot; Description=&quot;Instructions&quot; PageGroup=&quot;0&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient3&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient3&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient1&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient1&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient2&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient2&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
-        ...
-    &lt;/Page&gt;
-&lt;/Session&gt;
-
-
+<p>Randomized Page Groups for User 1 :  RandomizedPageGroupIndices="3,1,2"</p>
+<p>The user would see Pages presented in this order:</p>
+<pre><code>Intro_Instructions
+PatientC_Planning
+PatientC_Followup 1
+PatientA_Planning
+PatientA_Followup 1
+PatientB_Planning
+PatientB_Followup 1
 </code></pre>
 
 
@@ -1068,7 +1047,7 @@ The user would see Pages in this order:
         
         
           
-          <a href="../contour-visibility/" class="md-footer__link md-footer__link--next" aria-label="Next: Contour visibility" rel="next">
+          <a href="../contour_visibility/" class="md-footer__link md-footer__link--next" aria-label="Next: Contour visibility" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">

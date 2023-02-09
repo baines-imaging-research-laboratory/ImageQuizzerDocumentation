@@ -523,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../session/contour-visibility/" class="md-nav__link">
+      <a href="../../session/contour_visibility/" class="md-nav__link">
         Contour visibility
       </a>
     </li>
@@ -682,18 +682,12 @@
     Description
   </a>
   
-    <nav class="md-nav" aria-label="Description">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pagegroup0" class="md-nav__link">
     PageGroup="0"
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -880,18 +874,12 @@
     Description
   </a>
   
-    <nav class="md-nav" aria-label="Description">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pagegroup0" class="md-nav__link">
     PageGroup="0"
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -941,7 +929,7 @@
 </tr>
 <tr>
 <td><strong>Parent</strong></td>
-<td>&lt;Page></td>
+<td>&lt;<a href="../">Page</a>></td>
 <td></td>
 </tr>
 <tr>
@@ -972,67 +960,49 @@
 will appear consecutively (as read in from the Master quiz file) and not randomized.</p>
 <p>This can be useful when a quiz is set up with a Page holding images that represent a time point in a patient's clinical journey (for example one of a number of follow up images).
 The administrator may want to keep all Pages for one patient in the same group.</p>
-<h3 id="pagegroup0">PageGroup="0"</h3>
+<h2 id="pagegroup0">PageGroup="0"</h2>
 <p>Any pages assigned a group number of 0 will always appear at the beginning of the quiz. 
 If more than one Page has a page group number of 0, these pages will appear in the order read in.
-This is useful if the administrator wishes to present instructional information that applies to the
-quiz that follows. The remaining pages are randomized.</p>
+The remaining pages are randomized. Following are some use cases for assigning pages to PageGroup="0"</p>
+<ul>
+<li>present instructional information that applies to the quiz that follows</li>
+<li>isolate certain images that all observers will see at the beginning of the quiz before randomization in order to establish a baseline</li>
+</ul>
 <h2 id="example">Example</h2>
-<pre><code>Master Quiz:
-
-&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
+<p>Master quiz:</p>
+<pre><code>&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
     &lt;Page ID=&quot;Intro&quot; Description=&quot;Instructions&quot; PageGroup=&quot;0&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient1&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
+    &lt;Page ID=&quot;PatientA&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient1&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
+    &lt;Page ID=&quot;PatientA&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient2&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
+    &lt;Page ID=&quot;PatientB&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient2&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
+    &lt;Page ID=&quot;PatientB&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient3&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
+    &lt;Page ID=&quot;PatientC&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
         ...
     &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient3&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
+    &lt;Page ID=&quot;PatientC&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
         ...
     &lt;/Page&gt;
 &lt;/Session&gt;
 </code></pre>
-<pre><code>Randomized Page Groups for User 1 :  RandomizedPageGroupIndices=&quot;3,1,2&quot;
-
-The user would see Pages in this order:
-
-&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
-    &lt;Page ID=&quot;Intro&quot; Description=&quot;Instructions&quot; PageGroup=&quot;0&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient3&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient3&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient1&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient1&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient2&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
-        ...
-    &lt;/Page&gt;
-    &lt;Page ID=&quot;Patient2&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
-        ...
-    &lt;/Page&gt;
-&lt;/Session&gt;
-
-
+<p>Randomized Page Groups for User 1 :  RandomizedPageGroupIndices="3,1,2"</p>
+<p>The user would see Pages presented in this order:</p>
+<pre><code>Intro_Instructions
+PatientC_Planning
+PatientC_Followup 1
+PatientA_Planning
+PatientA_Followup 1
+PatientB_Planning
+PatientB_Followup 1
 </code></pre>
 
 

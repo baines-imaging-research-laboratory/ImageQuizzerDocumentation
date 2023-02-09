@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/">
       
       
-        <link rel="prev" href="../session/contour-visibility/">
+        <link rel="prev" href="../session/contour_visibility/">
       
       
         <link rel="next" href="id/">
@@ -523,7 +523,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../session/contour-visibility/" class="md-nav__link">
+      <a href="../session/contour_visibility/" class="md-nav__link">
         Contour visibility
       </a>
     </li>
@@ -814,6 +814,96 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#id" class="md-nav__link">
+    ID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#descriptor" class="md-nav__link">
+    Descriptor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linkviews" class="md-nav__link">
+    LinkViews
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layout" class="md-nav__link">
+    Layout
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagegroup" class="md-nav__link">
+    PageGroup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allowmultipleresponse" class="md-nav__link">
+    AllowMultipleResponse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enablesegmenteditor" class="md-nav__link">
+    EnableSegmentEditor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#segmentrequiredonanyimage" class="md-nav__link">
+    SegmentRequiredOnAnyImage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minmarkuplinesrequiredonanyimage" class="md-nav__link">
+    MinMarkupLinesRequiredOnAnyImage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loop" class="md-nav__link">
+    Loop
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -853,7 +943,7 @@
 </tr>
 <tr>
 <td><strong>Parent</strong></td>
-<td><a href="../session/">Session</a></td>
+<td>&lt;<a href="../session/">Session</a>></td>
 <td></td>
 </tr>
 <tr>
@@ -868,15 +958,19 @@
 </tr>
 </tbody>
 </table>
-<p>See also: <a href="ID.md">ID</a>, <a href="descriptor/">Descriptor</a>, <a href="pagegroup/">PageGroup</a></p>
+<p>See also: <a href="image/index.md">Image</a>, <a href="questionset.md">QuestionSet</a>, <a href="question.md">Question</a></p>
 <h2 id="description">Description</h2>
 <p>The Page element is a child of the Session element. There can be multiple pages in a quiz session.
-Among the many attributes allowed for this element, ID and Descriptor are the ones used to identify the Page.
+Essentially, each Page represents a snap-shot of the screen that the user will see. It defines what Images
+and QuestionSets (containing Questions) to display.</p>
+<p><img alt="Simple Script Layout" src="assets/PageLayout.png" /></p>
+<p>Among the many attributes allowed for the Page element, ID and Descriptor are the ones used for identification.
 The ID attribute is required but the Descriptor is not. However, during quiz validation, the combination of ID_Descriptor
 must be unique throughout all the Page elements.</p>
-<p>In some observer studies, each Page may represent a different patient.
+<p>In some observer studies, each Page represents a different patient.
 It could also represent a time point of a Patient's clinical journey (planning, 3 month follow up, 6 month follow up etc.).
 Another example could be that there are multiple pages for one patient, each page holding images that represent different cancer sites (e.g. primary and secondary tumours).</p>
+<h2 id="example">Example</h2>
 <pre><code>&lt;Session&gt;
   &lt;Page ID=&quot;Patient 1&quot; Descriptor=&quot;CT&quot;&gt;
     ...
@@ -887,6 +981,17 @@ Another example could be that there are multiple pages for one patient, each pag
 
 &lt;/Session&gt;
 </code></pre>
+<h2 id="attributes">Attributes</h2>
+<h5 id="id"><a href="id/">ID</a></h5>
+<h5 id="descriptor"><a href="descriptor/">Descriptor</a></h5>
+<h5 id="linkviews"><a href="linkviews.md">LinkViews</a></h5>
+<h5 id="layout"><a href="layout.md">Layout</a></h5>
+<h5 id="pagegroup"><a href="pagegroup/">PageGroup</a></h5>
+<h5 id="allowmultipleresponse"><a href="allowmultipleresponse.md">AllowMultipleResponse</a></h5>
+<h5 id="enablesegmenteditor"><a href="enablesegmenteditor.md">EnableSegmentEditor</a></h5>
+<h5 id="segmentrequiredonanyimage"><a href="segmentanyimage.md">SegmentRequiredOnAnyImage</a></h5>
+<h5 id="minmarkuplinesrequiredonanyimage"><a href="markuplinesanyimage.md">MinMarkupLinesRequiredOnAnyImage</a></h5>
+<h5 id="loop"><a href="looping/">Loop</a></h5>
 
 
 
@@ -908,7 +1013,7 @@ Another example could be that there are multiple pages for one patient, each pag
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../session/contour-visibility/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Contour visibility" rel="prev">
+          <a href="../session/contour_visibility/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Contour visibility" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
