@@ -6,7 +6,7 @@
 |---|---|---|
 | **Name** | PageGroup |  |
 | **Classification** | attribute ||
-| **Parent** | <Page\> ||
+| **Parent** | <[Page](index.md)\> ||
 | **Required** | yes |if <Session\> has the [RandomizePageGroups](../session/randomizing.md) attribute set to "Y"|
 | | no |if <Session\> does not have the [RandomizePageGroups](../session/randomizing.md) attribute or it is set to "N" |
 | **Syntax** | PageGroup="*option*" ||
@@ -31,64 +31,45 @@ quiz that follows. The remaining pages are randomized.
 
 ## Example
 
-```
 Master Quiz:
 
+```
 <Session RandomizePageGroups="Y">
 	<Page ID="Intro" Description="Instructions" PageGroup="0">
 		...
 	</Page>
-	<Page ID="Patient1" Description="Planning" PageGroup="1">
+	<Page ID="PatientA" Description="Planning" PageGroup="1">
 		...
 	</Page>
-	<Page ID="Patient1" Description="FollowUp 1" PageGroup="1">
+	<Page ID="PatientA" Description="FollowUp 1" PageGroup="1">
 		...
 	</Page>
-	<Page ID="Patient2" Description="Planning" PageGroup="2">
+	<Page ID="PatientB" Description="Planning" PageGroup="2">
 		...
 	</Page>
-	<Page ID="Patient2" Description="FollowUp 1" PageGroup="2">
+	<Page ID="PatientB" Description="FollowUp 1" PageGroup="2">
 		...
 	</Page>
-	<Page ID="Patient3" Description="Planning" PageGroup="3">
+	<Page ID="PatientC" Description="Planning" PageGroup="3">
 		...
 	</Page>
-	<Page ID="Patient3" Description="FollowUp 1" PageGroup="3">
+	<Page ID="PatientC" Description="FollowUp 1" PageGroup="3">
 		...
 	</Page>
 </Session>
 ```
 
 
-```
 Randomized Page Groups for User 1 :  RandomizedPageGroupIndices="3,1,2"
 
-The user would see Pages in this order:
-
-<Session RandomizePageGroups="Y">
-	<Page ID="Intro" Description="Instructions" PageGroup="0">
-		...
-	</Page>
-	<Page ID="Patient3" Description="Planning" PageGroup="3">
-		...
-	</Page>
-	<Page ID="Patient3" Description="FollowUp 1" PageGroup="3">
-		...
-	</Page>
-	<Page ID="Patient1" Description="Planning" PageGroup="1">
-		...
-	</Page>
-	<Page ID="Patient1" Description="FollowUp 1" PageGroup="1">
-		...
-	</Page>
-	<Page ID="Patient2" Description="Planning" PageGroup="2">
-		...
-	</Page>
-	<Page ID="Patient2" Description="FollowUp 1" PageGroup="2">
-		...
-	</Page>
-</Session>
-
+The user would see Pages presented in this order:
 
 ```
-	
+Intro_Instructions
+PatientC_Planning
+PatientC_Followup 1
+PatientA_Planning
+PatientA_Followup 1
+PatientB_Planning
+PatientB_Followup 1
+```

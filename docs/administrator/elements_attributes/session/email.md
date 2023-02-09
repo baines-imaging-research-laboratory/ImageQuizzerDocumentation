@@ -6,7 +6,7 @@
 |---|---|
 | **Name** | EmailResultsTo |
 | **Classification** | attribute |
-| **Parent** | <Session\> |
+| **Parent** | <[Session](index.md)\> |
 | **Required** | no |
 | **Syntax** | EmailResultsTo="*youremailaddress@example.com*" |
 

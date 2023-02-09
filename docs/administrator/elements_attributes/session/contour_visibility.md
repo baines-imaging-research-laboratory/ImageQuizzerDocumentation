@@ -6,7 +6,7 @@
 |---| ---|:---:|
 | **Name** | ContourVisibility ||
 | **Classification** | attribute ||
-| **Parent** | Session ||
+| **Parent** | <[Session](index.md)\> ||
 | **Required** | no ||
 | **Syntax** | ContourVisibility="*option*" ||
 | **Options** | Outline |(default) contours displayed as outlines|

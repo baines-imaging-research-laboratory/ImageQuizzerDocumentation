@@ -22,6 +22,7 @@ In some observer studies, each Page may represent a different patient.
 It could also represent a time point of a Patient's clinical journey (planning, 3 month follow up, 6 month follow up etc.).
 Another example could be that there are multiple pages for one patient, each page holding images that represent different cancer sites (e.g. primary and secondary tumours).
 
+## Example
 
 ```
 <Session>
@@ -34,3 +35,16 @@ Another example could be that there are multiple pages for one patient, each pag
 
 </Session>
 ```
+
+## Attributes
+#####[ID](id.md)
+#####[Descriptor](descriptor.md)
+#####[LinkViews](linkviews.md)
+#####[Layout](layout.md)
+#####[PageGroup](pagegroup.md)
+#####[AllowMultipleResponse](allowmultipleresponse.md)
+#####[EnableSegmentEditor](enablesegmenteditor.md)
+#####[SegmentRequiredOnAnyImage](segmentanyimage.md)
+#####[MinMarkupLinesRequiredOnAnyImage](markuplinesanyimage.md)
+#####[Loop](looping.md)
+

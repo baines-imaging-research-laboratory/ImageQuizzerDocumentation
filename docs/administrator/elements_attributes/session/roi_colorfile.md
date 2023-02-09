@@ -6,7 +6,7 @@
 |---|---|:---:|
 | **Name** | ROIColorFile ||
 | **Classification** | attribute ||
-| **Parent** | <Session\> ||
+| **Parent** | <[Session](index.md)\> ||
 | **Required** | no ||
 | **Syntax** | ROIColorFile="*colorfilename*" | filename without .txt extension |
 

@@ -44,7 +44,7 @@ nav:
         - ROI Color File: administrator/elements_attributes/session/roi_colorfile.md
         - Email results: administrator/elements_attributes/session/email.md
         - Randomize pages: administrator/elements_attributes/session/randomizing.md
-        - Contour visibility: administrator/elements_attributes/session/contour-visibility.md
+        - Contour visibility: administrator/elements_attributes/session/contour_visibility.md
       - Page:
         - administrator/elements_attributes/page/index.md
         - ID: administrator/elements_attributes/page/id.md
