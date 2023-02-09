@@ -1,9 +1,9 @@
-# Results file
+# Response capture
 
 ## Location
 
-When the user first logs in to the Image Quizzer, a results file is created with the same
-name as the original file. This file is placed in the User/Username folder that gets created
+When the user first logs in to the Image Quizzer, a response XML file is created with the same
+name as the original master XML file. This file is placed in the Users/Username folder that gets created
 on the first login.
 
 For example, *Observer1* has logged in to run the *ObserverContouringStudy* quiz.
@@ -12,7 +12,7 @@ When the user logs in to the quiz session, he/she has to browse to the *ImageDat
 
 ![Login screen shot](./assets/login-observer1.png)
 
-The results file will be found here:
+The response XML file will be found here:
 
 ```
 .
@@ -23,7 +23,7 @@ The results file will be found here:
        └─ObserverContouringStudy.xml
 ```
 	
-This is a copy of the original quiz as set up by the administrator.
+This is a copy of the original master quiz as set up by the administrator.
 As the quiz progresses throughout the user's login session, elements and attributes
 are added to capture various pieces of information (responses, login times, username etc.)
 as described below.
@@ -36,7 +36,7 @@ as described below.
 
 ### Login
 
-When the user first logs in, a <Login\> element is added to the results XML file.
+When the user first logs in, a <Login\> element is added to the response XML file.
 It holds the login and logout times for the user's session. 
 
 ```
@@ -51,11 +51,11 @@ When the user completes the assigned quiz, a *QuizComplete="y"* attribute is add
 
 ###  RandomizedPageGroupIndices
 
-The <RandomizedPageGroupIndices\> element is added to the results XML file under the <Session\> element
+The <RandomizedPageGroupIndices\> element is added to the response XML file under the <Session\> element
 if the RandomizePageGroups attribute was set to "Y" in the Session element. The
 element holds the list of integers reflecting the randomized order of Page Groups used to direct the order of display of the quiz pages.
 If this element is not present, then randomizing of pages was not done and the Image Quizzer
-presented each page in the order defined in the original XML quiz file.
+presented each page in the order defined in the original master quiz XML file.
 
 ## New Attributes
 

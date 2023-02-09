@@ -55,7 +55,7 @@ nav:
 #        - administrator/page/looping.md
 #        - QuestionSet:
 #          - Question:
-    - Results file: administrator/results.md
+    - Quiz reponses: administrator/results.md
   - User Guide: 
     - user/index.md
     - ExtraTools: user/extratools.md

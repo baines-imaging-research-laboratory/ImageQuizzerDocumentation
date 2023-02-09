@@ -10,8 +10,8 @@ It can be created using a simple editor like Notepad.
 	
 !!! Note
     When building your quiz, the administrator creates and makes changes to the original XML file.
-    This is known throughout the documentation as the *Master* quiz file.
-    When the user starts a quiz session, a copy of this *Master* quiz file, with the same name is placed in the User's folder
+    This is known throughout the documentation as the *master* quiz file.
+    When the user starts a quiz session, a copy of this *master* quiz file, with the same name is placed in the User's folder
     ready to record the session responses. This is known throughout the documentation as the *Results* quiz file
 
 ## Simple quiz example
@@ -79,13 +79,13 @@ Refer to the [Elements and attributes](elements_attributes/index.md) section for
 
 When you are building your quiz, the general pattern is:
 
-    - modify/create the XML quiz file (aka __Master__ quiz)
-    - run ImageQuizzer for modified quiz (Image Quizzer creates a copy of the Master quiz in the user folder to capture responses.)
-    - make additional modifications to Master quiz
+    - modify/create the XML quiz file (aka __master__ quiz)
+    - run ImageQuizzer for modified quiz (Image Quizzer creates a copy of the master quiz in the user folder to capture responses.)
+    - make additional modifications to master quiz
     - **remove quiz folder under the Users folder**
-    - run ImageQuizzer again on modified Master
+    - run ImageQuizzer again on modified master
 
 !!! Note
 	If you don't remove the results quiz folder under the User's folder, Image Quizzer will
 	assume the user is resuming the quiz that was already started. It reads the copied
-	quiz and your new modifications made to the Master quiz will not be reflected.
+	quiz and your new modifications made to the master quiz will not be reflected.

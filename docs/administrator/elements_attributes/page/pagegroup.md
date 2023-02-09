@@ -16,22 +16,24 @@ See also: [Randomizing pages](../session/randomizing.md),  [RandomizedPageGroupI
 
 ## Description
 The PageGroup number is used to keep certain pages together when randomizing is setup. All Pages with the same group number
-will appear consecutively (as read in from the Master quiz file) and not randomized.
+will appear consecutively (as read in from the master quiz file) and not randomized.
 
 This can be useful when a quiz is set up with a Page holding images that represent a time point in a patient's clinical journey (for example one of a number of follow up images).
 The administrator may want to keep all Pages for one patient in the same group.
 
-### PageGroup="0"
+## PageGroup="0"
 
 Any pages assigned a group number of 0 will always appear at the beginning of the quiz. 
 If more than one Page has a page group number of 0, these pages will appear in the order read in.
-This is useful if the administrator wishes to present instructional information that applies to the
-quiz that follows. The remaining pages are randomized.
+The remaining pages are randomized. Following are some use cases for assigning pages to PageGroup="0"
+
+* present instructional information that applies to the quiz that follows
+* isolate certain images that all observers will see at the beginning of the quiz before randomization in order to establish a baseline
 
 
 ## Example
 
-Master Quiz:
+Master quiz:
 
 ```
 <Session RandomizePageGroups="Y">

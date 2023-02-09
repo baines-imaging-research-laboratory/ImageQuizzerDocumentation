@@ -26,7 +26,7 @@ If the user logs out of the quiz session and resumes at a later time, the Pages 
 
 The randomized PageGroup order is captured and stored in the results quiz file in the RandomizedPageGroupIndices element 
 so that the administrator knows the order in which the pages were presented for any observer and can cross-reference the displayed order 
-with the original Master quiz file Pages.
+with the original master quiz file Pages.
 
 
 ## Setup
@@ -38,12 +38,12 @@ numbers consecutively.
 
 !!! Note
     Question sets defined within a Page are never randomized. They will always appear in the order
-    as defined in the Page of the Master quiz file.
+    as defined in the Page of the master quiz file.
 
 
 ## Example
 
-Master Quiz:
+Master quiz:
 
 ```
 <Session RandomizePageGroups="Y">
