@@ -21,7 +21,7 @@
     
     
       
-        <title>Results file - Image Quizzer Documentation</title>
+        <title>Quiz reponses - Image Quizzer Documentation</title>
       
     
     
@@ -91,7 +91,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#results-file" class="md-skip">
+        <a href="#response-capture" class="md-skip">
           Skip to content
         </a>
       
@@ -124,7 +124,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Results file
+              Quiz reponses
             
           </span>
         </div>
@@ -671,12 +671,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Results file
+          Quiz reponses
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Results file
+        Quiz reponses
       </a>
       
         
@@ -954,16 +954,16 @@
 
 
 
-<h1 id="results-file">Results file</h1>
+<h1 id="response-capture">Response capture</h1>
 <h2 id="location">Location</h2>
-<p>When the user first logs in to the Image Quizzer, a results file is created with the same
-name as the original file. This file is placed in the User/Username folder that gets created
+<p>When the user first logs in to the Image Quizzer, a response XML file is created with the same
+name as the original master XML file. This file is placed in the Users/Username folder that gets created
 on the first login.</p>
 <p>For example, <em>Observer1</em> has logged in to run the <em>ObserverContouringStudy</em> quiz.
 The administrator has placed all the image volumes for this study in the folder <em>ImageQuizzerData</em>.
 When the user logs in to the quiz session, he/she has to browse to the <em>ImageDatabase</em> folder.</p>
 <p><img alt="Login screen shot" src="../assets/login-observer1.png" /></p>
-<p>The results file will be found here:</p>
+<p>The response XML file will be found here:</p>
 <pre><code>.
 └─ImageQuizzerData/
    ├─SlicerDicomDatabse/
@@ -971,7 +971,7 @@ When the user logs in to the quiz session, he/she has to browse to the <em>Image
      └─Observer1/
        └─ObserverContouringStudy.xml
 </code></pre>
-<p>This is a copy of the original quiz as set up by the administrator.
+<p>This is a copy of the original master quiz as set up by the administrator.
 As the quiz progresses throughout the user's login session, elements and attributes
 are added to capture various pieces of information (responses, login times, username etc.)
 as described below.</p>
@@ -982,7 +982,7 @@ when the user logs in to manage information about DICOM data.</p>
 </div>
 <h2 id="new-elements">New Elements</h2>
 <h3 id="login">Login</h3>
-<p>When the user first logs in, a &lt;Login> element is added to the results XML file.
+<p>When the user first logs in, a &lt;Login> element is added to the response XML file.
 It holds the login and logout times for the user's session. </p>
 <pre><code>&lt;Login LoginTime=&quot;20221129_16:35:07.894893&quot; LogoutTime=&quot;20221129_17:37:36.548557&quot;/&gt;
 </code></pre>
@@ -990,11 +990,11 @@ It holds the login and logout times for the user's session. </p>
 <pre><code>&lt;Login LoginTime=&quot;20221129_16:35:07.894893&quot; LogoutTime=&quot;20221129_17:37:36.548557&quot; QuizComplete=&quot;Y&quot;/&gt;
 </code></pre>
 <h3 id="randomizedpagegroupindices">RandomizedPageGroupIndices</h3>
-<p>The &lt;RandomizedPageGroupIndices> element is added to the results XML file under the &lt;Session> element
+<p>The &lt;RandomizedPageGroupIndices> element is added to the response XML file under the &lt;Session> element
 if the RandomizePageGroups attribute was set to "Y" in the Session element. The
 element holds the list of integers reflecting the randomized order of Page Groups used to direct the order of display of the quiz pages.
 If this element is not present, then randomizing of pages was not done and the Image Quizzer
-presented each page in the order defined in the original XML quiz file.</p>
+presented each page in the order defined in the original master quiz XML file.</p>
 <h2 id="new-attributes">New Attributes</h2>
 <h3 id="username">UserName</h3>
 <p>Once a user has logged in to the Image Quizzer, the attribute <em>UserName</em> will be added 

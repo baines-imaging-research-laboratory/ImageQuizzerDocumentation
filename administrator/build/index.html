@@ -724,7 +724,7 @@
   
     <li class="md-nav__item">
       <a href="../results/" class="md-nav__link">
-        Results file
+        Quiz reponses
       </a>
     </li>
   
@@ -914,8 +914,8 @@ This can be used in conjuction with the <em>ImageQuizzer.xsd</em> schema file fo
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When building your quiz, the administrator creates and makes changes to the original XML file.
-This is known throughout the documentation as the <em>Master</em> quiz file.
-When the user starts a quiz session, a copy of this <em>Master</em> quiz file, with the same name is placed in the User's folder
+This is known throughout the documentation as the <em>master</em> quiz file.
+When the user starts a quiz session, a copy of this <em>master</em> quiz file, with the same name is placed in the User's folder
 ready to record the session responses. This is known throughout the documentation as the <em>Results</em> quiz file</p>
 </div>
 <h2 id="simple-quiz-example">Simple quiz example</h2>
@@ -991,17 +991,17 @@ Then you can copy/paste the pages, update the Image Path element and the ID &amp
 </div>
 <h2 id="testing-your-quiz">Testing your quiz</h2>
 <p>When you are building your quiz, the general pattern is:</p>
-<pre><code>- modify/create the XML quiz file (aka __Master__ quiz)
-- run ImageQuizzer for modified quiz (Image Quizzer creates a copy of the Master quiz in the user folder to capture responses.)
-- make additional modifications to Master quiz
+<pre><code>- modify/create the XML quiz file (aka __master__ quiz)
+- run ImageQuizzer for modified quiz (Image Quizzer creates a copy of the master quiz in the user folder to capture responses.)
+- make additional modifications to master quiz
 - **remove quiz folder under the Users folder**
-- run ImageQuizzer again on modified Master
+- run ImageQuizzer again on modified master
 </code></pre>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you don't remove the results quiz folder under the User's folder, Image Quizzer will
 assume the user is resuming the quiz that was already started. It reads the copied
-quiz and your new modifications made to the Master quiz will not be reflected.</p>
+quiz and your new modifications made to the master quiz will not be reflected.</p>
 </div>
 
 
