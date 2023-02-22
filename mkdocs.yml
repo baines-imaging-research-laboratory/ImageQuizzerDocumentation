@@ -17,7 +17,6 @@ theme:
       tip: octicons/squirrel-16
       warning: octicons/alert-16
       bug: octicons/bug-16
-      todo: octicons/checklist-16
       
 markdown_extensions:
   - admonition
@@ -33,6 +32,7 @@ extra:
 # Page tree
 nav:
   - Home: index.md
+  - Getting started: getting_started/index.md
   - Administrator guide:
     - administrator/index.md
     - Install: administrator/install.md
@@ -60,4 +60,4 @@ nav:
     - user/index.md
     - ExtraTools: user/extratools.md
   - System Notes: extras/codingconventions.md
-  - About: about.md
+ 
