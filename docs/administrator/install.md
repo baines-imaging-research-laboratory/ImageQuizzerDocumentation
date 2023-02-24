@@ -1,3 +1,8 @@
+---
+hide:
+- toc
+---
+<!-- let javascript handle toc on left sidebar -->
 # Installation
 
 This is how to install the Image Quizzer

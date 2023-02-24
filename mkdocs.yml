@@ -24,7 +24,11 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   
-extra_css: [stylesheets/extra.css]
+extra_javascript:
+  - javascripts/extra.js
+
+extra_css: 
+  - stylesheets/extra.css
 
 extra:
   generator: false
@@ -33,6 +37,9 @@ extra:
 nav:
   - Home: index.md
   - Getting started: getting_started/index.md
+  - User Guide: 
+    - user/index.md
+    - ExtraTools: user/extratools.md
   - Administrator guide:
     - administrator/index.md
     - Install: administrator/install.md
@@ -56,8 +63,5 @@ nav:
 #        - QuestionSet:
 #          - Question:
     - Quiz reponses: administrator/results.md
-  - User Guide: 
-    - user/index.md
-    - ExtraTools: user/extratools.md
   - System Notes: extras/codingconventions.md
  

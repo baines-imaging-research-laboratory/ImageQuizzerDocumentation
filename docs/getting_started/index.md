@@ -1,3 +1,9 @@
+---
+hide:
+- toc
+---
+<!-- let javascript handle toc on left sidebar -->
+
 # Getting started
 
 <!--
@@ -30,7 +36,7 @@ Following you will find information to get the Image Quizzer installed and runni
 ### Image Quizzer
 
 The Image Quizzer project is currently available with special access permission through GitHub.
-This will be made public in the near future.
+This will be made public in the near future (estimate 2nd quarter 2023).
 
 Once downloaded, the following directory tree describes the basic files and folders 
 that may be relevant to the study coordinator when developing the script. 
@@ -55,17 +61,9 @@ that may be relevant to the study coordinator when developing the script.
 ```
 
 !!! Note
-    Other files/folders not shown in this tree may be:
+    There are other files/folders not shown in this tree. They are not necessary for script development.
+    They may be either under development or required for execution of the Image Quizzer module.	
 	
-    - required by the Image Quizzer module
-    - relevant only to code developers
-	- or under development
-
-
-One option is to set up a USB with encrypted study data, the XML quiz file  along with 3D Slicer and the Image Quizzer module already installed and set up.
-This USB can then be plugged into the observers laptop and the 
-(VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; admin rights are required.)
-
 
 
 ### 3D Slicer
@@ -101,7 +99,7 @@ Download and install 3D Slicer version 4.11.20210226
 
 
 
-## Connecting Image Quizzer to 3D Slicer
+### Connecting Image Quizzer to 3D Slicer
 
 To connect the Image Quizzer module
 
@@ -109,7 +107,10 @@ To connect the Image Quizzer module
 * Select Edit > Application Settings
 * Select Modules in the left-hand panel
 * Click Add in the panel to the right of  “Additional module paths:” (may have to click the ‘>>’ button)
-* Search for folder named **ImageQuizzer** in the downloaded ImageQuizzerProject
+* Search for folder named **Imag rights are required.)
+
+
+eQuizzer** in the downloaded ImageQuizzerProject
     * eg. C:\Users\username\Documents\ImageQuizzerProject\ImageQuizzer
 * Restart 3D Slicer if prompted
 
@@ -158,8 +159,15 @@ There are two ways to run the Image Quizzer.
 		    C:\Users\username\Documents\ImageDatabase\SlicerDicomDatabase
 	
  
+## Distribution to observers
 
-## Setup for remote access
+Following are some options on how to get this tool to your observers/students:
+
+* [install and setup](#installation) on individual's laptop/PC
+* set up for [remote access](#setup-for-remote-access).
+* or [distribute on a USB](#distribute-via-usb)
+
+### Setup for remote access
 
 One option for running the Image Quizzer is to install the tool on a PC that observers
 are able to log into remotely.
@@ -170,7 +178,7 @@ are able to log into remotely.
     associated with each observer is used to create the user's results folder.
     
 	If you don't have unique accounts, you risk overwriting a previous user's results.
-	You must move the current user's results folder into a secure area before the next observer starts the quiz.
+	You must move the current user's results folder into a secure area before the next observer starts his/her quiz session.
     .
 There may be issues if you are setting up the Image Quizzer so that the users can log in remotely. 
 This is related to OpenGL which 3D Slicer uses for the graphical display.
@@ -189,4 +197,12 @@ We have had success using:
 * Other recommendations:
 * Windows 10 must be used at both ends
 * Google Remote Desktop, RealVNC, AnyDesk (free remote software options)
+
+### Distribute via USB
+
+Distribution to observers can be done by setting up a USB with 3D Slicer and the Image Quizzer module already installed, along with encrypted study data and the XML quiz file.
+This USB can then be plugged into the observers laptop or PC and the quiz is ready-to-go.
+
+!!! tip
+    (VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; admin
 

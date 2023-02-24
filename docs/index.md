@@ -1,3 +1,9 @@
+---
+hide:
+- toc
+---
+<!-- let javascript handle toc on left sidebar -->
+
 ![Baines logo](assets\bainesimaginglogo-small.png)
 
 # Image Quizzer
