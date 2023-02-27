@@ -3,8 +3,7 @@ hide:
 - toc
 ---
 <!-- let javascript handle toc on left sidebar -->
-
-# User Guide
+# Using Image Quizzer
 
 ## Start Image Quizzer
 
@@ -17,10 +16,6 @@ Once the Image Quizzer is started, you start your session by logging in.
 
 
 ![login](assets/login-user1.png)
-
-Screenshot of the user's login screen.
-
-
 
 There are 3 steps to launch the quiz.
 

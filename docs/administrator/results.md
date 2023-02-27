@@ -2,7 +2,7 @@
 
 ## Location
 
-When the user first logs in to the Image Quizzer, a response XML file is created with the same
+When the user first logs in to the Image Quizzer, a results XML file is created with the same
 name as the original master XML file. This file is placed in the Users/Username folder that gets created
 on the first login.
 
@@ -12,7 +12,7 @@ When the user logs in to the quiz session, he/she has to browse to the *ImageDat
 
 ![Login screen shot](./assets/login-observer1.png)
 
-The response XML file will be found here:
+The results XML file will be found here:
 
 ```
 .
@@ -64,7 +64,7 @@ presented each page in the order defined in the original master quiz XML file.
 Once a user has logged in to the Image Quizzer, the attribute _UserName_ will be added 
 to the Session element
 capturing the Windows defined user name. This allows you to keep track of who the XML
-results file belongs to, as long as each user has his/her own login profile.
+results quiz file belongs to, as long as each user has his/her own login profile.
 
 ```
 <Session UserName="Observer1">

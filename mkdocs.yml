@@ -37,14 +37,15 @@ extra:
 nav:
   - Home: index.md
   - Getting started: getting_started/index.md
-  - User Guide: 
-    - user/index.md
-    - ExtraTools: user/extratools.md
+  - User guide:  
+    - Using Image Quizzer: user/user.md
+    - Extra tools: user/extratools.md
+    - Keyboard shortcuts: user/keyboard_shortcuts.md
   - Administrator guide:
     - administrator/index.md
-    - Install: administrator/install.md
-    - Build a quiz: administrator/build.md
-    - Elements and attributes: 
+    - Quiz examples:
+      - Build a quiz basics: administrator/examples/build.md
+    - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
         - administrator/elements_attributes/session/index.md
@@ -62,6 +63,6 @@ nav:
 #        - administrator/page/looping.md
 #        - QuestionSet:
 #          - Question:
-    - Quiz reponses: administrator/results.md
+    - Quiz results: administrator/results.md
   - System Notes: extras/codingconventions.md
  

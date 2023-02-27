@@ -1,4 +1,9 @@
-# Build a quiz
+---
+hide:
+- toc
+---
+<!-- let javascript handle toc on left sidebar -->
+# Build a quiz - basics
 
 The Image Quizzer is controlled by a script that is written using eXtensible Markup Language (XML) formatting. 
 This script defines what images and questions are to be displayed and in what order. 
@@ -12,13 +17,17 @@ It can be created using a simple editor like Notepad.
     When building your quiz, the administrator creates and makes changes to the original XML file.
     This is known throughout the documentation as the *master* quiz file.
     When the user starts a quiz session, a copy of this *master* quiz file, with the same name is placed in the User's folder
-    ready to record the session responses. This is known throughout the documentation as the *Results* quiz file
+    ready to record the session responses. This is known throughout the documentation as the *results* quiz file
+
+## Prep
+
+Download and save CTChest sample data.
 
 ## Simple quiz example
 
 Here is a screenshot of a very simple quiz followed by the script that was used to create it.
 
-![Simple Script Screenshot](assets/build/SimpleScript_Screenshot.png)
+![Simple Script Screenshot](../assets/build/SimpleScript_Screenshot.png)
 
 
 Script for the Simple Quiz example.
@@ -66,11 +75,11 @@ section of this documentation.
 ## Expanding your quiz
 
 There are many XML elements and attributes available to customize your quiz.
-Refer to the [Elements and attributes](elements_attributes/index.md) section for details.
+Refer to the [Scripting references](elements_attributes/index.md) section for details.
 
 !!! tip
     When working on quizzes that have a specific set of questions to be asked for numerous images,
-	start the build process using the basic required elements for one Page. 
+	start the build process using the basic required elements for one page. 
 	Test this in Slicer to make sure it displays what you want.
 	Then you can copy/paste the pages, update the Image Path element and the ID & Description attributes.
 

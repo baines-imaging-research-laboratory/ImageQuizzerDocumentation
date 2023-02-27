@@ -6,15 +6,6 @@ hide:
 
 # Getting started
 
-<!--
-* [System Requirements](system_requirements.md)
-
-* [Installing](installation.md)
-
-* [How to run](run.md)
-
-
--->
 The Image Quizzer is a tool that was designed to run as a module on the [3D Slicer](https://slicer.org) platform.
 Following you will find information to get the Image Quizzer installed and running on your computer.
 
@@ -205,4 +196,53 @@ This USB can then be plugged into the observers laptop or PC and the quiz is rea
 
 !!! tip
     (VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; admin
+
+## Sample datasets
+
+You will find references in the [example scripts](../administrator/examples/index.md) section of this documentation
+for datasets that are available in 3D Slicer.
+If you wish to run the Image Quizzer example quizzes, you can download and save the image volumes
+using the instructions below.
+
+* CTChest
+* MRHead
+* MRBrain Tumor1
+* CT Cardio Volume Sequence
+* TinyPatient (available when Developer's mode is enabled in Edit>Application Settings>Developer)
+
+#### Download and save
+
+Following is a brief set of commands to download and save any of the available image datasets.
+Refer to Slicer's documentation for [download and save](https://slicer.readthedocs.io/en/latest/user_guide/data_loading_and_saving.html) for more more details.
+
+* Open 3D Slicer. 
+* In the Welcome to Slicer module, select **Download Sample Data**
+* Select the image dataset to download.
+* Select File>Save in Slicer's menu bar
+* Unselect all check marks under File Name except for the image volume being saved.
+* The default file format for saving data is *.nrrd which will match the script examples.
+* Browse to the folder that you wish to save the sample data.
+* Click on the Save button.
+
+#### Suggested tree structure
+
+This is the tree structure we use for testing and building the example scripts.
+You will have to modify the image **Path** element in the scripts if you are 
+using a tree structure with customized folder names.
+
+```
+.
+└─ ImageQuizzerData/
+      └─ ImageVolumes/
+          ├─ MRHead/
+          │     └─ MRHead.nrrd
+          ├─ MRBrain/
+          │     └─ MRBrain.nrrd
+          │
+          ... etc.
+
+```
+
+
+
 

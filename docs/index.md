@@ -31,3 +31,13 @@ Credits: **Carol A. Johnson**<sup>1</sup> (Author), David A. Palma<sup>1-3</sup>
 
 
 [Baines Imaging Research Laboratories](https://bainesimaging.com)
+
+
+<!--
+saving for copy/paste tree symbols
+.
+├─ docs/
+│  └─ stylesheets/
+│     └─ extra.css
+└─ mkdocs.yml
+-->

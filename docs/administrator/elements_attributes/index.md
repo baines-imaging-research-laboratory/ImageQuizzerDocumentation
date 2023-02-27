@@ -1,7 +1,7 @@
 # Elements and attributes
 
 The quiz file is set up with XML elements. Special attributes are associated with 
-each element. The combinatin of elements and attributes enables the administrator to customize
+each element. The combination of elements and attributes enables the administrator to customize
 how the Image Quizzer display will display the images and questions and in what order.
 
 The following table defines the basic elements of the quiz.

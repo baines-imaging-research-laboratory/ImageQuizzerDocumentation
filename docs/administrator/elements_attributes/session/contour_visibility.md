@@ -17,7 +17,7 @@
 The ContourVisibility attribute defines how contours  (label maps or segmentations) are displayed for the
 entire quiz - as an outline only or as a solid contour.
 The user has an opportunity to override this setting using the visibility toggle in 
-the [Extra Tools tab](../../../user/extratools.md).
+the [Extra Tools tab](../../../user/extratools.md#contour-visibility).
 
 ## Options
 
