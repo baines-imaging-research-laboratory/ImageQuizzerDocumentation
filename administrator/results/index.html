@@ -259,6 +259,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -462,15 +464,25 @@
       
         
           
+            
+          
+        
+          
         
           
         
       
       
-        <label class="md-nav__link" for="__nav_4_2" tabindex="0" aria-expanded="false">
-          Quiz examples
-          <span class="md-nav__icon md-icon"></span>
-        </label>
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../examples/">Quiz examples</a>
+          
+            <label for="__nav_4_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
       
       <nav class="md-nav" aria-label="Quiz examples" data-md-level="2">
         <label class="md-nav__title" for="__nav_4_2">
@@ -478,6 +490,8 @@
           Quiz examples
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
           
             
               
@@ -953,7 +967,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1044,12 +1060,12 @@
 <h1 id="response-capture">Response capture</h1>
 <h2 id="location">Location</h2>
 <p>When the user first logs in to the Image Quizzer, a results XML file is created with the same
-name as the original master XML file. This file is placed in the Users/Username folder that gets created
-on the first login.</p>
+name as the original master XML file. This file is placed in the Users/Username folder that gets created on the first login. 
+You will find the Users folder under the directory you defined to be the database directory.</p>
 <p>For example, <em>Observer1</em> has logged in to run the <em>ObserverContouringStudy</em> quiz.
-The administrator has placed all the image volumes for this study in the folder <em>ImageQuizzerData</em>.
+The administrator has placed all the image volumes for this study in the folder <em>ImageQuizzerData</em> (the database directory).
 When the user logs in to the quiz session, he/she has to browse to the <em>ImageDatabase</em> folder.</p>
-<p><img alt="Login screen shot" src="./assets/login-observer1.png" /></p>
+<p><img alt="Login screen shot" src="../assets/login-observer1.png" /></p>
 <p>The results XML file will be found here:</p>
 <pre><code>.
 └─ImageQuizzerData/
@@ -1097,6 +1113,8 @@ results quiz file belongs to, as long as each user has his/her own login profile
 
 
 
+  
+
 
 
                 
@@ -1111,6 +1129,8 @@ results quiz file belongs to, as long as each user has his/her own login profile
         <footer class="md-footer">
   
     
+      
+        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         

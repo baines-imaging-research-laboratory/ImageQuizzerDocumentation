@@ -81,6 +81,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/</loc>
+         <lastmod>2023-02-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/build_basics/</loc>
          <lastmod>2023-02-28</lastmod>
          <changefreq>daily</changefreq>
