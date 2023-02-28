@@ -10,7 +10,7 @@ For example, *Observer1* has logged in to run the *ObserverContouringStudy* quiz
 The administrator has placed all the image volumes for this study in the folder *ImageQuizzerData* (the database directory).
 When the user logs in to the quiz session, he/she has to browse to the *ImageDatabase* folder.
 
-![Login screen shot](./assets/login-observer1.png)
+![Login screen shot](assets/login-observer1.png)
 
 The results XML file will be found here:
 
