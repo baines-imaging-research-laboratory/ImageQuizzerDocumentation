@@ -1,3 +1,7 @@
+---
+hide:
+- toc
+---
 # Randomizing Pages
 
 ## Specs

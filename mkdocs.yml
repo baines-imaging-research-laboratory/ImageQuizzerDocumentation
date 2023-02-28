@@ -44,21 +44,24 @@ nav:
   - Administrator guide:
     - administrator/index.md
     - Quiz examples:
-      - Build a quiz basics: administrator/examples/build.md
+      - Building basics: administrator/examples/build_basics.md
+      - ROI Color File: administrator/examples/example_roicolorfile.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
         - administrator/elements_attributes/session/index.md
-        - ROI Color File: administrator/elements_attributes/session/roi_colorfile.md
-        - Email results: administrator/elements_attributes/session/email.md
-        - Randomize pages: administrator/elements_attributes/session/randomizing.md
-        - Contour visibility: administrator/elements_attributes/session/contour_visibility.md
+        - ROIColorFile: administrator/elements_attributes/session/roi_colorfile.md
+        - EmailResults: administrator/elements_attributes/session/email.md
+        - RandomizePageGroups: administrator/elements_attributes/session/randomizing.md
+        - ContourVisibility: administrator/elements_attributes/session/contour_visibility.md
       - Page:
         - administrator/elements_attributes/page/index.md
         - ID: administrator/elements_attributes/page/id.md
         - Descriptor: administrator/elements_attributes/page/descriptor.md
-        - Looping pages: administrator/elements_attributes/page/looping.md
-        - Page groups: administrator/elements_attributes/page/pagegroup.md
+        - Loop: administrator/elements_attributes/page/looping.md
+        - PageGroup: administrator/elements_attributes/page/pagegroup.md
+        - EnableSegmentEditor: administrator/elements_attributes/page/enable_segment_editor.md
+        - SegmentRequiredOnAnyImage: administrator/elements_attributes/page/segment_required_on_any_image.md
 #      - Image:
 #        - administrator/page/looping.md
 #        - QuestionSet:

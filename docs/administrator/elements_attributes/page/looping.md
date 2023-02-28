@@ -1,3 +1,7 @@
+---
+hide:
+- toc
+---
 # Looping Pages
 
 ## Script Setup

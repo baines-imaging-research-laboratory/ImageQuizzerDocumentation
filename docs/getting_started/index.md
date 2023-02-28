@@ -213,7 +213,6 @@ using the instructions below.
 #### Download and save
 
 Following is a brief set of commands to download and save any of the available image datasets.
-Refer to Slicer's documentation for [download and save](https://slicer.readthedocs.io/en/latest/user_guide/data_loading_and_saving.html) for more more details.
 
 * Open 3D Slicer. 
 * In the Welcome to Slicer module, select **Download Sample Data**
@@ -223,6 +222,8 @@ Refer to Slicer's documentation for [download and save](https://slicer.readthedo
 * The default file format for saving data is *.nrrd which will match the script examples.
 * Browse to the folder that you wish to save the sample data.
 * Click on the Save button.
+
+Refer to Slicer's documentation for [download and save](https://slicer.readthedocs.io/en/latest/user_guide/data_loading_and_saving.html) for more more details.
 
 #### Suggested tree structure
 

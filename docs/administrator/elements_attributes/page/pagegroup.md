@@ -1,4 +1,8 @@
-# Page Groups
+---
+hide:
+- toc
+---
+# PageGroup
 
 ## Specs
 
