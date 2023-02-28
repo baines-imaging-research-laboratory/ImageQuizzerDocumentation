@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#page-id" class="md-skip">
+        <a href="#id" class="md-skip">
           Skip to content
         </a>
       
@@ -258,6 +258,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -463,6 +465,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_2" tabindex="0" aria-expanded="false">
@@ -483,8 +487,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/build/" class="md-nav__link">
-        Build a quiz basics
+      <a href="../../../examples/build_basics/" class="md-nav__link">
+        Building basics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_roicolorfile/" class="md-nav__link">
+        ROI Color File
       </a>
     </li>
   
@@ -601,7 +619,7 @@
   
     <li class="md-nav__item">
       <a href="../../session/roi_colorfile/" class="md-nav__link">
-        ROI Color File
+        ROIColorFile
       </a>
     </li>
   
@@ -615,7 +633,7 @@
   
     <li class="md-nav__item">
       <a href="../../session/email/" class="md-nav__link">
-        Email results
+        EmailResults
       </a>
     </li>
   
@@ -629,7 +647,7 @@
   
     <li class="md-nav__item">
       <a href="../../session/randomizing/" class="md-nav__link">
-        Randomize pages
+        RandomizePageGroups
       </a>
     </li>
   
@@ -643,7 +661,7 @@
   
     <li class="md-nav__item">
       <a href="../../session/contour_visibility/" class="md-nav__link">
-        Contour visibility
+        ContourVisibility
       </a>
     </li>
   
@@ -676,6 +694,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -791,7 +813,7 @@
   
     <li class="md-nav__item">
       <a href="../looping/" class="md-nav__link">
-        Looping pages
+        Loop
       </a>
     </li>
   
@@ -805,7 +827,35 @@
   
     <li class="md-nav__item">
       <a href="../pagegroup/" class="md-nav__link">
-        Page groups
+        PageGroup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enable_segment_editor/" class="md-nav__link">
+        EnableSegmentEditor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../segment_required_on_any_image/" class="md-nav__link">
+        SegmentRequiredOnAnyImage
       </a>
     </li>
   
@@ -869,7 +919,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -917,7 +969,7 @@
 
 
 
-<h1 id="page-id">Page ID</h1>
+<h1 id="id">ID</h1>
 <h2 id="specs">Specs</h2>
 <table>
 <thead>
@@ -962,13 +1014,16 @@
 </table>
 <p>See also:  <a href="../">Page</a>, <a href="../descriptor/">Descriptor</a></p>
 <h2 id="description">Description</h2>
-<p>ID is a required attribute for the Page element. It is used in combination with the Descriptor attribute (not required)
-to identify the Page element.</p>
-<p>The ID_Descriptor string combination appears as an identifier in the Slicer layout
-when displaying the images. It is also used in the subfolders created in the User's results folder when capturing
+<p>ID is a required attribute for the Page element. It is used in combination with the Image ID attribute (required)
+to create a unique node name when loading the image into Slicer.</p>
+<p>The Page ID_Descriptor string combination appears as an identifier in the Slicer layout
+when displaying the images. It is also used as part of the subfolder names (prefixed by the PageGroup number) 
+ created in the User's results folder when capturing
 contours and measurement lines that the user creates during the quiz.</p>
 
 
+
+  
 
 
 
@@ -984,6 +1039,8 @@ contours and measurement lines that the user creates during the quiz.</p>
         <footer class="md-footer">
   
     
+      
+        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         

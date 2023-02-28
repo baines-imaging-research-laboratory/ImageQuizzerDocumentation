@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/build/">
+        <link rel="canonical" href="https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/build_basics/">
       
       
         <link rel="prev" href="../../">
       
       
-        <link rel="next" href="../../elements_attributes/">
+        <link rel="next" href="../example_roicolorfile/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
     
     
       
-        <title>Build a quiz basics - Image Quizzer Documentation</title>
+        <title>Building basics - Image Quizzer Documentation</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#build-a-quiz-basics" class="md-skip">
+        <a href="#building-basics" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Build a quiz basics
+              Building basics
             
           </span>
         </div>
@@ -467,6 +467,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_2" tabindex="0" aria-expanded="true">
@@ -497,12 +499,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Build a quiz basics
+          Building basics
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Build a quiz basics
+        Building basics
       </a>
       
         
@@ -535,8 +537,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#simple-quiz-elements-and-layout" class="md-nav__link">
-    Simple quiz elements and layout
+  <a href="#script-elements-layout" class="md-nav__link">
+    Script elements layout
   </a>
   
 </li>
@@ -559,6 +561,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_roicolorfile/" class="md-nav__link">
+        ROI Color File
+      </a>
     </li>
   
 
@@ -672,7 +688,7 @@
   
     <li class="md-nav__item">
       <a href="../../elements_attributes/session/roi_colorfile/" class="md-nav__link">
-        ROI Color File
+        ROIColorFile
       </a>
     </li>
   
@@ -686,7 +702,7 @@
   
     <li class="md-nav__item">
       <a href="../../elements_attributes/session/email/" class="md-nav__link">
-        Email results
+        EmailResults
       </a>
     </li>
   
@@ -700,7 +716,7 @@
   
     <li class="md-nav__item">
       <a href="../../elements_attributes/session/randomizing/" class="md-nav__link">
-        Randomize pages
+        RandomizePageGroups
       </a>
     </li>
   
@@ -714,7 +730,7 @@
   
     <li class="md-nav__item">
       <a href="../../elements_attributes/session/contour_visibility/" class="md-nav__link">
-        Contour visibility
+        ContourVisibility
       </a>
     </li>
   
@@ -745,6 +761,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -812,7 +832,7 @@
   
     <li class="md-nav__item">
       <a href="../../elements_attributes/page/looping/" class="md-nav__link">
-        Looping pages
+        Loop
       </a>
     </li>
   
@@ -826,7 +846,35 @@
   
     <li class="md-nav__item">
       <a href="../../elements_attributes/page/pagegroup/" class="md-nav__link">
-        Page groups
+        PageGroup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elements_attributes/page/enable_segment_editor/" class="md-nav__link">
+        EnableSegmentEditor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elements_attributes/page/segment_required_on_any_image/" class="md-nav__link">
+        SegmentRequiredOnAnyImage
       </a>
     </li>
   
@@ -925,8 +973,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#simple-quiz-elements-and-layout" class="md-nav__link">
-    Simple quiz elements and layout
+  <a href="#script-elements-layout" class="md-nav__link">
+    Script elements layout
   </a>
   
 </li>
@@ -962,24 +1010,9 @@
 
 
 <!-- let javascript handle toc on left sidebar -->
-<h1 id="build-a-quiz-basics">Build a quiz - basics</h1>
-<p>The Image Quizzer is controlled by a script that is written using eXtensible Markup Language (XML) formatting. 
-This script defines what images and questions are to be displayed and in what order. 
-It can be created using a simple editor like Notepad.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
-This can be used in conjuction with the <em>ImageQuizzer.xsd</em> schema file found in the Resources\XML folder.</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When building your quiz, the administrator creates and makes changes to the original XML file.
-This is known throughout the documentation as the <em>master</em> quiz file.
-When the user starts a quiz session, a copy of this <em>master</em> quiz file, with the same name is placed in the User's folder
-ready to record the session responses. This is known throughout the documentation as the <em>results</em> quiz file</p>
-</div>
+<h1 id="building-basics">Building basics</h1>
 <h2 id="prep">Prep</h2>
-<p>Download and save CTChest sample data.</p>
+<p>Download and save Slicer's CTChest <a href="../../../getting_started/#sample-datasets">sample data</a>.</p>
 <h2 id="simple-quiz-example">Simple quiz example</h2>
 <p>Here is a screenshot of a very simple quiz followed by the script that was used to create it.</p>
 <p><img alt="Simple Script Screenshot" src="../../assets/build/SimpleScript_Screenshot.png" /></p>
@@ -1002,68 +1035,35 @@ ready to record the session responses. This is known throughout the documentatio
     &lt;/Page&gt;
 &lt;/Session&gt;
 </code></pre>
-<h2 id="simple-quiz-elements-and-layout">Simple quiz elements and layout</h2>
-<p>Following describes the basic elements of the above script and the screen layout. 
-See details for each element and their attributes in the <a href="elements_attributes/index.md">Elements and attributes</a>
-section of this documentation.</p>
-<table>
-<thead>
-<tr>
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="elements_attributes/session/index.md">Session</a></td>
-<td>The root of the script containing all elements of the quiz.</td>
-</tr>
-<tr>
-<td><a href="elements_attributes/page/index.md">Page</a></td>
-<td>What appears in the 3D Slicer layout. This includes the images on the right side and the quiz on the left side.</td>
-</tr>
-<tr>
-<td>Image</td>
-<td>An element that defines specifics of the image to display</td>
-</tr>
-<tr>
-<td>QuestionSet</td>
-<td>An element that contains a group of questions.</td>
-</tr>
-<tr>
-<td>Question</td>
-<td>An element that contains a group of options and specifics on how they are displayed.</td>
-</tr>
-<tr>
-<td>Option</td>
-<td>An individual item that forms part of the question.</td>
-</tr>
-</tbody>
-</table>
-<p><img alt="Simple Script Layout" src="assets/build/SimpleScript_Layout.png" /></p>
+<h2 id="script-elements-layout">Script elements layout</h2>
+<p><img alt="Simple Script Layout" src="../../assets/build/SimpleScript_Layout.png" /></p>
 <h2 id="expanding-your-quiz">Expanding your quiz</h2>
 <p>There are many XML elements and attributes available to customize your quiz.
-Refer to the <a href="elements_attributes/index.md">Scripting references</a> section for details.</p>
+Some of these are shown in the Quiz examples section. You can also
+refer to the <a href="elements_attributes/index.md">Scripting references</a> section for more details.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>When working on quizzes that have a specific set of questions to be asked for numerous images,
+<p>When working on quizzes that have a specific set of questions to be asked for numerous sets of images,
 start the build process using the basic required elements for one page. 
 Test this in Slicer to make sure it displays what you want.
-Then you can copy/paste the pages, update the Image Path element and the ID &amp; Description attributes.</p>
+Then you can copy/paste the pages, update the image Path element and the ID &amp; 
+Description attributes to make each page unique.</p>
 </div>
 <h2 id="testing-your-quiz">Testing your quiz</h2>
 <p>When you are building your quiz, the general pattern is:</p>
-<pre><code>- modify/create the XML quiz file (aka __master__ quiz)
-- run ImageQuizzer for modified quiz (Image Quizzer creates a copy of the master quiz in the user folder to capture responses.)
-- make additional modifications to master quiz
-- **remove quiz folder under the Users folder**
-- run ImageQuizzer again on modified master
-</code></pre>
+<ol>
+<li>create the XML quiz file (aka <strong>master</strong> quiz)</li>
+<li>run ImageQuizzer </li>
+<li>make additional modifications to master quiz</li>
+<li><strong>remove quiz folder under the Users folder</strong></li>
+<li>rerun ImageQuizzer on modified master</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you don't remove the results quiz folder under the User's folder, Image Quizzer will
+<p>In step 1, the Image Quizzer creates a copy of the master quiz in the user folder (the results quiz) to capture responses.
+If you don't remove this results quiz folder (step 4), Image Quizzer will
 assume the user is resuming the quiz that was already started. It reads the copied
-quiz and your new modifications made to the master quiz will not be reflected.</p>
+quiz and the new modifications made to the master quiz will not be reflected.</p>
 </div>
 
 
@@ -1106,13 +1106,13 @@ quiz and your new modifications made to the master quiz will not be reflected.</
         
         
           
-          <a href="../../elements_attributes/" class="md-footer__link md-footer__link--next" aria-label="Next: Elements and attributes" rel="next">
+          <a href="../example_roicolorfile/" class="md-footer__link md-footer__link--next" aria-label="Next: ROI Color File" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Elements and attributes
+                ROI Color File
               </div>
             </div>
             <div class="md-footer__button md-icon">
