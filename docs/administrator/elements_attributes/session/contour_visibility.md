@@ -2,7 +2,7 @@
 hide:
 - toc
 ---
-# Contour Visibility
+# ContourVisibility
 
 ## Specs
 

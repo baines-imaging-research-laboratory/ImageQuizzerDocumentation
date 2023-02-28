@@ -53,8 +53,8 @@ Another example could be that there are multiple pages for one patient, each pag
 #####[Layout](layout.md)
 #####[PageGroup](pagegroup.md)
 #####[AllowMultipleResponse](allowmultipleresponse.md)
-#####[EnableSegmentEditor](enablesegmenteditor.md)
-#####[SegmentRequiredOnAnyImage](segmentanyimage.md)
+#####[EnableSegmentEditor](enable_segment_editor.md)
+#####[SegmentRequiredOnAnyImage](segment_required_on_any_image.md)
 #####[MinMarkupLinesRequiredOnAnyImage](markuplinesanyimage.md)
 #####[Loop](looping.md)
 

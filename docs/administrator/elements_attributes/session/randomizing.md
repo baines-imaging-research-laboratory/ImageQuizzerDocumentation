@@ -2,7 +2,7 @@
 hide:
 - toc
 ---
-# Randomizing Pages
+# RandomizePageGroups
 
 ## Specs
 

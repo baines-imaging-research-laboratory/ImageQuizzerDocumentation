@@ -2,7 +2,7 @@
 hide:
 - toc
 ---
-# Email results
+# EmailResultsTo
 
 ## Specs
 

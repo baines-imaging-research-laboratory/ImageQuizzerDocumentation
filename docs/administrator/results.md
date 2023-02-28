@@ -3,11 +3,11 @@
 ## Location
 
 When the user first logs in to the Image Quizzer, a results XML file is created with the same
-name as the original master XML file. This file is placed in the Users/Username folder that gets created
-on the first login.
+name as the original master XML file. This file is placed in the Users/Username folder that gets created on the first login. 
+You will find the Users folder under the directory you defined to be the database directory.
 
 For example, *Observer1* has logged in to run the *ObserverContouringStudy* quiz.
-The administrator has placed all the image volumes for this study in the folder *ImageQuizzerData*.
+The administrator has placed all the image volumes for this study in the folder *ImageQuizzerData* (the database directory).
 When the user logs in to the quiz session, he/she has to browse to the *ImageDatabase* folder.
 
 ![Login screen shot](./assets/login-observer1.png)

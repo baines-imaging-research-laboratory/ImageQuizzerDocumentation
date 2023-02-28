@@ -44,6 +44,7 @@ nav:
   - Administrator guide:
     - administrator/index.md
     - Quiz examples:
+      - administrator/examples/index.md
       - Building basics: administrator/examples/build_basics.md
       - ROI Color File: administrator/examples/example_roicolorfile.md
     - Scripting references: 

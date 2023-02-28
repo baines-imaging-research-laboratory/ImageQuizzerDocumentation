@@ -26,7 +26,7 @@ The main attributes of interest used for this example include:
 
 Download and save Slicer's CTChest [sample data](../../getting_started/index.md#sample-datasets).
 
-## ROI Color File
+## Create color file
 
 Create the color text file.
 Format: roi# roiName red green blue alpha
@@ -41,7 +41,7 @@ Lung_SABR_Study_colors.txt
 
 ```
 
-## Script
+## Script example
 
 ```
 Lung_SABR.xml
@@ -90,6 +90,8 @@ Screenshot of ROI color options:
 
 ## See also
 
-[ROI Color File](../elements_attributes/session/roi_colorfile.md)
-[EnableSegmentEditor](../elements_attributes/page/enable_segment_editor.md)
-[SegmentRequiredOnAnyImage](../elements_attributes/page/segment_required_on_any_image.md)
+Scripting references section:
+
+- [ROIColorFile](../elements_attributes/session/roi_colorfile.md)
+- [EnableSegmentEditor](../elements_attributes/page/enable_segment_editor.md)
+- [SegmentRequiredOnAnyImage](../elements_attributes/page/segment_required_on_any_image.md)

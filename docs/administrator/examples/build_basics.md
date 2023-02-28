@@ -51,7 +51,7 @@ SimpleScript.xml
 
 There are many XML elements and attributes available to customize your quiz.
 Some of these are shown in the Quiz examples section. You can also
-refer to the [Scripting references](elements_attributes/index.md) section for more details.
+refer to the [Scripting references](../elements_attributes/index.md) section for more details.
 
 !!! tip
     When working on quizzes that have a specific set of questions to be asked for numerous sets of images,
