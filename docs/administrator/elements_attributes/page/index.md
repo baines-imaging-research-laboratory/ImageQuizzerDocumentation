@@ -49,12 +49,13 @@ Another example could be that there are multiple pages for one patient, each pag
 ## Attributes
 #####[ID](id.md)
 #####[Descriptor](descriptor.md)
-#####[LinkViews](linkviews.md)
-#####[Layout](layout.md)
 #####[PageGroup](pagegroup.md)
-#####[AllowMultipleResponse](allowmultipleresponse.md)
 #####[EnableSegmentEditor](enable_segment_editor.md)
 #####[SegmentRequiredOnAnyImage](segment_required_on_any_image.md)
-#####[MinMarkupLinesRequiredOnAnyImage](markuplinesanyimage.md)
 #####[Loop](looping.md)
-
+<!--
+#####[LinkViews](linkviews.md)
+#####[Layout](layout.md)
+#####[AllowMultipleResponse](allowmultipleresponse.md)
+#####[MinMarkupLinesRequiredOnAnyImage](markuplinesanyimage.md)
+-->

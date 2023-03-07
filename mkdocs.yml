@@ -46,7 +46,8 @@ nav:
     - Quiz examples:
       - administrator/examples/index.md
       - Building basics: administrator/examples/build_basics.md
-      - ROI Color File: administrator/examples/example_roicolorfile.md
+      - ROI colors: administrator/examples/example_roicolorfile.md
+      - Loading dicom images: administrator/examples/dicom_image_load.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -63,7 +64,10 @@ nav:
         - PageGroup: administrator/elements_attributes/page/pagegroup.md
         - EnableSegmentEditor: administrator/elements_attributes/page/enable_segment_editor.md
         - SegmentRequiredOnAnyImage: administrator/elements_attributes/page/segment_required_on_any_image.md
-#      - Image:
+      - Image:
+        - administrator/elements_attributes/image/index.md
+        - ID: administrator/elements_attributes/image/id.md
+        - DicomRead: administrator/elements_attributes/image/dicom_read.md
 #        - administrator/page/looping.md
 #        - QuestionSet:
 #          - Question:
