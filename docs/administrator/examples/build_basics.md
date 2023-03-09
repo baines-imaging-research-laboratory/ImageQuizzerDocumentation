@@ -10,6 +10,15 @@ hide:
 
 Download and save Slicer's CTChest [sample data](../../getting_started/index.md#sample-datasets).
 
+Suggested folder structure to match script:
+```
+.
+└─ ImageQuizzerData/
+      └─ ImageVolumes/
+          └─ CTChest/
+                └─ CTChest.nrrd
+```
+
 ## Simple quiz example
 
 Here is a screenshot of a very simple quiz followed by the script that was used to create it.
@@ -67,11 +76,26 @@ When you are building your quiz, the general pattern is:
 1. create the XML quiz file (aka __master__ quiz)
 1. run ImageQuizzer 
 1. make additional modifications to master quiz
-1. **remove quiz folder under the Users folder**
+1. **remove quiz folder under the Users folder** (see tree structure below for location)
 1. rerun ImageQuizzer on modified master
 
+```
+User's folder found here:
+.
+└─ ImageQuizzerData/
+    │ └─ ImageVolumes/
+    │     ├─ CTChest/
+    │     │     └─ CTChest.nrrd
+    │     ... etc.
+    └─ Users/
+         └─ username
+               └─ copy_of_master_quiz_for_responses.xml
+	
+
+```
 !!! Note
     In step 1, the Image Quizzer creates a copy of the master quiz in the user folder (the results quiz) to capture responses.
 	If you don't remove this results quiz folder (step 4), Image Quizzer will
 	assume the user is resuming the quiz that was already started. It reads the copied
 	quiz and the new modifications made to the master quiz will not be reflected.
+	

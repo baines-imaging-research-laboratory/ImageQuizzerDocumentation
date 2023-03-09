@@ -22,11 +22,11 @@ There are 3 steps to launch the quiz.
 1. Define location for Image Quizzer data.
 
     Navigate to the directory given to you by the quiz administrator. 
-	This is the parent directory for all files and subfolders holding the images for the quiz.
+	This is the parent directory holding the images for the quiz.
 
 1. Select Quiz
 
-    Select the XML quiz file as given to you by the quiz administrator.
+    Browse to the XML quiz file as given to you by the quiz administrator.
     This is the script that defines which images and questions are to be displayed
 	while you navigate through the quiz.
 	
@@ -61,7 +61,7 @@ entered for that page will be captured and saved to disk.
 
 You can then log back in to the Image Quizzer when it is convenient to resume the quiz.
 If you had completed all required elements of a page, the next page will automatically be shown.
-If there was only partial completion, the same page will be displayed from when you pressed **Exit**.
+If there was only partial completion, the same page will be displayed at the time when you pressed **Exit**.
 
 ## Quiz complete
 

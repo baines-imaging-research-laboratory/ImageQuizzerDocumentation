@@ -30,7 +30,7 @@ For any of the loaded images you can change the viewing windows display layout.
 First select the image for which you want to change the display layout.
 Then select the viewing mode: 1 plane only (axial, coronal, or sagittal) or 3 planes to display all orientations.
 Then click the **Display view** button to activate.
-Use **Reset to default** to return to the display as defined by the quiz.
+Use **Reset to default** to return to the display layout as defined by the quiz.
 
 ## Line measurement
 
@@ -47,7 +47,7 @@ or to remove all points by clicking the **Clear all** button.
 ### Fill/outline and opacity
 
 When a contour has been created using the **Segment Editor** tool,
-you have the option to change the contour from solid to display as an outline only by toggling the **Fill** checkbox.
+you have the option to change the contour display from a solid filled in feature to an outline by toggling the **Fill** checkbox.
 You can also change the opacity of the contour using the slider bar.
 
 The visibility state chosen (fill or outline) will persist until the next page of images and questions appear.

@@ -15,8 +15,10 @@ The main attributes of interest used for this example include:
 	- name of the file holding color rgba definition
 	- there is no .txt extension in this attribute
 - EnableSegmentEditor="Y"
+    - an attribute of the Page element
     - to open the Segment Editor tab in the Image Quizzer
 - SegmentRequiredOnAnyImage="Y"
+    - an attribute of the Page element
     - the user cannot advance to the next Page of images and questions until
 	a contour has been created on any of the images displayed
 	
@@ -25,6 +27,17 @@ The main attributes of interest used for this example include:
 ## Prep
 
 Download and save Slicer's CTChest [sample data](../../getting_started/index.md#sample-datasets).
+
+
+Suggested folder structure to match script:
+```
+.
+└─ ImageQuizzerData/
+      └─ ImageVolumes/
+          └─ CTChest/
+                └─ CTChest.nrrd
+```
+
 
 ## Create color file
 
@@ -78,11 +91,20 @@ Lung_SABR.xml
 
 ## Display results
 
+```
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+```
 Screenshot of quiz options:
 
 ![Quiz radio button options](assets/Example_ROIColorFile_Quiz.png)
 
-Screenshot of ROI color options:
+```
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+```
+
+Screenshot of ROI color options
+
+Popup window shows available colors. Access by clicking on the color bar.
 
 ![Segment color options](assets/Example_ROIColorFile_SegmentColors.png)
 
@@ -95,3 +117,10 @@ Scripting references section:
 - [ROIColorFile](../elements_attributes/session/roi_colorfile.md)
 - [EnableSegmentEditor](../elements_attributes/page/enable_segment_editor.md)
 - [SegmentRequiredOnAnyImage](../elements_attributes/page/segment_required_on_any_image.md)
+
+
+### Citation:
+
+Parts of this example are based on a previous observer study carried out in our lab.
+
+<div class="csl-entry">Mattonen, S. A., Palma, D. A., Johnson, C., Louie, A. v, Landis, M., Rodrigues, G., Chan, I., Etemad-rezai, R., Yeung, T. P. C., Senan, S., &#38; Ward, A. D. (2015). Detection of Local Cancer Recurrence After Stereotactic Ablative Radiation Therapy for Lung Cancer : Physician Performance Versus Radiomic Assessment. <i>Radiation Oncology Biology</i>. https://doi.org/10.1016/j.ijrobp.2015.12.369</div>

@@ -14,7 +14,7 @@ The Image Quizzer can load DICOM images although this can be slow depending on t
 The main attributes of interest used for this example include:
 
 - DicomRead="*option*"
-    - an attribute in the Image element
+    - an attribute of the Image element
 	- if set to "Y", images will be loaded using dicom functionality
 	- if set to "N" (default) images are loaded as data volumes
 	
@@ -26,41 +26,57 @@ The main attributes of interest used for this example include:
 
 ## Prep
 
-Use the test data provided in the Image Quizzer download:
- 
+You can download some DICOM test data here:
+
+https://spujol.github.io/SlicerDICOMTutorial
+
+Extract and save the dataset1_TorsoCT data and save the dcm slices in a subfolder as shown.
+
 ```
 .
-└─ ImageQuizzerProject/
-   └─ ImageQuizzer
-         └─ ImageQuizzerData/
-               └─ ImageVolumes/
-                   └─ TinyRtStudy/
+└─ ImageQuizzerData/
+      └─ ImageVolumes/
+          └─ dataset1_TorsoCT/
+                ├─ IM-0001-0001.dcm
+                ├─ IM-0001-0002.dcm
+                ├─ IM-0001-0003.dcm
+				├─ ...
+                ├─ IM-0001-0290.dcm
+                └─ IM-0001-0291.dcm
 ```
 
 ## Script example
 
 ```
 <Session>
-	<Page ID="TinyPatient" Descriptor="DicomSeries">
+	<Page ID="Patient-1" Descriptor="DicomSeries">
 		<Image DicomRead="Y" Type="Volume" ID="CTSeries">
 			<DefaultDestination>Red</DefaultDestination>
 			<Layer>Background</Layer>
 			<DefaultOrientation>Axial</DefaultOrientation>
-			<Path>ImageVolumes\TinyRtStudy\image0000_1.2.826.0.1.3680043.8.274.1.1.2750954856.34924.5415589575.496.dcm</Path>
+			<Path>ImageVolumes\dataset1_TorsoCT\IM-0001-0001.dcm</Path>
 		</Image>
 		<Image DicomRead="Y" Type="Volume" ID="CTSeries">
 			<DefaultDestination>Yellow</DefaultDestination>
 			<Layer>Background</Layer>
 			<DefaultOrientation>Sagittal</DefaultOrientation>
-			<Path>ImageVolumes\TinyRtStudy\image0000_1.2.826.0.1.3680043.8.274.1.1.2750954856.34924.5415589575.496.dcm</Path>
+			<Path>ImageVolumes\dataset1_TorsoCT\IM-0001-0001.dcm</Path>
 		</Image>
 		<Image DicomRead="Y" Type="Volume" ID="CTSeries">
 			<DefaultDestination>Green</DefaultDestination>
 			<Layer>Background</Layer>
 			<DefaultOrientation>Coronal</DefaultOrientation>
-			<Path>ImageVolumes\TinyRtStudy\image0000_1.2.826.0.1.3680043.8.274.1.1.2750954856.34924.5415589575.496.dcm</Path>
+			<Path>ImageVolumes\dataset1_TorsoCT\IM-0001-0001.dcm</Path>
 		</Image>
 	</Page>
 </Session>
 ```
 
+## Display results
+
+```
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+```
+(Note - there were no questions scripted for this example. Only images are displayed.)
+
+![Loading dicom data](assets/Example_DicomLoad.png)
