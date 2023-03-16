@@ -2,122 +2,167 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/results/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/image/</loc>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/image/color_table/</loc>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/image/dicom_read/</loc>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/image/id/</loc>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/image/layer/</loc>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/image/opacity/</loc>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/descriptor/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/enable_segment_editor/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/id/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/looping/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/loop/</loc>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/pagegroup/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/page/segment_required_on_any_image/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/questionset/</loc>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/session/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/session/contour_visibility/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/session/email/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/session/randomizing/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/elements_attributes/session/roi_colorfile/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/build_basics/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/example_dicomread/</loc>
+         <lastmod>2023-03-16</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/example_layering/</loc>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/example_roicolorfile/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/extras/codingconventions/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/getting_started/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/user/extratools/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/user/keyboard_shortcuts/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/user/user/</loc>
-         <lastmod>2023-02-28</lastmod>
+         <lastmod>2023-03-16</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/results/">
       
       
-        <link rel="prev" href="../elements_attributes/page/segment_required_on_any_image/">
+        <link rel="prev" href="../elements_attributes/questionset/">
       
       
         <link rel="next" href="../../extras/codingconventions/">
@@ -471,6 +471,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -514,7 +518,35 @@
   
     <li class="md-nav__item">
       <a href="../examples/example_roicolorfile/" class="md-nav__link">
-        ROI Color File
+        ROI colors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/example_dicomread/" class="md-nav__link">
+        Loading dicoms
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/example_layering/" class="md-nav__link">
+        Layers & colors
       </a>
     </li>
   
@@ -545,6 +577,10 @@
         
           
             
+          
+        
+          
+        
           
         
           
@@ -772,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../elements_attributes/page/looping/" class="md-nav__link">
+      <a href="../elements_attributes/page/loop/" class="md-nav__link">
         Loop
       </a>
     </li>
@@ -820,6 +856,178 @@
     </li>
   
 
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3_4" type="checkbox" id="__nav_4_3_4" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../elements_attributes/image/">Image</a>
+          
+            <label for="__nav_4_3_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Image" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Image
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements_attributes/image/id/" class="md-nav__link">
+        ID
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements_attributes/image/dicom_read/" class="md-nav__link">
+        DicomRead
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements_attributes/image/layer/" class="md-nav__link">
+        Layer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements_attributes/image/color_table/" class="md-nav__link">
+        ColorTable
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements_attributes/image/opacity/" class="md-nav__link">
+        Opacity
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3_5" type="checkbox" id="__nav_4_3_5" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../elements_attributes/questionset/">QuestionSet</a>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="QuestionSet" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          QuestionSet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
             
           
         </ul>
@@ -1063,12 +1271,13 @@
 name as the original master XML file. This file is placed in the Users/Username folder that gets created on the first login. 
 You will find the Users folder under the directory you defined to be the database directory.</p>
 <p>For example, <em>Observer1</em> has logged in to run the <em>ObserverContouringStudy</em> quiz.
-The administrator has placed all the image volumes for this study in the folder <em>ImageQuizzerData</em> (the database directory).
-When the user logs in to the quiz session, he/she has to browse to the <em>ImageDatabase</em> folder.</p>
+The administrator has placed all the image volumes for this study in the folder named <em>ImageQuizzerData</em> (the database directory).
+When the user logs in to the quiz session, he/she has to browse to the <em>ImageQuizzerData</em> database folder.</p>
 <p><img alt="Login screen shot" src="../assets/login-observer1.png" /></p>
 <p>The results XML file will be found here:</p>
 <pre><code>.
 └─ImageQuizzerData/
+   ├─ImageVolumes/
    ├─SlicerDicomDatabse/
    └─Users/
      └─Observer1/
@@ -1078,6 +1287,9 @@ When the user logs in to the quiz session, he/she has to browse to the <em>Image
 As the quiz progresses throughout the user's login session, elements and attributes
 are added to capture various pieces of information (responses, login times, username etc.)
 as described below.</p>
+<p>Each time the user exits and resumes the quiz, this results file is copied and renamed with a timestamp suffix
+in order to safeguard against hardware issues or power failures.
+The file without a timestamp suffix will be the most recent and most complete results file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The SlicerDicomDatabase folder is created automatically by Slicer 
@@ -1135,7 +1347,7 @@ results quiz file belongs to, as long as each user has his/her own login profile
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../elements_attributes/page/segment_required_on_any_image/" class="md-footer__link md-footer__link--prev" aria-label="Previous: SegmentRequiredOnAnyImage" rel="prev">
+          <a href="../elements_attributes/questionset/" class="md-footer__link md-footer__link--prev" aria-label="Previous: QuestionSet" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1144,7 +1356,7 @@ results quiz file belongs to, as long as each user has his/her own login profile
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                SegmentRequiredOnAnyImage
+                QuestionSet
               </div>
             </div>
           </a>
