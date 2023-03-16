@@ -14,7 +14,7 @@ hide:
 | **Required** | yes ||
 | **Syntax** | <Page\>||
 
-See also: [Image](image/index.md), [QuestionSet](questionset.md), [Question](question.md)
+See also: [Image](../image/index.md), [QuestionSet](../questionset/index.md), [Question](../questionset/question.md)
 
 ## Description
 The Page element is a child of the Session element. There can be multiple pages in a quiz session.
@@ -52,7 +52,7 @@ Another example could be that there are multiple pages for one patient, each pag
 #####[PageGroup](pagegroup.md)
 #####[EnableSegmentEditor](enable_segment_editor.md)
 #####[SegmentRequiredOnAnyImage](segment_required_on_any_image.md)
-#####[Loop](looping.md)
+#####[Loop](loop.md)
 <!--
 #####[LinkViews](linkviews.md)
 #####[Layout](layout.md)

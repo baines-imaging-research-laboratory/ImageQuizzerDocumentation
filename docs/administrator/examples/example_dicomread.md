@@ -26,11 +26,11 @@ The main attributes of interest used for this example include:
 
 ## Prep
 
-You can download some DICOM test data here:
+Download the DICOM test data as described in the [sample data sets](index.md#sample-data) section.
 
-https://spujol.github.io/SlicerDICOMTutorial
 
-Extract and save the dataset1_TorsoCT data and save the dcm slices in a subfolder as shown.
+
+From the downloaded tutorial data, extract the dataset1_TorsoCT folder to a subfolder under ImageVolumes/ as shown.
 
 ```
 .

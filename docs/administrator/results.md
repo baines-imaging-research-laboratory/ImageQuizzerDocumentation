@@ -11,8 +11,8 @@ name as the original master XML file. This file is placed in the Users/Username 
 You will find the Users folder under the directory you defined to be the database directory.
 
 For example, *Observer1* has logged in to run the *ObserverContouringStudy* quiz.
-The administrator has placed all the image volumes for this study in the folder *ImageQuizzerData* (the database directory).
-When the user logs in to the quiz session, he/she has to browse to the *ImageDatabase* folder.
+The administrator has placed all the image volumes for this study in the folder named *ImageQuizzerData* (the database directory).
+When the user logs in to the quiz session, he/she has to browse to the *ImageQuizzerData* database folder.
 
 ![Login screen shot](assets/login-observer1.png)
 
@@ -21,6 +21,7 @@ The results XML file will be found here:
 ```
 .
 └─ImageQuizzerData/
+   ├─ImageVolumes/
    ├─SlicerDicomDatabse/
    └─Users/
      └─Observer1/
@@ -31,6 +32,10 @@ This is a copy of the original master quiz as set up by the administrator.
 As the quiz progresses throughout the user's login session, elements and attributes
 are added to capture various pieces of information (responses, login times, username etc.)
 as described below.
+
+Each time the user exits and resumes the quiz, this results file is copied and renamed with a timestamp suffix
+in order to safeguard against hardware issues or power failures.
+The file without a timestamp suffix will be the most recent and most complete results file.
 
 !!! note
     The SlicerDicomDatabase folder is created automatically by Slicer 

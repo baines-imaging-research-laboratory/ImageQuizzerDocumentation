@@ -46,11 +46,11 @@ instructions to the user or display questions that do not depend on images.
 #####[DicomRead](dicom_read.md)
 <!--
 #####[Type](type.md)
-#####[LabelMapID](pagegroup.md)
-#####[DisplayLabelMapID](allowmultipleresponse.md)
-#####[RotateToAcquisition](enable_segment_editor.md)
-#####[ColorTable](segment_required_on_any_image.md)
-#####[Opacity](markuplinesanyimage.md)
-#####[SegmentRequired](looping.md)
+#####[LabelMapID](label_map_id.md)
+#####[DisplayLabelMapID](display_label-map_ID.md)
+#####[RotateToAcquisition](rotate_to_acquisition.md)
+#####[ColorTable](color_table.md)
+#####[Opacity](opacity.md)
+#####[SegmentRequired](segment_required.md)
 
 -->

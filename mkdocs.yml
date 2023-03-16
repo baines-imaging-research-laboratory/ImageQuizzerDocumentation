@@ -47,7 +47,8 @@ nav:
       - administrator/examples/index.md
       - Building basics: administrator/examples/build_basics.md
       - ROI colors: administrator/examples/example_roicolorfile.md
-      - Loading dicom images: administrator/examples/dicom_image_load.md
+      - Loading dicoms: administrator/examples/example_dicomread.md
+      - Layers & colors: administrator/examples/example_layering.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -60,7 +61,7 @@ nav:
         - administrator/elements_attributes/page/index.md
         - ID: administrator/elements_attributes/page/id.md
         - Descriptor: administrator/elements_attributes/page/descriptor.md
-        - Loop: administrator/elements_attributes/page/looping.md
+        - Loop: administrator/elements_attributes/page/loop.md
         - PageGroup: administrator/elements_attributes/page/pagegroup.md
         - EnableSegmentEditor: administrator/elements_attributes/page/enable_segment_editor.md
         - SegmentRequiredOnAnyImage: administrator/elements_attributes/page/segment_required_on_any_image.md
@@ -68,8 +69,11 @@ nav:
         - administrator/elements_attributes/image/index.md
         - ID: administrator/elements_attributes/image/id.md
         - DicomRead: administrator/elements_attributes/image/dicom_read.md
-#        - administrator/page/looping.md
-#        - QuestionSet:
+        - Layer: administrator/elements_attributes/image/layer.md 
+        - ColorTable: administrator/elements_attributes/image/color_table.md 
+        - Opacity: administrator/elements_attributes/image/opacity.md 
+      - QuestionSet:
+        - administrator/elements_attributes/questionset/index.md
 #          - Question:
     - Quiz results: administrator/results.md
   - System Notes: extras/codingconventions.md

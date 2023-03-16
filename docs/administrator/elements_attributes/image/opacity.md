@@ -3,30 +3,24 @@ hide:
 - toc
 ---
 <!-- let javascript handle toc on left sidebar -->
-# ID
+# Opacity
 
 ## Specs
 
 | ||Details|
 |---|---|:---:|
-| **Name** | ID ||
+| **Name** | Opacity ||
 | **Classification** | attribute ||
 | **Parent** | <[Image](index.md)\> ||
-| **Required** | yes ||
-| **Syntax** | ID="*string*" |  |
+| **Required** | no ||
+| **Syntax** | Opacity="*value*" | value is a decimal between 0 and 1  |
+| **Dependencies**| Layer="Foreground" | |
 
 ## Description
 
-The ID attribute must be unique for each image in the Page.
-This allows for the administrator to load images into the foreground and background
-layers of one viewing window. 
-
-Also, the ID attribute for the Image is combined with the ID attribute
-of the Page to create a unique node name when loaded into Slicer.
-
-!!! Warning
-    If the same image is loaded into different viewing destinations, **they must have
-    the same ID**. 
+The opacity attribute is effective on an Image element that has been assigned to a Foreground layer.
+This adjusts the visibility balance between the foreground and background images.
+If no Opacity attribute is set for an image loaded into the foreground layer, the default is set to .5 .
 
 
 ## Example
