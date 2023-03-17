@@ -43,6 +43,59 @@ The file without a timestamp suffix will be the most recent and most complete re
 
 ## New Elements
 
+### Response
+
+The Response element is created as a child of each Option element.
+The type of response captured depends on the [Question Type](elements_attributes/questionset/question/type.md) attribute. 
+
+If the Type is an InfoBox, the response captured for the Option is null.
+For  Radio or CheckBox types, the response is a "Y" or "N" value depending on whether the radio button or checkbox has been selected.
+If the Type is a Text, IntegerValue, or FloatValue Types the response element will hold the text that the user input into that box.
+
+Also captured as attributes in the Response element are timestamps LoginTime and the ResponseTime.
+
+```
+Examples for Response element based on Question Type:
+
+InfoBox:
+	<Question Descriptor="Introduction" Type="InfoBox">
+		<Option>
+			Using the Segment Editor tab, create a contour for displayed image
+			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:58:27.114871"/>
+		</Option>
+	</Question>
+	
+Radio
+	<Question Descriptor="Assessment" Type="Radio">
+		<Option>
+			Injury
+			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_16:00:22.706985">Y</Response>
+		</Option>
+		<Option>
+			Recurrence
+			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_16:00:22.706985">N</Response>
+		</Option>
+	</Question>
+
+CheckBox
+	<Question Descriptor="High Risk Features:" Type="CheckBox">
+		<Option>
+			Enlarging opacity
+			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:57:08.896963">Y</Response>
+		</Option>
+		<Option>
+			Bulging margin
+			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:57:08.896963">Y</Response>
+		</Option>
+		<Option>
+			Sequential enlargement
+			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:57:08.896963">N</Response>
+		</Option>
+	</Question>
+    
+
+```
+
 ### Login
 
 When the user first logs in, a <Login\> element is added to the response XML file.

@@ -75,9 +75,16 @@ nav:
         - Path: administrator/elements_attributes/image/path.md 
       - QuestionSet:
         - administrator/elements_attributes/questionset/index.md
-        - ID: administrator/elements_attributes/questionset/questionset_id.md
-        - Descriptor: administrator/elements_attributes/questionset/questionset_descriptor.md
-#          - Question:
+        - ID: administrator/elements_attributes/questionset/id.md
+        - Descriptor: administrator/elements_attributes/questionset/descriptor.md
+      - Question:
+        - administrator/elements_attributes/questionset/question/index.md
+        - Descriptor: administrator/elements_attributes/questionset/question/descriptor.md
+        - Type: administrator/elements_attributes/questionset/question/type.md
+        - Min: administrator/elements_attributes/questionset/question/min.md
+        - Max: administrator/elements_attributes/questionset/question/max.md
+        - GroupLayout: administrator/elements_attributes/questionset/question/group_layout.md
+        - Option: administrator/elements_attributes/questionset/question/option.md
     - Quiz results: administrator/results.md
-  - System Notes: extras/codingconventions.md
+    - System Notes: extras/codingconventions.md
  

@@ -39,5 +39,5 @@ a long list of questions reducing the use of the scroll bar by the observer to d
 ```
 
 ## Attributes
-#####[ID](questionset_id.md)
-#####[Descriptor](questionset_descriptor.md)
+#####[ID](id.md)
+#####[Descriptor](descriptor.md)
