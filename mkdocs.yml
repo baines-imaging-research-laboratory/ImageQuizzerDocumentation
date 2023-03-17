@@ -69,11 +69,14 @@ nav:
         - administrator/elements_attributes/image/index.md
         - ID: administrator/elements_attributes/image/id.md
         - DicomRead: administrator/elements_attributes/image/dicom_read.md
-        - Layer: administrator/elements_attributes/image/layer.md 
         - ColorTable: administrator/elements_attributes/image/color_table.md 
         - Opacity: administrator/elements_attributes/image/opacity.md 
+        - Layer: administrator/elements_attributes/image/layer.md 
+        - Path: administrator/elements_attributes/image/path.md 
       - QuestionSet:
         - administrator/elements_attributes/questionset/index.md
+        - ID: administrator/elements_attributes/questionset/questionset_id.md
+        - Descriptor: administrator/elements_attributes/questionset/questionset_descriptor.md
 #          - Question:
     - Quiz results: administrator/results.md
   - System Notes: extras/codingconventions.md
