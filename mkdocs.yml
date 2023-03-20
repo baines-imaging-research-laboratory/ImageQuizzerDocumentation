@@ -49,6 +49,7 @@ nav:
       - ROI colors: administrator/examples/example_roicolorfile.md
       - Loading dicoms: administrator/examples/example_dicomread.md
       - Layers & colors: administrator/examples/example_layering.md
+      - Layouts: administrator/examples/example_layouts.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -61,6 +62,7 @@ nav:
         - administrator/elements_attributes/page/index.md
         - ID: administrator/elements_attributes/page/id.md
         - Descriptor: administrator/elements_attributes/page/descriptor.md
+        - Layout: administrator/elements_attributes/page/layout.md
         - Loop: administrator/elements_attributes/page/loop.md
         - PageGroup: administrator/elements_attributes/page/pagegroup.md
         - EnableSegmentEditor: administrator/elements_attributes/page/enable_segment_editor.md
@@ -72,6 +74,8 @@ nav:
         - ColorTable: administrator/elements_attributes/image/color_table.md 
         - Opacity: administrator/elements_attributes/image/opacity.md 
         - Layer: administrator/elements_attributes/image/layer.md 
+        - DefaultDestination: administrator/elements_attributes/image/default_destination.md 
+        - DefaultOrientation: administrator/elements_attributes/image/default_orientation.md 
         - Path: administrator/elements_attributes/image/path.md 
       - QuestionSet:
         - administrator/elements_attributes/questionset/index.md

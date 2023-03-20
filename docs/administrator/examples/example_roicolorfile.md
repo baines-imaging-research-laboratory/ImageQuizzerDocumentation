@@ -119,7 +119,7 @@ Scripting references section:
 - [SegmentRequiredOnAnyImage](../elements_attributes/page/segment_required_on_any_image.md)
 
 
-### Citation:
+## References:
 
 Parts of this example are based on a previous observer study carried out in our lab.
 

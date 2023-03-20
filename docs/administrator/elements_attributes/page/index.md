@@ -14,7 +14,7 @@ hide:
 | **Required** | yes ||
 | **Syntax** | <Page\>||
 
-See also: [Image](../image/index.md), [QuestionSet](../questionset/index.md), [Question](../questionset/question.md)
+See also: [Image](../image/index.md), [QuestionSet](../questionset/index.md), [Question](../questionset/question/index.md)
 
 ## Description
 The Page element is a child of the Session element. There can be multiple pages in a quiz session.

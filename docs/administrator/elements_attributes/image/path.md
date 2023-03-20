@@ -3,7 +3,7 @@ hide:
 - toc
 ---
 <!-- let javascript handle toc on left sidebar -->
-# Layer
+# Path
 
 ## Specs
 

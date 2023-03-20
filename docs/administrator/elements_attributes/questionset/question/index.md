@@ -38,5 +38,4 @@ It has a Type attribute that defines how to present the Options.
 ```
 
 ## Attributes
-#####[ID](id.md)
 #####[Descriptor](descriptor.md)
