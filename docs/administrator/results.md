@@ -190,7 +190,7 @@ starting at '1'. (A '0' has special meaning for the randomizing functionality).
 
 ### Rep
 
-The Rep attribute is added to the Page element if the attribute [Loop](elements_attributes/page/loop.md) is set to "Y".
-This reflects the repetition number for looping a page.
+The Rep attribute is added to the Page element if any Page in the master XML quiz file has the attribute [Loop](elements_attributes/page/loop.md) set to "Y".
+This reflects the repetition number for looping a page. If there was no looping the Rep attribute will be "0" (i.e. the original Page).
 
 See also the [looping example](../administrator/examples/example_looping.md) for more details.
