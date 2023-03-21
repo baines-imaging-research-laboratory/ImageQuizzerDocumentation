@@ -11,25 +11,30 @@ displayed. The different layouts available are shown in the examples below.
 Following are the window assignments available for each of the layouts. These window names
 are used in the [DefaultDestination](../elements_attributes/image/default_destination.md) element.
 
-| | Name | Details| Notes |
-|---| ---|---|---|
-| **Options** | FourUp |(default) Red, Green, and Yellow| default 3 windows |
-|             | TwoOverTwo | Red, Green, Yellow, and Slice4 | Helpful when you need 4 windows |
-|             | OneUpRedSlice | Red window only| Good for close ups |
-|             | SideBySideRedYellow | Red and Yellow windows | Good for comparisons |
+| Layout option | Viewing windows for DefaultDestination|
+| ---|---|
+| FourUp | Red, Green, and Yellow|
+| TwoOverTwo | Red, Green, Yellow, and Slice4 |
+| OneUpRedSlice | Red |
+| SideBySideRedYellow | Red and Yellow |
 
 
+Other attributes that are associated with how the images are displayed include:
 
-The main attributes of interest used for this example include:
-
-- [DicomRead](../elements_attributes/image/dicom_read.md)
 - [Layout](../elements_attributes/page/layout.md)
 - [DefaultDestination](../elements_attributes/image/default_destination.md)
+    - which viewing window to place the image (Red, Green, Yellow, or Slice4)
+- [DefaultOrientation](../elements_attributes/image/default_orientation.md)
+    - what orientation to present the image (Axial, Sagittal, or Coronal)
+- [Layer](../elements_attributes/image/layer.md)
+    - option to assign image to a layer (Background, Foreground, Segmentation, or LabelMap)
+	
+	
 
 
 ## Prep
 
-Download the PETCTFusion-Tutorial-Data dataset as described in the [sample data sets](index.md#sample-data) section.
+Download the PETCTFusion-Tutorial-Data dataset as described in the [sample data](sample_data.md#tutorial-data-links) section.
 
 Extract the PETCTFusion-Tutorial-Data to a subfolder under ImageVolumes/ as shown.
 

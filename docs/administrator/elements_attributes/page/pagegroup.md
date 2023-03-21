@@ -11,12 +11,11 @@ hide:
 | **Name** | PageGroup |  |
 | **Classification** | attribute ||
 | **Parent** | <[Page](index.md)\> ||
-| **Required** | yes |if <Session\> has the [RandomizePageGroups](../session/randomizing.md) attribute set to "Y"|
-| | no |if <Session\> does not have the [RandomizePageGroups](../session/randomizing.md) attribute or it is set to "N" |
-| **Syntax** | PageGroup="*option*" ||
-| **Options** | positive integer value | group number assigned to a [Page](./index.md) element
+| **Required** | yes |if <Session\> has the RandomizePageGroups attribute set to "Y"|
+| | no |if <Session\> does not have the RandomizePageGroups attribute or it is set to "N" |
+| **Syntax** | PageGroup="*value*" | positive integer value |
 
-See also: [Randomizing pages](../session/randomizing.md),  [RandomizedPageGroupIndices](../../results.md#randomizedpagegroupindices)
+See also: [Randomizing pages](../session/randomize_page_groups.md),  [RandomizedPageGroupIndices](../../results.md#randomizedpagegroupindices)
 
 ## Description
 The PageGroup number is used to keep certain pages together when randomizing is setup. All Pages with the same group number
@@ -37,6 +36,10 @@ The remaining pages are randomized. Following are some use cases for assigning p
 
 ## Example
 
+!!! Note
+    See also [randomizing example](../../examples/example_randomizing.md) for a plug and play example.
+	
+	
 Master quiz:
 
 ```
@@ -79,3 +82,4 @@ PatientA_Followup 1
 PatientB_Planning
 PatientB_Followup 1
 ```
+

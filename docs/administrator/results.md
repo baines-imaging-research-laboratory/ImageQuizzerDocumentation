@@ -4,6 +4,9 @@ hide:
 ---
 # Response capture
 
+The quiz question responses are captured in a results xml file found in the Users/*Username*/ folder. If any annotations were created
+(contours and/or markup measurement lines) these are found in subfolders, one for each Page.
+
 ## Location
 
 When the user first logs in to the Image Quizzer, a results XML file is created with the same
@@ -40,6 +43,37 @@ The file without a timestamp suffix will be the most recent and most complete re
 !!! note
     The SlicerDicomDatabase folder is created automatically by Slicer 
 	when the user logs in to manage information about DICOM data.
+	
+	
+If contours and markup lines were required, they are stored in subfolders - one for each Page.
+For example, if there were 3 pages in the quiz and a contour and at least one markup line was requested for each,
+the Users folder could look like this:
+
+```
+.
+└─ImageQuizzerData/
+   ├─ImageVolumes/
+   ├─SlicerDicomDatabse/
+   └─Users/
+     └─Observer1/
+       ├─ObserverContouringStudy.xml
+	   ├─(Page1FolderName)/
+	   ├    ├─imagename-bainesquizlabel.nrrd
+	   ├    ├─imagename_MarkupsLine_bainesquizline.nrrd
+	   ├    └─imagename_MarkupsLine_1_bainesquizline.mrk
+	   ├─(Page2FolderName)/
+	   ├    ├─imagename-bainesquizlabel.nrrd
+	   ├    ├─imagename_MarkupsLine_bainesquizline.mrk
+	   ├    ├─imagename_MarkupsLine_1_bainesquizline.mrk
+	   ├    └─imagename_MarkupsLine_2_bainesquizline.mrk
+	   └─(Page3FolderName)/
+	        ├─imagename-bainesquizlabel.nrrd
+	        └─imagename_MarkupsLine_bainesquizline.mrk
+	   
+```
+
+Contours are captured as label masks in the nrrd format and markup lines are in json format and have a .mrk extension.
+
 
 ## New Elements
 
@@ -118,6 +152,16 @@ if the RandomizePageGroups attribute was set to "Y" in the Session element. The
 element holds the list of integers reflecting the randomized order of Page Groups used to direct the order of display of the quiz pages.
 If this element is not present, then randomizing of pages was not done and the Image Quizzer
 presented each page in the order defined in the original master quiz XML file.
+
+An example of this element for 4 different page group numbers could look like this:
+
+```
+		<RandomizedPageGroupIndices>0,4,2,3,1</RandomizedPageGroupIndices>
+```
+
+PageGroup="0" always appears first if it exists.
+
+
 
 ## New Attributes
 

@@ -26,7 +26,7 @@ The main attributes of interest used for this example include:
 
 ## Prep
 
-Download the DICOM test data as described in the [sample data sets](index.md#sample-data) section.
+Download the DICOM test data as described in the [sample data](sample_data.md#tutorial-data-links) section.
 
 
 

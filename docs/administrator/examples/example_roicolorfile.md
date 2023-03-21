@@ -26,7 +26,7 @@ The main attributes of interest used for this example include:
 
 ## Prep
 
-Download and save Slicer's CTChest [sample data](../../getting_started/index.md#sample-datasets).
+Download and save Slicer's CTChest [sample data](sample_data.md#slicer-sample-datasets).
 
 
 Suggested folder structure to match script:

@@ -200,3 +200,6 @@ This USB can then be plugged into the observers laptop or PC and the quiz is rea
 !!! tip
     VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; (admin rights are required).
 
+## Quiz script examples
+
+See [Quiz Examples](../administrator/examples/index.md) for links to examples with scripts.

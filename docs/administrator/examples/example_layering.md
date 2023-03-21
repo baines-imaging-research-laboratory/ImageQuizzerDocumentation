@@ -28,7 +28,7 @@ The main attributes of interest used for this example include:
 
 ## Prep
 
-Download the PETCTFusion-Tutorial-Data dataset as described in the [sample data sets](index.md#sample-data) section.
+Download the PETCTFusion-Tutorial-Data dataset as described in the [sample data](sample_data.md#tutorial-data-links) section.
 
 Extract the PETCTFusion-Tutorial-Data to a subfolder under ImageVolumes/ as shown.
 
