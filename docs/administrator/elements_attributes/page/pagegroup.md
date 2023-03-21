@@ -18,11 +18,15 @@ hide:
 See also: [Randomizing pages](../session/randomize_page_groups.md),  [RandomizedPageGroupIndices](../../results.md#randomizedpagegroupindices)
 
 ## Description
-The PageGroup number is used to keep certain pages together when randomizing is setup. All Pages with the same group number
-will appear consecutively (as read in from the master quiz file) and not randomized.
 
-This can be useful when a quiz is set up with a Page holding images that represent a time point in a patient's clinical journey (for example one of a number of follow up images).
-The administrator may want to keep all Pages for one patient in the same group.
+The PageGroup attribute can be assigned by the administrator. If it hasn't been defined in the original XML master quiz file,
+the Image Quizzer will add this attribute to the results quiz file and assign numbers consecutively starting at '1'. (This is
+helpful for cross referencing the [user's annotations results subfolders](../../results.md#annotations-subfolders) which have the PageGroup numbers embedded in the name).
+
+When setting up for randomizing, you can use the PageGroup numbers to group Pages together. For example, if you want to 
+randomize patients but each patient has 3 Pages (baseline, follow-up1, follow-up2), you would assign 1 PageGroup number to all 3 Pages.
+Another example could be if one patient has images from multiple lesions that are set up to display on different pages.
+
 
 ## PageGroup="0"
 
@@ -70,6 +74,7 @@ Master quiz:
 
 
 Randomized Page Groups for User 1 :  RandomizedPageGroupIndices="3,1,2"
+(The unique PageGroup numbers are the indices that are randomized).
 
 The user would see Pages presented in this order:
 

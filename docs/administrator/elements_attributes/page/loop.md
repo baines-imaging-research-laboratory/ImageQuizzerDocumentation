@@ -4,18 +4,10 @@ hide:
 ---
 # Looping Pages
 
-
----
-hide:
-- toc
----
-<!-- let javascript handle toc on left sidebar -->
-# ID
-
 ## Specs
 
 | ||Details|
-|---|---|:---:|
+|---|---|---|
 | **Name** | Loop ||
 | **Classification** | attribute ||
 | **Parent** | <[Page](index.md)\> ||
@@ -26,15 +18,24 @@ hide:
 
 ## Description
 
-When a page has looping enabled, the user will see a '**Repeat**' button next to the 'Next' button.
+Looping is useful for example in situations where you are presenting images with a number of lesions and
+want the observer to contour and answer questions for as many as he/she can find.
+
+### For the user
+
+When a page has looping enabled, the user will see a **Repeat** button next to the 'Next' button.
 By pressing 'Repeat', this allows the observer to repeat the quiz questions and required annotations for another region of interest.
 Once the information for all ROIs has been completed the user presses 'Next' to move on to the next page of images and questions. 
 
-This is useful for example in situations where you are presenting images with a number of lesions and
-want the observer to contour and answer questions for as many as he/she can find.
+### For the administrator
 
+When the user presses **Repeat**, the module will capture the responses of the current Page then make a copy of the Page
+and insert it into the results quiz file. The copied page has a suffix attached to the Page ID attribute to identify it
+as a repeated page. This prefix includes a repition number (e.g. PageID-Rep1). 
 
 
 ## Example
+
+See [Looping example](../../examples/example_looping.md#script-example) for a plug and play script example.
 
 ## Changes to results folder

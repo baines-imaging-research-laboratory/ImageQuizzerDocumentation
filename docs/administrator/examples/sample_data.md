@@ -59,6 +59,8 @@ These include:
 * CT-MR Brain
 * CT Cardio Volume Sequence
 
+See also [Tutorial data links](.#tutorial-data-links) for more sample datasets.
+
 ### Download and save
 
 Following is a brief set of commands to download and save 

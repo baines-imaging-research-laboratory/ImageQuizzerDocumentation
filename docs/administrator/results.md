@@ -44,8 +44,10 @@ The file without a timestamp suffix will be the most recent and most complete re
     The SlicerDicomDatabase folder is created automatically by Slicer 
 	when the user logs in to manage information about DICOM data.
 	
-	
-If contours and markup lines were required, they are stored in subfolders - one for each Page.
+### Annotations subfolders
+
+If contours and markup lines were required, they are stored in subfolders - one for each Page. 
+The assigned PageGroup number (either by administrator or automatically by the Image Quizzer) is embedded in the folder name for cross-referencing with the results quiz file.
 For example, if there were 3 pages in the quiz and a contour and at least one markup line was requested for each,
 the Users folder could look like this:
 
@@ -57,16 +59,16 @@ the Users folder could look like this:
    └─Users/
      └─Observer1/
        ├─ObserverContouringStudy.xml
-	   ├─(Page1FolderName)/
+	   ├─(PgGroup1_PageID_PageDescriptor)/
 	   ├    ├─imagename-bainesquizlabel.nrrd
 	   ├    ├─imagename_MarkupsLine_bainesquizline.nrrd
 	   ├    └─imagename_MarkupsLine_1_bainesquizline.mrk
-	   ├─(Page2FolderName)/
+	   ├─(PgGroup2_PageID_PageDescriptor)/
 	   ├    ├─imagename-bainesquizlabel.nrrd
 	   ├    ├─imagename_MarkupsLine_bainesquizline.mrk
 	   ├    ├─imagename_MarkupsLine_1_bainesquizline.mrk
 	   ├    └─imagename_MarkupsLine_2_bainesquizline.mrk
-	   └─(Page3FolderName)/
+	   └─(PgGroup3_PageID_PageDescriptor)/
 	        ├─imagename-bainesquizlabel.nrrd
 	        └─imagename_MarkupsLine_bainesquizline.mrk
 	   
@@ -179,3 +181,16 @@ results quiz file belongs to, as long as each user has his/her own login profile
 	</Page>
 </Session>
 ```
+
+### PageGroup
+
+[PageGroup](elements_attributes\page\pagegroup.md) numbers can be assigned by the administrator when setting up for randomizing the Pages of the observer study.
+If they were not set up in the original XML master quiz file, the Image Quizzer will add this attribute to the Page element and assign a sequential number
+starting at '1'. (A '0' has special meaning for the randomizing functionality).
+
+### Rep
+
+The Rep attribute is added to the Page element if the attribute [Loop](elements_attributes/page/loop.md) is set to "Y".
+This reflects the repetition number for looping a page.
+
+See also the [looping example](../administrator/examples/example_looping.md) for more details.
