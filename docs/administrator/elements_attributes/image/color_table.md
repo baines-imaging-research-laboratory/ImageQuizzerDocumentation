@@ -23,8 +23,8 @@ options provided by Slicer (see list below).
 
 
 ## Example
-```
-```
+
+See [example for layers & colors](../../examples/example_layering.md#script-example) for plug and play script example.
 
 ## Slicer lookup tables
 

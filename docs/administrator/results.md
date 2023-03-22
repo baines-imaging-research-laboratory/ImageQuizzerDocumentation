@@ -73,8 +73,25 @@ the Users folder could look like this:
 	        └─imagename_MarkupsLine_bainesquizline.mrk
 	   
 ```
+#### Contour capture
 
-Contours are captured as label masks in the nrrd format and markup lines are in json format and have a .mrk extension.
+Creating a contour will add a LabelMapPath element as a child of the Image element to the results file
+which stores the relative directory path where you can find the label map mask file.
+
+It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .
+
+File name is constructed using ImageID_ImageDescriptor-bainesquizlabel.nrrd
+
+#### MarkupLine capture
+
+Creating [measurement lines](../user/extratrools.md#line-measurement) using the tool in the Extra Tools tab will create a MarkupLinePath element
+as a child of the Image element to the results file. This element stores the relative directory path where you
+can find the markup line file.
+
+It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .
+File name is constructed using ImageID_ImageDescriptor-MarkupsLine_bainesquizline.mrk.json
+
+
 
 
 ## New Elements
@@ -131,6 +148,15 @@ CheckBox
     
 
 ```
+
+### LabelMapPath
+
+The LabelMapPath element is added as a child of the Image element to hold the relative path to the label map file if a contour was created on the image.
+
+### MarkupLinePath
+
+The MarkupLinePath element is added as a child of the Image element to hold the relative path to the 
+markup line file(s) if any [line measurements](../user/extratrools.md#line-measurement) was created on the image.
 
 ### Login
 
@@ -194,3 +220,7 @@ The Rep attribute is added to the Page element if any Page in the master XML qui
 This reflects the repetition number for looping a page. If there was no looping the Rep attribute will be "0" (i.e. the original Page).
 
 See also the [looping example](../administrator/examples/example_looping.md) for more details.
+
+### PageComplete
+
+The PageComplete attribute is added to the Page element once all the quiz questions and required annotations have been completed by the observer.

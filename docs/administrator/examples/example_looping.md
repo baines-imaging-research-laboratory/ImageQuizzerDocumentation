@@ -8,14 +8,17 @@ hide:
 Image Quizzer has the ability to allow the users to *Repeat* a page if for example you want the user 
 to contour all regions of interest they find on one image and answer the same questions for each.
 
-To do this, assign the [Loop](../elements_attributes/page/loop.md) attribute to "Y" in the Page element: 
+To do this, assign the [Loop](../elements_attributes/page/loop.md) attribute to "Y" in the Page element.
 
-The **Repeat** button is visible on a Page that has Loop="Y" and becomes enabled when the last question set is displayed.
+The **Repeat** button is visible on a Page that has Loop="Y" and becomes enabled when the last question set for the Page is displayed.
 
 When the **Repeat** button is pressed by the user, the Image Quizzer will ensure that all quiz questions and required
-annotations are complete before proceding. Then it will make a copy of the Page and add a suffix of *-RepN* (where N is the number of
-the repetition) to the Page ID attribute. The Response elements and any LabelMapPath and MarkupLinePath elements are stripped out of the new Page - ready
+annotations are complete before proceding. The responses for the current page are saved to the results XML file and 
+then a copy of this Page element is made and inserted into the results file. The copied Page has the ID attribute modified adding
+a suffix of *-RepN* (where N is the number of the repetition) and any
+Response elements, LabelMapPath and MarkupLinePath elements are stripped out of the new Page - ready
 for the user's new responses.
+
 
 
 ## Prep
@@ -23,7 +26,7 @@ for the user's new responses.
 For the following example, we will use the CT-MR Brain sample dataset that is available when you open Slicer.	
 
 Download and save the dataset as described in the [sample data](sample_data.md#slicer-sample-datasets) section
-to a subfolder under ImageVolumes/ as shown.
+to a subfolder under ImageVolumes folder as shown.
 
 ```
 .
@@ -38,33 +41,98 @@ to a subfolder under ImageVolumes/ as shown.
 ## Script example
 
 For this quiz example, we will present each image for this patient on a different page with Loop="Y" only on the pages displaying the MR images.
-This could be an observer study to compare an observer's ability to detect and classify lesions on different modalities. 
-
-```
-
-```
-
-### Results tree structure
-
-![Results subfolders](assets/example_looping_result.png)
+(This could be an observer study to compare observers' ability to detect and classify lesions on different modalities). 
 
 
 ```
-PatientC_MR T1-bainesquizlabel.nrrd
+<Session>
+	<Page ID="PatientC" Descriptor="Grp3- Brain-CT" Layout="OneUpRedSlice">
+		<Image Type="Volume" ID="CT">
+			<Layer>Background</Layer>
+			<DefaultDestination>Red</DefaultDestination>
+			<DefaultOrientation>Axial</DefaultOrientation>
+			<Path>ImageVolumes\CT-MR Brain\CTBrain.nrrd</Path>
+		</Image>
+		<QuestionSet ID="Lesions" Descriptor="Lesions detected on CT">
+			<Question Type="IntegerValue" Min="0" Descriptor="Total">
+				<Option>Enter the number of lesions detected:</Option>
+			</Question>
+		</QuestionSet>
+	</Page>
+	<Page ID="PatientC" Descriptor="Grp3- Brain-MR T1" Layout="OneUpRedSlice" Loop="Y" EnableSegmentEditor="Y">
+		<Image Type="Volume" ID="MR T1">
+			<Layer>Background</Layer>
+			<DefaultDestination>Red</DefaultDestination>
+			<DefaultOrientation>Axial</DefaultOrientation>
+			<Path>ImageVolumes\CT-MR Brain\MRBrainT1.nrrd</Path>
+		</Image>
+		<QuestionSet ID="Lesions" Descriptor="Lesions detected on T1W MR">
+			<Question Type="InfoBox">
+				<Option>Contour and classify one lesion.</Option>
+				<Option>Use the repeat button if multiple lesions exist.</Option>
+			</Question>
+			<Question Type="Radio" Descriptor="Classification">
+				<Option>Primary</Option>
+				<Option>Metasasis</Option>
+			</Question>
+		</QuestionSet>
+	</Page>
+	<Page ID="PatientC" Descriptor="Grp3- Brain-MR T2" Layout="OneUpRedSlice" Loop="Y" EnableSegmentEditor="Y">
+		<Image Type="Volume" ID="MR T2">
+			<Layer>Background</Layer>
+			<DefaultDestination>Red</DefaultDestination>
+			<DefaultOrientation>Axial</DefaultOrientation>
+			<Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
+		</Image>
+		<QuestionSet ID="Lesions" Descriptor="Lesions detected on T2W MR">
+			<Question Type="InfoBox">
+				<Option>Contour and classify one lesion.</Option>
+				<Option>Use the repeat button if multiple lesions exist.</Option>
+			</Question>
+			<Question Type="Radio" Descriptor="Classification">
+				<Option>Primary</Option>
+				<Option>Metasasis</Option>
+			</Question>
+		</QuestionSet>
+	</Page>
+</Session>
 
-PatientC-Rep1_MR T1-bainesquizlabel.nrrd
+```
 
-PatientC_MR T2-bainesquizlabel.nrrd
+### Results
 
+When running this quiz, contours were created on Pages 2 and 3 and the Repeat button for looping was be used once on Page 2 and twice on Page 3.
+Following is the resulting tree structure and the resulting quiz file:
+
+
+```
+.
+└─ ImageQuizzerData/
+      └─ Users/
+          └─ Observer1/
+               ├─ PgGroup2_PatientC_Grp3- Brain-MR T1/
+               ├─ PgGroup2_PatientC-Rep1_Grp3- Brain-MR T1/
+               ├─ PgGroup3_PatientC_Grp3- Brain-MR T2/
+               ├─ PgGroup3_PatientC-Rep1_Grp3- Brain-MR T2/
+               ├─ PgGroup3_PatientC-Rep2_Grp3- Brain-MR T2/
+			   └─ example_looping.xml
+```
+
+
+Following is the results XML quiz file for the looping example described above.
+Note the added attributes:
+
+- [PageComplete](../results.md#pagecomplete)
+- [PageGroup](../results.md#pagegroup)
+- [Rep](../results.md#rep)
 
 
 
 ```
+example_looping.xml  (The results quiz file holding the observers responses)
 
-### Results quiz file
 
-```
-	<Session UserName="cjohnson">
+	<Session UserName="Observer1">
 		<Page Descriptor="Grp3- Brain-CT" ID="PatientC" Layout="OneUpRedSlice" PageComplete="Y" PageGroup="1" Rep="0">
 			<Image ID="CT" Type="Volume">
 				<Layer>Background</Layer>
@@ -250,4 +318,5 @@ PatientC_MR T2-bainesquizlabel.nrrd
 	</Session>
 
 ```
+
 
