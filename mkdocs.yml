@@ -35,7 +35,9 @@ extra:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home: 
+    - index.md
+    - Quick links: quicklinks.md
   - Getting started: getting_started/index.md
   - User guide:  
     - Using Image Quizzer: user/user.md

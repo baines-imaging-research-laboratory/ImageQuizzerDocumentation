@@ -19,11 +19,13 @@ This example touches on a number of topics:
 
 The main attributes of interest used for this example include:
 
-- [DicomRead](../elements_attributes/image/dicom_read.md)
 - [Layer](../elements_attributes/image/layer.md)
 - [Layout](../elements_attributes/page/layout.md)
-- [ColorTable](../elements_attributes/image/color_table.md) See [Slicer lookup tables](../elements_attributes/image/color_table.md#slicer-lookup-tables) for list of valid color table names.
 - [Opacity](../elements_attributes/image/opacity.md)
+
+See also:
+- [DicomRead](../elements_attributes/image/dicom_read.md)
+- [ColorTable](../elements_attributes/image/color_table.md)
 
 
 ## Prep
