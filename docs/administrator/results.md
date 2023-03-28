@@ -84,7 +84,7 @@ File name is constructed using ImageID_ImageDescriptor-bainesquizlabel.nrrd
 
 #### MarkupLine capture
 
-Creating [measurement lines](../user/extratrools.md#line-measurement) using the tool in the Extra Tools tab will create a MarkupLinePath element
+Creating [measurement lines](../user/extratools.md#line-measurement) using the tool in the Extra Tools tab will create a MarkupLinePath element
 as a child of the Image element to the results file. This element stores the relative directory path where you
 can find the markup line file.
 
@@ -156,7 +156,7 @@ The LabelMapPath element is added as a child of the Image element to hold the re
 ### MarkupLinePath
 
 The MarkupLinePath element is added as a child of the Image element to hold the relative path to the 
-markup line file(s) if any [line measurements](../user/extratrools.md#line-measurement) was created on the image.
+markup line file(s) if any [line measurements](../user/extratools.md#line-measurement) was created on the image.
 
 ### Login
 

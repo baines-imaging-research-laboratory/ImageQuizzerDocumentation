@@ -148,4 +148,5 @@ After running this quiz, the element added into the [results quiz file](../resul
 		<RandomizedPageGroupIndices>0,4,2,3,1</RandomizedPageGroupIndices>
 ```
 
-These indices define the order in which the Pages are displayed.
+These indices define the order in which the Pages are displayed. They are set when
+the user first logs in to the session. Each user will have a different set of indices.

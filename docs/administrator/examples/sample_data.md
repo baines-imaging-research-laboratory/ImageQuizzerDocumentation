@@ -18,7 +18,7 @@ This is the tree structure we use for testing and building the example scripts.
 If you are using a tree structure with customized folder names,
 you will have to modify the image **Path** element in the scripts to match your tree layout.
 
-We recommend saving your data in a subfolder (e.g. ImageVolumes) since, in the parent database directory (ImageQuizzerData)
+We recommend saving your data in a subfolder (e.g. ImageVolumes) since in the parent database directory (ImageQuizzerData),
 two other subfolders will be created:
 
 1. The **Users** folder which will hold the observer results files.
@@ -44,7 +44,7 @@ two other subfolders will be created:
 ```
 
 When logging in to the Image Quizzer, users point to **ImageQuizzerData** as the image database folder.
-All paths in the scripts are relative to this folder and begin with **ImageVolumes/...**.
+All paths in the example scripts are relative to this folder and begin with **ImageVolumes/...**.
 
 
 ## Slicer sample datasets
@@ -59,7 +59,7 @@ These include:
 * CT-MR Brain
 * CT Cardio Volume Sequence
 
-See also [Tutorial data links](.#tutorial-data-links) for more sample datasets.
+See also the section for [tutorial data links](#tutorial-data-links) below for more sample datasets.
 
 ### Download and save
 

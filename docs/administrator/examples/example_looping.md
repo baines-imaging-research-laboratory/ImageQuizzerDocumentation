@@ -102,7 +102,8 @@ For this quiz example, we will present each image for this patient on a differen
 ### Results
 
 When running this quiz, contours were created on Pages 2 and 3 and the Repeat button for looping was be used once on Page 2 and twice on Page 3.
-Following is the resulting tree structure and the resulting quiz file:
+Following is the resulting tree structure and the resulting quiz file. Each folder in the directory tree holds a label map file
+for the contours created at each repetition.
 
 
 ```

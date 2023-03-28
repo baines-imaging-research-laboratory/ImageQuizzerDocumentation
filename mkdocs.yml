@@ -56,6 +56,7 @@ nav:
       - Randomizing: administrator/examples/example_randomizing.md
       - Looping: administrator/examples/example_looping.md
       - ROI colors: administrator/examples/example_roicolorfile.md
+      - Link & multiple response: administrator/examples/example_link_multipleresponse.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -73,6 +74,8 @@ nav:
         - PageGroup: administrator/elements_attributes/page/pagegroup.md
         - EnableSegmentEditor: administrator/elements_attributes/page/enable_segment_editor.md
         - SegmentRequiredOnAnyImage: administrator/elements_attributes/page/segment_required_on_any_image.md
+        - LinkViews: administrator/elements_attributes/page/link_views.md
+        - AllowMultipleResponse: administrator/elements_attributes/page/allow_multiple_response.md
       - Image:
         - administrator/elements_attributes/image/index.md
         - ID: administrator/elements_attributes/image/id.md
