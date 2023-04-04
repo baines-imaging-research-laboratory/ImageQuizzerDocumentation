@@ -15,9 +15,7 @@ The **Repeat** button is visible on a Page that has Loop="Y" and becomes enabled
 When the **Repeat** button is pressed by the user, the Image Quizzer will ensure that all quiz questions and required
 annotations are complete before proceding. The responses for the current page are saved to the results XML file and 
 then a copy of this Page element is made and inserted into the results file. The copied Page has the ID attribute modified adding
-a suffix of *-RepN* (where N is the number of the repetition) and any
-Response elements, LabelMapPath and MarkupLinePath elements are stripped out of the new Page - ready
-for the user's new responses.
+a suffix of *-RepN* where N is the number of the repetition (e.g. PageID-Rep1).
 
 
 

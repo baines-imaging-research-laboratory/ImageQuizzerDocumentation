@@ -36,6 +36,3 @@ It has a Type attribute that defines how to present the Options.
   </Page>
 </Session>
 ```
-
-## Attributes
-#####[Descriptor](descriptor.md)

@@ -45,17 +45,3 @@ Another example could be that there are multiple pages for one patient, each pag
 
 </Session>
 ```
-
-## Attributes
-#####[ID](id.md)
-#####[Descriptor](descriptor.md)
-#####[PageGroup](pagegroup.md)
-#####[EnableSegmentEditor](enable_segment_editor.md)
-#####[SegmentRequiredOnAnyImage](segment_required_on_any_image.md)
-#####[Loop](loop.md)
-<!--
-#####[LinkViews](linkviews.md)
-#####[Layout](layout.md)
-#####[AllowMultipleResponse](allowmultipleresponse.md)
-#####[MinMarkupLinesRequiredOnAnyImage](markuplinesanyimage.md)
--->

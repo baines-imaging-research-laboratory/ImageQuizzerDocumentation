@@ -19,7 +19,8 @@ hide:
 ## Description
 
 If this attribute is set to "Y" the user has the ability to return to a completed Page and modify their answers.
-This attribute can be different for different Pages throughout the Session.
+Since this attribute is at the Page level, the administrator can lock down responses for some pages and open up 
+other pages for multiple responses.
 
 ## Example
 

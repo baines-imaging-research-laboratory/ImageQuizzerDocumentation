@@ -40,17 +40,3 @@ instructions to the user or display questions that do not depend on images.
   </Page>
 </Session>
 ```
-
-## Attributes
-#####[ID](id.md)
-#####[DicomRead](dicom_read.md)
-<!--
-#####[Type](type.md)
-#####[LabelMapID](label_map_id.md)
-#####[DisplayLabelMapID](display_label-map_ID.md)
-#####[RotateToAcquisition](rotate_to_acquisition.md)
-#####[ColorTable](color_table.md)
-#####[Opacity](opacity.md)
-#####[SegmentRequired](segment_required.md)
-
--->

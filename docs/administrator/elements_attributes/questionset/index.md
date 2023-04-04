@@ -37,7 +37,3 @@ a long list of questions reducing the use of the scroll bar by the observer to d
   </Page>
 </Session>
 ```
-
-## Attributes
-#####[ID](id.md)
-#####[Descriptor](descriptor.md)

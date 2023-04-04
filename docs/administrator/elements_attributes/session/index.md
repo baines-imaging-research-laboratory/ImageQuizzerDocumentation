@@ -32,10 +32,3 @@ It encompasses all the child [Page](../page/index.md) elements defined for the s
 	</Page>
 </Session>
 ```
-
-## Attributes
-#####[ROIColorFile](roi_colorfile.md)
-#####[RandomizePageGroups](randomize_page_groups.md)
-#####[ContourVisibility](contour_visibility.md)
-#####[EmailResultsTo](email.md)
-
