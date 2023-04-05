@@ -31,3 +31,7 @@ See [Line measurement](../../../user/extratools.md#line-measurement) for details
 
 If you want the user to measure one or more lines that are associated with a specific image,
 use the [MinMarkupLinesRequired](../image/min_markuplines_required.md) attribute for the Image element.
+
+
+The user will not be allowed to advance to the next page until the required number of lines have been created on any image on this page.
+If more than one line is required, they can be created on different viewing windows.

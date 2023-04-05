@@ -158,20 +158,23 @@ The LabelMapPath element is added as a child of the Image element to hold the re
 The MarkupLinePath element is added as a child of the Image element to hold the relative path to the 
 markup line file(s) if any [line measurements](../user/extratools.md#line-measurement) was created on the image.
 
-### Login
+### State
 
-When the user first logs in, a <Login\> element is added to the response XML file.
-It holds the login and logout times for the user's session. 
+The State element is added as a child of the Image element everytime the user moves from one Page to another.
+This could happen on a Next, Previous, Repeat, or Exit button click. The following attributes are added
+to record the image state at that time point:
 
-```
-<Login LoginTime="20221129_16:35:07.894893" LogoutTime="20221129_17:37:36.548557"/>
-``` 
+| Attribute | Description |
+|--|--|
+| Window | window value |
+| Level |level value |
+| LoginTime | time the Session was started|
+| ResponseTime | time when the user switched pages |
+| SliceOffset | which slice was the user viewing (mm) |
+| ViewingMode | 3Planes, 1Plane, or Default |
+| Destination | Red, Green, Yellow, Slice4 - where this image was located on the screen |
+| Orientation | Axial, Sagittal, Coronal of the image being viewed |
 
-When the user completes the assigned quiz, a *QuizComplete="y"* attribute is added to this element.
-
-```
-<Login LoginTime="20221129_16:35:07.894893" LogoutTime="20221129_17:37:36.548557" QuizComplete="Y"/>
-``` 
 
 ###  RandomizedPageGroupIndices
 
@@ -188,6 +191,21 @@ An example of this element for 4 different page group numbers could look like th
 ```
 
 PageGroup="0" always appears first if it exists.
+
+### Login
+
+When the user first logs in, a <Login\> element is added to the response XML file.
+It holds the login and logout times for the user's session. 
+
+```
+<Login LoginTime="20221129_16:35:07.894893" LogoutTime="20221129_17:37:36.548557"/>
+``` 
+
+When the user completes the assigned quiz, a *QuizComplete="y"* attribute is added to this element.
+
+```
+<Login LoginTime="20221129_16:35:07.894893" LogoutTime="20221129_17:37:36.548557" QuizComplete="Y"/>
+``` 
 
 
 
