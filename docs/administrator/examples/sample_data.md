@@ -84,10 +84,11 @@ Refer to Slicer's documentation [download and save](https://slicer.readthedocs.i
 
 Some example scripts refer to data that can be downloaded and extracted using these links.
 
-[DICOM dataset1_TorsoCT](https://spujol.github.io/SlicerDICOMTutorial) 
+[DICOM dataset1_TorsoCT](https://spujol.github.io/SlicerDICOMTutorial) see link for "Tutorial Dataset: 3D Slicer DICOM Tutorial Data"
 
 [PETCTFusion dataset](http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data) see link for "Data for Quantitative PET/CT tutorial"
 
+[RECIST Tutorial](http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data) see link for "Data for RECIST tutorial"
 
 Once downloaded, extract the sample data into the suggested tree structure for plug and play examples.
 
