@@ -57,6 +57,7 @@ nav:
       - Looping: administrator/examples/example_looping.md
       - ROI colors: administrator/examples/example_roicolorfile.md
       - Link & multiple response: administrator/examples/example_link_multipleresponse.md
+      - Redisplay contours: administrator/examples/redisplay_contours.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:

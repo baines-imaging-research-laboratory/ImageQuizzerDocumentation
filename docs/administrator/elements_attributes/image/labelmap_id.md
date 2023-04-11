@@ -29,4 +29,14 @@ This attribute (along with other associated attributes) provides a means to have
 on a specific image and have this contour redisplayed on the same image in a subsequent page.
 This can be useful for comparing the user's contour with a gold standard.
 
+If a subsequent page has an image element with the DisplayLabelMapID attribute set to match 
+this LabelMapID, and the Path elements for both the current image and the subsequent image match, then the label map created
+here will be redisplayed on the subsequent page.
 
+If more than one image element is set up for this image path - differing orientations, 
+this attribute only needs to be set up on one instance.
+
+
+## Example
+
+See [Redisplay contours](../../examples/redisplay_contours.md) example.

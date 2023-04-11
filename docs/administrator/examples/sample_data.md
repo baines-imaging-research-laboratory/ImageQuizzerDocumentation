@@ -88,7 +88,7 @@ Some example scripts refer to data that can be downloaded and extracted using th
 
 [PETCTFusion dataset](http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data) see link for "Data for Quantitative PET/CT tutorial"
 
-[RECIST Tutorial](http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data) see link for "Data for RECIST tutorial"
+[RECIST dataset](http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data) see link for "Data for RECIST tutorial"
 
 Once downloaded, extract the sample data into the suggested tree structure for plug and play examples.
 
