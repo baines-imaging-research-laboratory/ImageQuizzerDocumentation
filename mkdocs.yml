@@ -57,7 +57,8 @@ nav:
       - Looping: administrator/examples/example_looping.md
       - ROI colors: administrator/examples/example_roicolorfile.md
       - Link & multiple response: administrator/examples/example_link_multipleresponse.md
-      - Redisplay contours: administrator/examples/redisplay_contours.md
+      - Redisplay contours: administrator/examples/example_redisplay_contours.md
+      - Annotations (contours and lines): administrator/examples/example_annotations.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -89,6 +90,7 @@ nav:
         - DefaultOrientation: administrator/elements_attributes/image/default_orientation.md 
         - Path: administrator/elements_attributes/image/path.md 
         - MinMarkupLinesRequired: administrator/elements_attributes/image/min_markuplines_required.md
+        - SegmentRequired: administrator/elements_attributes/image/segment_required.md
         - InitialSliceOffset: administrator/elements_attributes/image/initial_slice_offset.md
         - LabelMapID: administrator/elements_attributes/image/labelmap_id.md
         - DisplayLabelMapID: administrator/elements_attributes/image/display_labelmap_id.md

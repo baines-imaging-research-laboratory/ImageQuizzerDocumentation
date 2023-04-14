@@ -38,5 +38,5 @@ this attribute needs to be set up on each instance.
 
 ## Example
 
-See [Redisplay contours](../../examples/redisplay_contours.md) example.
+See [Redisplay contours](../../examples/example_redisplay_contours.md) example.
 

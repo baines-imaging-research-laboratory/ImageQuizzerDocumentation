@@ -39,4 +39,4 @@ this attribute only needs to be set up on one instance.
 
 ## Example
 
-See [Redisplay contours](../../examples/redisplay_contours.md) example.
+See [Redisplay contours](../../examples/example_redisplay_contours.md) example.

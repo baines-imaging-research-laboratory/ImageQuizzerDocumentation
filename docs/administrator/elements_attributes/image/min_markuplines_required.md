@@ -20,7 +20,23 @@ hide:
 
 This attribute represents the minimum number of markup lines that must be added to the specific image
 displayed. The minimum number must be a positive integer (excluding zero).
+The user will not be allowed to advance to the next page until the required number of lines have been created for this image.
 
+
+If you want the user to measure one or more lines that are associated with *any* image displayed on this page,
+use the [MinMarkupLinesRequired](../page/min_markuplines_required_on_any_image.md) attribute for the Page element.
+
+
+
+!!! note
+	If you need the user to add markup lines to the same image presented in multiple viewing windows
+	you must include the attribute in each of the duplicated XML image elements.
+	This attribute is not applicable for images with the xml *Layer* element assigned to "Segmentation" or "Label". 
+
+	See example below.
+
+
+## Creating markup lines
 
 A markup line is added by selecting **Add new line** button under the **Extra Tools** tab.
 
@@ -31,16 +47,6 @@ The length of the line in mm is captured and stored in a .mrk.json (readable in 
 See [Line measurement](../../../user/extratools.md#line-measurement) for details.
 
 
-If you want the user to measure one or more lines that are associated with any image displayed on this page,
-use the [MinMarkupLinesRequired](../page/min_markuplines_required_on_any_image.md) attribute for the Page element.
-
-The user will not be allowed to advance to the next page until the required number of lines have been created for this image.
-
-
-!!! note
-    In the case where the same image is repeated in more than one viewing window
-	and you need markup lines on the repeated image, you must add the attribute to 
-	each of the image elements. See example below.
 
 ## Example
 
@@ -60,7 +66,7 @@ attribute is repeated for each viewing window.
 			<Image ID="MR T1" Type="Volume" MinMarkupLinesRequired="2">
 				<Layer>Background</Layer>
 				<DefaultDestination>Yellow</DefaultDestination>
-				<DefaultOrientation>Axial</DefaultOrientation>
+				<DefaultOrientation>Coronal</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT1.nrrd</Path>
 			</Image>
 			<Image ID="MR T2" Type="Volume">
