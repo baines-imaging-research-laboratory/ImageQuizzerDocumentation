@@ -13,7 +13,7 @@ hide:
 | **Classification** | element ||
 | **Parent** | <[Image](index.md)\> ||
 | **Required** | no ||
-| **Syntax** | DefaultDestination="*option*" | |
+| **Syntax** | <DefaultDestination\>*option*</DefaultDestination\> | |
 | **Options** | Red | (default)|
 |             | Green | |
 |             | Yellow | |

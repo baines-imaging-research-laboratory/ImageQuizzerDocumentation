@@ -12,10 +12,9 @@ hide:
 | **Classification** | element ||
 | **Parent** | <[Page](../page/index.md)\> ||
 | **Required** | no ||
-| **Syntax** | <Image\>||
+| **Syntax** | <Image\>...</Image\>|... represents Image subelements|
 
 
-See also: 
 
 
 ## Description

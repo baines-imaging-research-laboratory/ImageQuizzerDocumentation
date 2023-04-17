@@ -6,13 +6,13 @@ hide:
 
 ## Specs
 
-| ||
-|---|---|
-| **Name** | Session |
-| **Classification** | element |
-| **Parent** | - |
-| **Required** | yes |
-| **Syntax** | <Session\> |
+| |||
+|---|---|---|
+| **Name** | Session ||
+| **Classification** | element ||
+| **Parent** | - ||
+| **Required** | yes ||
+| **Syntax** | <Session\>...</Session\>|... represents Session subelements|
 
 See also: [Page](../page/index.md)
 

@@ -13,7 +13,7 @@ hide:
 | **Classification** | element ||
 | **Parent** | <[Image](index.md)\> ||
 | **Required** | no ||
-| **Syntax** | DefaultOrientation="*option*" | |
+| **Syntax** | <DefaultOrientation\>*option*</DefaultOrientation\> | |
 | **Options** | Axial | (default)|
 |             | Sagittal | |
 |             | Coronal | |

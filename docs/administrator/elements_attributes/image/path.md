@@ -13,7 +13,7 @@ hide:
 | **Classification** | element ||
 | **Parent** | <[Image](index.md)\> ||
 | **Required** | yes ||
-| **Syntax** | Path="*string*" | relative/path/to/image/filename |
+| **Syntax** | <Path\>*string*</Path\> | relative/path/to/image/filename |
 
 ## Description
 

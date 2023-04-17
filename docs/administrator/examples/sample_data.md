@@ -50,7 +50,7 @@ All paths in the example scripts are relative to this folder and begin with **Im
 ## Slicer sample datasets
 
 Some of the sample datasets referenced to run the example scripts can be downloaded directly from the Slicer application.
-These include:
+(See *Download Sample Data* in the *Welcome to Slicer* module). These include:
 
 * CTChest
 * MRHead
@@ -58,6 +58,8 @@ These include:
 * MRBrain Tumor2
 * CT-MR Brain
 * CT Cardio Volume Sequence
+* TinyPatient
+    * Available with developer's mode enabled (in Slicer Edit>Application Settings>Developer)
 
 See also the section for [tutorial data links](#tutorial-data-links) below for more sample datasets.
 

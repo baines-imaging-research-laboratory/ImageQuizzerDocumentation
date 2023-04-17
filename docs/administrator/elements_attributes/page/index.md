@@ -12,7 +12,7 @@ hide:
 | **Classification** | element ||
 | **Parent** | <[Session](../session/index.md)\> ||
 | **Required** | yes ||
-| **Syntax** | <Page\>||
+| **Syntax** | <Page\>...</Page\>|... represents Page subelements|
 
 See also: [Image](../image/index.md), [QuestionSet](../questionset/index.md), [Question](../questionset/question/index.md)
 

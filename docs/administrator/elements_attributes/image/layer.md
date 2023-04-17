@@ -13,7 +13,7 @@ hide:
 | **Classification** | element ||
 | **Parent** | <[Image](index.md)\> ||
 | **Required** | no ||
-| **Syntax** | Layer="*option*" |  |
+| **Syntax** | <Layer\>*option*</Layer\> |  |
 | **Options** | Background | (default) load image on background layer|
 |             | Foreground |load image on foreground layer |
 |             | Label |load label map mask on label layer |
@@ -29,4 +29,9 @@ See [layering](../../examples/example_layering.md) example.
 The Label layer is best assigned to images that contain a mask representing a region of interest (ROI).
 The Segmentation layer can be used to load images that contain multiple segments for the same ROI.
 For the Label and Segmentation layers, you have the ability to identify which ROIs to display or ignore.
-See the [ROI](roi.md) element description.
+
+See also:
+
+- [ROIs](rois/index.md) element description.
+- [ROIVisibiltyCode](rois/roi_visibility_code.md) attribute description.
+- [ROI](rois/roi.md) element description.

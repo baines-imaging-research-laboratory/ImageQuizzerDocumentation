@@ -8,7 +8,7 @@ hide:
 
 ## Prep
 
-Download and save Slicer's CTChest [sample data](sample_data.md#slicer-sample-datasets).
+Download and save Slicer's CTChest dataset as described in the [sample data](sample_data.md#slicer-sample-datasets) section.
 
 Suggested folder structure to match script:
 ```

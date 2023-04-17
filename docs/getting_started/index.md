@@ -59,13 +59,8 @@ that may be relevant to the study administrator when developing the script.
 
 ### 3D Slicer
 
-Download and install 3D Slicer version 4.11.20210226
-    
-	* https://download.slicer.org/download?os=win&date=2021-02-26
-	
-	or
-	
-	https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482
+Download and install [3D Slicer version 4.11.20210226](   
+	https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482)
 	
 	
 - Double click on the downloaded .exe file
@@ -103,7 +98,7 @@ To connect the Image Quizzer module
 * Select Edit > Application Settings
 * Select Modules in the left-hand panel
 * Click Add in the panel to the right of  “Additional module paths:” (you may have to click the ‘>>’ button)
-* Browse for folder named **ImageQuizzereQuizzer** in the downloaded ImageQuizzerProject
+* Browse for folder named **ImageQuizzer** in the downloaded ImageQuizzerProject
     * eg. C:\Users\username\Documents\ImageQuizzerProject\ImageQuizzer
 * Restart 3D Slicer if prompted
 
@@ -200,6 +195,7 @@ This USB can then be plugged into the observers laptop or PC and the quiz is rea
 !!! tip
     VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; (admin rights are required).
 
-## Quiz script examples
+## Building the quiz script
 
-See [Quiz Examples](../administrator/examples/index.md) for links to examples with scripts.
+See [Quiz Examples](../administrator/examples/index.md) section in the Administrator's guide
+for instructions on building scripts and examples showing how to activate various features available in the Image Quizzer.

@@ -12,7 +12,7 @@ hide:
 | **Classification** | element ||
 | **Parent** | <[QuestionSet](../index.md)\> ||
 | **Required** | no ||
-| **Syntax** | <Question\>||
+| **Syntax** | <Question\>...</Question\>|... represents Question subelements|
 
 
 ## Description
