@@ -549,6 +549,8 @@
         
           
         
+          
+        
       
       
         
@@ -719,6 +721,20 @@
     <li class="md-nav__item">
       <a href="../../../examples/example_annotations/" class="md-nav__link">
         Annotations (contours and lines)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_roi_visibility/" class="md-nav__link">
+        ROI visibility
       </a>
     </li>
   
@@ -1150,6 +1166,8 @@
         
           
         
+          
+        
       
       
         
@@ -1397,6 +1415,86 @@
       <a href="../display_labelmap_id/" class="md-nav__link">
         DisplayLabelMapID
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3_4_15" type="checkbox" id="__nav_4_3_4_15" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../rois/">ROIs</a>
+          
+            <label for="__nav_4_3_4_15">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="ROIs" data-md-level="4">
+        <label class="md-nav__title" for="__nav_4_3_4_15">
+          <span class="md-nav__icon md-icon"></span>
+          ROIs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rois/roi_visibility_code/" class="md-nav__link">
+        ROIVisibilityCode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rois/roi/" class="md-nav__link">
+        ROI
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1768,7 +1866,7 @@
 </tr>
 <tr>
 <td><strong>Syntax</strong></td>
-<td>Layer="<em>option</em>"</td>
+<td>&lt;Layer><em>option</em>&lt;/Layer></td>
 <td align="center"></td>
 </tr>
 <tr>
@@ -1800,8 +1898,13 @@ create 2 image elements, one for each image and assign the layer for one as "Bac
 See <a href="../../../examples/example_layering/">layering</a> example.</p>
 <p>The Label layer is best assigned to images that contain a mask representing a region of interest (ROI).
 The Segmentation layer can be used to load images that contain multiple segments for the same ROI.
-For the Label and Segmentation layers, you have the ability to identify which ROIs to display or ignore.
-See the <a href="roi.md">ROI</a> element description.</p>
+For the Label and Segmentation layers, you have the ability to identify which ROIs to display or ignore.</p>
+<p>See also:</p>
+<ul>
+<li><a href="../rois/">ROIs</a> element description.</li>
+<li><a href="../rois/roi_visibility_code/">ROIVisibiltyCode</a> attribute description.</li>
+<li><a href="../rois/roi/">ROI</a> element description.</li>
+</ul>
 
 
 

@@ -456,8 +456,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quiz-script-examples" class="md-nav__link">
-    Quiz script examples
+  <a href="#building-the-quiz-script" class="md-nav__link">
+    Building the quiz script
   </a>
   
 </li>
@@ -663,6 +663,8 @@
         
           
         
+          
+        
       
       
         
@@ -833,6 +835,20 @@
     <li class="md-nav__item">
       <a href="../administrator/examples/example_annotations/" class="md-nav__link">
         Annotations (contours and lines)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/examples/example_roi_visibility/" class="md-nav__link">
+        ROI visibility
       </a>
     </li>
   
@@ -1260,6 +1276,8 @@
         
           
         
+          
+        
       
       
         
@@ -1459,6 +1477,86 @@
       <a href="../administrator/elements_attributes/image/display_labelmap_id/" class="md-nav__link">
         DisplayLabelMapID
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3_4_15" type="checkbox" id="__nav_4_3_4_15" >
+      
+      
+        
+          
+            
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../administrator/elements_attributes/image/rois/">ROIs</a>
+          
+            <label for="__nav_4_3_4_15">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="ROIs" data-md-level="4">
+        <label class="md-nav__title" for="__nav_4_3_4_15">
+          <span class="md-nav__icon md-icon"></span>
+          ROIs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/elements_attributes/image/rois/roi_visibility_code/" class="md-nav__link">
+        ROIVisibilityCode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/elements_attributes/image/rois/roi/" class="md-nav__link">
+        ROI
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -1842,8 +1940,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quiz-script-examples" class="md-nav__link">
-    Quiz script examples
+  <a href="#building-the-quiz-script" class="md-nav__link">
+    Building the quiz script
   </a>
   
 </li>
@@ -1886,8 +1984,13 @@ With some adjustments to the installation notes, this may also run on a MAC syst
 </div>
 <h2 id="installation">Installation</h2>
 <h3 id="image-quizzer">Image Quizzer</h3>
-<p>The Image Quizzer project is currently available with special access permission through GitHub.
-This will be made public in the near future (estimate 2nd quarter 2023).</p>
+<p>Download the Image Quizzer here:</p>
+<p>https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer.git</p>
+<ul>
+<li>The <strong>master</strong> branch has the release versions.</li>
+<li>The <strong>dev</strong> branch is pre-release, with the latest features.</li>
+<li>Use the Tags to download code only.</li>
+</ul>
 <p>Once downloaded, the following directory tree describes the basic files and folders 
 that may be relevant to the study administrator when developing the script. </p>
 <pre><code>.
@@ -1912,13 +2015,8 @@ that may be relevant to the study administrator when developing the script. </p>
 They may be either under development or required for execution of the Image Quizzer module. </p>
 </div>
 <h3 id="3d-slicer">3D Slicer</h3>
-<p>Download and install 3D Slicer version 4.11.20210226</p>
-<pre><code>* https://download.slicer.org/download?os=win&amp;date=2021-02-26
-
-or
-
-https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482
-</code></pre>
+<p>Download and install <a href="https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482">3D Slicer</a>
+     version 4.11.20210226</p>
 <ul>
 <li>Double click on the downloaded .exe file</li>
 <li>Accept installation defaults</li>
@@ -1961,7 +2059,7 @@ https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/
 <li>Select Edit &gt; Application Settings</li>
 <li>Select Modules in the left-hand panel</li>
 <li>Click Add in the panel to the right of  “Additional module paths:” (you may have to click the ‘&gt;&gt;’ button)</li>
-<li>Browse for folder named <strong>ImageQuizzereQuizzer</strong> in the downloaded ImageQuizzerProject<ul>
+<li>Browse for folder named <strong>ImageQuizzer</strong> in the downloaded ImageQuizzerProject<ul>
 <li>eg. C:\Users\username\Documents\ImageQuizzerProject\ImageQuizzer</li>
 </ul>
 </li>
@@ -2054,8 +2152,9 @@ This USB can then be plugged into the observers laptop or PC and the quiz is rea
 <p class="admonition-title">Tip</p>
 <p>VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; (admin rights are required).</p>
 </div>
-<h2 id="quiz-script-examples">Quiz script examples</h2>
-<p>See <a href="../administrator/examples/">Quiz Examples</a> for links to examples with scripts.</p>
+<h2 id="building-the-quiz-script">Building the quiz script</h2>
+<p>See <a href="../administrator/examples/">Quiz Examples</a> section in the Administrator's guide
+for instructions on building scripts and examples showing how to activate various features available in the Image Quizzer.</p>
 
 
 
