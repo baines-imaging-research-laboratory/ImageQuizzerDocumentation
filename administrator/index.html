@@ -551,6 +551,8 @@
         
           
         
+          
+        
       
       
         
@@ -693,6 +695,20 @@
     <li class="md-nav__item">
       <a href="examples/example_link_multipleresponse/" class="md-nav__link">
         Link & multiple response
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="examples/example_rotating/" class="md-nav__link">
+        Rotate to acquisition
       </a>
     </li>
   
@@ -867,7 +883,7 @@
   
     <li class="md-nav__item">
       <a href="elements_attributes/session/email/" class="md-nav__link">
-        EmailResults
+        EmailResultsTo
       </a>
     </li>
   
@@ -1164,6 +1180,8 @@
         
           
         
+          
+        
       
       
         
@@ -1346,6 +1364,20 @@
   
   
     <li class="md-nav__item">
+      <a href="elements_attributes/image/rotate_to_acquisition/" class="md-nav__link">
+        RotateToAcquisition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="elements_attributes/image/labelmap_id/" class="md-nav__link">
         LabelMapID
       </a>
@@ -1379,7 +1411,7 @@
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3_4_15" type="checkbox" id="__nav_4_3_4_15" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3_4_16" type="checkbox" id="__nav_4_3_4_16" >
       
       
         
@@ -1398,14 +1430,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="elements_attributes/image/rois/">ROIs</a>
           
-            <label for="__nav_4_3_4_15">
+            <label for="__nav_4_3_4_16">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="ROIs" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_3_4_15">
+        <label class="md-nav__title" for="__nav_4_3_4_16">
           <span class="md-nav__icon md-icon"></span>
           ROIs
         </label>
@@ -1757,6 +1789,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#building-your-script" class="md-nav__link">
+    Building your script
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1780,20 +1819,24 @@
 <p>The Image Quizzer is controlled by a script that is written using eXtensible Markup Language (XML) formatting. 
 This script defines what images and questions are to be displayed and in what order. 
 It can be created using a simple editor like Notepad.</p>
+<p>Setting up the quiz XML is best done using a trial and error approach starting with the basic elements.
+Once the basic building blocks are in place, you can customize the quiz adding in more features.</p>
+<h2 id="building-your-script">Building your script</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>When building your quiz, the administrator creates and makes changes to the original XML file.
+This is known throughout the documentation as the <em>master</em> quiz file.
+When the user starts a quiz session, a copy of this <em>master</em> quiz file, with the same name is placed in the user's results folder
+ready to record the session responses. This is known throughout the documentation as the <em>results</em> quiz file.</p>
+<p>After your initial run of the quiz, if you edit the master quiz XML file,
+<strong>you must delete the copy of the quiz in the user's results folder</strong> before your next run.
+Otherwise, your changes will not be recognized on the next run.</p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
 This can be used in conjuction with the <em>ImageQuizzer.xsd</em> schema file found in the Resources\XML folder.
 The schema file is set up to do some immediate validation as you build your script.</p>
-</div>
-<p>Setting up the quiz XML is best done using a trial and error approach starting with the basic elements.
-Once the basic building blocks are in place, you can customize the quiz adding in more features.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When building your quiz, the administrator creates and makes changes to the original XML file.
-This is known throughout the documentation as the <em>master</em> quiz file.
-When the user starts a quiz session, a copy of this <em>master</em> quiz file, with the same name is placed in the user's results folder
-ready to record the session responses. This is known throughout the documentation as the <em>results</em> quiz file.</p>
 </div>
 
 

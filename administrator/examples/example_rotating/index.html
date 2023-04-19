@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/example_layouts/">
+        <link rel="canonical" href="https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/administrator/examples/example_rotating/">
       
       
-        <link rel="prev" href="../build_basics/">
+        <link rel="prev" href="../example_link_multipleresponse/">
       
       
-        <link rel="next" href="../example_dicomread/">
+        <link rel="next" href="../example_redisplay_contours/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
     
     
       
-        <title>Layouts - Image Quizzer Documentation</title>
+        <title>Rotate to acquisition - Image Quizzer Documentation</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#layouts" class="md-skip">
+        <a href="#rotate-to-acquisition" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Layouts
+              Rotate to acquisition
             
           </span>
         </div>
@@ -609,59 +609,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Layouts
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../example_layouts/" class="md-nav__link">
         Layouts
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prep" class="md-nav__link">
-    Prep
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#script-examples" class="md-nav__link">
-    Script examples
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -755,11 +707,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../example_rotating/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Rotate to acquisition
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Rotate to acquisition
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prep" class="md-nav__link">
+    Prep
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#script-example" class="md-nav__link">
+    Script example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1840,8 +1847,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#script-examples" class="md-nav__link">
-    Script examples
+  <a href="#script-example" class="md-nav__link">
+    Script example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    See also
   </a>
   
 </li>
@@ -1863,167 +1877,147 @@
 
 
 <!-- let javascript handle toc on left sidebar -->
-<h1 id="layouts">Layouts</h1>
-<p>The Image Quizzer enables you to define the configuration of viewing windows to be
-displayed. The different layouts available are shown in the examples below.</p>
-<p>Following are the window assignments available for each of the layouts. These window names
-are used in the <a href="../../elements_attributes/image/default_destination/">DefaultDestination</a> element.</p>
-<table>
-<thead>
-<tr>
-<th>Layout option</th>
-<th>Viewing windows for DefaultDestination</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>FourUp</td>
-<td>Red, Green, and Yellow</td>
-</tr>
-<tr>
-<td>TwoOverTwo</td>
-<td>Red, Green, Yellow, and Slice4</td>
-</tr>
-<tr>
-<td>OneUpRedSlice</td>
-<td>Red</td>
-</tr>
-<tr>
-<td>SideBySideRedYellow</td>
-<td>Red and Yellow</td>
-</tr>
-</tbody>
-</table>
-<p>Other attributes that are associated with how the images are displayed include:</p>
-<ul>
-<li><a href="../../elements_attributes/page/layout/">Layout</a></li>
-<li><a href="../../elements_attributes/image/default_destination/">DefaultDestination</a><ul>
-<li>which viewing window to place the image (Red, Green, Yellow, or Slice4)</li>
-</ul>
-</li>
-<li><a href="../../elements_attributes/image/default_orientation/">DefaultOrientation</a><ul>
-<li>what orientation to present the image (Axial, Sagittal, or Coronal)</li>
-</ul>
-</li>
-<li><a href="../../elements_attributes/image/layer/">Layer</a><ul>
-<li>option to assign image to a layer (Background, Foreground, Segmentation, or LabelMap)</li>
-</ul>
-</li>
-</ul>
+<h1 id="rotate-to-acquisition">Rotate to acquisition</h1>
+<p>This example focuses on <a href="../../elements_attributes/image/rotate_to_acquisition/">RotateToAcquisition</a> (an attribute for the Image element).
+Also included is the <a href="../../elements_attributes/page/link_views/">LinkViews</a> (an attribute for the Page element)
+attribute to demonstrate their basic functionality and how they may conflict with each other.</p>
+<p>Using the RotateToAcquisition attribute on an Image element, you can have an image
+displayed immediately in the frame of reference that the volume was acquired. The default
+is to display the image according to the anatomical coordinate system (Axial, Sagittal and Coronal).</p>
+<p>The LinkViews attribute allows the user to scroll through the slices on one image view and 
+have the other views scroll as well.</p>
 <h2 id="prep">Prep</h2>
-<p>Download the PETCTFusion-Tutorial-Data dataset as described in the <a href="../sample_data/#tutorial-data-links">sample data</a> section.</p>
-<p>Extract the PETCTFusion-Tutorial-Data to a subfolder under ImageVolumes/ as shown.</p>
+<p>For the following example, we will use the CT-MR Brain sample dataset that is available when you open Slicer.   </p>
+<p>Download and save the dataset as described in the <a href="../sample_data/#slicer-sample-datasets">sample data</a> section
+to a subfolder under ImageVolumes folder as shown.</p>
 <pre><code>.
 └─ ImageQuizzerData/
       └─ ImageVolumes/
-          └─ PETCTFusion-Tutorial-Data/
-                └─ PETCTFusion/
-                      └─ CT1/
-                         ├─ 26556672
-                         ├─ 26556691
-                         ├─ ...
-                      └─ CT2/
-                      └─ PET1/
-                         ├─ 26558596
-                         ├─ 26558607
-                         ├─ ...
-                     └─ PET2/
+          └─ CT-MR Brain/
+               ├─ CTBrain.nrrd
+               ├─ MRBrainT1.nrrd
+               └─ MRBrainT2.nrrd
 </code></pre>
-<h2 id="script-examples">Script examples</h2>
-<p>Layout="FourUp"</p>
+<h2 id="script-example">Script example</h2>
+<p>This script has three pages each with the EnableSegmentEditor attribute set to "Y".</p>
+<p>The first page uses the LinkViews attribute and the images do not
+use the RotateToAcquisition attribute. You should be able to scroll through the slices on one view and
+have the other views also scroll as well. If you go to the Segment Editor tab and set the Master Volume 
+to any of the loaded images, you should see the image 'snap' to the acquisition orientation.</p>
+<p>The second page does not use the LinkViews attribute, but the images are set with the RotateToAcquisition attribute set to "Y".
+Now if you go to the Segment Editor tab and assign one of the loaded images to the Master Volume, there will
+be no 'snap' rotation as the image is already in the acquired orientation.</p>
+<p>The third page uses both the LinkViews and RotateToAcquisition attributes. If you try to scroll
+through any of the images, the others do not scroll as well since they were each acquired at a slightly 
+different angle.</p>
 <pre><code>&lt;Session&gt;
-    &lt;Page ID=&quot;Patient1&quot; Descriptor=&quot;PET-CT&quot; Layout=&quot;FourUp&quot;&gt;
-        &lt;Image DicomRead=&quot;Y&quot; Type=&quot;Volume&quot; ID=&quot;CT&quot;&gt;
-            &lt;DefaultDestination&gt;Red&lt;/DefaultDestination&gt;
+    &lt;Page Descriptor=&quot;Brain CT-MR&quot; ID=&quot;Patient1&quot; EnableSegmentEditor=&quot;Y&quot; LinkViews=&quot;Y&quot;&gt;
+        &lt;Image ID=&quot;MR T1&quot; Type=&quot;Volume&quot;&gt;
             &lt;Layer&gt;Background&lt;/Layer&gt;
+            &lt;DefaultDestination&gt;Yellow&lt;/DefaultDestination&gt;
             &lt;DefaultOrientation&gt;Axial&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672&lt;/Path&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\MRBrainT1.nrrd&lt;/Path&gt;
         &lt;/Image&gt;
-        &lt;Image DicomRead=&quot;Y&quot; ID=&quot;CT&quot; Type=&quot;Volume&quot;&gt;
+        &lt;Image ID=&quot;MR T2&quot; Type=&quot;Volume&quot;&gt;
+            &lt;Layer&gt;Background&lt;/Layer&gt;
             &lt;DefaultDestination&gt;Green&lt;/DefaultDestination&gt;
-            &lt;Layer&gt;Background&lt;/Layer&gt;
-            &lt;DefaultOrientation&gt;Coronal&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672&lt;/Path&gt;
-        &lt;/Image&gt;
-        &lt;Image DicomRead=&quot;Y&quot; ID=&quot;CT&quot; Type=&quot;Volume&quot;&gt;
-            &lt;DefaultDestination&gt;Yellow&lt;/DefaultDestination&gt;
-            &lt;Layer&gt;Background&lt;/Layer&gt;
-            &lt;DefaultOrientation&gt;Sagittal&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672&lt;/Path&gt;
-        &lt;/Image&gt;
-    &lt;/Page&gt;
-&lt;/Session&gt;
-</code></pre>
-<p><img alt="FourUp" src="../assets/layout_fourup.png" /></p>
-<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-</code></pre>
-<p>Layout="SideBySideRedYellow"</p>
-<pre><code>&lt;Session&gt;
-    &lt;Page ID=&quot;Patient1&quot; Descriptor=&quot;PET-CT&quot; Layout=&quot;SideBySideRedYellow&quot;&gt;
-        &lt;Image DicomRead=&quot;Y&quot; Type=&quot;Volume&quot; ID=&quot;CT&quot;&gt;
-            &lt;DefaultDestination&gt;Red&lt;/DefaultDestination&gt;
-            &lt;Layer&gt;Background&lt;/Layer&gt;
-            &lt;DefaultOrientation&gt;Sagittal&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672&lt;/Path&gt;
-        &lt;/Image&gt;
-        &lt;Image DicomRead=&quot;Y&quot; Type=&quot;Volume&quot; ID=&quot;PET&quot;&gt;
-            &lt;DefaultDestination&gt;Yellow&lt;/DefaultDestination&gt;
-            &lt;Layer&gt;Background&lt;/Layer&gt;
-            &lt;DefaultOrientation&gt;Sagittal&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\PET1\26558596&lt;/Path&gt;
-        &lt;/Image&gt;
-    &lt;/Page&gt;
-&lt;/Session&gt;
-</code></pre>
-<p><img alt="SideBySideRedYellow" src="../assets/layout_sidebysideredyellow.png" /></p>
-<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-</code></pre>
-<p>Layout="TwoOverTwo"</p>
-<pre><code>&lt;Session&gt;
-    &lt;Page ID=&quot;Patient1&quot; Descriptor=&quot;PET-CT&quot; Layout=&quot;TwoOverTwo&quot;&gt;
-        &lt;Image DicomRead=&quot;Y&quot; Type=&quot;Volume&quot; ID=&quot;CT&quot;&gt;
-            &lt;DefaultDestination&gt;Red&lt;/DefaultDestination&gt;
-            &lt;Layer&gt;Background&lt;/Layer&gt;
             &lt;DefaultOrientation&gt;Axial&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672&lt;/Path&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\MRBrainT2.nrrd&lt;/Path&gt;
         &lt;/Image&gt;
-        &lt;Image DicomRead=&quot;Y&quot; ID=&quot;CT&quot; Type=&quot;Volume&quot;&gt;
-            &lt;DefaultDestination&gt;Green&lt;/DefaultDestination&gt;
+        &lt;Image ID=&quot;CT&quot; Type=&quot;Volume&quot;&gt;
             &lt;Layer&gt;Background&lt;/Layer&gt;
-            &lt;DefaultOrientation&gt;Coronal&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672&lt;/Path&gt;
-        &lt;/Image&gt;
-        &lt;Image DicomRead=&quot;Y&quot; ID=&quot;CT&quot; Type=&quot;Volume&quot;&gt;
-            &lt;DefaultDestination&gt;Yellow&lt;/DefaultDestination&gt;
-            &lt;Layer&gt;Background&lt;/Layer&gt;
-            &lt;DefaultOrientation&gt;Sagittal&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672&lt;/Path&gt;
-        &lt;/Image&gt;
-        &lt;Image DicomRead=&quot;Y&quot; ID=&quot;PET&quot; Type=&quot;Volume&quot;&gt;
-            &lt;DefaultDestination&gt;Slice4&lt;/DefaultDestination&gt;
-            &lt;Layer&gt;Background&lt;/Layer&gt;
-            &lt;DefaultOrientation&gt;Coronal&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\PET1\26558596&lt;/Path&gt;
-        &lt;/Image&gt;
-    &lt;/Page&gt;
-&lt;/Session&gt;
-</code></pre>
-<p><img alt="TwoOverTwo" src="../assets/layout_twoovertwo.png" /></p>
-<pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-</code></pre>
-<p>Layout="OneUpRedSlice"</p>
-<pre><code>&lt;Session&gt;
-    &lt;Page ID=&quot;Patient1&quot; Descriptor=&quot;CT&quot; Layout=&quot;OneUpRedSlice&quot;&gt;
-        &lt;Image DicomRead=&quot;Y&quot; Type=&quot;Volume&quot; ID=&quot;CT&quot;&gt;
             &lt;DefaultDestination&gt;Red&lt;/DefaultDestination&gt;
-            &lt;Layer&gt;Background&lt;/Layer&gt;
-            &lt;DefaultOrientation&gt;Sagittal&lt;/DefaultOrientation&gt;
-            &lt;Path&gt;ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672&lt;/Path&gt;
+            &lt;DefaultOrientation&gt;Axial&lt;/DefaultOrientation&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\CTBrain.nrrd&lt;/Path&gt;
         &lt;/Image&gt;
+        &lt;QuestionSet ID=&quot;Create contours&quot; Descriptor=&quot;&quot;&gt;
+            &lt;Question Type=&quot;InfoBox&quot; Descriptor=&quot;Attributes&quot;&gt;
+                &lt;Option&gt;LinkViews=&quot;Y&quot;&lt;/Option&gt;
+                &lt;Option&gt;RotateToAcquisition=&quot;N&quot; (attribute is absent)&lt;/Option&gt;
+            &lt;/Question&gt;
+            &lt;Question Type=&quot;InfoBox&quot; Descriptor=&quot;Contouring Instructions&quot;&gt;
+                &lt;Option&gt;In Segment Editor tab, select volume to create contours.&lt;/Option&gt;
+                &lt;Option&gt;   In Edit label map dropdown, use available tools to contour region of interest.&lt;/Option&gt;
+            &lt;/Question&gt;
+            &lt;Question Type=&quot;CheckBox&quot; Descriptor=&quot;Functionality&quot;&gt;
+                &lt;Option&gt;Images should scroll together&lt;/Option&gt;
+                &lt;Option&gt;Images should 'snap' to acquired axis for segmenting&lt;/Option&gt;
+            &lt;/Question&gt;
+        &lt;/QuestionSet&gt;
+    &lt;/Page&gt;
+    &lt;Page Descriptor=&quot;Brain CT-MR&quot; ID=&quot;Patient2&quot; EnableSegmentEditor=&quot;Y&quot;&gt;
+        &lt;Image ID=&quot;MR T2&quot; Type=&quot;Volume&quot; RotateToAcquisition=&quot;Y&quot;&gt;
+            &lt;Layer&gt;Background&lt;/Layer&gt;
+            &lt;DefaultDestination&gt;Green&lt;/DefaultDestination&gt;
+            &lt;DefaultOrientation&gt;Axial&lt;/DefaultOrientation&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\MRBrainT2.nrrd&lt;/Path&gt;
+        &lt;/Image&gt;
+        &lt;Image ID=&quot;MR T1&quot; Type=&quot;Volume&quot; RotateToAcquisition=&quot;Y&quot;&gt;
+            &lt;Layer&gt;Background&lt;/Layer&gt;
+            &lt;DefaultDestination&gt;Yellow&lt;/DefaultDestination&gt;
+            &lt;DefaultOrientation&gt;Coronal&lt;/DefaultOrientation&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\MRBrainT1.nrrd&lt;/Path&gt;
+        &lt;/Image&gt;
+        &lt;Image ID=&quot;CT&quot; Type=&quot;Volume&quot; RotateToAcquisition=&quot;Y&quot;&gt;
+            &lt;Layer&gt;Background&lt;/Layer&gt;
+            &lt;DefaultDestination&gt;Red&lt;/DefaultDestination&gt;
+            &lt;DefaultOrientation&gt;Axial&lt;/DefaultOrientation&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\CTBrain.nrrd&lt;/Path&gt;
+        &lt;/Image&gt;
+        &lt;QuestionSet ID=&quot;Create contours&quot; Descriptor=&quot;&quot;&gt;
+            &lt;Question Type=&quot;InfoBox&quot; Descriptor=&quot;Attributes&quot;&gt;
+                &lt;Option&gt;LinkViews=&quot;N&quot; (attribute is absent)&lt;/Option&gt;
+                &lt;Option&gt;RotateToAcquisition=&quot;Y&quot;&lt;/Option&gt;
+            &lt;/Question&gt;
+            &lt;Question Type=&quot;InfoBox&quot; Descriptor=&quot;Contouring Instructions&quot;&gt;
+                &lt;Option&gt;In Segment Editor tab, select volume to create contours.&lt;/Option&gt;
+                &lt;Option&gt;   In Edit label map dropdown, use available tools to contour region of interest.&lt;/Option&gt;
+            &lt;/Question&gt;
+            &lt;Question Type=&quot;CheckBox&quot; Descriptor=&quot;Functionality&quot;&gt;
+                &lt;Option&gt;Images don't scroll together&lt;/Option&gt;
+                &lt;Option&gt;Images do not rotate when segmenting - already in acquisition orientation&lt;/Option&gt;
+            &lt;/Question&gt;
+        &lt;/QuestionSet&gt;
+    &lt;/Page&gt;
+    &lt;Page Descriptor=&quot;Brain CT-MR&quot; ID=&quot;Patient3&quot; EnableSegmentEditor=&quot;Y&quot; LinkViews=&quot;Y&quot;&gt;
+        &lt;Image ID=&quot;MR T1&quot; Type=&quot;Volume&quot; RotateToAcquisition=&quot;Y&quot;&gt;
+            &lt;Layer&gt;Background&lt;/Layer&gt;
+            &lt;DefaultDestination&gt;Yellow&lt;/DefaultDestination&gt;
+            &lt;DefaultOrientation&gt;Axial&lt;/DefaultOrientation&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\MRBrainT1.nrrd&lt;/Path&gt;
+        &lt;/Image&gt;
+        &lt;Image ID=&quot;MR T2&quot; Type=&quot;Volume&quot; RotateToAcquisition=&quot;Y&quot;&gt;
+            &lt;Layer&gt;Background&lt;/Layer&gt;
+            &lt;DefaultDestination&gt;Green&lt;/DefaultDestination&gt;
+            &lt;DefaultOrientation&gt;Axial&lt;/DefaultOrientation&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\MRBrainT2.nrrd&lt;/Path&gt;
+        &lt;/Image&gt;
+        &lt;Image ID=&quot;CT&quot; Type=&quot;Volume&quot; RotateToAcquisition=&quot;Y&quot;&gt;
+            &lt;Layer&gt;Background&lt;/Layer&gt;
+            &lt;DefaultDestination&gt;Red&lt;/DefaultDestination&gt;
+            &lt;DefaultOrientation&gt;Axial&lt;/DefaultOrientation&gt;
+            &lt;Path&gt;ImageVolumes\CT-MR Brain\CTBrain.nrrd&lt;/Path&gt;
+        &lt;/Image&gt;
+        &lt;QuestionSet ID=&quot;Create contours&quot; Descriptor=&quot;&quot;&gt;
+            &lt;Question Type=&quot;InfoBox&quot; Descriptor=&quot;Attributes&quot;&gt;
+                &lt;Option&gt;LinkViews=&quot;Y&quot;&lt;/Option&gt;
+                &lt;Option&gt;RotateToAcquisition=&quot;Y&quot;&lt;/Option&gt;
+            &lt;/Question&gt;
+            &lt;Question Type=&quot;InfoBox&quot; Descriptor=&quot;Contouring Instructions&quot;&gt;
+                &lt;Option&gt;In Segment Editor tab, select volume to create contours.&lt;/Option&gt;
+                &lt;Option&gt;   In Edit label map dropdown, use available tools to contour region of interest.&lt;/Option&gt;
+            &lt;/Question&gt;
+            &lt;Question Type=&quot;CheckBox&quot; Descriptor=&quot;Functionality&quot;&gt;
+                &lt;Option&gt;Images don't scroll together even with LinkViews set to &quot;Y&quot;&lt;/Option&gt;
+                &lt;Option&gt;Images do not rotate when segmenting - already in acquisition orientation&lt;/Option&gt;
+            &lt;/Question&gt;
+        &lt;/QuestionSet&gt;
     &lt;/Page&gt;
 &lt;/Session&gt;
+
+
 </code></pre>
-<p><img alt="OneUpRedSlice" src="../assets/layout_oneupredslice.png" /></p>
+<h2 id="see-also">See also</h2>
 
 
 
@@ -2049,7 +2043,7 @@ are used in the <a href="../../elements_attributes/image/default_destination/">D
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../build_basics/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Building basics" rel="prev">
+          <a href="../example_link_multipleresponse/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Link &amp; multiple response" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -2058,20 +2052,20 @@ are used in the <a href="../../elements_attributes/image/default_destination/">D
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                Building basics
+                Link & multiple response
               </div>
             </div>
           </a>
         
         
           
-          <a href="../example_dicomread/" class="md-footer__link md-footer__link--next" aria-label="Next: Loading dicoms" rel="next">
+          <a href="../example_redisplay_contours/" class="md-footer__link md-footer__link--next" aria-label="Next: Redisplay contours" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Loading dicoms
+                Redisplay contours
               </div>
             </div>
             <div class="md-footer__button md-icon">
