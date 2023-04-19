@@ -26,8 +26,14 @@ Following you will find information to get the Image Quizzer installed and runni
 
 ### Image Quizzer
 
-The Image Quizzer project is currently available with special access permission through GitHub.
-This will be made public in the near future (estimate 2nd quarter 2023).
+Download the Image Quizzer here:
+
+https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer.git
+
+- The **master** branch has the release versions.
+- The **dev** branch is pre-release, with the latest features.
+- Use the Tags to download code only.
+
 
 Once downloaded, the following directory tree describes the basic files and folders 
 that may be relevant to the study administrator when developing the script. 
@@ -59,8 +65,9 @@ that may be relevant to the study administrator when developing the script.
 
 ### 3D Slicer
 
-Download and install [3D Slicer version 4.11.20210226](   
+Download and install [3D Slicer](   
 	https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482)
+	 version 4.11.20210226
 	
 	
 - Double click on the downloaded .exe file
@@ -167,7 +174,7 @@ are able to log into remotely.
 	responses for each observer separate.
     
 	If you don't have unique accounts, you risk overwriting a previous user's results.
-	You must move the current user's results folder into a secure area before the next observer starts his/her quiz session.
+	You must move the current user's results folder into a secure area before the next observer starts their quiz session.
     .
 There may be display issues if you are setting up the Image Quizzer so that the users can log in remotely. 
 This is related to OpenGL which 3D Slicer uses for the graphical display.

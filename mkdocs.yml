@@ -57,6 +57,7 @@ nav:
       - Looping: administrator/examples/example_looping.md
       - ROI colors: administrator/examples/example_roicolorfile.md
       - Link & multiple response: administrator/examples/example_link_multipleresponse.md
+      - Rotate to acquisition: administrator/examples/example_rotating.md
       - Redisplay contours: administrator/examples/example_redisplay_contours.md
       - Annotations (contours and lines): administrator/examples/example_annotations.md
       - ROI visibility: administrator/examples/example_roi_visibility.md
@@ -65,7 +66,7 @@ nav:
       - Session:
         - administrator/elements_attributes/session/index.md
         - ROIColorFile: administrator/elements_attributes/session/roi_colorfile.md
-        - EmailResults: administrator/elements_attributes/session/email.md
+        - EmailResultsTo: administrator/elements_attributes/session/email.md
         - RandomizePageGroups: administrator/elements_attributes/session/randomize_page_groups.md
         - ContourVisibility: administrator/elements_attributes/session/contour_visibility.md
       - Page:
@@ -93,6 +94,7 @@ nav:
         - MinMarkupLinesRequired: administrator/elements_attributes/image/min_markuplines_required.md
         - SegmentRequired: administrator/elements_attributes/image/segment_required.md
         - InitialSliceOffset: administrator/elements_attributes/image/initial_slice_offset.md
+        - RotateToAcquisition: administrator/elements_attributes/image/rotate_to_acquisition.md
         - LabelMapID: administrator/elements_attributes/image/labelmap_id.md
         - DisplayLabelMapID: administrator/elements_attributes/image/display_labelmap_id.md
         - ROIs:
