@@ -6,7 +6,7 @@ hide:
 # Rotate to acquisition
 
 This example focuses on [RotateToAcquisition](../elements_attributes/image/rotate_to_acquisition.md) (an attribute for the Image element).
-Also included is the [LinkViews](../elements_attributes/page/link_views.md) (an attribute for the Page element)
+Also included in this example is the [LinkViews](../elements_attributes/page/link_views.md) (an attribute for the Page element)
 attribute to demonstrate their basic functionality and how they may conflict with each other.
 
 Using the RotateToAcquisition attribute on an Image element, you can have an image
@@ -162,7 +162,7 @@ different angle.
 
 
 ```
-## See also
+
 
 
 

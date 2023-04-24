@@ -61,6 +61,7 @@ nav:
       - Redisplay contours: administrator/examples/example_redisplay_contours.md
       - Annotations (contours and lines): administrator/examples/example_annotations.md
       - ROI visibility: administrator/examples/example_roi_visibility.md
+      - 4D Volume load: administrator/examples/example_volumesequence.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -84,6 +85,7 @@ nav:
       - Image:
         - administrator/elements_attributes/image/index.md
         - ID: administrator/elements_attributes/image/id.md
+        - Type: administrator/elements_attributes/image/type.md
         - DicomRead: administrator/elements_attributes/image/dicom_read.md
         - ColorTable: administrator/elements_attributes/image/color_table.md 
         - Opacity: administrator/elements_attributes/image/opacity.md 
