@@ -598,7 +598,7 @@
   
     <li class="md-nav__item">
       <a href="examples/build_basics/" class="md-nav__link">
-        Building basics
+        Quiz building basics
       </a>
     </li>
   
@@ -1822,8 +1822,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#building-your-script" class="md-nav__link">
-    Building your script
+  <a href="#building-and-testing-your-script" class="md-nav__link">
+    Building and testing your script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#live-run" class="md-nav__link">
+    Live run
   </a>
   
 </li>
@@ -1853,23 +1860,24 @@ This script defines what images and questions are to be displayed and in what or
 It can be created using a simple editor like Notepad.</p>
 <p>Setting up the quiz XML is best done using a trial and error approach starting with the basic elements.
 Once the basic building blocks are in place, you can customize the quiz adding in more features.</p>
-<h2 id="building-your-script">Building your script</h2>
+<h2 id="building-and-testing-your-script">Building and testing your script</h2>
+<p>See the documentation for <a href="examples/build_basics/">Quiz building basics</a> for details on the quiz setup.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>When building your quiz, the administrator creates and makes changes to the original XML file.
-This is known throughout the documentation as the <em>master</em> quiz file.
-When the user starts a quiz session, a copy of this <em>master</em> quiz file, with the same name is placed in the user's results folder
-ready to record the session responses. This is known throughout the documentation as the <em>results</em> quiz file.</p>
-<p>After your initial run of the quiz, if you edit the master quiz XML file,
-<strong>you must delete the copy of the quiz in the user's results folder</strong> before your next run.
-Otherwise, your changes will not be recognized on the next run.</p>
+This is known throughout the documentation as the <strong>master</strong> quiz file.
+When a quiz session is first started, a copy of this <em>master</em> quiz file, with the same name is placed in the user's results folder
+ready to record the session responses. This is known throughout the documentation as the <strong>results</strong> quiz file.</p>
+<p>After your initial test run of the quiz, if you edit the master quiz XML file,
+<strong>you must delete the copy of the quiz in the user's results folder</strong> before you run your next test.
+Otherwise, your changes will not be implemented.</p>
+<p>What happens is that when the Begin button is clicked to start a session,
+the Image Quizzer checks the user's results folder to see if there is an existing results quiz.
+If there is, it assumes the user is going to resume the quiz and it opens this pre-existing file.</p>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
-This can be used in conjuction with the <em>ImageQuizzer.xsd</em> schema file found in the Resources\XML folder.
-The schema file is set up to do some immediate validation as you build your script.</p>
-</div>
+<h2 id="live-run">Live run</h2>
+<p>When you have finished creating your script, ensure there are no pre-existing results quiz files
+in the user's results folder. You want the user to start with an empty results folder.</p>
 
 
 
