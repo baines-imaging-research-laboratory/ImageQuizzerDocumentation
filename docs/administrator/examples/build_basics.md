@@ -5,6 +5,14 @@ hide:
 <!-- let javascript handle toc on left sidebar -->
 # Building basics
 
+This section presents a simple script with a desciption of the resulting layout.
+It also provides tips on the development process for building and testing your script. 
+
+!!! tip
+    Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
+    This can be used in conjuction with the *ImageQuizzer.xsd* schema file found in the Resources/XML folder.
+    The schema file is set up to do some immediate validation as you build your script.
+
 
 ## Prep
 
@@ -74,7 +82,7 @@ refer to the [Scripting references](../elements_attributes/index.md) section for
 When you are building your quiz, the general pattern is:
 
 1. create the XML quiz file (aka __master__ quiz)
-1. run ImageQuizzer 
+1. run ImageQuizzer to test your script
 1. make additional modifications to master quiz
 1. **remove quiz folder under the Users folder** (see tree structure below for location)
 1. rerun ImageQuizzer on modified master
@@ -93,9 +101,12 @@ User's folder found here:
 	
 
 ```
+
 !!! Note
-    In step 1, the Image Quizzer creates a copy of the master quiz in the user folder (the results quiz) to capture responses.
-	If you don't remove this results quiz folder (step 4), Image Quizzer will
-	assume the user is resuming the quiz that was already started. It reads the copied
-	quiz and the new modifications made to the master quiz will not be reflected.
+    During your test, when the Begin button is pressed, the Image Quizzer creates a copy
+	of the master quiz in the user folder (the results quiz) to capture responses.
+	If you make changes but don't remove this results quiz folder between tests, Image Quizzer will
+	assume the user is resuming the quiz that was already started. It reads the existing results
+	quiz file and the new modifications made to the master quiz will not be reflected.
 	
+	See also [Building your script \> Warning](../index.md#bulding-and-testing-your-script)

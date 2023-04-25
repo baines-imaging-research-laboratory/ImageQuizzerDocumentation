@@ -62,6 +62,8 @@ ROIs stored in segmentation or RTStruct files are loaded as Type="Segmentation" 
 
 ### VolumeSequence
 
+
+
 ### Segmentation
 
 For an example of loading images as Type="Segmentation" see the script example in [ROI Visibility](../../examples/example_roi_visibility.md#script-example)

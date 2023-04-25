@@ -49,7 +49,7 @@ nav:
     - Quiz examples: 
       - administrator/examples/index.md
       - Sample data: administrator/examples/sample_data.md
-      - Building basics: administrator/examples/build_basics.md
+      - Quiz building basics: administrator/examples/build_basics.md
       - Layouts: administrator/examples/example_layouts.md
       - Loading dicoms: administrator/examples/example_dicomread.md
       - Layers & colors: administrator/examples/example_layering.md

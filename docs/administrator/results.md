@@ -4,13 +4,13 @@ hide:
 ---
 # Response capture
 
-The quiz question responses are captured in a results xml file found in the Users/*Username*/ folder. If any annotations were created
+The quiz question responses are captured in a results xml file found in the **Users/*Username*/** folder. If any annotations were created
 (contours and/or markup measurement lines) these are found in subfolders, one for each Page.
 
 ## Location
 
 When the user first logs in to the Image Quizzer, a results XML file is created with the same
-name as the original master XML file. This file is placed in the Users/Username folder that gets created on the first login. 
+name as the original master XML file. This file is placed in the **Users/*Username*/** folder that gets created on the first login. 
 You will find the Users folder under the directory you defined to be the database directory.
 
 For example, *Observer1* has logged in to run the *ObserverContouringStudy* quiz.
