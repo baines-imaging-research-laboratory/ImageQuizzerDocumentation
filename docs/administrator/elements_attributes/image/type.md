@@ -62,7 +62,7 @@ ROIs stored in segmentation or RTStruct files are loaded as Type="Segmentation" 
 
 ### VolumeSequence
 
-
+For an example of loading 4D images as Type="VolumeSequence" see the script example in [4D VolumeSequence](../../examples/example_volumesequence.md)
 
 ### Segmentation
 

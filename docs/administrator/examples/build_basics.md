@@ -5,8 +5,17 @@ hide:
 <!-- let javascript handle toc on left sidebar -->
 # Building basics
 
-This section presents a simple script with a desciption of the resulting layout.
+The **master** quiz XML file can be created using a simple editor such as Notepad.
+This is where you enter XML elements and attributes that will define how the quiz
+images and associated questions are displayed.
+
+This section presents a simple script example with a desciption of the resulting layout.
 It also provides tips on the development process for building and testing your script. 
+
+Specifics for each element and attribute can be found in the 
+[Scripting references](../elements_attributes/index.md) section.
+
+
 
 !!! tip
     Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.

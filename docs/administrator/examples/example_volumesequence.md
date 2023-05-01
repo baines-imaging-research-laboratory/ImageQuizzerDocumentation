@@ -3,9 +3,11 @@ hide:
 - toc
 ---
 <!-- let javascript handle toc on left sidebar -->
-# 4D Volume load using VolumeSequence
+# VolumeSequence 4D Images
 
-This example shows how to load a 4D time series volume using the  Type="VolumeSequence" attribute.
+This example shows how to load 4D image volumes using the  Type="VolumeSequence" attribute.
+Using this attribute, the time sequence controls will be enabled 
+allowing the user to play the image frames as a movie.
 
 
 ## Prep
@@ -30,9 +32,9 @@ to a subfolder under ImageVolumes folder as shown.
 
 This script has 3 pages.
 
-* The first loads the volume that contains all time points as Type="VolumeSequence".
-* The second page loads the volume that contains only the first time point but loads it as Type="VolumeSequence".
-You will see the time Sequence controls are enabled but they don't 'play' the time series since there is only one frame.
+* The first loads the volume that contains all time points as Type="VolumeSequence". The time sequence controls are enabled and will play the image frames as a movie.
+* The second page loads the volume that contains only the first time point and loads it as Type="VolumeSequence".
+You will see the time Sequence controls are enabled but they don't play the time series since there is only one frame.
 * The third page loads again loads the volume that contains only the first time point but loads it as Type="Volume"
 You will see that the image looks the same as presented in Page 2 but the time sequence controls are greyed out.
 
