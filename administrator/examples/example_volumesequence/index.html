@@ -21,7 +21,7 @@
     
     
       
-        <title>4D Volume load - Image Quizzer Documentation</title>
+        <title>4D VolumeSequence - Image Quizzer Documentation</title>
       
     
     
@@ -88,7 +88,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#4d-volume-load-using-volumesequence" class="md-skip">
+        <a href="#volumesequence-4d-images" class="md-skip">
           Skip to content
         </a>
       
@@ -121,7 +121,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4D Volume load
+              4D VolumeSequence
             
           </span>
         </div>
@@ -557,6 +557,8 @@
         
           
         
+          
+        
       
       
         
@@ -615,6 +617,20 @@
     <li class="md-nav__item">
       <a href="../example_layouts/" class="md-nav__link">
         Layouts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_question_type/" class="md-nav__link">
+        Question types
       </a>
     </li>
   
@@ -777,12 +793,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          4D Volume load
+          4D VolumeSequence
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        4D Volume load
+        4D VolumeSequence
       </a>
       
         
@@ -1895,8 +1911,10 @@
 
 
 <!-- let javascript handle toc on left sidebar -->
-<h1 id="4d-volume-load-using-volumesequence">4D Volume load using VolumeSequence</h1>
-<p>This example shows how to load a 4D time series volume using the  Type="VolumeSequence" attribute.</p>
+<h1 id="volumesequence-4d-images">VolumeSequence 4D Images</h1>
+<p>This example shows how to load 4D image volumes using the  Type="VolumeSequence" attribute.
+Using this attribute, the time sequence controls will be enabled 
+allowing the user to play the image frames as a movie.</p>
 <h2 id="prep">Prep</h2>
 <p>For the following example, we will use the CT Cardio Volume Sequence sample dataset that is available when you open Slicer. </p>
 <p>Download and save the dataset as described in the <a href="../sample_data/#slicer-sample-datasets">sample data</a> section
@@ -1911,9 +1929,9 @@ to a subfolder under ImageVolumes folder as shown.</p>
 <h2 id="script-example">Script example</h2>
 <p>This script has 3 pages.</p>
 <ul>
-<li>The first loads the volume that contains all time points as Type="VolumeSequence".</li>
-<li>The second page loads the volume that contains only the first time point but loads it as Type="VolumeSequence".
-You will see the time Sequence controls are enabled but they don't 'play' the time series since there is only one frame.</li>
+<li>The first loads the volume that contains all time points as Type="VolumeSequence". The time sequence controls are enabled and will play the image frames as a movie.</li>
+<li>The second page loads the volume that contains only the first time point and loads it as Type="VolumeSequence".
+You will see the time Sequence controls are enabled but they don't play the time series since there is only one frame.</li>
 <li>The third page loads again loads the volume that contains only the first time point but loads it as Type="Volume"
 You will see that the image looks the same as presented in Page 2 but the time sequence controls are greyed out.</li>
 </ul>
