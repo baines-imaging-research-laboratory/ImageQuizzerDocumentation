@@ -28,5 +28,4 @@ It is a required attribute.
 
 ## Example
 
-!!! todo
-    Connect to example for Question Types
+See [Question type](../../../examples/example_question_type.md) examples.

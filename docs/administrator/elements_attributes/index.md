@@ -4,9 +4,11 @@ The quiz file is set up with XML elements. Special attributes are associated wit
 each element. The combination of elements and attributes enables the administrator to customize
 how the Image Quizzer display will display the images and questions and in what order.
 
-This section provides details for each element and attribute including available options and dependencies.
-The following table provides an overview of the elements, subelements and attributes.
+Following is a table giving an overview of the elements and attributes.
+These are linked to the details describing the available options and dependencies.
 
+
+!!! Note "Case Sensitive entries"
 
 |Element|Sub-1|Sub-2|Sub-3|Sub-4|Attribute|
 |--|--|--|--|--|--|
