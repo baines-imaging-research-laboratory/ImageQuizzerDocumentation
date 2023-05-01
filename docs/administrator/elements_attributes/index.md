@@ -10,10 +10,10 @@ The following table provides an overview of the elements, subelements and attrib
 
 |Element|Sub-1|Sub-2|Sub-3|Sub-4|Attribute|
 |--|--|--|--|--|--|
-|Session|||||ROIColorFIle|
-||||||RandomizePageGroups|
-||||||ContourVisibility|
-||||||EmailResultsTo|
+|[Session](session/index.md)|||||[ROIColorFIle](session/roi_colorfile.md)|
+||||||[RandomizePageGroups](session/randomize_page_groups.md)|
+||||||[ContourVisibility](session/contour_visibility.md)|
+||||||[EmailResultsTo](session/email.md)|
 |--|--|--|--|--|--|
 ||Page||||ID|
 ||||||Descriptor|
