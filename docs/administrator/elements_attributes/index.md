@@ -58,9 +58,3 @@ These are linked to the details describing the available options and dependencie
 ||||||[GroupLayout](questionset/question/group_layout.md)|
 |||||[Option](questionset/question/option.md)||
 
-
-
-
-
-
-![In a nutshell](../assets/XML ElementsAndAttributes.jpg)
