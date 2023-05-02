@@ -1,3 +1,7 @@
+---
+hide:
+- toc
+---
 # Elements and attributes
 
 The quiz file is set up with XML elements. Special attributes are associated with 
