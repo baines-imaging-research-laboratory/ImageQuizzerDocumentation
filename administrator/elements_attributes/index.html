@@ -251,6 +251,8 @@
           
             
               
+                
+              
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -1810,7 +1812,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -1840,8 +1844,11 @@
 <p>The quiz file is set up with XML elements. Special attributes are associated with 
 each element. The combination of elements and attributes enables the administrator to customize
 how the Image Quizzer display will display the images and questions and in what order.</p>
-<p>This section provides details for each element and attribute including available options and dependencies.
-The following table provides an overview of the elements, subelements and attributes.</p>
+<p>Following is a table giving an overview of the elements and attributes.
+These are linked to the details describing the available options and dependencies.</p>
+<div class="admonition note">
+<p class="admonition-title">Case Sensitive entries</p>
+</div>
 <table>
 <thead>
 <tr>
@@ -1855,12 +1862,12 @@ The following table provides an overview of the elements, subelements and attrib
 </thead>
 <tbody>
 <tr>
-<td>Session</td>
+<td><a href="session/">Session</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>ROIColorFIle</td>
+<td><a href="session/roi_colorfile/">ROIColorFIle</a></td>
 </tr>
 <tr>
 <td></td>
@@ -1868,7 +1875,7 @@ The following table provides an overview of the elements, subelements and attrib
 <td></td>
 <td></td>
 <td></td>
-<td>RandomizePageGroups</td>
+<td><a href="session/randomize_page_groups/">RandomizePageGroups</a></td>
 </tr>
 <tr>
 <td></td>
@@ -1876,7 +1883,7 @@ The following table provides an overview of the elements, subelements and attrib
 <td></td>
 <td></td>
 <td></td>
-<td>ContourVisibility</td>
+<td><a href="session/contour_visibility/">ContourVisibility</a></td>
 </tr>
 <tr>
 <td></td>
@@ -1884,231 +1891,7 @@ The following table provides an overview of the elements, subelements and attrib
 <td></td>
 <td></td>
 <td></td>
-<td>EmailResultsTo</td>
-</tr>
-<tr>
-<td>--</td>
-<td>--</td>
-<td>--</td>
-<td>--</td>
-<td>--</td>
-<td>--</td>
-</tr>
-<tr>
-<td></td>
-<td>Page</td>
-<td></td>
-<td></td>
-<td></td>
-<td>ID</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Descriptor</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>LinkViews</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Layout</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>PageGroup</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>AllowMultipleResponse</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>EnableSegmentEditor</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>SegmentRequiredOnAnyImage</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>MinMarkupLinesRequiredOnAnyImage</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Loop</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Image</td>
-<td></td>
-<td></td>
-<td>ID</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>DicomRead</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Type</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>LabelMapID</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>DisplayLabelMapID</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>RotateToAcquisition</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>ColorTable</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>Opacity</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>SegmentRequired</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>MinMarkupLinesRequired</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>InitialSliceOffset</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>DefaultDestination</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>DefaultOrientation</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>Layer</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>Path</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>ROIs</td>
-<td></td>
-<td>ROIVisibilityCode</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>ROI</td>
-<td></td>
+<td><a href="session/email/">EmailResultsTo</a></td>
 </tr>
 <tr>
 <td>--</td>
@@ -2120,11 +1903,11 @@ The following table provides an overview of the elements, subelements and attrib
 </tr>
 <tr>
 <td></td>
+<td><a href="page/">Page</a></td>
 <td></td>
-<td>QuestionSet</td>
 <td></td>
 <td></td>
-<td>ID</td>
+<td><a href="page/id/">ID</a></td>
 </tr>
 <tr>
 <td></td>
@@ -2132,15 +1915,7 @@ The following table provides an overview of the elements, subelements and attrib
 <td></td>
 <td></td>
 <td></td>
-<td>Descriptor</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td>Question</td>
-<td></td>
-<td>Type</td>
+<td><a href="page/descriptor/">Descriptor</a></td>
 </tr>
 <tr>
 <td></td>
@@ -2148,7 +1923,7 @@ The following table provides an overview of the elements, subelements and attrib
 <td></td>
 <td></td>
 <td></td>
-<td>Descriptor</td>
+<td><a href="page/link_views/">LinkViews</a></td>
 </tr>
 <tr>
 <td></td>
@@ -2156,7 +1931,7 @@ The following table provides an overview of the elements, subelements and attrib
 <td></td>
 <td></td>
 <td></td>
-<td>Min</td>
+<td><a href="page/layout/">Layout</a></td>
 </tr>
 <tr>
 <td></td>
@@ -2164,7 +1939,7 @@ The following table provides an overview of the elements, subelements and attrib
 <td></td>
 <td></td>
 <td></td>
-<td>Max</td>
+<td><a href="page/pagegroup/">PageGroup</a></td>
 </tr>
 <tr>
 <td></td>
@@ -2172,21 +1947,255 @@ The following table provides an overview of the elements, subelements and attrib
 <td></td>
 <td></td>
 <td></td>
-<td>GroupLayout</td>
+<td><a href="page/allow_multiple_response/">AllowMultipleResponse</a></td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td>Option</td>
+<td></td>
+<td><a href="page/enable_segment_editor/">EnableSegmentEditor</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="page/segment_required_on_any_image/">SegmentRequiredOnAnyImage</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="page/min_markuplines_required_on_any_image/">MinMarkupLinesRequiredOnAnyImage</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="page/loop/">Loop</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="image/">Image</a></td>
+<td></td>
+<td></td>
+<td><a href="image/id/">ID</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/dicom_read/">DicomRead</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/type/">Type</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/labelmap_id/">LabelMapID</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/display_labelmap_id/">DisplayLabelMapID</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/rotate_to_acquisition/">RotateToAcquisition</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/color_table/">ColorTable</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/opacity/">Opacity</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/segment_required/">SegmentRequired</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/min_markuplines_required/">MinMarkupLinesRequired</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/initial_slice_offset/">InitialSliceOffset</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/default_destination/">DefaultDestination</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/default_orientation/">DefaultOrientation</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/layer/">Layer</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/path/">Path</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/rois/">ROIs</a></td>
+<td></td>
+<td><a href="image/rois/roi_visibility_code/">ROIVisibilityCode</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="image/rois/roi/">ROI</a></td>
+<td></td>
+</tr>
+<tr>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+<td>--</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="questionset/">QuestionSet</a></td>
+<td></td>
+<td></td>
+<td><a href="questionset/id/">ID</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="questionset/descriptor/">Descriptor</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="questionset/question/">Question</a></td>
+<td></td>
+<td><a href="questionset/question/type/">Type</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="questionset/question/descriptor/">Descriptor</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="questionset/question/min/">Min</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="questionset/question/max/">Max</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="questionset/question/group_layout/">GroupLayout</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a href="questionset/question/option/">Option</a></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p><img alt="In a nutshell" src="../assets/XML%20ElementsAndAttributes.jpg" /></p>
+<p><img alt="In a nutshell" src="../assets/XML ElementsAndAttributes.jpg" /></p>
 
 
+
+  
 
 
 
@@ -2202,6 +2211,8 @@ The following table provides an overview of the elements, subelements and attrib
         <footer class="md-footer">
   
     
+      
+        
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
