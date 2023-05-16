@@ -153,7 +153,17 @@ There are two ways to run the Image Quizzer.
 		
 		    C:\Users\username\Documents\ImageDatabase\SlicerDicomDatabase
 	
- 
+
+## Test your installation
+
+You can test your installation by following the instructions for [building a simple script](../administrator/examples/build_basics.md).
+
+
+See [Quiz Examples](../administrator/examples/index.md) section in the Administrator's guide
+for examples showing how to build your script and activate various features available in the Image Quizzer.
+
+
+
 ## Distribution to observers
 
 Following are some options on how to get this tool to your observers/students:
@@ -202,7 +212,4 @@ This USB can then be plugged into the observers laptop or PC and the quiz is rea
 !!! tip
     VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; (admin rights are required).
 
-## Building the quiz script
 
-See [Quiz Examples](../administrator/examples/index.md) section in the Administrator's guide
-for instructions on building scripts and examples showing how to activate various features available in the Image Quizzer.

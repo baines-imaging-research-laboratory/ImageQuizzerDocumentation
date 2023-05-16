@@ -22,6 +22,10 @@ Specifics for each element and attribute can be found in the
     This can be used in conjuction with the *ImageQuizzer.xsd* schema file found in the Resources/XML folder.
     The schema file is set up to do some immediate validation as you build your script.
 
+!!! warning
+    Note the [Warning](../index.md) for building and testing your script.
+    (It could save you time and headaches.)
+
 
 ## Prep
 
