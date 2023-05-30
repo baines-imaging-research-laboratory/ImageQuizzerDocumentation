@@ -38,6 +38,11 @@ nav:
   - Home: 
     - index.md
     - Quick links: quicklinks.md
+    - Release notes:
+      - release/index.md
+      - v1.0.0: release/release_notes_v1.0.0.md
+      - v2.0.0: release/release_notes_v2.0.0.md
+      - v2.2.1: release/release_notes_v2.2.1.md
   - Getting started: getting_started/index.md
   - User guide:  
     - Using Image Quizzer: user/user.md
