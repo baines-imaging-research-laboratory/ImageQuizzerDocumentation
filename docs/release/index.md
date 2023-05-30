@@ -11,11 +11,13 @@ hide:
 
 ## Timeline
 
-For public release (branches master and dev)
+For public releases:
 
-<https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer>
+<https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer/releases>
 
+For development branch (not all new features are finalized):
 
+<https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer/tags>
 
 ![Timeline](assets/release_timeline.png)
 
