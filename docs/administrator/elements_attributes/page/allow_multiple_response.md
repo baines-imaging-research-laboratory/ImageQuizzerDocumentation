@@ -13,8 +13,8 @@ hide:
 | **Parent** | <[Page](index.md)\> ||
 | **Required** | no ||
 | **Syntax** | AllowMultipleResponse="*option*" |  |
-| **Options** | N | (default) multiple responses is disabled for the Page |
-|             | Y | multiple responses is disabled for the Page |
+| **Options** | N | (default) multiple responses are disabled for the Page |
+|             | Y | multiple responses are enabled for the Page |
 
 ## Description
 
