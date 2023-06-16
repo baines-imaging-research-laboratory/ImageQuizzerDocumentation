@@ -55,10 +55,9 @@ During the merge, the function will collect all the labelmaps from the labelmap 
 combine them and then save them to a folder for the current page. The merged labelmap filename will have
 the PageGroup#_PageID_LabelMapID-bainesquizlabel.nrrd.
 
-If the user presses the Previous button and then comes back to the page with the MergeLabelMaps attribute,
+If the user presses the Previous button to do some modifications and then Next to come back to the page with the MergeLabelMaps attribute,
 the merge will happen again and the current merge file will be overwritten. This way the user 
-can press previous to the looping page, then press 'Repeat' to create a new contour. The merged labelmap
-file will then contain all ROIs including the one just created.
-
+can press previous to the looping page, change previously drawn contours (if AllowMultipleResponse="Y"), 
+or press 'Repeat' to create a new page within that loop. 
 
 
