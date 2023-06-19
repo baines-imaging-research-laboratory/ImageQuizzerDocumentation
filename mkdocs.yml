@@ -106,7 +106,6 @@ nav:
         - RotateToAcquisition: administrator/elements_attributes/image/rotate_to_acquisition.md
         - LabelMapID: administrator/elements_attributes/image/labelmap_id.md
         - DisplayLabelMapID: administrator/elements_attributes/image/display_labelmap_id.md
-        - MergeLabelMaps: administrator/elements_attributes/image/merge_labelmaps.md
         - ROIs:
           - administrator/elements_attributes/image/rois/index.md
           - ROIVisibilityCode: administrator/elements_attributes/image/rois/roi_visibility_code.md

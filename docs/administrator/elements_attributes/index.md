@@ -42,7 +42,6 @@ These are linked to the details describing the available options and dependencie
 ||||||[SegmentRequired](image/segment_required.md)|
 ||||||[MinMarkupLinesRequired](image/min_markuplines_required.md)|
 ||||||[InitialSliceOffset](image/initial_slice_offset.md)|
-||||||[MergeLabelMaps](image/merge_labelmaps.md)|
 ||||[DefaultDestination](image/default_destination.md)|||
 ||||[DefaultOrientation](image/default_orientation.md)|||
 ||||[Layer](image/layer.md)|||
