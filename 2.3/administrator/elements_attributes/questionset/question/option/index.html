@@ -2107,20 +2107,29 @@
 </tr>
 <tr>
 <td><strong>Syntax</strong></td>
-<td>&lt;Option>text to display&lt;/Option></td>
+<td>&lt;Option>string&lt;/Option></td>
+<td>String holds text that is displayed for the question.</td>
+</tr>
+<tr>
 <td></td>
+<td></td>
+<td>For Type='Button', the string is a relative path to an external script.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="description">Description</h2>
 <p>An Option element is a child of a Question. It contains text that is to be displayed in the quiz questions.
+(See note for question of type Button)
 When observer presses the Next or Previous buttons, the Image Quizzer will capture the response for each Option element
 which is recorded in the <a href="../../../../results/#response">results file</a>.</p>
-<h2 id="example">Example</h2>
-<div class="admonition todo">
-<p class="admonition-title">Todo</p>
-<p>Connect to example for Question Types</p>
+<div class="admonition note">
+<p class="admonition-title">Button</p>
+<p>For a Button type of question, the text in the Option element represents the relative path to an external script
+that will be run when the user presses the button. The path stored is relative to the directory of the Image Quizzer data
+that was selected by the user at <a href="../../../../../user/user/#login">login time</a> .</p>
 </div>
+<h2 id="example">Example</h2>
+<p>See <a href="../../../../examples/example_question_type/">Question Types</a> for examples.</p>
 
 
 
