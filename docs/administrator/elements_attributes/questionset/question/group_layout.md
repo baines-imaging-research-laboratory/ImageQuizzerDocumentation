@@ -20,8 +20,8 @@ hide:
 ## Description
 
 The GroupLayout attribute gives you the ability to line up your options in a question box either vertically or horizontally.
+This attribute is only active for question types: Radio and CheckBox .
 
 ## Example
 
-!!! todo
-    Connect to example for Question Types
+See [Question Types](../../../examples/example_question_type.md) for examples.
