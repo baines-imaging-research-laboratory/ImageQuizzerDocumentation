@@ -16,6 +16,7 @@ hide:
 | **Syntax** | GroupLayout="*string*" |  |
 | **Options** | Vertical |(default) present options in a box vertically |
 |             | Horizontal |present options in a box horizontally|
+| **Restrictions** | | only for question types: Radio and CheckBox |
 
 ## Description
 
