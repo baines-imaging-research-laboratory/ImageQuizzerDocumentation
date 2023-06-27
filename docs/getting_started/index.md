@@ -24,18 +24,64 @@ Following you will find information to get the Image Quizzer installed and runni
 
 ## Installation
 
+
+### 3D Slicer
+
+Download and install [3D Slicer](   
+	https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482)
+	 version 4.11.20210226
+	
+	
+- Double click on the downloaded .exe file
+- Accept installation defaults
+
+##### Extensions
+
+- Install 3D Slicer extensions : SlicerRT, mpReview (optional)
+      * Open 3D Slicer
+      * Select View > Extension Manager
+      * In the Search field (upper right-hand corner) input SlicerRT
+      * Click Install
+      * There will be a message to say the extension was installed
+      * Click on Restart (bottom right-hand corner) and OK
+      * Repeat for mpReview extension (optional)
+          * This extension can be used as a preprocessor to convert dicom series slices to nrrd (or nifti) data volume to speed up loading of images when running the quiz
+
+##### Settings
+
+* Set Slicer application settings to be compatible with Image Quizzer
+    * Open 3D Slicer
+    * Select Edit>Application Settings
+    * Select DICOM in the left-hand panel
+    * Set Preferred multi-volume import format = volume sequence
+    * Set Load referenced series = Always
+    * Restart 3D Slicer if prompted
+
+!!! Note
+    We are using version 4.11.20210226; revision 29738
+    
+	Using any other version of Slicer may have unpredictable behavior for this application.
+
+
+
+
 ### Image Quizzer
 
-Download the Image Quizzer here:
+##### Download
 
-https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer.git
+Download the Image Quizzer [here](
+https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer/tags)
 
-- The **master** branch has the release versions.
-- The **dev** branch is pre-release, with the latest features.
-- Use the Tags to download code only.
+- The release versions are labeled QuizApp_v#.#.#
+- The pre-release, with the latest features are labeled dev_v#.#.#
 
+##### Extract
 
-Once downloaded, the following directory tree describes the basic files and folders 
+Once downloaded, extract all files from the BainesImageQuizzer-QuizApp_v#.#.# file.
+
+##### Components
+
+The following directory tree describes the basic files and folders 
 that may be relevant to the study administrator when developing the script. 
 
 
@@ -61,40 +107,6 @@ that may be relevant to the study administrator when developing the script.
     There are other files/folders not shown in this tree. They are not necessary for script development.
     They may be either under development or required for execution of the Image Quizzer module.	
 	
-
-
-### 3D Slicer
-
-Download and install [3D Slicer](   
-	https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482)
-	 version 4.11.20210226
-	
-	
-- Double click on the downloaded .exe file
-- Accept installation defaults
-- Install 3D Slicer extensions : SlicerRT, mpReview (optional)
-      * Open 3D Slicer
-      * Select View > Extension Manager
-      * In the Search field (upper right-hand corner) input SlicerRT
-      * Click Install
-      * There will be a message to say the extension was installed
-      * Click on Restart (bottom right-hand corner) and OK
-      * Repeat for mpReview extension (optional)
-          * This extension can be used as a preprocessor to convert dicom series slices to nrrd (or nifti) data volume to speed up loading of images when running the quiz
-
-* Set Slicer application settings to be compatible with Image Quizzer
-    * Open 3D Slicer
-    * Select Edit>Application Settings
-    * Select DICOM in the left-hand panel
-    * Set Preferred multi-volume import format = volume sequence
-    * Set Load referenced series = Always
-    * Restart 3D Slicer if prompted
-
-!!! Note
-    We are using version 4.11.20210226; revision 29738
-    
-	Using any other version of Slicer may have unpredictable behavior for this application.
-
 
 
 ### Connecting Image Quizzer to 3D Slicer
