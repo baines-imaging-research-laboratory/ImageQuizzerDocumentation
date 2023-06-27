@@ -24,6 +24,11 @@ hide:
 		  for images with a matching LabelMapID and combine them into one merged label map file.
 		- The merged image will be displayed.
 		- For details see [MergeLabelMaps](../administrator/elements_attributes/image/merge_labelmaps.md)
+	- (v2.3.0) Added new Question Type : Button
+		- The Button question will execute an external script.
+		- The Option element for this type of question stores the relative path to the script.
+		- The path is relative to the Image Quizzer data location defined by the user at login time.
+
 
 
 
