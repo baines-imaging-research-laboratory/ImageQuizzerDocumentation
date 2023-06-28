@@ -526,16 +526,63 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#image-quizzer" class="md-nav__link">
-    Image Quizzer
+  <a href="#3d-slicer" class="md-nav__link">
+    3D Slicer
+  </a>
+  
+    <nav class="md-nav" aria-label="3D Slicer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    Extensions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3d-slicer" class="md-nav__link">
-    3D Slicer
+  <a href="#settings" class="md-nav__link">
+    Settings
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-quizzer" class="md-nav__link">
+    Image Quizzer
+  </a>
+  
+    <nav class="md-nav" aria-label="Image Quizzer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    Download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extract" class="md-nav__link">
+    Extract
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2106,16 +2153,63 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#image-quizzer" class="md-nav__link">
-    Image Quizzer
+  <a href="#3d-slicer" class="md-nav__link">
+    3D Slicer
+  </a>
+  
+    <nav class="md-nav" aria-label="3D Slicer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extensions" class="md-nav__link">
+    Extensions
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3d-slicer" class="md-nav__link">
-    3D Slicer
+  <a href="#settings" class="md-nav__link">
+    Settings
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-quizzer" class="md-nav__link">
+    Image Quizzer
+  </a>
+  
+    <nav class="md-nav" aria-label="Image Quizzer">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    Download
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extract" class="md-nav__link">
+    Extract
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#components" class="md-nav__link">
+    Components
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2209,15 +2303,57 @@ Following you will find information to get the Image Quizzer installed and runni
 With some adjustments to the installation notes, this may also run on a MAC system.</p>
 </div>
 <h2 id="installation">Installation</h2>
-<h3 id="image-quizzer">Image Quizzer</h3>
-<p>Download the Image Quizzer here:</p>
-<p>https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer.git</p>
+<h3 id="3d-slicer">3D Slicer</h3>
+<p>Download and install <a href="https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482">3D Slicer</a>
+     version 4.11.20210226</p>
 <ul>
-<li>The <strong>master</strong> branch has the release versions.</li>
-<li>The <strong>dev</strong> branch is pre-release, with the latest features.</li>
-<li>Use the Tags to download code only.</li>
+<li>Double click on the downloaded .exe file</li>
+<li>Accept installation defaults</li>
 </ul>
-<p>Once downloaded, the following directory tree describes the basic files and folders 
+<h5 id="extensions">Extensions</h5>
+<ul>
+<li>Install 3D Slicer extensions : SlicerRT, mpReview (optional)<ul>
+<li>Open 3D Slicer</li>
+<li>Select View &gt; Extension Manager</li>
+<li>In the Search field (upper right-hand corner) input SlicerRT</li>
+<li>Click Install</li>
+<li>There will be a message to say the extension was installed</li>
+<li>Click on Restart (bottom right-hand corner) and OK</li>
+<li>Repeat for mpReview extension (optional)<ul>
+<li>This extension can be used as a preprocessor to convert dicom series slices to nrrd (or nifti) data volume to speed up loading of images when running the quiz</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="settings">Settings</h5>
+<ul>
+<li>Set Slicer application settings to be compatible with Image Quizzer<ul>
+<li>Open 3D Slicer</li>
+<li>Select Edit&gt;Application Settings</li>
+<li>Select DICOM in the left-hand panel</li>
+<li>Set Preferred multi-volume import format = volume sequence</li>
+<li>Set Load referenced series = Always</li>
+<li>Restart 3D Slicer if prompted</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We are using version 4.11.20210226; revision 29738</p>
+<p>Using any other version of Slicer may have unpredictable behavior for this application.</p>
+</div>
+<h3 id="image-quizzer">Image Quizzer</h3>
+<h5 id="download">Download</h5>
+<p>Download the Image Quizzer <a href="https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer/tags">here</a></p>
+<ul>
+<li>The release versions are labeled QuizApp_v#.#.#</li>
+<li>The pre-release, with the latest features are labeled dev_v#.#.#</li>
+</ul>
+<h5 id="extract">Extract</h5>
+<p>Once downloaded, extract all files from the BainesImageQuizzer-QuizApp_v#.#.# file.</p>
+<h5 id="components">Components</h5>
+<p>The following directory tree describes the basic files and folders 
 that may be relevant to the study administrator when developing the script. </p>
 <pre><code>.
 └─ ImageQuizzerProject/
@@ -2239,44 +2375,6 @@ that may be relevant to the study administrator when developing the script. </p>
 <p class="admonition-title">Note</p>
 <p>There are other files/folders not shown in this tree. They are not necessary for script development.
 They may be either under development or required for execution of the Image Quizzer module. </p>
-</div>
-<h3 id="3d-slicer">3D Slicer</h3>
-<p>Download and install <a href="https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482">3D Slicer</a>
-     version 4.11.20210226</p>
-<ul>
-<li>Double click on the downloaded .exe file</li>
-<li>Accept installation defaults</li>
-<li>
-<p>Install 3D Slicer extensions : SlicerRT, mpReview (optional)</p>
-<ul>
-<li>Open 3D Slicer</li>
-<li>Select View &gt; Extension Manager</li>
-<li>In the Search field (upper right-hand corner) input SlicerRT</li>
-<li>Click Install</li>
-<li>There will be a message to say the extension was installed</li>
-<li>Click on Restart (bottom right-hand corner) and OK</li>
-<li>Repeat for mpReview extension (optional)<ul>
-<li>This extension can be used as a preprocessor to convert dicom series slices to nrrd (or nifti) data volume to speed up loading of images when running the quiz</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>
-<p>Set Slicer application settings to be compatible with Image Quizzer</p>
-<ul>
-<li>Open 3D Slicer</li>
-<li>Select Edit&gt;Application Settings</li>
-<li>Select DICOM in the left-hand panel</li>
-<li>Set Preferred multi-volume import format = volume sequence</li>
-<li>Set Load referenced series = Always</li>
-<li>Restart 3D Slicer if prompted</li>
-</ul>
-</li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We are using version 4.11.20210226; revision 29738</p>
-<p>Using any other version of Slicer may have unpredictable behavior for this application.</p>
 </div>
 <h3 id="connecting-image-quizzer-to-3d-slicer">Connecting Image Quizzer to 3D Slicer</h3>
 <p>To connect the Image Quizzer module</p>
