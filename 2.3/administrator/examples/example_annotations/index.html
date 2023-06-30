@@ -689,6 +689,8 @@
         
           
         
+          
+        
       
       
         
@@ -983,6 +985,20 @@
     <li class="md-nav__item">
       <a href="../example_volumesequence/" class="md-nav__link">
         4D VolumeSequence
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_zoom_pan_sliceoffset/" class="md-nav__link">
+        Zoom Pan and Slice offset
       </a>
     </li>
   
@@ -1418,6 +1434,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -1669,13 +1689,41 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../elements_attributes/image/zoom_factor/" class="md-nav__link">
+        ZoomFactor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../elements_attributes/image/pan_origin/" class="md-nav__link">
+        PanOrigin
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3_4_18" type="checkbox" id="__nav_4_3_4_18" >
+      <input class="md-nav__toggle md-toggle " data-md-toggle="__nav_4_3_4_20" type="checkbox" id="__nav_4_3_4_20" >
       
       
         
@@ -1694,14 +1742,14 @@
         <div class="md-nav__link md-nav__link--index ">
           <a href="../../elements_attributes/image/rois/">ROIs</a>
           
-            <label for="__nav_4_3_4_18">
+            <label for="__nav_4_3_4_20">
               <span class="md-nav__icon md-icon"></span>
             </label>
           
         </div>
       
       <nav class="md-nav" aria-label="ROIs" data-md-level="4">
-        <label class="md-nav__title" for="__nav_4_3_4_18">
+        <label class="md-nav__title" for="__nav_4_3_4_20">
           <span class="md-nav__icon md-icon"></span>
           ROIs
         </label>
@@ -2102,9 +2150,51 @@
 is required to create segmentations or markup lines.</p>
 <p>A segmentation (also referred to as a contour) is created using the Segment Editor tab. The
 resulting contours are stored as label maps in a file with a .nrrd extension.</p>
+<p>Attributes associated with creating segmentations include:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Attribute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Page</td>
+<td><a href="../../elements_attributes/page/enable_segment_editor/">EnableSegmentEditor</a></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../../elements_attributes/page/segment_required_on_any_image/">SegmentationRequiredOnAnyImage</a></td>
+</tr>
+<tr>
+<td>Image</td>
+<td><a href="../../elements_attributes/image/segment_required/">SegmentRequired</a></td>
+</tr>
+</tbody>
+</table>
 <p>A markup line captures the length between two points selected by the user.
 The lines can be added using the Line Measurement Ruler tool in the Extra Tools tab.
 The results are stored in a file with the .mrk.json extension.</p>
+<p>Attributes associated with creating markup lines include:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Attribute</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Page</td>
+<td><a href="../../elements_attributes/page/min_markuplines_required_on_any_image/">MinMarkupLinesRequiredOnAnyImage</a></td>
+</tr>
+<tr>
+<td>Image</td>
+<td><a href="../../elements_attributes/image/min_markuplines_required/">MinMarkupLinesRequired</a></td>
+</tr>
+</tbody>
+</table>
 <p>User documentation on how to create these annotations can be found here:</p>
 <ul>
 <li><a href="../../../user/contouring/">How to contour</a></li>
