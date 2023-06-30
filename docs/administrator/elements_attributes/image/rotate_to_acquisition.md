@@ -14,7 +14,7 @@ hide:
 | **Parent** | <[Image](index.md)\> ||
 | **Required** | no ||
 | **Syntax** | RotateToAcquisition="*option*" |  |
-| **Options** | Y | image is loaded in the axquisition frame of reference|
+| **Options** | Y | image is loaded in the acquisition frame of reference|
 |             | N |(default) image is loaded in world coordinates frame of reference |
 
 

@@ -72,6 +72,7 @@ nav:
       - Annotations (contours and lines): administrator/examples/example_annotations.md
       - ROI visibility: administrator/examples/example_roi_visibility.md
       - 4D VolumeSequence: administrator/examples/example_volumesequence.md
+      - Zoom Pan and Slice offset: administrator/examples/example_zoom_pan_sliceoffset.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -110,6 +111,8 @@ nav:
         - LabelMapID: administrator/elements_attributes/image/labelmap_id.md
         - DisplayLabelMapID: administrator/elements_attributes/image/display_labelmap_id.md
         - MergeLabelMaps: administrator/elements_attributes/image/merge_labelmaps.md
+        - ZoomFactor: administrator/elements_attributes/image/zoom_factor.md
+        - PanOrigin: administrator/elements_attributes/image/pan_origin.md
         - ROIs:
           - administrator/elements_attributes/image/rois/index.md
           - ROIVisibilityCode: administrator/elements_attributes/image/rois/roi_visibility_code.md

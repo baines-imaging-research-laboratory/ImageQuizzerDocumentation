@@ -11,14 +11,32 @@ is required to create segmentations or markup lines.
 A segmentation (also referred to as a contour) is created using the Segment Editor tab. The
 resulting contours are stored as label maps in a file with a .nrrd extension.
 
+Attributes associated with creating segmentations include:
+
+| Element | Attribute |
+|---------|-----------|
+|Page | [EnableSegmentEditor](../elements_attributes/page/enable_segment_editor.md) |
+| | [SegmentationRequiredOnAnyImage](../elements_attributes/page/segment_required_on_any_image.md) |
+| Image | [SegmentRequired](../elements_attributes/image/segment_required.md) |
+
 A markup line captures the length between two points selected by the user.
 The lines can be added using the Line Measurement Ruler tool in the Extra Tools tab.
 The results are stored in a file with the .mrk.json extension.
+
+Attributes associated with creating markup lines include:
+
+| Element | Attribute |
+|---------|-----------|
+|Page | [MinMarkupLinesRequiredOnAnyImage](../elements_attributes/page/min_markuplines_required_on_any_image.md) |
+| Image | [MinMarkupLinesRequired](../elements_attributes/image/min_markuplines_required.md) |
+
 
 User documentation on how to create these annotations can be found here:
 
 - [How to contour](../../user/contouring.md)
 - [Create line measuremets](../../user/extratools.md#line-measurement)
+
+
 
 
 

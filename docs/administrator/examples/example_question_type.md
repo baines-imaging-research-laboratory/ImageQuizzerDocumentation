@@ -7,6 +7,8 @@ hide:
 
 This example shows the different formats available for presenting the quiz questions.
 
+See the table listing all available [question types](../elements_attributes/questionset/question/type.md).
+
 
 ## Prep
 

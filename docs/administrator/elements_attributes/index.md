@@ -43,6 +43,8 @@ These are linked to the details describing the available options and dependencie
 ||||||[MinMarkupLinesRequired](image/min_markuplines_required.md)|
 ||||||[InitialSliceOffset](image/initial_slice_offset.md)|
 ||||||[MergeLabelMaps](image/merge_labelmaps.md)|
+||||||[ZoomFactor](image/zoom_factor.md)|
+||||||[PanOrigin](image/pan_origin.md)|
 ||||[DefaultDestination](image/default_destination.md)|||
 ||||[DefaultOrientation](image/default_orientation.md)|||
 ||||[Layer](image/layer.md)|||

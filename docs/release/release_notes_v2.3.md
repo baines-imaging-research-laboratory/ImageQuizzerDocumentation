@@ -28,7 +28,10 @@ hide:
 		- The Button question will execute an external script.
 		- The Option element for this type of question stores the relative path to the script.
 		- The path is relative to the Image Quizzer data location defined by the user at login time.
-
+	- (v2.3.0) Added new Image attributes ZoomFactor and PanOrigin
+		- You can now default the image for the initial view to be zoomed in or out.
+		- Using PanOrigin, you can move the image view to be centred at a different origin.
+		- These attributes along with InitialSliceOffset can help to focus the view on a region of interest when the image is loaded.
 
 
 
