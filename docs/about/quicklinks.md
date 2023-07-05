@@ -23,7 +23,7 @@ Carol.Johnson@lhsc.on.ca
 
 Get notified when there is a new release.
 
-![Email subscribe](assets/QRCode.png)
+![Email subscribe](../assets/QRCode.png)
 
 ## Baines Imaging Research Laboratories
 
@@ -31,5 +31,5 @@ Get notified when there is a new release.
 
 ## Image Quizzer overview
 
-![ImNO 2023 Poster](assets/Poster_ImNO2023.png)
+![ImNO 2023 Poster](../assets/Poster_ImNO2023.png)
 
