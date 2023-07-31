@@ -95,7 +95,7 @@ contour and markup files if any exist.
 ```
 .
 └─ImageDatabase/
-   ├─SlicerDicomDatabse/
+   ├─SlicerDicomDatabase/
    └─Users/
      ├─Observer1/
      │ └─ObserverContouringStudy.zip

@@ -31,6 +31,7 @@ These are linked to the details describing the available options and dependencie
 ||||||[SegmentRequiredOnAnyImage](page/segment_required_on_any_image.md)|
 ||||||[MinMarkupLinesRequiredOnAnyImage](page/min_markuplines_required_on_any_image.md)|
 ||||||[Loop](page/loop.md)|
+||||||[UserInteractionLog](page/user_interaction_log.md) |
 |||[Image](image/index.md)|||[ID](image/id.md)|
 ||||||[DicomRead](image/dicom_read.md)|
 ||||||[Type](image/type.md)|

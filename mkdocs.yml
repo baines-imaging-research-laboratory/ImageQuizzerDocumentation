@@ -66,6 +66,7 @@ nav:
       - ROI visibility: administrator/examples/example_roi_visibility.md
       - 4D VolumeSequence: administrator/examples/example_volumesequence.md
       - Zoom Pan and Slice offset: administrator/examples/example_zoom_pan_sliceoffset.md
+      - User interaction log: administrator/examples/example_user_interaction_log.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:
@@ -86,6 +87,7 @@ nav:
         - LinkViews: administrator/elements_attributes/page/link_views.md
         - AllowMultipleResponse: administrator/elements_attributes/page/allow_multiple_response.md
         - MinMarkupLinesRequiredOnAnyImage: administrator/elements_attributes/page/min_markuplines_required_on_any_image.md
+        - UserInteractionLog: administrator/elements_attributes/page/user_interaction_log.md
       - Image:
         - administrator/elements_attributes/image/index.md
         - ID: administrator/elements_attributes/image/id.md
