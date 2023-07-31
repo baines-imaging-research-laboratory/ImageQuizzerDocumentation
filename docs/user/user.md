@@ -17,7 +17,14 @@ Once the Image Quizzer is started, you start your session by logging in.
 
 ![login](assets/login-user1.png)
 
-There are 3 steps to launch the quiz.
+Following are the steps to launch the quiz.
+
+1. User Name
+
+	The login screen will display the Windows login user name as a default.
+	The user has the option to change this. (This is convenient for a user
+	working off a USB stick which is being plugged into multiple PC's with
+	different login user names.)
 
 1. Define location for Image Quizzer data.
 

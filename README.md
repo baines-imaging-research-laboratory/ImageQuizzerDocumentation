@@ -21,7 +21,7 @@ The tool can be run from any computer, enabling the observer to perform the stud
   <em>
     Our team - 
     <a href="https://bainesimaging.com/"
-      >https://bainesimaging.com></a>
+      >https://bainesimaging.com</a>
   </em>
 </p>
 
