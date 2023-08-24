@@ -568,6 +568,8 @@
         
           
         
+          
+        
       
       
         
@@ -752,6 +754,20 @@
     <li class="md-nav__item">
       <a href="../../../examples/example_redisplay_contours/" class="md-nav__link">
         Redisplay contours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_merge_labelmaps/" class="md-nav__link">
+        Merge Labelmaps
       </a>
     </li>
   
@@ -2243,18 +2259,13 @@
 </tr>
 <tr>
 <td><strong>Dependencies</strong></td>
-<td>For current page/image elements</td>
+<td>For current page &amp; image elements</td>
+<td>(ie. page where historical contours are merged and displayed)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
 <td>DisplayLabelMapID - exists</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>Path for image matches image on historical page</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>PageGroup - number matches that of historical element</td>
 </tr>
 <tr>
 <td></td>
@@ -2268,13 +2279,28 @@
 </tr>
 <tr>
 <td></td>
-<td>For historical page/image elements</td>
-<td>LabelMapID - matches DisplayLabelMapID</td>
+<td></td>
+<td>Looping - off</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
-<td>Path for image matches image on current page</td>
+<td>PageGroup - number matches that of historical element</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Path for image matches image on historical page</td>
+</tr>
+<tr>
+<td></td>
+<td>For historical page &amp; image elements</td>
+<td>(ie. pages that will hold contours to be merged)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>LabelMapID - matches DisplayLabelMapID</td>
 </tr>
 <tr>
 <td></td>
@@ -2284,12 +2310,17 @@
 <tr>
 <td></td>
 <td></td>
-<td>Page ID and Descriptor match for all repetitions (ignoring 'Rep##')</td>
+<td>EnableSegmentEditor='Y'</td>
 </tr>
 <tr>
 <td></td>
 <td></td>
 <td>PageGroup number match to current page</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Path for image matches image on current page</td>
 </tr>
 </tbody>
 </table>

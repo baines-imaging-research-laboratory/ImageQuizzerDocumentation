@@ -568,6 +568,8 @@
         
           
         
+          
+        
       
       
         
@@ -752,6 +754,20 @@
     <li class="md-nav__item">
       <a href="../../../examples/example_redisplay_contours/" class="md-nav__link">
         Redisplay contours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_merge_labelmaps/" class="md-nav__link">
+        Merge Labelmaps
       </a>
     </li>
   
@@ -1183,6 +1199,19 @@
   <a href="#example" class="md-nav__link">
     Example
   </a>
+  
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    See also:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2204,6 +2233,19 @@
     Example
   </a>
   
+    <nav class="md-nav" aria-label="Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    See also:
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2267,12 +2309,18 @@
 </table>
 <p>See also: <a href="../../session/randomize_page_groups/">Randomizing pages</a>,  <a href="../../../results/#randomizedpagegroupindices">RandomizedPageGroupIndices</a></p>
 <h2 id="description">Description</h2>
-<p>The PageGroup attribute can be assigned by the administrator. If it hasn't been defined in the original XML master quiz file,
-the Image Quizzer will add this attribute to the results quiz file and assign numbers consecutively starting at '1'. (This is
-helpful for cross referencing the <a href="../../../results/#annotations-subfolders">user's annotations results subfolders</a> which have the PageGroup numbers embedded in the name).</p>
-<p>When setting up for randomizing, you can use the PageGroup numbers to group Pages together. For example, if you want to 
-randomize patients but each patient has 3 Pages (baseline, follow-up1, follow-up2), you would assign 1 PageGroup number to all 3 Pages.
-Another example could be if one patient has images from multiple lesions that are set up to display on different pages.</p>
+<p>This attribute can be used to keep Pages together and is particularly valuable if you intend to randomize
+the presentation of patient images.</p>
+<p>For example, consider the situation where patient randomization is desired, and each patient
+has 3 Pages (baseline, follow-up1, follow-up2). Assigning a common PageGroup number 
+to all three Pages would prevent the separation of these images during the randomization process.
+and as a result, the images would be presented sequentially within the quiz.</p>
+<p>Another application of the PageGroup attribute is for implementing the Merge Label Maps functionality.
+When employing the <a href="../../image/merge_labelmaps/">MergeLabelMap</a> attribute, it is essential to designate identical PageGroup numbers
+to both the Page where contouring is initiated and the Page where the combined contours are displayed.</p>
+<p>If the PageGroup attribute is not defined in the original XML master quiz file,
+the Image Quizzer will add this attribute to the results quiz file and assign numbers consecutively starting at '1'.
+(This is helpful for cross referencing the <a href="../../../results/#annotations-subfolders">user's annotations results subfolders</a> which have the PageGroup numbers embedded in the name).</p>
 <h2 id="pagegroup0">PageGroup="0"</h2>
 <p>Any pages assigned a group number of 0 will always appear at the beginning of the quiz. 
 If more than one Page has a page group number of 0, these pages will appear in the order read in.
@@ -2282,11 +2330,7 @@ The remaining pages are randomized. Following are some use cases for assigning p
 <li>isolate certain images that all observers will see at the beginning of the quiz before randomization in order to establish a baseline</li>
 </ul>
 <h2 id="example">Example</h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>See also <a href="../../../examples/example_randomizing/">randomizing example</a> for a plug and play example.</p>
-</div>
-<p>Master quiz:</p>
+<p>Following is an overview of PageGroup assignments if setting up for randomizing:</p>
 <pre><code>&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
     &lt;Page ID=&quot;Intro&quot; Description=&quot;Instructions&quot; PageGroup=&quot;0&quot;&gt;
         ...
@@ -2322,6 +2366,11 @@ PatientA_Followup 1
 PatientB_Planning
 PatientB_Followup 1
 </code></pre>
+<h3 id="see-also">See also:</h3>
+<ul>
+<li><a href="../../../examples/example_merge_labelmaps/">merging label maps example</a></li>
+<li><a href="../../../examples/example_randomizing/">randomizing example</a></li>
+</ul>
 
 
 

@@ -568,6 +568,8 @@
         
           
         
+          
+        
       
       
         
@@ -752,6 +754,20 @@
     <li class="md-nav__item">
       <a href="../../../examples/example_redisplay_contours/" class="md-nav__link">
         Redisplay contours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_merge_labelmaps/" class="md-nav__link">
+        Merge Labelmaps
       </a>
     </li>
   
@@ -2282,6 +2298,11 @@
 <td>Y</td>
 <td>interaction logs are created for each page</td>
 </tr>
+<tr>
+<td><strong>Depedencies</strong></td>
+<td>SlicerOpenCV</td>
+<td>required Slicer Extension as described in <a href="../../../../getting_started/#extensions">Getting Started</a> (used to capture CPU Uptime)</td>
+</tr>
 </tbody>
 </table>
 <h2 id="description">Description</h2>
@@ -2315,9 +2336,9 @@ and the IJK values of the loaded image volumes displayed within those windows.</
 - Screen coordinates X,Y for corner location
 - Viewing window height, width (pixels),
 - Background image name I,J,K,
-- Foreground image name I,J,K,
+- Foreground image name I,J,K,  (zeros if no foreground image)
 - Background transformation 4x4 matrix (XY to IJK),
-- Foreground transformation 4x4 matrix (XY to IJK)
+- Foreground transformation 4x4 matrix (XY to IJK)   (zeros if no foreground image)
 </code></pre>
 <h2 id="example">Example</h2>
 <p>See the <a href="../../../examples/example_user_interaction_log/">user interaction log example</a>

@@ -731,6 +731,8 @@
         
           
         
+          
+        
       
       
         
@@ -915,6 +917,20 @@
     <li class="md-nav__item">
       <a href="../administrator/examples/example_redisplay_contours/" class="md-nav__link">
         Redisplay contours
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/examples/example_merge_labelmaps/" class="md-nav__link">
+        Merge Labelmaps
       </a>
     </li>
   
@@ -2448,15 +2464,23 @@ With some adjustments to the installation notes, this may also run on a MAC syst
 <li>Double click on the downloaded .exe file</li>
 <li>Accept installation defaults</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>We are using version 4.11.20210226; revision 29738</p>
+<p>Using any other version of Slicer may have unpredictable behavior for this application.</p>
+</div>
 <h5 id="extensions">Extensions</h5>
 <ul>
-<li>Install 3D Slicer extensions : SlicerRT, mpReview (optional)<ul>
+<li>Install 3D Slicer extensions : SlicerRT, SlicerOpenCV, mpReview (optional)<ul>
 <li>Open 3D Slicer</li>
-<li>Select View &gt; Extension Manager</li>
+<li>Select View &gt; Extension Manager<ul>
 <li>In the Search field (upper right-hand corner) input SlicerRT</li>
 <li>Click Install</li>
 <li>There will be a message to say the extension was installed</li>
 <li>Click on Restart (bottom right-hand corner) and OK</li>
+</ul>
+</li>
+<li>Repeat for SlicerOpenCV</li>
 <li>Repeat for mpReview extension (optional)<ul>
 <li>This extension can be used as a preprocessor to convert dicom series slices to nrrd (or nifti) data volume to speed up loading of images when running the quiz</li>
 </ul>
@@ -2476,11 +2500,6 @@ With some adjustments to the installation notes, this may also run on a MAC syst
 </ul>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We are using version 4.11.20210226; revision 29738</p>
-<p>Using any other version of Slicer may have unpredictable behavior for this application.</p>
-</div>
 <h3 id="image-quizzer">Image Quizzer</h3>
 <h5 id="download">Download</h5>
 <p>Download the Image Quizzer <a href="https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer/tags">here</a></p>
