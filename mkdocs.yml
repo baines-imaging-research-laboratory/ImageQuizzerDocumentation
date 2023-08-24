@@ -62,6 +62,7 @@ nav:
       - Link & multiple response: administrator/examples/example_link_multipleresponse.md
       - Rotate to acquisition: administrator/examples/example_rotating.md
       - Redisplay contours: administrator/examples/example_redisplay_contours.md
+      - Merge Labelmaps: administrator/examples/example_merge_labelmaps.md
       - Annotations (contours and lines): administrator/examples/example_annotations.md
       - ROI visibility: administrator/examples/example_roi_visibility.md
       - 4D VolumeSequence: administrator/examples/example_volumesequence.md

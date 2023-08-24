@@ -35,15 +35,23 @@ Download and install [3D Slicer](
 - Double click on the downloaded .exe file
 - Accept installation defaults
 
+!!! Warning
+    We are using version 4.11.20210226; revision 29738
+    
+	Using any other version of Slicer may have unpredictable behavior for this application.
+
+
+
 ##### Extensions
 
-- Install 3D Slicer extensions : SlicerRT, mpReview (optional)
+- Install 3D Slicer extensions : SlicerRT, SlicerOpenCV, mpReview (optional)
       * Open 3D Slicer
       * Select View > Extension Manager
-      * In the Search field (upper right-hand corner) input SlicerRT
-      * Click Install
-      * There will be a message to say the extension was installed
-      * Click on Restart (bottom right-hand corner) and OK
+		  * In the Search field (upper right-hand corner) input SlicerRT
+		  * Click Install
+		  * There will be a message to say the extension was installed
+		  * Click on Restart (bottom right-hand corner) and OK
+      * Repeat for SlicerOpenCV
       * Repeat for mpReview extension (optional)
           * This extension can be used as a preprocessor to convert dicom series slices to nrrd (or nifti) data volume to speed up loading of images when running the quiz
 
@@ -56,12 +64,6 @@ Download and install [3D Slicer](
     * Set Preferred multi-volume import format = volume sequence
     * Set Load referenced series = Always
     * Restart 3D Slicer if prompted
-
-!!! Note
-    We are using version 4.11.20210226; revision 29738
-    
-	Using any other version of Slicer may have unpredictable behavior for this application.
-
 
 
 

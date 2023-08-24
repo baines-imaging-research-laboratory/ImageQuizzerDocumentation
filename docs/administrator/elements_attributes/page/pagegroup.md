@@ -19,13 +19,24 @@ See also: [Randomizing pages](../session/randomize_page_groups.md),  [Randomized
 
 ## Description
 
-The PageGroup attribute can be assigned by the administrator. If it hasn't been defined in the original XML master quiz file,
-the Image Quizzer will add this attribute to the results quiz file and assign numbers consecutively starting at '1'. (This is
-helpful for cross referencing the [user's annotations results subfolders](../../results.md#annotations-subfolders) which have the PageGroup numbers embedded in the name).
+This attribute can be used to keep Pages together and is particularly valuable if you intend to randomize
+the presentation of patient images.
 
-When setting up for randomizing, you can use the PageGroup numbers to group Pages together. For example, if you want to 
-randomize patients but each patient has 3 Pages (baseline, follow-up1, follow-up2), you would assign 1 PageGroup number to all 3 Pages.
-Another example could be if one patient has images from multiple lesions that are set up to display on different pages.
+
+For example, consider the situation where patient randomization is desired, and each patient
+has 3 Pages (baseline, follow-up1, follow-up2). Assigning a common PageGroup number 
+to all three Pages would prevent the separation of these images during the randomization process.
+and as a result, the images would be presented sequentially within the quiz.
+
+
+Another application of the PageGroup attribute is for implementing the Merge Label Maps functionality.
+When employing the [MergeLabelMap](../image/merge_labelmaps.md) attribute, it is essential to designate identical PageGroup numbers
+to both the Page where contouring is initiated and the Page where the combined contours are displayed.
+
+
+ If the PageGroup attribute is not defined in the original XML master quiz file,
+the Image Quizzer will add this attribute to the results quiz file and assign numbers consecutively starting at '1'.
+(This is helpful for cross referencing the [user's annotations results subfolders](../../results.md#annotations-subfolders) which have the PageGroup numbers embedded in the name).
 
 
 ## PageGroup="0"
@@ -40,11 +51,7 @@ The remaining pages are randomized. Following are some use cases for assigning p
 
 ## Example
 
-!!! Note
-    See also [randomizing example](../../examples/example_randomizing.md) for a plug and play example.
-	
-	
-Master quiz:
+Following is an overview of PageGroup assignments if setting up for randomizing:
 
 ```
 <Session RandomizePageGroups="Y">
@@ -88,3 +95,8 @@ PatientB_Planning
 PatientB_Followup 1
 ```
 
+### See also:
+
+- [merging label maps example](../../examples/example_merge_labelmaps.md)
+- [randomizing example](../../examples/example_randomizing.md)
+	

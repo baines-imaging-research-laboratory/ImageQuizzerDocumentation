@@ -18,7 +18,8 @@ When you enable this feature, the application will:
 - generate a log file that captures the screen XY coordinates of the displayed viewing windows and the corresponding 
 IJK coordinates of the image volume displayed
 	
-See [UserInteractionLog](../elements_attributes/page/user_interaction_log.md) for details.
+See [UserInteractionLog](../elements_attributes/page/user_interaction_log.md) in the Scripting References section
+ for log file details.
 
  
 

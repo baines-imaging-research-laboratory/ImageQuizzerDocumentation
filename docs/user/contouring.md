@@ -34,7 +34,7 @@ The user can create a contour on images that have the Segment Editor enabled.
     You can also use the undo/redo buttons.
 
 
-At this time only certain buttons are activated:
+The following table describes functionalities of the editing tool:
 
 | Tool name | Functionality | Notes |
 |---|---|---|
@@ -44,6 +44,8 @@ At this time only certain buttons are activated:
 | DrawEffect | to draw a contour with a 'pen' | |
 | ChangeLabelEffect | to change a previously drawn contour's index#/color | select Input as the color to change and Output as the color to change to |
 | Undo/Redo | remove or restore previous contour | |
+| Sphere | to create a 3D contour that spans multiple slices ||
+| Smudge | automatically toggle between erase and draw  | starting inside a contour toggles to draw; starting outside contour toggles to erase |
 
 
 

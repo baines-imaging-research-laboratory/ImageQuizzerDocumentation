@@ -15,6 +15,8 @@ hide:
 | **Syntax** | UserInteractionLog="*option*" |||
 | **Options** | N | (default) interaction logs are not created |
 |             | Y | interaction logs are created for each page |
+| **Depedencies** | SlicerOpenCV | required Slicer Extension as described in [Getting Started](../../../getting_started/index.md#extensions) (used to capture CPU Uptime)|
+
 
 ## Description
 
@@ -53,9 +55,9 @@ Following is a list of the information captured in each log file:
     - Screen coordinates X,Y for corner location
 	- Viewing window height, width (pixels),
 	- Background image name I,J,K,
-	- Foreground image name I,J,K,
+	- Foreground image name I,J,K,  (zeros if no foreground image)
 	- Background transformation 4x4 matrix (XY to IJK),
-	- Foreground transformation 4x4 matrix (XY to IJK)
+	- Foreground transformation 4x4 matrix (XY to IJK)   (zeros if no foreground image)
 
 
 

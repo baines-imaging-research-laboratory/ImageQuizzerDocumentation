@@ -16,16 +16,19 @@ hide:
 | **Syntax** | MergeLabelMaps="*option*" |  |
 | **Options** | Y | previous label maps are merged into one file and displayed|
 |             | N |(default) no merged label maps are created|
-| **Dependencies**| For current page/image elements |DisplayLabelMapID - exists|
-||| Path for image matches image on historical page |
-|||PageGroup - number matches that of historical element|
+| **Dependencies**| For current page & image elements |  (ie. page where historical contours are merged and displayed) |
+||| DisplayLabelMapID - exists |
 |||SegmentEditor - off|
 |||SegmentRequiredOnAnyImage - off|
-||For historical page/image elements| LabelMapID - matches DisplayLabelMapID |
-||| Path for image matches image on current page |
+|||Looping - off |
+|||PageGroup - number matches that of historical element|
+||| Path for image matches image on historical page |
+||For historical page & image elements| (ie. pages that will hold contours to be merged) |
+||| LabelMapID - matches DisplayLabelMapID |
 |||Loop='Y'|
-||| Page ID and Descriptor match for all repetitions (ignoring 'Rep##')|
+|||EnableSegmentEditor='Y' |
 || | PageGroup number match to current page |
+||| Path for image matches image on current page |
 
 
 
