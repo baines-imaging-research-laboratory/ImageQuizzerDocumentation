@@ -65,6 +65,7 @@ nav:
       - Merge Labelmaps: administrator/examples/example_merge_labelmaps.md
       - Annotations (contours and lines): administrator/examples/example_annotations.md
       - ROI visibility: administrator/examples/example_roi_visibility.md
+      - Gold standard - Learning tool: administrator/examples/example_gold_standard.md
       - 4D VolumeSequence: administrator/examples/example_volumesequence.md
       - Zoom Pan and Slice offset: administrator/examples/example_zoom_pan_sliceoffset.md
       - User interaction log: administrator/examples/example_user_interaction_log.md
