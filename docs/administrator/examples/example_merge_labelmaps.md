@@ -90,7 +90,8 @@ This is followed by the display of the merged contours.
 
 !!! Note
 	Pixel locations that have overlapping contours are rendered using the contour label associated with the greater label number.
-	
+<!--	
 ![First contour](../assets/example_mergelabelmaps_contour1.png)
 ![Second contour](../assets/example_mergelabelmaps_contour2.png)
 ![Merged contours](../assets/example_mergelabelmaps_merged.png)
+-->
