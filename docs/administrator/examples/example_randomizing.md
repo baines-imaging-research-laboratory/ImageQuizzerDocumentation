@@ -50,8 +50,7 @@ Save each dataset to a subfolder under ImageVolumes/ as shown.
           ├─ MRHead/
           ├─   └─ MRHead.nrrd
           ├─ MRBrainTumor1/
-          ├─   ├─ MRBrainTumor1.nrrd
-          ├─   └─ BaselineVolume.nrrd
+          ├─   └─ MRBrainTumor1.nrrd
           └─ MRBrainTumor2/
                └─ MRBrainTumor2.nrrd
 ```
