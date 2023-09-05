@@ -6,7 +6,7 @@ hide:
 
 # Getting started
 
-The Image Quizzer is a tool that was designed to run as a module on the  <a href="https://slicer.org" target="_blank">3D Slicer</a> platform.
+The Image Quizzer is a tool that was designed to run as a module on the 3D Slicer platform.
 Following you will find information to get the Image Quizzer installed and running on your computer.
 
 ## System Requirements
@@ -224,7 +224,7 @@ We have had success using:
 
 Distribution to observers can be done by setting up a USB with 3D Slicer and the Image Quizzer module already installed, along with encrypted study data and the XML quiz file.
 This USB can then be plugged into the observers laptop or PC and the quiz is ready-to-go. 
-Use ImageQuizzerStartup-USB.bat to start the Image Quizzer as described above in [How to start the ImageQuizzer](.#how-to-start-the-image-quizzer)
+Use ImageQuizzerStartup-USB.bat to start the Image Quizzer as described above in [How to start the ImageQuizzer](#how-to-start-the-image-quizzer)
 
 !!! tip
     VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; (admin rights are required).
