@@ -23,4 +23,4 @@ hide:
 	The objective was to acquire expert segmentations to be used as the gold standard for an
 	upcoming observer study.
 
-[Baines Imaging Research Laboratories](https://bainesimaging.com), LRCP, London Health Sciences Centre, London, ON, Canada
+ <a href="https://bainesimaging.com" target="_blank">Baines Imaging Research Laboratories</a>, LRCP, London Health Sciences Centre, London, ON, Canada

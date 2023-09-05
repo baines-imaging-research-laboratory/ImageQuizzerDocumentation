@@ -64,3 +64,6 @@ hide:
 		- ROIs element now required on any element loaded as RTStruct or Segmentation;
 			previously this was only required if the image element being loaded had attribute DicomRead="Y"
 
+		
+		  
+<a href="https://bainesimaging.com" target="_blank">Baines Imaging Research Laboratories</a>, LRCP, London Health Sciences Centre, London, ON, Canada

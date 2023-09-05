@@ -22,6 +22,7 @@ theme:
 markdown_extensions:
   - admonition
   - tables
+  - attr_list
   - pymdownx.betterem:
       smart_enable: all
   
@@ -136,4 +137,4 @@ nav:
       - v1.0.0: release/release_notes_v1.0.0.md
       - v2.0.0: release/release_notes_v2.0.0.md
       - v2.2.1: release/release_notes_v2.2.1.md
-      - v2.3: release/release_notes_v2.3.md
+      - v2.3.0: release/release_notes_v2.3.0.md

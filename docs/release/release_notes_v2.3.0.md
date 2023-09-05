@@ -49,6 +49,10 @@ hide:
 		- User Login name
 			- User now has the option to change the login name from the Windows login default.  This is useful if the Image Quizzer application,
 			data and quiz files are stored on a USB stick, allowing the user to work on the same quiz on different PC's.
+		- Default location for image database
+			- The default location for the quiz images is now .../ImageQuizzerProject/ImageQuizzer/Resources/ImageQuizzerData.
+			The directory selector for the image database points here during the user login.
+			Using this location to store the quiz images is not mandatory but may make it easier for users when logging in.
 
 ##Fix
 
@@ -61,4 +65,4 @@ hide:
 			- The sphere and smudge tools will now work when creating contours on a sagittal or coronal orientation - as well as the axial.
 		
 		  
-[Baines Imaging Research Laboratories](https://bainesimaging.com), LRCP, London Health Sciences Centre, London, ON, Canada
+<a href="https://bainesimaging.com" target="_blank">Baines Imaging Research Laboratories</a>, LRCP, London Health Sciences Centre, London, ON, Canada

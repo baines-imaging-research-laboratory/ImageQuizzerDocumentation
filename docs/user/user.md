@@ -19,6 +19,12 @@ Once the Image Quizzer is started, you start your session by logging in.
 
 Following are the steps to launch the quiz.
 
+1. Define location for Image Quizzer data.
+
+    Navigate to the directory given to you by the quiz administrator. 
+	This is the parent directory holding the images for the quiz.
+	The default location is .../ImageQuizzerProject/ImageQuizzer/Resources/ImageQuizzerData. 
+
 1. User Name
 
 	The login screen will display the Windows login user name as a default.
@@ -26,10 +32,6 @@ Following are the steps to launch the quiz.
 	working off a USB stick which is being plugged into multiple PC's with
 	different login user names.)
 
-1. Define location for Image Quizzer data.
-
-    Navigate to the directory given to you by the quiz administrator. 
-	This is the parent directory holding the images for the quiz.
 
 1. Select Quiz
 

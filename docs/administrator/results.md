@@ -15,7 +15,7 @@ You will find the Users folder under the directory you defined to be the databas
 
 For example, *Observer1* has logged in to run the *ObserverContouringStudy* quiz.
 The administrator has placed all the image volumes for this study in the folder named *ImageQuizzerData* (the database directory).
-When the user logs in to the quiz session, he/she has to browse to the *ImageQuizzerData* database folder.
+When the user logs in to the quiz session, they have to browse to the *ImageQuizzerData* database folder.
 
 ![Login screen shot](assets/login-observer1.png)
 

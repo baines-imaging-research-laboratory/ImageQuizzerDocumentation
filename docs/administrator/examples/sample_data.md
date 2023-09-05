@@ -77,8 +77,7 @@ any of the image datasets available through the Slicer application.
 * Browse to the folder that you wish to save the sample data.
 * Click on the Save button.
 
-Refer to Slicer's documentation [download and save](https://slicer.readthedocs.io/en/latest/user_guide/data_loading_and_saving.html) for more more details.
-
+Refer to Slicer's documentation <a href="https://slicer.readthedocs.io/en/latest/user_guide/data_loading_and_saving.html" target="_blank"> download and save</a> for more more details.
 
 
 
@@ -86,12 +85,10 @@ Refer to Slicer's documentation [download and save](https://slicer.readthedocs.i
 
 Some example scripts refer to data that can be downloaded and extracted using these links.
 
-[DICOM dataset1_TorsoCT](https://spujol.github.io/SlicerDICOMTutorial) see link for "Tutorial Dataset: 3D Slicer DICOM Tutorial Data"
+<a href="http://spujol.github.io/SlicerDICOMTutorial" target="_blank">DICOM dataset1_TorsoCT</a> see link for "Tutorial Dataset: 3D Slicer DICOM Tutorial Data"
 
-[PETCTFusion dataset](http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data) see link for "Data for Quantitative PET/CT tutorial"
+<a href="http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data)" target="_blank">PETCTFusion dataset</a> see link for "Data for Quantitative PET/CT tutorial"
 
-[RECIST dataset](http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data) see link for "Data for RECIST tutorial"
+<a href="http://www.na-mic.org/Wiki/index.php/Events:RSNA_CTSA_2009#Tutorial_Data" target="_blank">RECIST dataset</a> see link for "Data for RECIST tutorial"
 
 Once downloaded, extract the sample data into the suggested tree structure for plug and play examples.
-
-

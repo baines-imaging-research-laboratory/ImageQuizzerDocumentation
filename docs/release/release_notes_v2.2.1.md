@@ -59,4 +59,4 @@ hide:
 		  Sometimes, the image would not be displayed at all, or when being the "Reset to default"
 		  button is pressed, the state of the image (slice number being observed) would not be retained. 
 		  
-[Baines Imaging Research Laboratories](https://bainesimaging.com), LRCP, London Health Sciences Centre, London, ON, Canada
+<a href="https://bainesimaging.com" target="_blank">Baines Imaging Research Laboratories</a>, LRCP, London Health Sciences Centre, London, ON, Canada

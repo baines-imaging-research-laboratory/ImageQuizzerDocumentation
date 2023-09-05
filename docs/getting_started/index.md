@@ -6,7 +6,7 @@ hide:
 
 # Getting started
 
-The Image Quizzer is a tool that was designed to run as a module on the [3D Slicer](https://slicer.org) platform.
+The Image Quizzer is a tool that was designed to run as a module on the  <a href="https://slicer.org" target="_blank">3D Slicer</a> platform.
 Following you will find information to get the Image Quizzer installed and running on your computer.
 
 ## System Requirements
@@ -27,8 +27,7 @@ Following you will find information to get the Image Quizzer installed and runni
 
 ### 3D Slicer
 
-Download and install [3D Slicer](   
-	https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482)
+Download and install  <a href="https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/5f4474d0e1d8c75dfc705482" target="_blank">3D Slicer</a>
 	 version 4.11.20210226
 	
 	
@@ -71,11 +70,9 @@ Download and install [3D Slicer](
 
 ##### Download
 
-Download the Image Quizzer [here](
-https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer/tags)
+Latest release  <a href="https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer/releases" target="_blank">here</a> labeled Image Quizzer v #.#.#
 
-- The release versions are labeled QuizApp_v#.#.#
-- The pre-release, with the latest features are labeled dev_v#.#.#
+Pre-release versions <a href="https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer/tags" target="_blank">here</a> labeled dev_v#.#.#
 
 ##### Extract
 
@@ -91,18 +88,19 @@ that may be relevant to the study administrator when developing the script.
 .
 └─ ImageQuizzerProject/
    ├─ Documentation/
-   │     ├─ XML Elements and Attributes.xls (keywords to create the script)  
-   │     └─ 3D Slicer – Keyboard Shortcuts.docx (popular shortcuts for the user when in quiz)  
+   │     └─ ReadMe.txt                           (contains links to on-line documentation)  
    ├─ ImageQuizzer
    │     └─ Resources/
    │           ├─ Config/
    │           │    └─ smtp_config_template.txt   (smtp config setup template for emailing results)
-   │           └─ XML/
+   │           ├─ ImageQuizzerData/               (default location for quiz image folders/files)
+   │           └─ XML/                            (default location for XML quiz files)
    │                ├─ Templates/
    │                │     └─ *.xml   (XML basics templates for script development)
-   │                └─ *.xsd   (XML schema file for script development)
-   ├─ImageQuizzerStartup.bat   (starts the Image Quizzer and does cleanup on close)
-   └─ImageQuizzerShutdown.bat  (updated when running the quiz; may not exist on install)
+   │                └─ *.xsd         (XML schema file for script development)
+   ├─ImageQuizzerStartup.bat         (starts the Image Quizzer and does cleanup on close)
+   ├─ImageQuizzerStartup-USB.bat     (starts the Image Quizzer installed on USB and does cleanup on close)
+   └─ImageQuizzerShutdown.bat        (updated when running the quiz; may not exist on install)
 ```
 
 !!! Note
@@ -134,7 +132,11 @@ There are two ways to run the Image Quizzer.
 	
     eg. C:\Users\username\Documents\ImageQuizzerProject
 	
-	and double click on the ImageQuizzerStartup.bat file.
+	Double-click on one of the two startup batch files:
+	
+		-ImageQuizzerStartup.bat
+		-ImageQuizzerStartup-USB.bat  (use only if installs of the Image Quizzer and Slicer were consolidated on a USB stick.)
+		
     The startup batch file will start Slicer and immediately bring the user to the Image Quizzer login screen.
 
     When the user exits the quiz, the batch file will start a shutdown process that will cleanup
@@ -159,13 +161,13 @@ There are two ways to run the Image Quizzer.
 		This folder is created automatically whenever the Image Quizzer is started.
 		This folder can be found wherever you have defined your image data location.
 
-        eg. If your image database is located here:
+        eg. If your image database is located in the default directory here:
 		
-		    C:\Users\username\Documents\ImageDatabase
+		    ...\ImageQuizzerProject\Resources\ImageQuizzerData
 		
 		you will find the SlicerDicomDatabase folder here:
 		
-		    C:\Users\username\Documents\ImageDatabase\SlicerDicomDatabase
+		    ...\ImageQuizzerProject\Resources\ImageQuizzerData\SlicerDicomDatabase
 	
 
 ## Test your installation
@@ -221,7 +223,8 @@ We have had success using:
 ### Distribute via USB
 
 Distribution to observers can be done by setting up a USB with 3D Slicer and the Image Quizzer module already installed, along with encrypted study data and the XML quiz file.
-This USB can then be plugged into the observers laptop or PC and the quiz is ready-to-go.
+This USB can then be plugged into the observers laptop or PC and the quiz is ready-to-go. 
+Use ImageQuizzerStartup-USB.bat to start the Image Quizzer as described above in [How to start the ImageQuizzer](.#how-to-start-the-image-quizzer)
 
 !!! tip
     VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; (admin rights are required).

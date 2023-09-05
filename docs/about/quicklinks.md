@@ -12,12 +12,12 @@ Carol.Johnson@lhsc.on.ca
 
 ## Documentation link (this site)
 
-<https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/>
+<a href="https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/" target="_blank">https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/</a>
 
 
 ## Github download link
 
-<https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer.git>
+<a href="https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer.git" target="_blank">https://github.com/baines-imaging-research-laboratory/BainesImageQuizzer.git</a>
 
 ## Subscribe to Image Quizzer email list
 
