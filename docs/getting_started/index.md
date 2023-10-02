@@ -88,16 +88,19 @@ that may be relevant to the study administrator when developing the script.
 .
 └─ ImageQuizzerProject/
    ├─ Documentation/
-   │     └─ ReadMe.txt                           (contains links to on-line documentation)  
+   │     └─ ReadMe.txt                              (contains links to on-line documentation)  
    ├─ ImageQuizzer
-   │     └─ Resources/
-   │           ├─ Config/
-   │           │    └─ smtp_config_template.txt   (smtp config setup template for emailing results)
-   │           ├─ ImageQuizzerData/               (default location for quiz image folders/files)
-   │           └─ XML/                            (default location for XML quiz files)
-   │                ├─ Templates/
-   │                │     └─ *.xml   (XML basics templates for script development)
-   │                └─ *.xsd         (XML schema file for script development)
+   │     ├─ Code/                                   (contains code to run the Image Quizzer application)
+   │     ├─ Inputs/
+   │     │   ├─ Config/
+   │     │   │    └─ smtp_config_template.txt       (smtp config setup template for emailing results)
+   │     │   ├─ Images/                             (parent directory for default image database)
+   │     │   │   └─ ImageDatabase         			
+   │     │   ├─ MasterQuiz/                         (default location for XML master quiz file)
+   │     │   │   └─ *.xsd                           (XML schema file for script development)
+   │     │   └─ Scripts/                            (default location for scripting files for 'Button' type questions)
+   │     └─ Outputs/
+   │         └─ UserResults                         (parent directory for users quiz results)
    ├─ImageQuizzerStartup.bat         (starts the Image Quizzer and does cleanup on close)
    ├─ImageQuizzerStartup-USB.bat     (starts the Image Quizzer installed on USB and does cleanup on close)
    └─ImageQuizzerShutdown.bat        (updated when running the quiz; may not exist on install)
@@ -117,8 +120,8 @@ To connect the Image Quizzer module
 * Select Edit > Application Settings
 * Select Modules in the left-hand panel
 * Click Add in the panel to the right of  “Additional module paths:” (you may have to click the ‘>>’ button)
-* Browse for folder named **ImageQuizzer** in the downloaded ImageQuizzerProject
-    * eg. C:\Users\username\Documents\ImageQuizzerProject\ImageQuizzer
+* Browse for folder named **ImageQuizzer\Code** in the downloaded ImageQuizzerProject
+    * eg. C:\Users\username\Documents\ImageQuizzerProject\ImageQuizzer\Code
 * Restart 3D Slicer if prompted
 
 ## How to start the Image Quizzer
@@ -140,7 +143,7 @@ There are two ways to run the Image Quizzer.
     The startup batch file will start Slicer and immediately bring the user to the Image Quizzer login screen.
 
     When the user exits the quiz, the batch file will start a shutdown process that will cleanup
-    the SlicerDicomDatabase folder that was created.
+    the SlicerDicomDatabase folder that was created in the ImageQuizzer\Outputs folder.
     (This folder is created automatically by Slicer whenever the Image Quizzer is started.
 	Deleting this folder reduces the startup time when restarting the Image Quizzer.)
 
@@ -158,16 +161,11 @@ There are two ways to run the Image Quizzer.
 	    If starting the Image Quizzer without using the Startup batch file and
 		you are loading DICOM image data, you can speed up the restart 
 		by deleting the SlicerDicomDatabase folder between Image Quizzer startups.
-		This folder is created automatically whenever the Image Quizzer is started.
-		This folder can be found wherever you have defined your image data location.
-
-        eg. If your image database is located in the default directory here:
+		This folder is created automatically whenever the Image Quizzer is started 
+		in the Outputs folder.
 		
-		    ...\ImageQuizzerProject\Resources\ImageQuizzerData
+		    ...\ImageQuizzerProject\ImageQuizzer\Outputs\SlicerDicomDatabase
 		
-		you will find the SlicerDicomDatabase folder here:
-		
-		    ...\ImageQuizzerProject\Resources\ImageQuizzerData\SlicerDicomDatabase
 	
 
 ## Test your installation
@@ -177,6 +175,12 @@ You can test your installation by following the instructions for [building a sim
 
 See [Quiz Examples](../administrator/examples/index.md) section in the Administrator's guide
 for examples showing how to build your script and activate various features available in the Image Quizzer.
+
+## Quiz Results
+
+Quiz results can be found in the folder:
+
+...\ImageQuizzerProject\ImageQuizzer\Outputs\UserResults\\*username*\\*quizname*
 
 
 
@@ -188,20 +192,27 @@ Following are some options on how to get this tool to your observers/students:
 * set up for [remote access](#setup-for-remote-access).
 * or [distribute on a USB](#distribute-via-usb)
 
+## Logging in
+
+!!! Warning
+    If you choose to have observers log into one PC, whether remotely or locally,
+    it is recommended that each observer log in with a unique name. The default
+    name displayed in the login window matches the Windows user name. This can be 
+	overriden. The login name associated with each observer is used to create the 
+	user's results folder, keeping responses for each observer separate.
+	
+	If the user exits the quiz prior to completion, the quiz can be resumed from that
+	spot IF the user logs in again using the same name as the original login.
+    
+	Capturing the quiz results folder for a user and moving it to a secure location reduces the 
+	risk of a user logging in under the wrong user name - accidentally overwriting
+	results from another user.
+
 ### Setup for remote access
 
 One option for running the Image Quizzer is to install the tool on a PC that observers
 are able to log into remotely.
  
-!!! Warning
-    If you choose to have observers log into one PC, whether remotely or locally,
-    it is recommended that each observer has their own login account. The login named
-    associated with each observer is used to create the user's results folder, keeping 
-	responses for each observer separate.
-    
-	If you don't have unique accounts, you risk overwriting a previous user's results.
-	You must move the current user's results folder into a secure area before the next observer starts their quiz session.
-    .
 There may be display issues if you are setting up the Image Quizzer so that the users can log in remotely. 
 This is related to OpenGL which 3D Slicer uses for the graphical display.
 Using the Image Quizzer through remote access may depend on the following:

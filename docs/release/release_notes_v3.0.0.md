@@ -5,8 +5,8 @@ hide:
 <!-- let javascript handle toc on left sidebar -->
 
 #Release Notes
-	Image Quizzer v2.3.1
-	September 28, 2023
+	Image Quizzer v3.0.0
+	September 29, 2023
 	
 
 ##Requirements
@@ -17,7 +17,7 @@ hide:
 	
 ##New Features
 
-	- (v2.3.1) 
+	- (v3.0.0) 
 		- Restructured the project directory tree
 			- The restructuring of the project directory tree makes it easier for the administrator to navigate. 
 			- There is now an Inputs subfolder to hold images, quiz, config files and scripts.
@@ -30,7 +30,7 @@ hide:
 			- Config file for emailing results:		.../ImageQuizzerProject/ImageQuizzer/Inputs/Config
 			- Users results folders:				.../ImageQuizzerProject/ImageQuizzer/Outputs/UsersResults
 			
-	- (v2.3.1)
+	- (v3.0.0)
 		- Users results folders
 			- Results are no longer output to a subfolder under the image database parent directory.
 			- This change was made in case there is no write access to where the images are stored.
@@ -41,18 +41,23 @@ hide:
 	
 ##Modifications
 
-	- (v2.3.1)
+	- (v3.0.0)
 		- Validation of ROIColorFile
-			- Before launching a quiz, if an ROIColorFile is being used it is validated to ensure a color has not been set up with an ID=0 
+			- Before launching a quiz, if an ROIColorFile is being used it is validated to ensure 
+			a color has not been set up with the roi# = 0 . 
+			(See documentation in Administrator guide> Scripting references > Session > ROIColorFile)
 		- Validation of existence of image files 
-			- If an image file is found to be missing from the image database folder selected by the user during login, the user is prompted to change the location of the image database directory. The application does not error out any longer.
+			- If an image file is found to be missing from the image database folder selected 
+			by the user during login, the user is prompted to change the location of the image
+			database directory. The application does not error out any longer.
 
 ##Fix
 
-	- (v2.3.1)
+	- (v3.0.0)
 		- UserInteractionLog
 			- Change was made to increase the viewing area 
-				- height is no longer based on a ratio of the desktop pixel height but a calculation that takes into account the height of Slicer's menu and status bars.
+				- height is no longer based on a ratio of the desktop pixel height but on a
+				 calculation that takes into account the height of Slicer's menu and status bars.
 		
 		  
 <a href="https://bainesimaging.com" target="_blank">Baines Imaging Research Laboratories</a>, LRCP, London Health Sciences Centre, London, ON, Canada
