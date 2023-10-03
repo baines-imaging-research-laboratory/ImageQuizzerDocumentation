@@ -30,9 +30,11 @@ See the documentation for [Quiz building basics](examples/build_basics.md) for d
 	**you must delete the copy of the quiz in the user's results folder** before you run your next test.
 	Otherwise, your changes will not be implemented.
 	
-	What happens is that when the Begin button is clicked to start a session,
-	the Image Quizzer checks the user's results folder to see if there is an existing results quiz.
-	If there is, it assumes the user is going to resume the quiz and it opens this pre-existing file.
+	The process operates in such a way that when the Begin button is pressed to start a session, 
+	the Image Quizzer examines the user's results folder to determine the presence of an existing results quiz.
+	If one exists, the software assumes the user is going to resume the quiz and opens this pre-existing file
+	which will not have your new modifications. If one does not exist, the updated master quiz is duplicated into the 
+	user's results folder.
 	
 	
 ## Live run

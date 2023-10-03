@@ -14,37 +14,48 @@ through the tutorial links provided.
 
 ## Suggested tree structure
 
-This is the tree structure we use for testing and building the example scripts.
-If you are using a tree structure with customized folder names,
-you will have to modify the image **Path** element in the scripts to match your tree layout.
-
-We recommend saving your data in a subfolder (e.g. ImageVolumes) since in the parent database directory (ImageQuizzerData),
-two other subfolders will be created:
-
-1. The **Users** folder which will hold the observer results files.
-1. The **SlicerDicomDatabase** folder that Slicer automatically creates to store pointers to the loaded DICOM files.
+This is the default location for the parent directory of the images database:
 
 ```
 .
-└─ ImageQuizzerData/
-    │ └─ ImageVolumes/
-    │     ├─ MRHead/
-    │     │     └─ MRHead.nrrd
-    │     ├─ MRBrain/
-    │     │     └─ MRBrain.nrrd
-    │     ... etc.
-    │     ├─ ExtractedSampleData1/
-    │     ├─ ExtractedSampleData2/
-	
-	(automatically created)
-    │	  
-	├─ Users/
-	└─ SlicerDicomDatabase/
+└─ ImageQuizzer/
+    └─ Inputs/
+        └─ Images/
+            └─ ImageDatabase/
+			
+```
+ 
+When the user logs in, they are directed to select the location of the data.
+
+![Data location](assets/LoginDefaultDatabase_selected.png)
+
+
+It is recommended that you save your data in a subfolder (e.g. ImageVolumes) below the parent database directory (ImageDatabase),
+All paths in the example scripts are relative to this folder and begin with **ImageVolumes/...**.
+
+This is an example of the tree structure used for building the example scripts.
+
+
+```
+.
+└─ ImageDatabase/
+   └─ ImageVolumes/
+        ├─ MRHead/
+        │   └─ MRHead.nrrd
+        ├─ MRBrain/
+        │   └─ MRBrain.nrrd
+            ... etc.
+        ├─ ExtractedSampleData1/
+        └─ ExtractedSampleData2/
 
 ```
 
-When logging in to the Image Quizzer, users point to **ImageQuizzerData** as the image database folder.
-All paths in the example scripts are relative to this folder and begin with **ImageVolumes/...**.
+
+
+If you are using a tree structure with customized folder names,
+you will have to modify the image **Path** element in the scripts to match your tree layout.
+
+
 
 
 ## Slicer sample datasets
