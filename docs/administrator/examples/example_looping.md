@@ -28,7 +28,7 @@ to a subfolder under ImageVolumes folder as shown.
 
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ CT-MR Brain/
                ├─ CTBrain.nrrd
@@ -106,8 +106,9 @@ for the contours created at each repetition.
 
 ```
 .
-└─ ImageQuizzerData/
-      └─ Users/
+└─ ImageQuizzer/
+	└─ Outputs/
+       └─ UsersResults/
           └─ Observer1/
                ├─ PgGroup2_PatientC_Grp3- Brain-MR T1/
                ├─ PgGroup2_PatientC-Rep1_Grp3- Brain-MR T1/

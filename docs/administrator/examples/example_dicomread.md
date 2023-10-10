@@ -34,7 +34,7 @@ From the downloaded tutorial data, extract the dataset1_TorsoCT folder to a subf
 
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ dataset1_TorsoCT/
                 ├─ IM-0001-0001.dcm

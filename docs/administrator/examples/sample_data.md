@@ -22,15 +22,19 @@ This is the default location for the parent directory of the images database:
     └─ Inputs/
         └─ Images/
             └─ ImageDatabase/
+			    │
+                ├─ ExtractedSampleData1/
+                └─ ExtractedSampleData2/
 			
 ```
  
-When the user logs in, they are directed to select the location of the data.
+When the user logs in, they are asked to select the location of the data.
 
 ![Data location](assets/LoginDefaultDatabase_selected.png)
 
 
-It is recommended that you save your data in a subfolder (e.g. ImageVolumes) below the parent database directory (ImageDatabase),
+It is recommended that you save your data in a subfolder (e.g. **ImageVolumes**) below the parent database directory. 
+In our examples the parent database directory is named **ImageDatabase**.
 All paths in the example scripts are relative to this folder and begin with **ImageVolumes/...**.
 
 This is an example of the tree structure used for building the example scripts.
@@ -45,8 +49,6 @@ This is an example of the tree structure used for building the example scripts.
         ├─ MRBrain/
         │   └─ MRBrain.nrrd
             ... etc.
-        ├─ ExtractedSampleData1/
-        └─ ExtractedSampleData2/
 
 ```
 

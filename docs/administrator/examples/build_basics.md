@@ -19,7 +19,7 @@ Specifics for each element and attribute can be found in the
 
 !!! tip
     Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
-    This can be used in conjuction with the *ImageQuizzer.xsd* schema file found in the Resources/XML folder.
+    This can be used in conjuction with the *ImageQuizzer.xsd* schema file found in the ImageQuizzer/Inputs/MasterQuiz folder.
     The schema file is set up to do some immediate validation as you build your script.
 
 !!! warning
@@ -29,15 +29,15 @@ Specifics for each element and attribute can be found in the
 
 ## Prep
 
-Download and save Slicer's CTChest dataset as described in the [sample data](sample_data.md#slicer-sample-datasets) section.
+Download and save Slicer's CTChest dataset as described in the [sample data suggested tree structure](sample_data.md#suggested-tree-structure) section.
 
-Suggested folder structure to match script:
 ```
 .
-└─ ImageQuizzerData/
-      └─ ImageVolumes/
-          └─ CTChest/
-                └─ CTChest.nrrd
+└─ ImageDatabase/
+    └─ ImageVolumes/
+        └─ CTChest/
+            └─ CTChest.nrrd
+			   
 ```
 
 ## Simple quiz example
@@ -81,7 +81,7 @@ SimpleScript.xml
 
 There are many XML elements and attributes available to customize your quiz.
 Some of these are shown in the Quiz examples section. You can also
-refer to the [Scripting references](../elements_attributes/index.md) section for more details.
+refer to the [Scripting references](../elements_attributes/index.md) section for a complete list of features.
 
 !!! tip
     When working on quizzes that have a specific set of questions to be asked for numerous sets of images,
@@ -92,9 +92,9 @@ refer to the [Scripting references](../elements_attributes/index.md) section for
 
 ## Testing your quiz
 
-When you are building your quiz, the general pattern is:
+When you are building your quiz, the general editing pattern is:
 
-1. create the XML quiz file (aka __master__ quiz)
+1. create the XML master quiz file
 1. run ImageQuizzer to test your script
 1. make additional modifications to master quiz
 1. **remove quiz folder under the Users folder** (see tree structure below for location)
@@ -103,16 +103,12 @@ When you are building your quiz, the general pattern is:
 ```
 User's folder found here:
 .
-└─ ImageQuizzerData/
-    │ └─ ImageVolumes/
-    │     ├─ CTChest/
-    │     │     └─ CTChest.nrrd
-    │     ... etc.
-    └─ Users/
-         └─ username
-               └─ copy_of_master_quiz_for_responses.xml
+└─ ImageQuizzer/
+	  └─ Outputs/
+	      └─ UsersResults
+              └─ username
+                  └─ copy_of_master_quiz_for_responses.xml
 	
-
 ```
 
 !!! Note

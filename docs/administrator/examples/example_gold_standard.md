@@ -25,7 +25,7 @@ Suggested folder structure to match script:
 ```
 
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ MRBrainTumor1/
 		       ├─ MRBrainTumor1.nrrd

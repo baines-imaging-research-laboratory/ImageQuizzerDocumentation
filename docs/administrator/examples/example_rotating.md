@@ -25,7 +25,7 @@ to a subfolder under ImageVolumes folder as shown.
 
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ CT-MR Brain/
                ├─ CTBrain.nrrd

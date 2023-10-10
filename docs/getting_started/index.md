@@ -142,7 +142,7 @@ There are two ways to run the Image Quizzer.
 		
     The startup batch file will start Slicer and immediately bring the user to the Image Quizzer login screen.
 
-    When the user exits the quiz, the batch file will start a shutdown process that will cleanup
+    When the user exits the quiz, the batch file will start a shutdown process that will clear
     the SlicerDicomDatabase folder that was created in the ImageQuizzer\Outputs folder.
     (This folder is created automatically by Slicer whenever the Image Quizzer is started.
 	Deleting this folder reduces the startup time when restarting the Image Quizzer.)
@@ -181,6 +181,8 @@ for examples showing how to build your script and activate various features avai
 Quiz results can be found in the folder:
 
 ...\ImageQuizzerProject\ImageQuizzer\Outputs\UserResults\\*username*\\*quizname*
+
+See [Quiz Results - Response Capture](../administrator/results.md) section for more details.
 
 
 

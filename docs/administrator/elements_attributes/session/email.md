@@ -30,16 +30,17 @@ in the section [Zip results file](#zip-results-file).
 In order to activate this feature, there are 2 steps required.
 
 
-* Create the file 'smtp_config.txt' in the Resources/Config directory:
+* Create the file 'smtp_config.txt' in the Inputs/Config directory:
 * The administrator must add the 'EmailResultsTo' attribute to the Session element in the quiz xml file. 
 
 ### smtp_config
     Currently in this directory, you will find smtp_config_template.txt.
 
 ```
-.../
+.
+└─ImageQuizzerProject/
    └─ImageQuizzer/
-     └─Resources/
+     └─Inputs/
        └─Config/
          └─smtp_config_template.txt
 ```
@@ -48,9 +49,10 @@ Copy this file and rename it smtp_config.txt to be edited with your
 host email server details.
 	
 ```
-.../
+.
+└─ImageQuizzerProject/
    └─ImageQuizzer/
-     └─Resources/
+     └─Inputs/
        └─Config/
          └─smtp_config_template.txt
          └─smtp_config.txt
@@ -94,15 +96,15 @@ contour and markup files if any exist.
 
 ```
 .
-└─ImageDatabase/
-   ├─SlicerDicomDatabase/
-   └─Users/
-     ├─Observer1/
-     │ └─ObserverContouringStudy.zip
-     │ └─ObserverContouringStudy.xml
-	 ├─Page1/
-	 ├─Page2/
-	 │...
+└─ImageQuizzer/
+     └─Outputs/
+		└─UsersResults/
+			├─Observer1/
+			│ └─ObserverContouringStudy.zip
+			│ └─ObserverContouringStudy.xml
+			├─Page1/
+			├─Page2/
+			│...
 ```
 
 This zip file will be attached to the email contents and sent to the email address assigned to the

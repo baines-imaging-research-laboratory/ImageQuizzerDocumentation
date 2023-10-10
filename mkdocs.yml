@@ -53,23 +53,23 @@ nav:
       - administrator/examples/index.md
       - Sample data: administrator/examples/sample_data.md
       - Quiz building basics: administrator/examples/build_basics.md
-      - Layouts: administrator/examples/example_layouts.md
-      - Question types: administrator/examples/example_question_type.md
-      - Loading dicoms: administrator/examples/example_dicomread.md
-      - Layers & colors: administrator/examples/example_layering.md
-      - Randomizing: administrator/examples/example_randomizing.md
-      - Looping: administrator/examples/example_looping.md
-      - ROI colors: administrator/examples/example_roicolorfile.md
-      - Link & multiple response: administrator/examples/example_link_multipleresponse.md
-      - Rotate to acquisition: administrator/examples/example_rotating.md
-      - Redisplay contours: administrator/examples/example_redisplay_contours.md
-      - Merge Labelmaps: administrator/examples/example_merge_labelmaps.md
       - Annotations (contours and lines): administrator/examples/example_annotations.md
-      - ROI visibility: administrator/examples/example_roi_visibility.md
+      - Dicom Image Read: administrator/examples/example_dicomread.md
       - Gold standard - Learning tool: administrator/examples/example_gold_standard.md
+      - Layers & colors: administrator/examples/example_layering.md
+      - Layouts: administrator/examples/example_layouts.md
+      - Link & multiple response: administrator/examples/example_link_multipleresponse.md
+      - Looping: administrator/examples/example_looping.md
+      - Merge Labelmaps: administrator/examples/example_merge_labelmaps.md
+      - Question types: administrator/examples/example_question_type.md
+      - Randomizing: administrator/examples/example_randomizing.md
+      - Redisplay contours: administrator/examples/example_redisplay_contours.md
+      - ROI visibility: administrator/examples/example_roi_visibility.md
+      - ROI colors: administrator/examples/example_roicolorfile.md
+      - Rotate to acquisition: administrator/examples/example_rotating.md
+      - User interaction log: administrator/examples/example_user_interaction_log.md
       - 4D VolumeSequence: administrator/examples/example_volumesequence.md
       - Zoom Pan and Slice offset: administrator/examples/example_zoom_pan_sliceoffset.md
-      - User interaction log: administrator/examples/example_user_interaction_log.md
     - Scripting references: 
       - administrator/elements_attributes/index.md
       - Session:

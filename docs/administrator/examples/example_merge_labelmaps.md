@@ -22,7 +22,7 @@ Download and save Slicer's CTChest dataset as described in the [sample data](sam
 Suggested folder structure to match script:
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ CTChest/
                 └─ CTChest.nrrd

@@ -30,7 +30,7 @@ Download and save Slicer's TinyPatient [sample data](sample_data.md#slicer-sampl
 Suggested folder structure to match script:
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ TinyPatient/
                 ├─ TinyPatient_CT.nrrd

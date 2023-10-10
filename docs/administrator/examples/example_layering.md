@@ -36,7 +36,7 @@ Extract the PETCTFusion-Tutorial-Data to a subfolder under ImageVolumes/ as show
 
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ PETCTFusion-Tutorial-Data/
                 └─ PETCTFusion/

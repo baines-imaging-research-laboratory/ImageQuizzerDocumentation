@@ -32,7 +32,7 @@ Download and save Slicer's CTChest [sample data](sample_data.md#slicer-sample-da
 Suggested folder structure to match script:
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ CTChest/
                 └─ CTChest.nrrd

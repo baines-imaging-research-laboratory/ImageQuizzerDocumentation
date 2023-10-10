@@ -2,33 +2,27 @@
 hide:
 - toc
 ---
-# Response capture
+# Quiz Results - Response capture
 
-The quiz question responses are captured in a results xml file found in the **Users/*Username*/** folder. If any annotations were created
+The quiz question responses are captured in a results xml file found in the **UsersResults/*Username*/** folder. If any annotations were created
 (contours and/or markup measurement lines) these are found in subfolders, one for each Page.
 
 ## Location
 
 When the user first logs in to the Image Quizzer, a results XML file is created with the same
-name as the original master XML file. This file is placed in the **Users/*Username*/** folder that gets created on the first login. 
-You will find the Users folder under the directory you defined to be the database directory.
+name as the original master XML file. This file is placed in the **UserResults/*Username*/** folder that gets created on the first login. 
 
 For example, *Observer1* has logged in to run the *ObserverContouringStudy* quiz.
-The administrator has placed all the image volumes for this study in the folder named *ImageQuizzerData* (the database directory).
-When the user logs in to the quiz session, they have to browse to the *ImageQuizzerData* database folder.
-
-![Login screen shot](assets/login-observer1.png)
 
 The results XML file will be found here:
 
 ```
 .
-└─ImageQuizzerData/
-   ├─ImageVolumes/
-   ├─SlicerDicomDatabse/
-   └─Users/
-     └─Observer1/
-       └─ObserverContouringStudy.xml
+└─ ImageQuizzer/
+	  └─ Outputs/
+	      └─ UsersResults
+              └─ Observer1
+                  └─ObserverContouringStudy.xml
 ```
 	
 This is a copy of the original master quiz as set up by the administrator.
@@ -40,9 +34,6 @@ Each time the user exits and resumes the quiz, this results file is copied and r
 in order to safeguard against hardware issues or power failures.
 The file without a timestamp suffix will be the most recent and most complete results file.
 
-!!! note
-    The SlicerDicomDatabase folder is created automatically by Slicer 
-	when the user logs in to manage information about DICOM data.
 	
 ### Annotations subfolders
 
@@ -53,25 +44,25 @@ the Users folder could look like this:
 
 ```
 .
-└─ImageQuizzerData/
-   ├─ImageVolumes/
-   ├─SlicerDicomDatabse/
-   └─Users/
-     └─Observer1/
-       ├─ObserverContouringStudy.xml
-	   ├─(PgGroup1_PageID_PageDescriptor)/
-	   ├    ├─imagename-bainesquizlabel.nrrd
-	   ├    ├─imagename_MarkupsLine_bainesquizline.nrrd
-	   ├    └─imagename_MarkupsLine_1_bainesquizline.mrk
-	   ├─(PgGroup2_PageID_PageDescriptor)/
-	   ├    ├─imagename-bainesquizlabel.nrrd
-	   ├    ├─imagename_MarkupsLine_bainesquizline.mrk
-	   ├    ├─imagename_MarkupsLine_1_bainesquizline.mrk
-	   ├    └─imagename_MarkupsLine_2_bainesquizline.mrk
-	   └─(PgGroup3_PageID_PageDescriptor)/
-	        ├─imagename-bainesquizlabel.nrrd
-	        └─imagename_MarkupsLine_bainesquizline.mrk
-	   
+└─ ImageQuizzer/
+	  └─ Outputs/
+	      └─ UsersResults
+              └─ Observer1
+					├─ObserverContouringStudy.xml
+					├─(PgGroup1_PageID_PageDescriptor)/
+					├    ├─imagename-bainesquizlabel.nrrd
+					├    ├─imagename_MarkupsLine_bainesquizline.nrrd
+					├    └─imagename_MarkupsLine_1_bainesquizline.mrk
+					├─(PgGroup2_PageID_PageDescriptor)/
+					├    ├─imagename-bainesquizlabel.nrrd
+					├    ├─imagename_MarkupsLine_bainesquizline.mrk
+					├    ├─imagename_MarkupsLine_1_bainesquizline.mrk
+					├    └─imagename_MarkupsLine_2_bainesquizline.mrk
+					└─(PgGroup3_PageID_PageDescriptor)/
+						 ├─imagename-bainesquizlabel.nrrd
+						 └─imagename_MarkupsLine_bainesquizline.mrk
+
+
 ```
 #### Contour capture
 
@@ -86,7 +77,7 @@ File name is constructed using ImageID_ImageDescriptor-bainesquizlabel.nrrd
 
 Creating [measurement lines](../user/extratools.md#line-measurement) using the tool in the Extra Tools tab will create a MarkupLinePath element
 as a child of the Image element to the results file. This element stores the relative directory path where you
-can find the markup line file.
+can find the markup line file. This file can be viewed with a simple editor (e.g. Notepad).
 
 It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .
 File name is constructed using ImageID_ImageDescriptor-MarkupsLine_bainesquizline.mrk.json

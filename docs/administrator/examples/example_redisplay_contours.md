@@ -18,7 +18,7 @@ Extract the RECIST-Tutorial-Data to a subfolder under ImageVolumes/ as shown.
 
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ RECIST-Tutorial-Data/
               ├─ 2006-spgr.nrrd

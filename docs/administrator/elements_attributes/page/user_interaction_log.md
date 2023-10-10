@@ -86,15 +86,16 @@ The log files are located in a subfolder created for each Page of the quiz XML f
 
 ```
 .
-└─ImageDatabase/
-   └─Users/
-     └─Observer1/
-       └─Test_UserInteraction.xml
-	     ├─PgGroup1_Patient 1_CT/
-         │ └─UserInteractionLog.csv
-	     ├─PgGroup2_Patient2_PET PSMA/
-         │ └─UserInteractionLog.csv
-	     │...
+└─ImageQuizzer/
+	└─Outputs/
+		└─UsersResults/
+			└─Observer1/
+			└─Test_UserInteraction.xml
+				├─PgGroup1_Patient 1_CT/
+				│ └─UserInteractionLog.csv
+				├─PgGroup2_Patient2_PET PSMA/
+				│ └─UserInteractionLog.csv
+				│...
 ```
 
 

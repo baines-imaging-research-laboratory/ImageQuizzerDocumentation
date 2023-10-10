@@ -49,12 +49,12 @@ to a subfolder under ImageVolumes folder as shown.
 
 ```
 .
-└─ ImageQuizzerData/
-      └─ ImageVolumes/
-          └─ CT-MR Brain/
-               ├─ CTBrain.nrrd
-               ├─ MRBrainT1.nrrd
-               └─ MRBrainT2.nrrd
+└─ ImageDatabase/
+	└─ ImageVolumes/
+		└─ CT-MR Brain/
+			├─ CTBrain.nrrd
+			├─ MRBrainT1.nrrd
+			└─ MRBrainT2.nrrd
 ```
 
 ## Script example
@@ -192,8 +192,9 @@ This would vary depending on where each user created the contours and markup lin
 Results tree structure
 
 .
-└─ ImageQuizzerData/
-      └─ Users/
+└─ ImageQuizzer/
+    └─ Outputs/
+      └─ UsersResults/
           └─ Observer1/
                ├─ PgGroup1_Patient1_Brain CT-MR/
 			   │   ├─ Patient1_CT_MarkupsLine_bainesquizline.mrk.json

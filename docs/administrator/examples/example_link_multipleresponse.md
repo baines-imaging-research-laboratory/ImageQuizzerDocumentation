@@ -25,7 +25,7 @@ Save the dataset to a subfolder under ImageVolumes/ as shown.
 
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ CT-MR Brain/
                ├─ CTBrain.nrrd

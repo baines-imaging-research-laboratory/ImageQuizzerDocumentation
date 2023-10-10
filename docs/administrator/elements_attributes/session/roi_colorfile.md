@@ -29,7 +29,7 @@ This file must be saved in the same folder as the study xml file.
 
 ## Syntax
 
-Syntax for each line in the text file (The roi# cannot be 0) :
+Syntax for each line in the text file. **NB. The roi# cannot be 0** :
 
 ```
 roi# roi_name red green blue alpha
@@ -52,8 +52,8 @@ the same directory as the XML for this quiz (PIRADS_SegmentationStudy.xml).
 .
 
 └─ImageQuizzer/
-  └─Resources/
-    └─XML/
+  └─Inputs/
+    └─MasterQuiz/
       ├─PIRADS_SegmentationStudy.xml
       └─PiRadsStudy_colors.txt
 		

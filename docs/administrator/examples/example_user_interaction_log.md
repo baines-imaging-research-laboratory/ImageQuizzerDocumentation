@@ -32,7 +32,7 @@ Download and save the datasets in the subfolders under ImageVolumes folder as sh
 
 ```
 .
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ CTChest/
                 └─ CTChest.nrrd
