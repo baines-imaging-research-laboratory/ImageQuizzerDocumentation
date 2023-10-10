@@ -805,22 +805,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../administrator/examples/example_layouts/" class="md-nav__link">
-        Layouts
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../administrator/examples/example_question_type/" class="md-nav__link">
-        Question types
+      <a href="../administrator/examples/example_annotations/" class="md-nav__link">
+        Annotations (contours and lines)
       </a>
     </li>
   
@@ -834,7 +820,21 @@
   
     <li class="md-nav__item">
       <a href="../administrator/examples/example_dicomread/" class="md-nav__link">
-        Loading dicoms
+        Dicom Image Read
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/examples/example_gold_standard/" class="md-nav__link">
+        Gold standard - Learning tool
       </a>
     </li>
   
@@ -861,36 +861,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../administrator/examples/example_randomizing/" class="md-nav__link">
-        Randomizing
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../administrator/examples/example_looping/" class="md-nav__link">
-        Looping
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../administrator/examples/example_roicolorfile/" class="md-nav__link">
-        ROI colors
+      <a href="../administrator/examples/example_layouts/" class="md-nav__link">
+        Layouts
       </a>
     </li>
   
@@ -917,22 +889,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../administrator/examples/example_rotating/" class="md-nav__link">
-        Rotate to acquisition
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../administrator/examples/example_redisplay_contours/" class="md-nav__link">
-        Redisplay contours
+      <a href="../administrator/examples/example_looping/" class="md-nav__link">
+        Looping
       </a>
     </li>
   
@@ -959,8 +917,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../administrator/examples/example_annotations/" class="md-nav__link">
-        Annotations (contours and lines)
+      <a href="../administrator/examples/example_question_type/" class="md-nav__link">
+        Question types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/examples/example_randomizing/" class="md-nav__link">
+        Randomizing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/examples/example_redisplay_contours/" class="md-nav__link">
+        Redisplay contours
       </a>
     </li>
   
@@ -987,8 +973,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../administrator/examples/example_gold_standard/" class="md-nav__link">
-        Gold standard - Learning tool
+      <a href="../administrator/examples/example_roicolorfile/" class="md-nav__link">
+        ROI colors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/examples/example_rotating/" class="md-nav__link">
+        Rotate to acquisition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../administrator/examples/example_user_interaction_log/" class="md-nav__link">
+        User interaction log
       </a>
     </li>
   
@@ -1017,20 +1031,6 @@
     <li class="md-nav__item">
       <a href="../administrator/examples/example_zoom_pan_sliceoffset/" class="md-nav__link">
         Zoom Pan and Slice offset
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../administrator/examples/example_user_interaction_log/" class="md-nav__link">
-        User interaction log
       </a>
     </li>
   
@@ -2620,7 +2620,7 @@ The observer needs to navigate to the ImageQuizzerProject folder</p>
 -ImageQuizzerStartup-USB.bat  (use only if installs of the Image Quizzer and Slicer were consolidated on a USB stick.)
 </code></pre>
 <p>The startup batch file will start Slicer and immediately bring the user to the Image Quizzer login screen.</p>
-<p>When the user exits the quiz, the batch file will start a shutdown process that will cleanup
+<p>When the user exits the quiz, the batch file will start a shutdown process that will clear
 the SlicerDicomDatabase folder that was created in the ImageQuizzer\Outputs folder.
 (This folder is created automatically by Slicer whenever the Image Quizzer is started.
 Deleting this folder reduces the startup time when restarting the Image Quizzer.)</p>
@@ -2653,6 +2653,7 @@ for examples showing how to build your script and activate various features avai
 <h2 id="quiz-results">Quiz Results</h2>
 <p>Quiz results can be found in the folder:</p>
 <p>...\ImageQuizzerProject\ImageQuizzer\Outputs\UserResults\<em>username</em>\<em>quizname</em></p>
+<p>See <a href="../administrator/results/">Quiz Results - Response Capture</a> section for more details.</p>
 <h2 id="distribution-to-observers">Distribution to observers</h2>
 <p>Following are some options on how to get this tool to your observers/students:</p>
 <ul>

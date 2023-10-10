@@ -14,7 +14,7 @@
         <link rel="prev" href="../sample_data/">
       
       
-        <link rel="next" href="../example_layouts/">
+        <link rel="next" href="../example_annotations/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
@@ -699,22 +699,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_layouts/" class="md-nav__link">
-        Layouts
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_question_type/" class="md-nav__link">
-        Question types
+      <a href="../example_annotations/" class="md-nav__link">
+        Annotations (contours and lines)
       </a>
     </li>
   
@@ -728,7 +714,21 @@
   
     <li class="md-nav__item">
       <a href="../example_dicomread/" class="md-nav__link">
-        Loading dicoms
+        Dicom Image Read
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_gold_standard/" class="md-nav__link">
+        Gold standard - Learning tool
       </a>
     </li>
   
@@ -755,36 +755,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_randomizing/" class="md-nav__link">
-        Randomizing
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_looping/" class="md-nav__link">
-        Looping
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_roicolorfile/" class="md-nav__link">
-        ROI colors
+      <a href="../example_layouts/" class="md-nav__link">
+        Layouts
       </a>
     </li>
   
@@ -811,22 +783,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_rotating/" class="md-nav__link">
-        Rotate to acquisition
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_redisplay_contours/" class="md-nav__link">
-        Redisplay contours
+      <a href="../example_looping/" class="md-nav__link">
+        Looping
       </a>
     </li>
   
@@ -853,8 +811,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_annotations/" class="md-nav__link">
-        Annotations (contours and lines)
+      <a href="../example_question_type/" class="md-nav__link">
+        Question types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_randomizing/" class="md-nav__link">
+        Randomizing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_redisplay_contours/" class="md-nav__link">
+        Redisplay contours
       </a>
     </li>
   
@@ -881,8 +867,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_gold_standard/" class="md-nav__link">
-        Gold standard - Learning tool
+      <a href="../example_roicolorfile/" class="md-nav__link">
+        ROI colors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_rotating/" class="md-nav__link">
+        Rotate to acquisition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_user_interaction_log/" class="md-nav__link">
+        User interaction log
       </a>
     </li>
   
@@ -911,20 +925,6 @@
     <li class="md-nav__item">
       <a href="../example_zoom_pan_sliceoffset/" class="md-nav__link">
         Zoom Pan and Slice offset
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_user_interaction_log/" class="md-nav__link">
-        User interaction log
       </a>
     </li>
   
@@ -2294,7 +2294,7 @@ It also provides tips on the development process for building and testing your s
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Notepad++ has a plugin for XML tools that can be downloaded to help check syntax as you build your quiz.
-This can be used in conjuction with the <em>ImageQuizzer.xsd</em> schema file found in the Resources/XML folder.
+This can be used in conjuction with the <em>ImageQuizzer.xsd</em> schema file found in the ImageQuizzer/Inputs/MasterQuiz folder.
 The schema file is set up to do some immediate validation as you build your script.</p>
 </div>
 <div class="admonition warning">
@@ -2303,13 +2303,13 @@ The schema file is set up to do some immediate validation as you build your scri
 (It could save you time and headaches.)</p>
 </div>
 <h2 id="prep">Prep</h2>
-<p>Download and save Slicer's CTChest dataset as described in the <a href="../sample_data/#slicer-sample-datasets">sample data</a> section.</p>
-<p>Suggested folder structure to match script:</p>
+<p>Download and save Slicer's CTChest dataset as described in the <a href="../sample_data/#suggested-tree-structure">sample data suggested tree structure</a> section.</p>
 <pre><code>.
-└─ ImageQuizzerData/
-      └─ ImageVolumes/
-          └─ CTChest/
-                └─ CTChest.nrrd
+└─ ImageDatabase/
+    └─ ImageVolumes/
+        └─ CTChest/
+            └─ CTChest.nrrd
+
 </code></pre>
 <h2 id="simple-quiz-example">Simple quiz example</h2>
 <p>Here is a screenshot of a very simple quiz followed by the script that was used to create it.</p>
@@ -2338,7 +2338,7 @@ The schema file is set up to do some immediate validation as you build your scri
 <h2 id="expanding-your-quiz">Expanding your quiz</h2>
 <p>There are many XML elements and attributes available to customize your quiz.
 Some of these are shown in the Quiz examples section. You can also
-refer to the <a href="../../elements_attributes/">Scripting references</a> section for more details.</p>
+refer to the <a href="../../elements_attributes/">Scripting references</a> section for a complete list of features.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>When working on quizzes that have a specific set of questions to be asked for numerous sets of images,
@@ -2348,9 +2348,9 @@ Then you can copy/paste the pages, update the image Path element and the ID &amp
 Description attributes to make each page unique.</p>
 </div>
 <h2 id="testing-your-quiz">Testing your quiz</h2>
-<p>When you are building your quiz, the general pattern is:</p>
+<p>When you are building your quiz, the general editing pattern is:</p>
 <ol>
-<li>create the XML quiz file (aka <strong>master</strong> quiz)</li>
+<li>create the XML master quiz file</li>
 <li>run ImageQuizzer to test your script</li>
 <li>make additional modifications to master quiz</li>
 <li><strong>remove quiz folder under the Users folder</strong> (see tree structure below for location)</li>
@@ -2358,15 +2358,11 @@ Description attributes to make each page unique.</p>
 </ol>
 <pre><code>User's folder found here:
 .
-└─ ImageQuizzerData/
-    │ └─ ImageVolumes/
-    │     ├─ CTChest/
-    │     │     └─ CTChest.nrrd
-    │     ... etc.
-    └─ Users/
-         └─ username
-               └─ copy_of_master_quiz_for_responses.xml
-
+└─ ImageQuizzer/
+      └─ Outputs/
+          └─ UsersResults
+              └─ username
+                  └─ copy_of_master_quiz_for_responses.xml
 
 </code></pre>
 <div class="admonition note">
@@ -2419,13 +2415,13 @@ quiz file and the new modifications made to the master quiz will not be reflecte
         
         
           
-          <a href="../example_layouts/" class="md-footer__link md-footer__link--next" aria-label="Next: Layouts" rel="next">
+          <a href="../example_annotations/" class="md-footer__link md-footer__link--next" aria-label="Next: Annotations (contours and lines)" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                Layouts
+                Annotations (contours and lines)
               </div>
             </div>
             <div class="md-footer__button md-icon">

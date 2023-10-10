@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://baines-imaging-research-laboratory.github.io/ImageQuizzerDocumentation/3.0/administrator/examples/example_looping/">
       
       
-        <link rel="prev" href="../example_randomizing/">
+        <link rel="prev" href="../example_link_multipleresponse/">
       
       
-        <link rel="next" href="../example_roicolorfile/">
+        <link rel="next" href="../example_merge_labelmaps/">
       
       <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.3">
@@ -630,22 +630,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_layouts/" class="md-nav__link">
-        Layouts
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_question_type/" class="md-nav__link">
-        Question types
+      <a href="../example_annotations/" class="md-nav__link">
+        Annotations (contours and lines)
       </a>
     </li>
   
@@ -659,7 +645,21 @@
   
     <li class="md-nav__item">
       <a href="../example_dicomread/" class="md-nav__link">
-        Loading dicoms
+        Dicom Image Read
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_gold_standard/" class="md-nav__link">
+        Gold standard - Learning tool
       </a>
     </li>
   
@@ -686,8 +686,22 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_randomizing/" class="md-nav__link">
-        Randomizing
+      <a href="../example_layouts/" class="md-nav__link">
+        Layouts
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_link_multipleresponse/" class="md-nav__link">
+        Link & multiple response
       </a>
     </li>
   
@@ -775,8 +789,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_roicolorfile/" class="md-nav__link">
-        ROI colors
+      <a href="../example_merge_labelmaps/" class="md-nav__link">
+        Merge Labelmaps
       </a>
     </li>
   
@@ -789,8 +803,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_link_multipleresponse/" class="md-nav__link">
-        Link & multiple response
+      <a href="../example_question_type/" class="md-nav__link">
+        Question types
       </a>
     </li>
   
@@ -803,8 +817,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_rotating/" class="md-nav__link">
-        Rotate to acquisition
+      <a href="../example_randomizing/" class="md-nav__link">
+        Randomizing
       </a>
     </li>
   
@@ -831,34 +845,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_merge_labelmaps/" class="md-nav__link">
-        Merge Labelmaps
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_annotations/" class="md-nav__link">
-        Annotations (contours and lines)
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../example_roi_visibility/" class="md-nav__link">
         ROI visibility
       </a>
@@ -873,8 +859,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_gold_standard/" class="md-nav__link">
-        Gold standard - Learning tool
+      <a href="../example_roicolorfile/" class="md-nav__link">
+        ROI colors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_rotating/" class="md-nav__link">
+        Rotate to acquisition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_user_interaction_log/" class="md-nav__link">
+        User interaction log
       </a>
     </li>
   
@@ -903,20 +917,6 @@
     <li class="md-nav__item">
       <a href="../example_zoom_pan_sliceoffset/" class="md-nav__link">
         Zoom Pan and Slice offset
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_user_interaction_log/" class="md-nav__link">
-        User interaction log
       </a>
     </li>
   
@@ -2281,7 +2281,7 @@ a suffix of <em>-RepN</em> where N is the number of the repetition (e.g. PageID-
 <p>Download and save the dataset as described in the <a href="../sample_data/#slicer-sample-datasets">sample data</a> section
 to a subfolder under ImageVolumes folder as shown.</p>
 <pre><code>.
-└─ ImageQuizzerData/
+└─ ImageDatabase/
       └─ ImageVolumes/
           └─ CT-MR Brain/
                ├─ CTBrain.nrrd
@@ -2349,8 +2349,9 @@ to a subfolder under ImageVolumes folder as shown.</p>
 Following is the resulting tree structure and the resulting quiz file. Each folder in the directory tree holds a label map file
 for the contours created at each repetition.</p>
 <pre><code>.
-└─ ImageQuizzerData/
-      └─ Users/
+└─ ImageQuizzer/
+    └─ Outputs/
+       └─ UsersResults/
           └─ Observer1/
                ├─ PgGroup2_PatientC_Grp3- Brain-MR T1/
                ├─ PgGroup2_PatientC-Rep1_Grp3- Brain-MR T1/
@@ -2580,7 +2581,7 @@ Note the added attributes:</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../example_randomizing/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Randomizing" rel="prev">
+          <a href="../example_link_multipleresponse/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Link &amp; multiple response" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -2589,20 +2590,20 @@ Note the added attributes:</p>
                 <span class="md-footer__direction">
                   Previous
                 </span>
-                Randomizing
+                Link & multiple response
               </div>
             </div>
           </a>
         
         
           
-          <a href="../example_roicolorfile/" class="md-footer__link md-footer__link--next" aria-label="Next: ROI colors" rel="next">
+          <a href="../example_merge_labelmaps/" class="md-footer__link md-footer__link--next" aria-label="Next: Merge Labelmaps" rel="next">
             <div class="md-footer__title">
               <div class="md-ellipsis">
                 <span class="md-footer__direction">
                   Next
                 </span>
-                ROI colors
+                Merge Labelmaps
               </div>
             </div>
             <div class="md-footer__button md-icon">

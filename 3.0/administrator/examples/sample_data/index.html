@@ -698,22 +698,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_layouts/" class="md-nav__link">
-        Layouts
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_question_type/" class="md-nav__link">
-        Question types
+      <a href="../example_annotations/" class="md-nav__link">
+        Annotations (contours and lines)
       </a>
     </li>
   
@@ -727,7 +713,21 @@
   
     <li class="md-nav__item">
       <a href="../example_dicomread/" class="md-nav__link">
-        Loading dicoms
+        Dicom Image Read
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_gold_standard/" class="md-nav__link">
+        Gold standard - Learning tool
       </a>
     </li>
   
@@ -754,36 +754,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_randomizing/" class="md-nav__link">
-        Randomizing
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_looping/" class="md-nav__link">
-        Looping
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_roicolorfile/" class="md-nav__link">
-        ROI colors
+      <a href="../example_layouts/" class="md-nav__link">
+        Layouts
       </a>
     </li>
   
@@ -810,22 +782,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_rotating/" class="md-nav__link">
-        Rotate to acquisition
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_redisplay_contours/" class="md-nav__link">
-        Redisplay contours
+      <a href="../example_looping/" class="md-nav__link">
+        Looping
       </a>
     </li>
   
@@ -852,8 +810,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_annotations/" class="md-nav__link">
-        Annotations (contours and lines)
+      <a href="../example_question_type/" class="md-nav__link">
+        Question types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_randomizing/" class="md-nav__link">
+        Randomizing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_redisplay_contours/" class="md-nav__link">
+        Redisplay contours
       </a>
     </li>
   
@@ -880,8 +866,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../example_gold_standard/" class="md-nav__link">
-        Gold standard - Learning tool
+      <a href="../example_roicolorfile/" class="md-nav__link">
+        ROI colors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_rotating/" class="md-nav__link">
+        Rotate to acquisition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../example_user_interaction_log/" class="md-nav__link">
+        User interaction log
       </a>
     </li>
   
@@ -910,20 +924,6 @@
     <li class="md-nav__item">
       <a href="../example_zoom_pan_sliceoffset/" class="md-nav__link">
         Zoom Pan and Slice offset
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../example_user_interaction_log/" class="md-nav__link">
-        User interaction log
       </a>
     </li>
   
@@ -2288,34 +2288,35 @@ using the instructions below.</p>
 <p>Some datasets are accessed directly through the Slicer application and others
 through the tutorial links provided.</p>
 <h2 id="suggested-tree-structure">Suggested tree structure</h2>
-<p>This is the tree structure we use for testing and building the example scripts.
-If you are using a tree structure with customized folder names,
-you will have to modify the image <strong>Path</strong> element in the scripts to match your tree layout.</p>
-<p>We recommend saving your data in a subfolder (e.g. ImageVolumes) since in the parent database directory (ImageQuizzerData),
-two other subfolders will be created:</p>
-<ol>
-<li>The <strong>Users</strong> folder which will hold the observer results files.</li>
-<li>The <strong>SlicerDicomDatabase</strong> folder that Slicer automatically creates to store pointers to the loaded DICOM files.</li>
-</ol>
+<p>This is the default location for the parent directory of the images database:</p>
 <pre><code>.
-└─ ImageQuizzerData/
-    │ └─ ImageVolumes/
-    │     ├─ MRHead/
-    │     │     └─ MRHead.nrrd
-    │     ├─ MRBrain/
-    │     │     └─ MRBrain.nrrd
-    │     ... etc.
-    │     ├─ ExtractedSampleData1/
-    │     ├─ ExtractedSampleData2/
-
-    (automatically created)
-    │     
-    ├─ Users/
-    └─ SlicerDicomDatabase/
+└─ ImageQuizzer/
+    └─ Inputs/
+        └─ Images/
+            └─ ImageDatabase/
+                │
+                ├─ ExtractedSampleData1/
+                └─ ExtractedSampleData2/
 
 </code></pre>
-<p>When logging in to the Image Quizzer, users point to <strong>ImageQuizzerData</strong> as the image database folder.
+<p>When the user logs in, they are asked to select the location of the data.</p>
+<p><img alt="Data location" src="../assets/LoginDefaultDatabase_selected.png" /></p>
+<p>It is recommended that you save your data in a subfolder (e.g. <strong>ImageVolumes</strong>) below the parent database directory. 
+In our examples the parent database directory is named <strong>ImageDatabase</strong>.
 All paths in the example scripts are relative to this folder and begin with <strong>ImageVolumes/...</strong>.</p>
+<p>This is an example of the tree structure used for building the example scripts.</p>
+<pre><code>.
+└─ ImageDatabase/
+   └─ ImageVolumes/
+        ├─ MRHead/
+        │   └─ MRHead.nrrd
+        ├─ MRBrain/
+        │   └─ MRBrain.nrrd
+            ... etc.
+
+</code></pre>
+<p>If you are using a tree structure with customized folder names,
+you will have to modify the image <strong>Path</strong> element in the scripts to match your tree layout.</p>
 <h2 id="slicer-sample-datasets">Slicer sample datasets</h2>
 <p>Some of the sample datasets referenced to run the example scripts can be downloaded directly from the Slicer application.
 (See <em>Download Sample Data</em> in the <em>Welcome to Slicer</em> module). These include:</p>

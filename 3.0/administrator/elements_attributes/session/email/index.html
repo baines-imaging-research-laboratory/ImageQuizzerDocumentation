@@ -628,22 +628,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/example_layouts/" class="md-nav__link">
-        Layouts
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../examples/example_question_type/" class="md-nav__link">
-        Question types
+      <a href="../../../examples/example_annotations/" class="md-nav__link">
+        Annotations (contours and lines)
       </a>
     </li>
   
@@ -657,7 +643,21 @@
   
     <li class="md-nav__item">
       <a href="../../../examples/example_dicomread/" class="md-nav__link">
-        Loading dicoms
+        Dicom Image Read
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_gold_standard/" class="md-nav__link">
+        Gold standard - Learning tool
       </a>
     </li>
   
@@ -684,36 +684,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/example_randomizing/" class="md-nav__link">
-        Randomizing
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../examples/example_looping/" class="md-nav__link">
-        Looping
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../examples/example_roicolorfile/" class="md-nav__link">
-        ROI colors
+      <a href="../../../examples/example_layouts/" class="md-nav__link">
+        Layouts
       </a>
     </li>
   
@@ -740,22 +712,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/example_rotating/" class="md-nav__link">
-        Rotate to acquisition
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../examples/example_redisplay_contours/" class="md-nav__link">
-        Redisplay contours
+      <a href="../../../examples/example_looping/" class="md-nav__link">
+        Looping
       </a>
     </li>
   
@@ -782,8 +740,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/example_annotations/" class="md-nav__link">
-        Annotations (contours and lines)
+      <a href="../../../examples/example_question_type/" class="md-nav__link">
+        Question types
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_randomizing/" class="md-nav__link">
+        Randomizing
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_redisplay_contours/" class="md-nav__link">
+        Redisplay contours
       </a>
     </li>
   
@@ -810,8 +796,36 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../examples/example_gold_standard/" class="md-nav__link">
-        Gold standard - Learning tool
+      <a href="../../../examples/example_roicolorfile/" class="md-nav__link">
+        ROI colors
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_rotating/" class="md-nav__link">
+        Rotate to acquisition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../examples/example_user_interaction_log/" class="md-nav__link">
+        User interaction log
       </a>
     </li>
   
@@ -840,20 +854,6 @@
     <li class="md-nav__item">
       <a href="../../../examples/example_zoom_pan_sliceoffset/" class="md-nav__link">
         Zoom Pan and Slice offset
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../examples/example_user_interaction_log/" class="md-nav__link">
-        User interaction log
       </a>
     </li>
   
@@ -2352,23 +2352,25 @@ in the section <a href="#zip-results-file">Zip results file</a>.</p>
 <h2 id="setup">Setup</h2>
 <p>In order to activate this feature, there are 2 steps required.</p>
 <ul>
-<li>Create the file 'smtp_config.txt' in the Resources/Config directory:</li>
+<li>Create the file 'smtp_config.txt' in the Inputs/Config directory:</li>
 <li>The administrator must add the 'EmailResultsTo' attribute to the Session element in the quiz xml file. </li>
 </ul>
 <h3 id="smtp_config">smtp_config</h3>
 <pre><code>Currently in this directory, you will find smtp_config_template.txt.
 </code></pre>
-<pre><code>.../
+<pre><code>.
+└─ImageQuizzerProject/
    └─ImageQuizzer/
-     └─Resources/
+     └─Inputs/
        └─Config/
          └─smtp_config_template.txt
 </code></pre>
 <p>Copy this file and rename it smtp_config.txt to be edited with your 
 host email server details.</p>
-<pre><code>.../
+<pre><code>.
+└─ImageQuizzerProject/
    └─ImageQuizzer/
-     └─Resources/
+     └─Inputs/
        └─Config/
          └─smtp_config_template.txt
          └─smtp_config.txt
@@ -2398,15 +2400,15 @@ and place it in the same folder where the quiz results are located. The zip
 file includes the results XML file as well as any <em>Page</em> folders containing 
 contour and markup files if any exist.</p>
 <pre><code>.
-└─ImageDatabase/
-   ├─SlicerDicomDatabase/
-   └─Users/
-     ├─Observer1/
-     │ └─ObserverContouringStudy.zip
-     │ └─ObserverContouringStudy.xml
-     ├─Page1/
-     ├─Page2/
-     │...
+└─ImageQuizzer/
+     └─Outputs/
+        └─UsersResults/
+            ├─Observer1/
+            │ └─ObserverContouringStudy.zip
+            │ └─ObserverContouringStudy.xml
+            ├─Page1/
+            ├─Page2/
+            │...
 </code></pre>
 <p>This zip file will be attached to the email contents and sent to the email address assigned to the
 'EmailResultsTo' attribute.</p>
