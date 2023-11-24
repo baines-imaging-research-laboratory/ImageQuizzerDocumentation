@@ -54,13 +54,16 @@ nav:
       - Sample data: administrator/examples/sample_data.md
       - Quiz building basics: administrator/examples/build_basics.md
       - Annotations (contours and lines): administrator/examples/example_annotations.md
+      - Bookmarks: administrator/examples/example_bookmarks.md
+      - Contour tool radius: administrator/examples/example_contour_tool_radius.md
       - Dicom Image Read: administrator/examples/example_dicomread.md
       - Gold standard - Learning tool: administrator/examples/example_gold_standard.md
       - Layers & colors: administrator/examples/example_layering.md
       - Layouts: administrator/examples/example_layouts.md
       - Link & multiple response: administrator/examples/example_link_multipleresponse.md
+      - Load label maps and segmentations: administrator/examples/example_load_labelmaps_segmentations.md
       - Looping: administrator/examples/example_looping.md
-      - Merge Labelmaps: administrator/examples/example_merge_labelmaps.md
+      - Merge label maps: administrator/examples/example_merge_labelmaps.md
       - Question types: administrator/examples/example_question_type.md
       - Randomizing: administrator/examples/example_randomizing.md
       - Redisplay contours: administrator/examples/example_redisplay_contours.md
@@ -91,6 +94,9 @@ nav:
         - AllowMultipleResponse: administrator/elements_attributes/page/allow_multiple_response.md
         - MinMarkupLinesRequiredOnAnyImage: administrator/elements_attributes/page/min_markuplines_required_on_any_image.md
         - UserInteractionLog: administrator/elements_attributes/page/user_interaction_log.md
+        - BookmarkID: administrator/elements_attributes/page/bookmark_id.md
+        - GoToBookmark: administrator/elements_attributes/page/go_to_bookmark.md
+        - ContourToolRadius: administrator/elements_attributes/page/contour_tool_radius.md
       - Image:
         - administrator/elements_attributes/image/index.md
         - ID: administrator/elements_attributes/image/id.md
@@ -139,4 +145,5 @@ nav:
       - v2.2.1: release/release_notes_v2.2.1.md
       - v2.3.0: release/release_notes_v2.3.0.md
       - v3.0.0: release/release_notes_v3.0.0.md
+      - v3.2.0: release/release_notes_v3.2.0.md
 

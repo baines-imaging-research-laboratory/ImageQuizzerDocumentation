@@ -12,16 +12,14 @@ quick access to a number of tools for image analysis.
 
 ## Window/Level
 
-Click the **On** button for quick access to Slicer's window/level tool.
-Use **Default Cursor** to exit the window/level functionality and return to the default cursor mode.
+A toggle button for quick access to Slicer's Window/Level tool and to return to the default cursor.
 
 ## Crosshairs
 
-Use the **On/Off** buttons to toggle Slicer's crosshairs tool.
+A toggle button for quick access to Slicer's display of crosshairs across all image viewing windows.
 When Crosshairs are turned on, hold the **Shift** key as you move the mouse over the images.
+A second click of this button will turn off the crosshairs display.
 
-Use the **Slice Intersections** checkbox to display crosshairs in each of the image views
-that are interactive as you scroll through the image slices.
 
 ## Viewing display options
 
@@ -35,12 +33,14 @@ Use **Reset to default** to return to the display layout as defined by the quiz.
 ## Line measurement
 
 Use the **Add new line** button to activate Slicer's ruler tool.
-Create the line using mouse clicks at the beginning and end of the feature on the image you wish to measure.
+Create this markup line using mouse clicks at the beginning and end of the feature on the image you wish to measure.
 
 Once you click on the 2nd point, a measurement will be displayed on the image viewing window.
+You have the option to turn off the measurement display by unchecking the 'Show Length' checkbox.
 
 You have the option to remove the last created point(s) by clicking the trash can button
 or to remove all points by clicking the **Clear all** button.
+
 
 ## Contour visibility
 

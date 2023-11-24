@@ -32,6 +32,9 @@ These are linked to the details describing the available options and dependencie
 ||||||[MinMarkupLinesRequiredOnAnyImage](page/min_markuplines_required_on_any_image.md)|
 ||||||[Loop](page/loop.md)|
 ||||||[UserInteractionLog](page/user_interaction_log.md) |
+||||||[BookmarkID](page/bookmark_id.md) |
+||||||[GoToBookmark](page/go_to_bookmark.md) |
+||||||[ContourToolRadius](page/contour_tool_radius.md) |
 |||[Image](image/index.md)|||[ID](image/id.md)|
 ||||||[DicomRead](image/dicom_read.md)|
 ||||||[Type](image/type.md)|

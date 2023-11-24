@@ -13,7 +13,7 @@ hide:
 | **Parent** | <[Page](index.md)\> ||
 | **Required** | yes ||
 | **Syntax** | ID="*option*" ||
-| **Options** | character string | used in compbination with Descriptor to identify the Page |
+| **Options** | character string | used in combination with Descriptor to identify the Page |
 
 
 See also:  [Page](index.md), [Descriptor](descriptor.md)

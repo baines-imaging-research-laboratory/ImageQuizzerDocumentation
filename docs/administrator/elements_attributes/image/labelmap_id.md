@@ -19,6 +19,8 @@ hide:
 |  | [SegmentRequired](segment_required.md)| user must create a contour for this image |
 |  | [Path](path.md)| path for image on this page must match image path on subsequent page |
 |  | [DisplayLabelMapID](display_labelmap_id.md)| set on image of subsequent page |
+|  | [PageGroup](../page/pagegroup.md) | |
+|  | [RandomizePageGroups](../session/randomize_page_groups.md) | |
 
 
 
@@ -36,6 +38,8 @@ here will be redisplayed on the subsequent page.
 If more than one image element is set up for this image path - differing orientations, 
 this attribute only needs to be set up on one instance.
 
+If the pages of the study are to be randomized using the Session attribute *RandomizePageGroups* to "Y",
+then the PageGroup attribute on the page for the images with *LabelMapID* and the *DisplayLabelMapID* page must be the same.
 
 ## Example
 

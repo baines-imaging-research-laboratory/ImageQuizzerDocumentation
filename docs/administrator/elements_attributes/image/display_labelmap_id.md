@@ -17,6 +17,8 @@ hide:
 | **Associations** | |  |
 |  | [Path](path.md)| path for image on this page must match image path on previous page |
 |  | [LabelMapID](labelmap_id.md)| set on image of a previous page |
+|  | [PageGroup](../page/pagegroup.md) | |
+|  | [RandomizePageGroups](../session/randomize_page_groups.md) | |
 
 
 
@@ -35,6 +37,10 @@ until it finds an image with the following two conditions:
 
 If more than one image element is set up for this image path - differing orientations, 
 this attribute needs to be set up on each instance.
+
+If the pages of the study are to be randomized using the Session attribute *RandomizePageGroups* to "Y",
+then the PageGroup attribute on the page for the images with *LabelMapID* and the *DisplayLabelMapID* page must be the same.
+
 
 ## Example
 

@@ -22,4 +22,18 @@ When in the contouring segment editor, the followng 3D Slicer shortcuts are avai
 
 ![Contouring shortcuts](assets/Slicer_contouring_shortcuts.png)
 
+
+| Tools | Key | Effect |
+|-----------|-----|--------|
+| Paint | + = | increase brush radius by 20% |
+|       | _ - | decrease brush radius by 20% |
+|       |     |                              |
+| Erase | + = | increase brush radius by 20% |
+|       | _ - | decrease brush radius by 20% |
+|       |     |                              |
+| Draw  | x | delete last point added |
+|       | a | apply segment |
+|       | Enter | apply segment |
+|       | Rt click | apply segment |
+
 Refer to <a href="https://slicer.readthedocs.io/en/latest/user_guide/modules/segmenteditor.html#keyboard-shortcuts" target="_blank">3D Slicer Segment editor shortcuts</a>
