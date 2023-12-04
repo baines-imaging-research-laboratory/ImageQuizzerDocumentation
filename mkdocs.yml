@@ -117,6 +117,7 @@ nav:
         - MergeLabelMaps: administrator/elements_attributes/image/merge_labelmaps.md
         - ZoomFactor: administrator/elements_attributes/image/zoom_factor.md
         - PanOrigin: administrator/elements_attributes/image/pan_origin.md
+        - WindowLevel: administrator/elements_attributes/image/window_level.md
         - ROIs:
           - administrator/elements_attributes/image/rois/index.md
           - ROIVisibilityCode: administrator/elements_attributes/image/rois/roi_visibility_code.md

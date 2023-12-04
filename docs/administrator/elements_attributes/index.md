@@ -49,6 +49,7 @@ These are linked to the details describing the available options and dependencie
 ||||||[MergeLabelMaps](image/merge_labelmaps.md)|
 ||||||[ZoomFactor](image/zoom_factor.md)|
 ||||||[PanOrigin](image/pan_origin.md)|
+||||||[WindowLevel](image/window_level.md)|
 ||||[DefaultDestination](image/default_destination.md)|||
 ||||[DefaultOrientation](image/default_orientation.md)|||
 ||||[Layer](image/layer.md)|||
