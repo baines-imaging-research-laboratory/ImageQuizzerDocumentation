@@ -45,6 +45,7 @@ Download and install  <a href="https://slicer-packages.kitware.com/#collection/5
 
 - Install 3D Slicer extensions : SlicerRT, SlicerOpenCV, mpReview (optional)
       * Open 3D Slicer
+		* .\Slicer 4.11.20210226\Slicer.exe
       * Select View > Extension Manager
 		  * In the Search field (upper right-hand corner) input SlicerRT
 		  * Click Install
@@ -58,6 +59,7 @@ Download and install  <a href="https://slicer-packages.kitware.com/#collection/5
 
 * Set Slicer application settings to be compatible with Image Quizzer
     * Open 3D Slicer
+		* .\Slicer 4.11.20210226\Slicer.exe
     * Select Edit>Application Settings
     * Select DICOM in the left-hand panel
     * Set Preferred multi-volume import format = volume sequence
@@ -76,7 +78,15 @@ Pre-release versions <a href="https://github.com/baines-imaging-research-laborat
 
 ##### Extract
 
-Once downloaded, extract all files from the BainesImageQuizzer-QuizApp_v#.#.# file.
+Once downloaded, extract all files from the BainesImageQuizzer-QuizApp_v#.#.# file into a folder named **BainesImageQuizzer**.
+
+!!! Warning 
+	BACKUP !!!
+	
+    If overwriting an existing copy of the Image Quizzer, be sure to back up any results, images and setup files
+	currently stored in the Inputs and Outputs folder.
+    
+
 
 ##### Components
 
@@ -86,7 +96,11 @@ that may be relevant to the study administrator when developing the script.
 
 ```
 .
-└─ ImageQuizzerProject/
+└─ BainesImageQuizzer/
+   ├─ USB-Support/
+   │     ├─ README - Startup.txt
+   │     ├─ README - Startup.docx
+   │     └─ Start Image Quizzer.bat
    ├─ Documentation/
    │     └─ ReadMe.txt                              (contains links to on-line documentation)  
    ├─ ImageQuizzer
@@ -111,8 +125,9 @@ that may be relevant to the study administrator when developing the script.
     They may be either under development or required for execution of the Image Quizzer module.	
 	
 
-
 ### Connecting Image Quizzer to 3D Slicer
+
+#### PC based (fixed device) install
 
 To connect the Image Quizzer module
 
@@ -120,9 +135,15 @@ To connect the Image Quizzer module
 * Select Edit > Application Settings
 * Select Modules in the left-hand panel
 * Click Add in the panel to the right of  “Additional module paths:” (you may have to click the ‘>>’ button)
-* Browse for folder named **ImageQuizzer\Code** in the downloaded ImageQuizzerProject
-    * eg. C:\Users\username\Documents\ImageQuizzerProject\ImageQuizzer\Code
+* Browse for folder named **ImageQuizzer\Code** in the downloaded BainesImageQuizzer
+    * eg. C:\Users\username\Documents\BainesImageQuizzer\ImageQuizzer\Code
 * Restart 3D Slicer if prompted
+
+#### USB based (portable device) install
+
+Since a USB when mounted on various PC's or laptops can have differing drive letters, this
+connection is done automatically when you use the ImageQuizzerStartup-USB.bat batch file.
+
 
 ## How to start the Image Quizzer
 
@@ -131,9 +152,9 @@ There are two ways to run the Image Quizzer.
 1. Using the Startup batch file (recommended)
 
     It is recommended that you use the startup batch file, especially if you are loading DICOM images.
-    The observer needs to navigate to the ImageQuizzerProject folder
+    The observer needs to navigate to the BainesImageQuizzer folder
 	
-    eg. C:\Users\username\Documents\ImageQuizzerProject
+    eg. C:\Users\username\Documents\BainesImageQuizzer
 	
 	Double-click on one of the two startup batch files:
 	
@@ -164,9 +185,8 @@ There are two ways to run the Image Quizzer.
 		This folder is created automatically whenever the Image Quizzer is started 
 		in the Outputs folder.
 		
-		    ...\ImageQuizzerProject\ImageQuizzer\Outputs\SlicerDicomDatabase
+		    ...\BainesImageQuizzer\ImageQuizzer\Outputs\SlicerDicomDatabase
 		
-	
 
 ## Test your installation
 
@@ -180,7 +200,7 @@ for examples showing how to build your script and activate various features avai
 
 Quiz results can be found in the folder:
 
-...\ImageQuizzerProject\ImageQuizzer\Outputs\UserResults\\*username*\\*quizname*
+...\BainesImageQuizzer\ImageQuizzer\Outputs\UserResults\\*username*\\*quizname*
 
 See [Quiz Results - Response Capture](../administrator/results.md) section for more details.
 
@@ -235,11 +255,6 @@ We have had success using:
 
 ### Distribute via USB
 
-Distribution to observers can be done by setting up a USB with 3D Slicer and the Image Quizzer module already installed, along with encrypted study data and the XML quiz file.
+Distribution to observers can be done by setting up a USB with 3D Slicer and the Image Quizzer module already installed, along with study data (encrypted) and the XML quiz file.
 This USB can then be plugged into the observers laptop or PC and the quiz is ready-to-go. 
 Use ImageQuizzerStartup-USB.bat to start the Image Quizzer as described above in [How to start the ImageQuizzer](#how-to-start-the-image-quizzer)
-
-!!! tip
-    VeraCrypt is an application that can be used to encrypt data and mount the encrypted volume onto your PC; (admin rights are required).
-
-

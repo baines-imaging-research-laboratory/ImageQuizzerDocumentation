@@ -38,7 +38,7 @@ In order to activate this feature, there are 2 steps required.
 
 ```
 .
-└─ImageQuizzerProject/
+└─BainesImageQuizzer/
    └─ImageQuizzer/
      └─Inputs/
        └─Config/
@@ -50,7 +50,7 @@ host email server details.
 	
 ```
 .
-└─ImageQuizzerProject/
+└─BainesImageQuizzer/
    └─ImageQuizzer/
      └─Inputs/
        └─Config/

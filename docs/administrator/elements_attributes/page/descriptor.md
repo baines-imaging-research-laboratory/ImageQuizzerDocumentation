@@ -12,8 +12,8 @@ hide:
 | **Classification** | attribute ||
 | **Parent** | <[Page](index.md)\> ||
 | **Required** | no ||
-| **Syntax** | Descriptor="*option*" ||
-| **Options** | character string | used in compbination with ID to identify the Page |
+| **Syntax** | Descriptor="*string*" | character string |
+| **Restrictions**  |  special characters not allowed | "'#&{}\\<>*?/$!:@+`~%^()+=,`|
 
 
 See also:  [Page](index.md), [ID](id.md)

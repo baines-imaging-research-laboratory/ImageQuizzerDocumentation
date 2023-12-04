@@ -32,6 +32,9 @@ It is a required attribute.
 	directory that holds the data for the Image Quizzer defined at login time.
 	This script can access elements of the Slicer application by importing the 'slicer' class.
 	
+	If the script fails, the button will turn a light red color and a warning message appears 
+	for the user to contact the administrator.
+	
 
 
 ## Example

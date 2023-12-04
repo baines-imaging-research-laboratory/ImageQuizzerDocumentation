@@ -23,7 +23,7 @@ Following are the steps to launch the quiz.
 
     Navigate to the directory given to you by the quiz administrator. 
 	This is the parent directory holding the images for the quiz.
-	The default location is .../ImageQuizzerProject/ImageQuizzer/Inputs/Images/ImageDatabase. 
+	The default location is .../BainesImageQuizzer/ImageQuizzer/Inputs/Images/ImageDatabase. 
 
 1. User Name
 
