@@ -40,8 +40,8 @@ You have the option to turn off the measurement display by unchecking the **Show
 
 The markup lines are linked to the image shown in the viewing window where they are generated.
 By checking the **Display in all views** box, users can choose whether to see the lines in all
-viewing windows, which may feature other associated images, 
-or only in the windows displaying the originally link image.
+viewing windows, which may feature other images, 
+or only in the windows displaying the originally linked image.
 
 You have the option to remove the last created point(s) by clicking the trash can button
 or to remove all points by clicking the **Clear all** button.
