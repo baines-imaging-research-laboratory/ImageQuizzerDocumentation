@@ -25,6 +25,11 @@ hide:
 			add the Image Quizzer module path to Slicer's extensions list enabling an automatic
 			start of the Image Quizzer from a startup batch file. This cannot be preset since
 			a USB can have different drive letters when plugging into different PC's or laptops.
+	- Markups Line viewing windows display
+		- Markup lines are linked to the image in the viewing window where the lines are generated.
+			There is now a 'Display in all views' checkbox in the Line Measurement group giving the
+			user control whether the lines created appear in all viewing windows (potentially displaying
+			other associated images) or only in the windows displaying the originally linked image.
 	- Preprocessing conversion utility - ConvertDicomToNiiVolume
 		- A script to convert a dicom series into a NIfTI volume. This can be run for an individual
 		series or can be run in batch mode.

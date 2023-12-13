@@ -36,10 +36,17 @@ Use the **Add new line** button to activate Slicer's ruler tool.
 Create this markup line using mouse clicks at the beginning and end of the feature on the image you wish to measure.
 
 Once you click on the 2nd point, a measurement will be displayed on the image viewing window.
-You have the option to turn off the measurement display by unchecking the 'Show Length' checkbox.
+You have the option to turn off the measurement display by unchecking the **Show length** checkbox.
+
+The markup lines are linked to the image shown in the viewing window where they are generated.
+By checking the **Display in all views** box, users can choose whether to see the lines in all
+viewing windows, which may feature other images, 
+or only in the windows displaying the originally linked image.
 
 You have the option to remove the last created point(s) by clicking the trash can button
 or to remove all points by clicking the **Clear all** button.
+
+
 
 
 ## Contour visibility
