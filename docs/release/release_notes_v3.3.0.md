@@ -25,7 +25,9 @@ hide:
 			add the Image Quizzer module path to Slicer's extensions list enabling an automatic
 			start of the Image Quizzer from a startup batch file. This cannot be preset since
 			a USB can have different drive letters when plugging into different PC's or laptops.
-			
+	- Preprocessing conversion utility - ConvertDicomToNiiVolume
+		- A script to convert a dicom series into a NIfTI volume. This can be run for an individual
+		series or can be run in batch mode.
 	
 	
 ##Modifications

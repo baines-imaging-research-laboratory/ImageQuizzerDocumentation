@@ -135,6 +135,7 @@ nav:
           - GroupLayout: administrator/elements_attributes/questionset/question/group_layout.md
           - Option: administrator/elements_attributes/questionset/question/option.md
     - Quiz results: administrator/results.md
+    - Preprocessing utilities: administrator/preprocessing.md
     - System Notes: extras/codingconventions.md
   - About:
     - about/index.md
