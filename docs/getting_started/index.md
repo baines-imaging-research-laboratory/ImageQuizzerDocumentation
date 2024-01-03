@@ -11,16 +11,12 @@ Following you will find information to get the Image Quizzer installed and runni
 
 ## System Requirements
 
-* Windows operating system (tested with Windows 7 and Windows 10)
+* Windows operating system 
+    - (tested with Windows 7, 10 and 11; not compatible on MAC OS at this time)
 * Notepad (or some editor)
 
 * 3D Slicer v 4.11.20210226
 
-
-
-!!! abstract "TODO"
-    Currently, the Image Quizzer has been running on Windows operating systems (Windows 7 and 10). 
-    With some adjustments to the installation notes, this may also run on a MAC system.
 
 ## Installation
 
@@ -118,11 +114,12 @@ that may be relevant to the study administrator when developing the script.
    ├─ImageQuizzerStartup.bat         (starts the Image Quizzer and does cleanup on close)
    ├─ImageQuizzerStartup-USB.bat     (starts the Image Quizzer installed on USB and does cleanup on close)
    └─ImageQuizzerShutdown.bat        (updated when running the quiz; may not exist on install)
+   
 ```
 
 !!! Note
     There are other files/folders not shown in this tree. They are not necessary for script development.
-    They may be either under development or required for execution of the Image Quizzer module.	
+    but required for execution of the Image Quizzer module.	
 	
 
 ### Connecting Image Quizzer to 3D Slicer
@@ -167,10 +164,6 @@ There are two ways to run the Image Quizzer.
     the SlicerDicomDatabase folder that was created in the ImageQuizzer\Outputs folder.
     (This folder is created automatically by Slicer whenever the Image Quizzer is started.
 	Deleting this folder reduces the startup time when restarting the Image Quizzer.)
-
-    !!! Note
-        Both the Startup and Shutdown batch files have commands specific to the Windows environment.
-        If using a MAC, start the Image Quizzer directly in Slicer as described below.
 
 
 1. Selecting the Image Quizzer module in Slicer

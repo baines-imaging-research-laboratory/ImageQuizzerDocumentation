@@ -27,6 +27,8 @@ This assumes you have Python (minimum version 3) installed on your PC.
 
 
 ```
+Run cmd.exe
+
 >>>cd path/to/ImageQuizzer/PrePost_Processing
 
 		for single run - one dicom series
@@ -45,7 +47,8 @@ are the python commands to run the conversion.
 
 
 ```
-Slicer interactor commands:
+Open Slicer
+View > Python Interactor
 
 >>>import sys
 >>>os.chdir("path/to/ImageQuizzer/PrePost_Processing")
@@ -57,26 +60,6 @@ Slicer interactor commands:
 		for multiple runs
 >>>sys.argv=["ConvertDicomToNiiVolume.py","-b","path/to/batchfile.csv"]
 >>>exec(open("ConvertDicomToNiiVolume.py").read())
-
-```
-
-####Utility syntax help
-
-```
->>>py ConvertDicomToNiiVolume.py -h
-
-usage: ConvertDicomToNiiVolume.py [-h] [-i PATH] [-o PATH] [-b CsvFilePATH]
-
-ConvertDicomToNiiVolume preprocessor
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -i PATH, --input-folder PATH
-                        Folder of input DICOM files (can contain sub-folders)
-  -o PATH, --output-folder PATH
-                        Folder to save converted datasets
-  -b CsvFilePATH, --batch-csv CsvFilePATH
-                        Full path to csv file for batch processing
 
 ```
 
@@ -100,3 +83,24 @@ Lines beginning with '#' are comment lines and are ignored.
 
 After a batch run, a log file is created in the same directory where the csv batch file is located.
 It has the same name as the batch file with 'Log' as the suffix.
+
+
+####Utility syntax help
+
+```
+>>>py ConvertDicomToNiiVolume.py -h
+
+usage: ConvertDicomToNiiVolume.py [-h] [-i PATH] [-o PATH] [-b CsvFilePATH]
+
+ConvertDicomToNiiVolume preprocessor
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i PATH, --input-folder PATH
+                        Folder of input DICOM files (can contain sub-folders)
+  -o PATH, --output-folder PATH
+                        Folder to save converted datasets
+  -b CsvFilePATH, --batch-csv CSVFILEPATH
+                        Full path to csv file for batch processing
+
+```
