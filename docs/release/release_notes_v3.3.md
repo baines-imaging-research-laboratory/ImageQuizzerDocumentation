@@ -20,20 +20,26 @@ hide:
 	- Window Level
 		- A WindowLevel attribute was added for the Image elements giving the user a starting point
 			- especially useful if not loading the image as dicom
+			
 	- Auto update of Slicer's extensions modules list
 		- When launching Slicer and the Image Quizzer from a USB, this script will automatically
 			add the Image Quizzer module path to Slicer's extensions list enabling an automatic
 			start of the Image Quizzer from a startup batch file. This cannot be preset since
 			a USB can have different drive letters when plugging into different PC's or laptops.
+			
 	- Markups Line viewing windows display
 		- Markup lines are linked to the image in the viewing window where the lines are generated.
 			There is now a 'Display in all views' checkbox in the Line Measurement group giving the
 			user control whether the lines created appear in all viewing windows (potentially displaying
 			other associated images) or only in the windows displaying the originally linked image.
+			
+	- Picture type question
+		- This question type enables an image to be displayed in the quiz.
+	
 	- Preprocessing conversion utility - ConvertDicomToNiiVolume
 		- A script to convert a dicom series into a NIfTI volume. This can be run for an individual
 		series or can be run in batch mode.
-	
+		
 	
 ##Modifications
 
@@ -46,22 +52,24 @@ hide:
 
 	- v3.3.0
 		- Exit / Resume
-			- When exiting from a quiz if the user had already reached the last page of the quiz and all requirements 
-				were met, resuming the quiz was starting on the wrong page. The code has been modified
-				to bring the user back to the last page when Exit was pressed in order to resume and press the Finish
-				button to mark the Quiz as completed.
+			- When exiting from a quiz if the user had already reached the last page of the quiz and  
+			  all requirements were met, resuming the quiz was starting on the wrong page. 
+			  The code has been modified to bring the user back to the last page when Exit was 
+			  pressed in order to resume and press the Finish	button to mark the Quiz as completed.
 				
 		- Page ID and Descriptor attributes
 			- A validation is performed to make sure there are no special characters in these strings.
-				These two attributes along with the PageGroup number are used to create the subfolders
-				in the results folder and special characters are not allowed in the naming of folders.
+			  These two attributes along with the PageGroup number are used to create the subfolders
+			  in the results folder and special characters are not allowed in the naming of folders.
 				
 		- Capture Image State
-			- Image state is now properly captured on the last page of the quiz when user presses the 'Finish' button.
+			- Image state is now properly captured on the last page of the quiz when user 
+			  presses the 'Finish' button.
 		
 	- v3.3.1
 		- USB Startup batch scripts
-			- Scripting adjusted to update the Slicer extensions list to automatically recognize the Image Quizzer.
+			- Scripting adjusted to update the Slicer extensions list to automatically recognize 
+			  the Image Quizzer.
 			- These scripts use Python that is embedded in Slicer so that the users don't need to
 			  download and install Python software.
 			  
@@ -74,8 +82,21 @@ hide:
 			  before calling on the operating system to delete it. (Previously, if an image was 
 			  displayed in two views with different orientations, there may have been some undeleted
 			  markup line files and the xml results file was not updated properly.)
+			  
+	- v3.3.3
+		- UserInteractionLog
+			- If you have a quiz that uses the UserInteractionLog attribute intermittently between Pages,
+			  the zoom, pan and window resizing capabilities were not being enabled when the 
+			  UserInteractionLog was set to 'N'.
 		
-			
-			
+	- v3.3.4
+		- Question type "Button" messaging
+			- Fix the validation error message when the script linked to the Button-type question
+			  is not found.
+		
+		- Import of OpenCV library (cv2)- for UserInteractionLog="Y"
+			- Error handling added for the import of the SlicerOpenCV extension. If the extension is missing
+			  (either not added or it is not available) the user interaction logs will have a 0 recorded
+			  in the logs for the CPU Uptime column.
 		  
 <a href="https://bainesimaging.com" target="_blank">Baines Imaging Research Laboratories</a>, LRCP, London Health Sciences Centre, London, ON, Canada

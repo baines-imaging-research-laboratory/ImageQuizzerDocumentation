@@ -12,7 +12,24 @@ See the table listing all available [question types](../elements_attributes/ques
 
 ## Prep
 
-For this example, there are no images being loaded. No sample datasets are required.
+For this quiz to run, there must be files in the Scripts and MasterQuiz directories as shown.
+(These can be empty placeholder files.) 
+There are no images being loaded. No sample datasets are required.
+
+```
+.
+└─ ImageQuizzer/
+    └─ Inputs/
+        └─ MasterQuiz/
+			├─ ScriptExampleQuiz.xml
+			└─ computer.png
+        └─ Scripts/
+			├─ script-for-button1.py
+			└─ script-for-button1.py
+			
+```
+
+
 
 ## Script example
 
@@ -37,9 +54,12 @@ For this example, there are no images being loaded. No sample datasets are requi
                 <Option>second option</Option>
             </Question>
             <Question Descriptor="Buttons" Type="Button">
-                <Option>relative/path/to/script-for-button1.py</Option>
-                <Option>relative/path/to/script-for-button2.py</Option>
+                <Option>script-for-button1.py</Option>
+                <Option>script-for-button2.py</Option>
             </Question>
+			<Question Descriptor="Picture display" Type="Picture">
+				<Option>legend.png</Option>
+			</Question>
         </QuestionSet>
         <QuestionSet ID="Text and Values" Descriptor="formats and modifiers">
             <Question Descriptor="Information box" Type="InfoBox">
@@ -70,7 +90,7 @@ For this example, there are no images being loaded. No sample datasets are requi
 
 ```
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Display from first question set with radion buttons and check boxes.
+Display from first question set with radio buttons and check boxes.
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 ```
 
