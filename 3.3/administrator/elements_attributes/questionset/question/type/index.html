@@ -2489,6 +2489,11 @@
 <td>Button</td>
 <td>button that will run external script defined in the Option element</td>
 </tr>
+<tr>
+<td></td>
+<td>Picture</td>
+<td>to display a picture type file (eg. .png or .jpg)</td>
+</tr>
 </tbody>
 </table>
 <h2 id="description">Description</h2>
@@ -2496,12 +2501,17 @@
 It is a required attribute.</p>
 <div class="admonition note">
 <p class="admonition-title">Button</p>
-<p>The Button type of question will execute an external script. The location of the script is defined 
-in the Option element of the question as a path relative to the
-directory that holds the data for the Image Quizzer defined at login time.
-This script can access elements of the Slicer application by importing the 'slicer' class.</p>
-<p>If the script fails, the button will turn a light red color and a warning message appears 
+<p>The Button type of question will execute an external script. The Option element holds the filename
+of the script located in the .../ImageQuizzer/Inputs/Scripts directory.
+If the script fails, the button will turn a light red color and a warning message appears 
 for the user to contact the administrator.</p>
+<p>This script can access elements of the Slicer application by importing the 'slicer' class.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Picture</p>
+<p>The Picture question type enables the display of an image file (such as .png or .jpg) in the quiz.
+The Option element holds the filename for the picture file located in the .../ImageQuizzer/Inputs/MasterQuiz directory
+along with the XML master quiz file.</p>
 </div>
 <h2 id="example">Example</h2>
 <p>See <a href="../../../../examples/example_question_type/">Question type</a> examples.</p>

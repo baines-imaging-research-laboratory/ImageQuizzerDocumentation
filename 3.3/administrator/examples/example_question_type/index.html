@@ -2419,7 +2419,20 @@
 <p>This example shows the different formats available for presenting the quiz questions.</p>
 <p>See the table listing all available <a href="../../elements_attributes/questionset/question/type/">question types</a>.</p>
 <h2 id="prep">Prep</h2>
-<p>For this example, there are no images being loaded. No sample datasets are required.</p>
+<p>For this quiz to run, there must be files in the Scripts and MasterQuiz directories as shown.
+(These can be empty placeholder files.) 
+There are no images being loaded. No sample datasets are required.</p>
+<pre><code>.
+└─ ImageQuizzer/
+    └─ Inputs/
+        └─ MasterQuiz/
+            ├─ ScriptExampleQuiz.xml
+            └─ computer.png
+        └─ Scripts/
+            ├─ script-for-button1.py
+            └─ script-for-button1.py
+
+</code></pre>
 <h2 id="script-example">Script example</h2>
 <pre><code>&lt;Session&gt;
     &lt;Page ID=&quot;Question Types&quot;&gt;
@@ -2441,8 +2454,11 @@
                 &lt;Option&gt;second option&lt;/Option&gt;
             &lt;/Question&gt;
             &lt;Question Descriptor=&quot;Buttons&quot; Type=&quot;Button&quot;&gt;
-                &lt;Option&gt;relative/path/to/script-for-button1.py&lt;/Option&gt;
-                &lt;Option&gt;relative/path/to/script-for-button2.py&lt;/Option&gt;
+                &lt;Option&gt;script-for-button1.py&lt;/Option&gt;
+                &lt;Option&gt;script-for-button2.py&lt;/Option&gt;
+            &lt;/Question&gt;
+            &lt;Question Descriptor=&quot;Picture display&quot; Type=&quot;Picture&quot;&gt;
+                &lt;Option&gt;legend.png&lt;/Option&gt;
             &lt;/Question&gt;
         &lt;/QuestionSet&gt;
         &lt;QuestionSet ID=&quot;Text and Values&quot; Descriptor=&quot;formats and modifiers&quot;&gt;
@@ -2471,7 +2487,7 @@
 </code></pre>
 <h2 id="quiz-display-results">Quiz display results</h2>
 <pre><code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-Display from first question set with radion buttons and check boxes.
+Display from first question set with radio buttons and check boxes.
 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
 </code></pre>
 <p><img alt="ButtonsBoxes" src="../assets/Example_QuestionType_Radio_CheckBox_Button.png" /></p>
