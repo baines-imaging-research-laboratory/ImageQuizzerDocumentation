@@ -22,7 +22,9 @@ hide:
 ## Description
 
 This element defines in which viewing window to place the image.
-The Red viewing window is the default window used if this element is missing.
+The Red viewing window is the default window used if this element is missing. 
+At least one Image element on the Page must be assigned to the Red window. 
+(This ensures the availability of Slicer's segmentation functionality.)
 
 The DefaultDestination element differs from the Destination attribute found in the State element.
 DefaultDestination defines the original destination that the image is presented.

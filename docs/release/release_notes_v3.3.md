@@ -7,6 +7,7 @@ hide:
 #Release Notes
 	Image Quizzer v3.3.0 - December 2023
 				  v3.3.2 - January 2024
+				  v3.3.4 - February 2024
 	
 
 ##Requirements
@@ -17,29 +18,39 @@ hide:
 	
 ##New Features
 
-	- Window Level
-		- A WindowLevel attribute was added for the Image elements giving the user a starting point
-			- especially useful if not loading the image as dicom
+	- v3.3.0 
+		- Window Level
+			- A WindowLevel attribute was added for the Image elements giving the user a starting point
+				- especially useful if not loading the image as dicom
 			
-	- Auto update of Slicer's extensions modules list
-		- When launching Slicer and the Image Quizzer from a USB, this script will automatically
-			add the Image Quizzer module path to Slicer's extensions list enabling an automatic
-			start of the Image Quizzer from a startup batch file. This cannot be preset since
-			a USB can have different drive letters when plugging into different PC's or laptops.
+		- Markups Line viewing windows display
+			- Markup lines are linked to the image in the viewing window where the lines are generated.
+				There is now a 'Display in all views' checkbox in the Line Measurement group giving the
+				user control whether the lines created appear in all viewing windows (potentially displaying
+				other associated images) or only in the windows displaying the originally linked image.
 			
-	- Markups Line viewing windows display
-		- Markup lines are linked to the image in the viewing window where the lines are generated.
-			There is now a 'Display in all views' checkbox in the Line Measurement group giving the
-			user control whether the lines created appear in all viewing windows (potentially displaying
-			other associated images) or only in the windows displaying the originally linked image.
+	- v3.3.1
+		- Auto update of Slicer's extensions modules list
+			- When launching Slicer and the Image Quizzer from a USB, this script will automatically
+				add the Image Quizzer module path to Slicer's extensions list enabling an automatic
+				start of the Image Quizzer from a startup batch file. This cannot be preset since
+				a USB can have different drive letters when plugging into different PC's or laptops.
 			
-	- Picture type question
-		- This question type enables an image to be displayed in the quiz.
+	- v3.3.0
+		- Preprocessing conversion utility - ConvertDicomToNiiVolume
+			- A script to convert a dicom series into a NIfTI volume. This can be run for an individual
+			series or can be run in batch mode.
+
+	- v3.3.4
+		- Picture type question
+			- This question type enables an image to be displayed in the quiz.
 	
-	- Preprocessing conversion utility - ConvertDicomToNiiVolume
-		- A script to convert a dicom series into a NIfTI volume. This can be run for an individual
-		series or can be run in batch mode.
-		
+		- USB-Support
+			- Connecting the Image Quizzer module to Slicer when using a USB is complicated by the fact that the 
+			drive letter assigned to the USB is not consistent when plugged into different PCs or laptops.
+			There are 2 python scripts in this folder that will update Slicer's extensions ini file automatically. 
+			
+			
 	
 ##Modifications
 
@@ -95,8 +106,12 @@ hide:
 			  is not found.
 		
 		- Import of OpenCV library (cv2)- for UserInteractionLog="Y"
-			- Error handling added for the import of the SlicerOpenCV extension. If the extension is missing
-			  (either not added or it is not available) the user interaction logs will have a 0 recorded
-			  in the logs for the CPU Uptime column.
+			- Error handling added for the import of the SlicerOpenCV extension. If the extension 
+			  is missing (either not added or it is not available) the user interaction logs 
+			  will have a 0 recorded in the logs for the CPU Uptime column.
+			  
+		- Validation added for the quiz to make sure all Page elements that have at least one Image  
+			sub-element have at least one Image assigned to the Red viewing window.
+			This ensures the availability of Slicer's segmentation functionality.
 		  
 <a href="https://bainesimaging.com" target="_blank">Baines Imaging Research Laboratories</a>, LRCP, London Health Sciences Centre, London, ON, Canada

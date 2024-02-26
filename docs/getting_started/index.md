@@ -74,15 +74,13 @@ Pre-release versions <a href="https://github.com/baines-imaging-research-laborat
 
 ##### Extract
 
-Once downloaded, extract all files from the BainesImageQuizzer-QuizApp_v#.#.# file into a folder named **BainesImageQuizzer**.
+Once downloaded, extract all files from the BainesImageQuizzer-QuizApp_v#.#.#.zip file into the (recommended) folder named **BainesImageQuizzer**.
 
 !!! Warning 
-	BACKUP !!!
+	BACKUP Inputs and Outputs folders !!!
 	
     If overwriting an existing copy of the Image Quizzer, be sure to back up any results, images and setup files
-	currently stored in the Inputs and Outputs folder.
-    
-
+	currently stored in the Inputs and Outputs folder. 
 
 ##### Components
 
@@ -93,10 +91,6 @@ that may be relevant to the study administrator when developing the script.
 ```
 .
 └─ BainesImageQuizzer/
-   ├─ USB-Support/
-   │     ├─ README - Startup.txt
-   │     ├─ README - Startup.docx
-   │     └─ Start Image Quizzer.bat
    ├─ Documentation/
    │     └─ ReadMe.txt                              (contains links to on-line documentation)  
    ├─ ImageQuizzer
@@ -111,6 +105,12 @@ that may be relevant to the study administrator when developing the script.
    │     │   └─ Scripts/                            (default location for scripting files for 'Button' type questions)
    │     └─ Outputs/
    │         └─ UserResults                         (parent directory for users quiz results)
+   ├─ USB-Support/
+   │     ├─ README - Startup.txt
+   │     ├─ Start Image Quizzer.bat
+   │     ├─ USB01-RunScriptShell.py
+   │     └─ USB02-UpdateSlicerExtensionList.py
+   │
    ├─ImageQuizzerStartup.bat         (starts the Image Quizzer and does cleanup on close)
    ├─ImageQuizzerStartup-USB.bat     (starts the Image Quizzer installed on USB and does cleanup on close)
    └─ImageQuizzerShutdown.bat        (updated when running the quiz; may not exist on install)
@@ -251,3 +251,18 @@ We have had success using:
 Distribution to observers can be done by setting up a USB with 3D Slicer and the Image Quizzer module already installed, along with study data (encrypted) and the XML quiz file.
 This USB can then be plugged into the observers laptop or PC and the quiz is ready-to-go. 
 Use ImageQuizzerStartup-USB.bat to start the Image Quizzer as described above in [How to start the ImageQuizzer](#how-to-start-the-image-quizzer)
+
+In the USB-Support folder, the following two files can be moved to the USB root directory for the user's convenience:
+
+- Start Image Quizzer.bat
+- README - Startup.txt
+
+The startup batch file assumes the following layout on the USB:
+```
+/
+├─ BainesImageQuizzer
+├─Slicer 4.11.20210226
+├─Start Image Quizzer.bat      - for autostart of Image Quizzer
+└─README - Startup.txt         - for general instructions on auto and manual start (optional)
+
+```
