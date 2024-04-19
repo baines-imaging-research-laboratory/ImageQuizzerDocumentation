@@ -119,3 +119,12 @@ User's folder found here:
 	quiz file and the new modifications made to the master quiz will not be reflected.
 	
 	See also [Building your script \> Warning](../index.md#bulding-and-testing-your-script)
+
+## Quiz Validation
+
+As you build your quiz, it is advisable to do a trial run. Start the quiz by selecting **Begin**
+within the Login window. The quiz undergoes validation based on various criteria.
+If any criteria are unmet, the validator will present
+a message box with the issues that were encountered. Once the issues are resolved, the quiz will 
+begin. This was set up to prevent errors during live sessions for the user.
+

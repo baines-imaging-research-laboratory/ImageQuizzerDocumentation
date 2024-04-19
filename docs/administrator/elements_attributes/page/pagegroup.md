@@ -22,6 +22,10 @@ See also: [Randomizing pages](../session/randomize_page_groups.md),  [Randomized
 This attribute can be used to keep Pages together and is particularly valuable if you intend to randomize
 the presentation of patient images.
 
+PageGroup numbers do not reflect the sequence in which the Pages are displayed in the quiz.
+If randomization is not turned on, the Pages will appear in the order they were entered in the XML Master Quiz,
+regardless of their assigned PageGroup number.
+
 
 For example, consider the situation where patient randomization is desired, and each patient
 has 3 Pages (baseline, follow-up1, follow-up2). Assigning a common PageGroup number 

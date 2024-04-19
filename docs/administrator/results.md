@@ -22,7 +22,8 @@ The results XML file will be found here:
 	  └─ Outputs/
 	      └─ UsersResults
               └─ Observer1
-                  └─ObserverContouringStudy.xml
+				 └─ ObserverContouringStudy
+                    └─ObserverContouringStudy.xml
 ```
 	
 This is a copy of the original master quiz as set up by the administrator.
@@ -48,6 +49,7 @@ the Users folder could look like this:
 	  └─ Outputs/
 	      └─ UsersResults
               └─ Observer1
+				 └─ ObserverContouringStudy
 					├─ObserverContouringStudy.xml
 					├─(PgGroup1_PageID_PageDescriptor)/
 					├    ├─imagename-bainesquizlabel.nrrd
@@ -64,6 +66,21 @@ the Users folder could look like this:
 
 
 ```
+!!! Warning "Path Lengths - Windows MAX_PATH limitation = 256 characters"
+	
+    Due to the layout of the results folders, the saved labelmaps and markup lines can have path lengths that are quite long.
+	If the file path exceeds Windows limitation, the annotation cannot be saved. In order to avoid the user encountering an error
+	where the file is not saved, a validation function estimates the path lengths for each image 
+	in the quiz XML and will not let the quiz begin if this estimate exceeds a set threshold. 
+	
+	If this validation fails, the administrator will have to reduce the length of various items (PageID, Page Descriptor, Image ID, Username) and/or
+	move the ImageQuizzer module closer to the root of the hard drive.
+	
+	TempWrite folders are created in the ../(PgGroup1_PageID_PageDescriptor) subfolder when saving the contour labelmap files. 
+	When the path length gets closer to the 256 limit, these TempWrite folders are not deleted after the labelmap
+	file is saved. They are empty and the administrator can ignore them during post-analysis of the quiz. 
+	
+
 #### Contour capture
 
 Creating a contour will add a LabelMapPath element as a child of the Image element to the results file
@@ -71,17 +88,18 @@ which stores the relative directory path where you can find the label map mask f
 
 It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .
 
-File name is constructed using ImageID_ImageDescriptor-bainesquizlabel.nrrd
+File name is constructed using PageID_ImageID-bainesquizlabel.nrrd
 
-#### MarkupLine capture
+
+
+#### MarkupsLine capture
 
 Creating [measurement lines](../user/extratools.md#line-measurement) using the tool in the Extra Tools tab will create a MarkupLinePath element
 as a child of the Image element to the results file. This element stores the relative directory path where you
 can find the markup line file. This file can be viewed with a simple editor (e.g. Notepad).
 
 It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .
-File name is constructed using ImageID_ImageDescriptor-MarkupsLine_bainesquizline.mrk.json
-
+File name is constructed using PageID_ImageID-MarkupsLine_bainesquizline.mrk.json
 
 
 
@@ -92,7 +110,7 @@ File name is constructed using ImageID_ImageDescriptor-MarkupsLine_bainesquizlin
 The Response element is created as a child of each Option element.
 The type of response captured depends on the [Question Type](elements_attributes/questionset/question/type.md) attribute. 
 
-If the Type is an InfoBox, the response captured for the Option is null.
+Depending on the Question Type (e.g., InfoBox, Picture) or if a field is empty (when the user moves to a Previous page), the response captured for the Option is null.
 For  Radio or CheckBox types, the response is a "Y" or "N" value depending on whether the radio button or checkbox has been selected.
 If the Type is a Text, IntegerValue, or FloatValue Types the response element will hold the text that the user input into that box.
 

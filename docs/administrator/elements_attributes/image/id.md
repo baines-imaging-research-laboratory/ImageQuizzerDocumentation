@@ -14,6 +14,8 @@ hide:
 | **Parent** | <[Image](index.md)\> ||
 | **Required** | yes ||
 | **Syntax** | ID="*string*" |  |
+| **Associations** | [Page ID](../page/id.md) | uniqueness validation |
+||[Path](path.md) | uniqueness validation |
 
 ## Description
 
@@ -21,12 +23,14 @@ The ID attribute must be unique for each image in the Page.
 This allows for the administrator to load images into the foreground and background
 layers of one viewing window. 
 
-Also, the ID attribute for the Image is combined with the ID attribute
-of the Page to create a unique node name when loaded into Slicer.
+#### Uniqueness
+The ID attribute for the Image is combined with the ID attribute
+of the Page to create a unique node name when loaded into Slicer. 
+There can be multiple Image elements within a Page with the same Path (e.g., one image
+loaded into different viewing windows). Each of these elements must
+have the same Image ID attribute. This is checked during quiz validation.
 
-!!! Warning
-    If the same image is loaded into different viewing destinations, **they must have
-    the same ID**. 
+
 
 
 ## Example

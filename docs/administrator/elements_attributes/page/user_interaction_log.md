@@ -15,7 +15,7 @@ hide:
 | **Syntax** | UserInteractionLog="*option*" |||
 | **Options** | N | (default) interaction logs are not created |
 |             | Y | interaction logs are created for each page |
-| **Depedencies** | SlicerOpenCV | required Slicer Extension as described in [Getting Started](../../../getting_started/index.md#extensions) (used to capture CPU Uptime)|
+| **Dependencies** | SlicerOpenCV | required Slicer Extension as described in [Getting Started](../../../getting_started/index.md#extensions) (used to capture CPU Uptime)|
 
 
 ## Description
@@ -60,6 +60,10 @@ Following is a list of the information captured in each log file:
 	- Foreground transformation 4x4 matrix (XY to IJK)   (zeros if no foreground image)
 
 
+!!! Warning "CPU Time Rounding"
+	
+	Editing the UserInteractionLog.csv file in Excel may cause rounding of significant digits
+	for CPU Uptime and coordinate values.
 
 ## Example
 
