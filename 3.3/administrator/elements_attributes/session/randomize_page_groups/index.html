@@ -1114,6 +1114,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#forcing-a-page-group-order-overriding-randomization" class="md-nav__link">
+    Forcing a page group order - overriding randomization
+  </a>
+  
+    <nav class="md-nav" aria-label="Forcing a page group order - overriding randomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1161,6 +1181,8 @@
         
           
             
+          
+        
           
         
           
@@ -1403,6 +1425,20 @@
     <li class="md-nav__item">
       <a href="../../page/contour_tool_radius/" class="md-nav__link">
         ContourToolRadius
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page/button_script_rerun_required/" class="md-nav__link">
+        ButtonScriptRerunRequired
       </a>
     </li>
   
@@ -2414,6 +2450,26 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#forcing-a-page-group-order-overriding-randomization" class="md-nav__link">
+    Forcing a page group order - overriding randomization
+  </a>
+  
+    <nav class="md-nav" aria-label="Forcing a page group order - overriding randomization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example_1" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2476,6 +2532,11 @@
 <td>Y</td>
 <td align="center">pages are randomized</td>
 </tr>
+<tr>
+<td><strong>Associations</strong></td>
+<td><a href="../../../results/#randomizedpagegroupindices">RandomizedPageGroupIndices</a></td>
+<td align="center">new element created in results xml</td>
+</tr>
 </tbody>
 </table>
 <p>See also:  <a href="../../page/">Page</a>, <a href="../../page/pagegroup/">PageGroup</a>,  <a href="../../../results/#randomizedpagegroupindices">RandomizedPageGroupIndices</a></p>
@@ -2533,6 +2594,38 @@ PatientA_Planning
 PatientA_Followup 1
 PatientB_Planning
 PatientB_Followup 1
+</code></pre>
+<h2 id="forcing-a-page-group-order-overriding-randomization">Forcing a page group order - overriding randomization</h2>
+<p>There are certain instances where you may want to use a certain order for the pages that doesn't follow the sequential layout in the XML Master Quiz.
+To do this, set the RandomizePageGroups attribute to "Y" in your master quiz and add a <RandomizedPageGroupIndices> element with the 
+desired page group numbers ordered accordingly.</p>
+<p>Even though you've enabled "RandomizePageGroups" to "Y", additional randomizing will not occur.
+The quiz will use the order laid out in the "RandomizedPageGroupIndices" element.</p>
+<h3 id="example_1">Example</h3>
+<pre><code>&lt;Session RandomizePageGroups=&quot;Y&quot;&gt;
+    &lt;Page ID=&quot;Intro&quot; Description=&quot;Instructions&quot; PageGroup=&quot;0&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;PatientA&quot; Description=&quot;Planning&quot; PageGroup=&quot;1&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;PatientA&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;1&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;PatientB&quot; Description=&quot;Planning&quot; PageGroup=&quot;2&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;PatientB&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;2&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;PatientC&quot; Description=&quot;Planning&quot; PageGroup=&quot;3&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;Page ID=&quot;PatientC&quot; Description=&quot;FollowUp 1&quot; PageGroup=&quot;3&quot;&gt;
+        ...
+    &lt;/Page&gt;
+    &lt;RandomizedPageGroupIndices&gt;3,1,2&lt;/RandomizedPageGroupIndices&gt;
+&lt;/Session&gt;
 </code></pre>
 
 

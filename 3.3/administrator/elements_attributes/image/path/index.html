@@ -1127,6 +1127,8 @@
         
           
         
+          
+        
       
       
         
@@ -1339,6 +1341,20 @@
     <li class="md-nav__item">
       <a href="../../page/contour_tool_radius/" class="md-nav__link">
         ContourToolRadius
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page/button_script_rerun_required/" class="md-nav__link">
+        ButtonScriptRerunRequired
       </a>
     </li>
   
@@ -1597,6 +1613,19 @@
   <a href="#description" class="md-nav__link">
     Description
   </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniqueness" class="md-nav__link">
+    Uniqueness
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2391,6 +2420,19 @@
     Description
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniqueness" class="md-nav__link">
+    Uniqueness
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2453,11 +2495,27 @@
 <td>&lt;Path><em>string</em>&lt;/Path></td>
 <td align="center">relative/path/to/image/filename</td>
 </tr>
+<tr>
+<td><strong>Associations</strong></td>
+<td><a href="../../page/id/">Page ID</a></td>
+<td align="center">uniqueness validation</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../id/">Image ID</a></td>
+<td align="center">uniqueness validation</td>
+</tr>
 </tbody>
 </table>
 <h2 id="description">Description</h2>
 <p>This element holds the path to the image file to be loaded. It is relative to the image database folder
 that the user selects when logging in to the Image Quizzer.</p>
+<h4 id="uniqueness">Uniqueness</h4>
+<p>The ID attribute for the Image is combined with the ID attribute
+of the Page to create a unique node name when loaded into Slicer. 
+There can be multiple Image elements within a Page with the same Path (e.g., one image
+loaded into different viewing windows). Each of these elements must
+have the same Image ID attribute. This is checked during quiz validation.</p>
 <h2 id="example">Example</h2>
 <p>An example script is shown for the following tree structure. ImageDatabaseFolder is the folder defined
 by the user to hold the image files for the observer strudy.</p>

@@ -1125,6 +1125,8 @@
         
           
         
+          
+        
       
       
         
@@ -1337,6 +1339,20 @@
     <li class="md-nav__item">
       <a href="../elements_attributes/page/contour_tool_radius/" class="md-nav__link">
         ContourToolRadius
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../elements_attributes/page/button_script_rerun_required/" class="md-nav__link">
+        ButtonScriptRerunRequired
       </a>
     </li>
   
@@ -2080,8 +2096,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#markupline-capture" class="md-nav__link">
-    MarkupLine capture
+  <a href="#markupsline-capture" class="md-nav__link">
+    MarkupsLine capture
   </a>
   
 </li>
@@ -2514,8 +2530,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#markupline-capture" class="md-nav__link">
-    MarkupLine capture
+  <a href="#markupsline-capture" class="md-nav__link">
+    MarkupsLine capture
   </a>
   
 </li>
@@ -2655,7 +2671,8 @@ name as the original master XML file. This file is placed in the <strong>UserRes
       └─ Outputs/
           └─ UsersResults
               └─ Observer1
-                  └─ObserverContouringStudy.xml
+                 └─ ObserverContouringStudy
+                    └─ObserverContouringStudy.xml
 </code></pre>
 <p>This is a copy of the original master quiz as set up by the administrator.
 As the quiz progresses throughout the user's login session, elements and attributes
@@ -2674,6 +2691,7 @@ the Users folder could look like this:</p>
       └─ Outputs/
           └─ UsersResults
               └─ Observer1
+                 └─ ObserverContouringStudy
                     ├─ObserverContouringStudy.xml
                     ├─(PgGroup1_PageID_PageDescriptor)/
                     ├    ├─imagename-bainesquizlabel.nrrd
@@ -2690,22 +2708,34 @@ the Users folder could look like this:</p>
 
 
 </code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Path Lengths - Windows MAX_PATH limitation = 256 characters</p>
+<p>Due to the layout of the results folders, the saved labelmaps and markup lines can have path lengths that are quite long.
+If the file path exceeds Windows limitation, the annotation cannot be saved. In order to avoid the user encountering an error
+where the file is not saved, a validation function estimates the path lengths for each image 
+in the quiz XML and will not let the quiz begin if this estimate exceeds a set threshold. </p>
+<p>If this validation fails, the administrator will have to reduce the length of various items (PageID, Page Descriptor, Image ID, Username) and/or
+move the ImageQuizzer module closer to the root of the hard drive.</p>
+<p>TempWrite folders are created in the ../(PgGroup1_PageID_PageDescriptor) subfolder when saving the contour labelmap files. 
+When the path length gets closer to the 256 limit, these TempWrite folders are not deleted after the labelmap
+file is saved. They are empty and the administrator can ignore them during post-analysis of the quiz. </p>
+</div>
 <h4 id="contour-capture">Contour capture</h4>
 <p>Creating a contour will add a LabelMapPath element as a child of the Image element to the results file
 which stores the relative directory path where you can find the label map mask file.</p>
 <p>It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .</p>
-<p>File name is constructed using ImageID_ImageDescriptor-bainesquizlabel.nrrd</p>
-<h4 id="markupline-capture">MarkupLine capture</h4>
+<p>File name is constructed using PageID_ImageID-bainesquizlabel.nrrd</p>
+<h4 id="markupsline-capture">MarkupsLine capture</h4>
 <p>Creating <a href="../../user/extratools/#line-measurement">measurement lines</a> using the tool in the Extra Tools tab will create a MarkupLinePath element
 as a child of the Image element to the results file. This element stores the relative directory path where you
 can find the markup line file. This file can be viewed with a simple editor (e.g. Notepad).</p>
 <p>It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .
-File name is constructed using ImageID_ImageDescriptor-MarkupsLine_bainesquizline.mrk.json</p>
+File name is constructed using PageID_ImageID-MarkupsLine_bainesquizline.mrk.json</p>
 <h2 id="new-elements">New Elements</h2>
 <h3 id="response">Response</h3>
 <p>The Response element is created as a child of each Option element.
 The type of response captured depends on the <a href="../elements_attributes/questionset/question/type/">Question Type</a> attribute. </p>
-<p>If the Type is an InfoBox, the response captured for the Option is null.
+<p>Depending on the Question Type (e.g., InfoBox, Picture) or if a field is empty (when the user moves to a Previous page), the response captured for the Option is null.
 For  Radio or CheckBox types, the response is a "Y" or "N" value depending on whether the radio button or checkbox has been selected.
 If the Type is a Text, IntegerValue, or FloatValue Types the response element will hold the text that the user input into that box.</p>
 <p>Also captured as attributes in the Response element are timestamps LoginTime and the ResponseTime.</p>

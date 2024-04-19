@@ -1129,6 +1129,8 @@
         
           
         
+          
+        
       
       
         
@@ -1201,6 +1203,19 @@
   <a href="#description" class="md-nav__link">
     Description
   </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniqueness" class="md-nav__link">
+    Uniqueness
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1389,6 +1404,20 @@
     <li class="md-nav__item">
       <a href="../contour_tool_radius/" class="md-nav__link">
         ContourToolRadius
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../button_script_rerun_required/" class="md-nav__link">
+        ButtonScriptRerunRequired
       </a>
     </li>
   
@@ -2384,6 +2413,19 @@
     Description
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniqueness" class="md-nav__link">
+    Uniqueness
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -2443,16 +2485,36 @@
 <td>special characters not allowed</td>
 <td align="center">"'#&amp;{}\&lt;&gt;*?/$!:@+<code>~%^()+=,</code></td>
 </tr>
+<tr>
+<td><strong>Associations</strong></td>
+<td><a href="../../image/id/">Image ID</a></td>
+<td align="center">uniqueness validation</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../../image/path/">Path</a></td>
+<td align="center">uniqueness validation</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../descriptor/">Descriptor</a></td>
+<td align="center">folder name</td>
+</tr>
 </tbody>
 </table>
-<p>See also:  <a href="../">Page</a>, <a href="../descriptor/">Descriptor</a></p>
 <h2 id="description">Description</h2>
-<p>ID is a required attribute for the Page element. It is used in combination with the Image ID attribute (required)
+<p>ID is a required attribute for the Page element. It is used in combination with the Image ID attribute (also required)
 to create a unique node name when loading the image into Slicer.</p>
-<p>The Page ID_Descriptor string combination appears as an identifier in the Slicer layout
-when displaying the images. It is also used as part of the subfolder names (prefixed by the PageGroup number) 
+<p>The PageID_Descriptor string combination appears in the quiz progress bar.
+It is also used as part of the subfolder names (prefixed by the PageGroup number) 
  created in the User's results folder when capturing
-contours and measurement lines that the user creates during the quiz. </p>
+contours and measurement lines that the user creates during the quiz.</p>
+<h4 id="uniqueness">Uniqueness</h4>
+<p>The ID attribute for the Image is combined with the ID attribute
+of the Page to create a unique node name when loaded into Slicer. 
+There can be multiple Image elements within a Page with the same Path (e.g., one image
+loaded into different viewing windows). Each of these elements must
+have the same Image ID attribute. This is checked during quiz validation.</p>
 
 
 

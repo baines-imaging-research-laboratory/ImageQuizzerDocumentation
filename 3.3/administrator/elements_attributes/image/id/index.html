@@ -1127,6 +1127,8 @@
         
           
         
+          
+        
       
       
         
@@ -1345,6 +1347,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../page/button_script_rerun_required/" class="md-nav__link">
+        ButtonScriptRerunRequired
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1485,6 +1501,19 @@
   <a href="#description" class="md-nav__link">
     Description
   </a>
+  
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniqueness" class="md-nav__link">
+    Uniqueness
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2391,6 +2420,19 @@
     Description
   </a>
   
+    <nav class="md-nav" aria-label="Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uniqueness" class="md-nav__link">
+    Uniqueness
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2453,19 +2495,28 @@
 <td>ID="<em>string</em>"</td>
 <td align="center"></td>
 </tr>
+<tr>
+<td><strong>Associations</strong></td>
+<td><a href="../../page/id/">Page ID</a></td>
+<td align="center">uniqueness validation</td>
+</tr>
+<tr>
+<td></td>
+<td><a href="../path/">Path</a></td>
+<td align="center">uniqueness validation</td>
+</tr>
 </tbody>
 </table>
 <h2 id="description">Description</h2>
 <p>The ID attribute must be unique for each image in the Page.
 This allows for the administrator to load images into the foreground and background
 layers of one viewing window. </p>
-<p>Also, the ID attribute for the Image is combined with the ID attribute
-of the Page to create a unique node name when loaded into Slicer.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If the same image is loaded into different viewing destinations, <strong>they must have
-the same ID</strong>. </p>
-</div>
+<h4 id="uniqueness">Uniqueness</h4>
+<p>The ID attribute for the Image is combined with the ID attribute
+of the Page to create a unique node name when loaded into Slicer. 
+There can be multiple Image elements within a Page with the same Path (e.g., one image
+loaded into different viewing windows). Each of these elements must
+have the same Image ID attribute. This is checked during quiz validation.</p>
 <h2 id="example">Example</h2>
 <pre><code>&lt;Session&gt;
     &lt;Page ID=&quot;Patient1&quot; Descriptor=&quot;PlanningCT&quot; &gt;

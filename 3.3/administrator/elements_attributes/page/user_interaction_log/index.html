@@ -1129,6 +1129,8 @@
         
           
         
+          
+        
       
       
         
@@ -1410,6 +1412,20 @@
     <li class="md-nav__item">
       <a href="../contour_tool_radius/" class="md-nav__link">
         ContourToolRadius
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../button_script_rerun_required/" class="md-nav__link">
+        ButtonScriptRerunRequired
       </a>
     </li>
   
@@ -2491,7 +2507,7 @@
 <td>interaction logs are created for each page</td>
 </tr>
 <tr>
-<td><strong>Depedencies</strong></td>
+<td><strong>Dependencies</strong></td>
 <td>SlicerOpenCV</td>
 <td>required Slicer Extension as described in <a href="../../../../getting_started/#extensions">Getting Started</a> (used to capture CPU Uptime)</td>
 </tr>
@@ -2532,6 +2548,11 @@ and the IJK values of the loaded image volumes displayed within those windows.</
 - Background transformation 4x4 matrix (XY to IJK),
 - Foreground transformation 4x4 matrix (XY to IJK)   (zeros if no foreground image)
 </code></pre>
+<div class="admonition warning">
+<p class="admonition-title">CPU Time Rounding</p>
+<p>Editing the UserInteractionLog.csv file in Excel may cause rounding of significant digits
+for CPU Uptime and coordinate values.</p>
+</div>
 <h2 id="example">Example</h2>
 <p>See the <a href="../../../examples/example_user_interaction_log/">user interaction log example</a>
 for a script that uses this feature.</p>

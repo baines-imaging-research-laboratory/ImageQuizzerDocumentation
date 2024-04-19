@@ -1129,6 +1129,8 @@
         
           
         
+          
+        
       
       
         
@@ -1409,6 +1411,20 @@
     <li class="md-nav__item">
       <a href="../contour_tool_radius/" class="md-nav__link">
         ContourToolRadius
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../button_script_rerun_required/" class="md-nav__link">
+        ButtonScriptRerunRequired
       </a>
     </li>
   
@@ -2510,7 +2526,10 @@
 allowing the user to return to this bookmarked page. If the attribute <em>AllowMultipleResponse</em> is set to "Y"
 on this page, the user could then modify the original responses.</p>
 <p>If the pages of the study are to be randomized using the Session attribute <em>RandomizePageGroups</em> to "Y",
-then the PageGroup attribute on this page and on the <em>GoToBookmark</em> page must be the same.</p>
+then the PageGroup attribute on this page and on the <em>GoToBookmark</em> page must be the same. An exception is when the
+PageGroup is "0" for the Page with BookmarkID.</p>
+<p>If the Session attribute <em>RandomizePageGroups</em> = "N", the PageGroup attribute numbers can be different (or not defined at all).
+Before beginning the quiz, the quiz validator will check that the BookmarkID is on a page that preceeds the page with the GoToBookmark attribute.</p>
 <h2 id="example">Example</h2>
 <p>See <a href="../../../examples/example_bookmarks/">Bookmarks example</a></p>
 <h3 id="use-case-examples">Use Case Examples</h3>
