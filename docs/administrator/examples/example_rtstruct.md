@@ -53,7 +53,7 @@ Suggested folder structure to match script:
 ## Script example
 
 The RTStruct file contains two ROIs. Only Tumor_Contour is selected to be displayed.
-See [ROI Visibility](../../examples/example_roi_visibility.md#script-example) for more ROI selection options.
+See [ROI Visibility](./example_roi_visibility.md#script-example) for more ROI selection options.
 
 
 ```

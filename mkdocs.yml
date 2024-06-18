@@ -70,6 +70,7 @@ nav:
       - ROI visibility: administrator/examples/example_roi_visibility.md
       - ROI colors: administrator/examples/example_roicolorfile.md
       - Rotate to acquisition: administrator/examples/example_rotating.md
+      - RTStruct from dicom: administrator/examples/example_rtstruct.md
       - User interaction log: administrator/examples/example_user_interaction_log.md
       - 4D VolumeSequence: administrator/examples/example_volumesequence.md
       - Zoom Pan and Slice offset: administrator/examples/example_zoom_pan_sliceoffset.md
