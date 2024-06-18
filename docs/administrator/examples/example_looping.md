@@ -156,7 +156,7 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<DefaultDestination>Red</DefaultDestination>
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT1.nrrd</Path>
-				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.075922">example_looping\PgGroup2_PatientC_Grp3- Brain-MR T1\PatientC_MR T1-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.075922">example_looping\PgGroup2_PatientC_Grp3- Brain-MR T1\PatientC_MR T1-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Red" Level="269.5113636363636" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:43:13.139537" SliceOffset="-13.069520903423077" ViewingMode="Default" Window="349.8636363636364"/>
 			</Image>
 			<QuestionSet Descriptor="Lesions detected on T1W MR" ID="Lesions">
@@ -189,7 +189,7 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT1.nrrd</Path>
 				<State Destination="Red" Level="269.5113636363636" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:43:13.139537" SliceOffset="-13.069520903423077" ViewingMode="Default" Window="349.8636363636364"/>
-				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.170952">example_looping\PgGroup2_PatientC-Rep1_Grp3- Brain-MR T1\PatientC-Rep1_MR T1-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.170952">example_looping\PgGroup2_PatientC-Rep1_Grp3- Brain-MR T1\PatientC-Rep1_MR T1-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Red" Level="269.5113636363636" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:43:44.217363" SliceOffset="-14.007020903422983" ViewingMode="Default" Window="349.8636363636364"/>
 			</Image>
 			<QuestionSet Descriptor="Lesions detected on T1W MR" ID="Lesions">
@@ -221,7 +221,7 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<DefaultDestination>Red</DefaultDestination>
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
-				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.563632">example_looping\PgGroup3_PatientC_Grp3- Brain-MR T2\PatientC_MR T2-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.563632">example_looping\PgGroup3_PatientC_Grp3- Brain-MR T2\PatientC_MR T2-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Red" Level="440.5" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:44:17.609544" SliceOffset="-11.95652695110362" ViewingMode="Default" Window="881.0"/>
 			</Image>
 			<QuestionSet Descriptor="Lesions detected on T2W MR" ID="Lesions">
@@ -255,7 +255,7 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
 				<State Destination="Red" Level="440.5" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:44:17.609544" SliceOffset="-11.95652695110362" ViewingMode="Default" Window="881.0"/>
-				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.532751">example_looping\PgGroup3_PatientC-Rep1_Grp3- Brain-MR T2\PatientC-Rep1_MR T2-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.532751">example_looping\PgGroup3_PatientC-Rep1_Grp3- Brain-MR T2\PatientC-Rep1_MR T2-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Red" Level="440.5" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:44:41.578163" SliceOffset="-7.966527418404027" ViewingMode="Default" Window="881.0"/>
 			</Image>
 			<QuestionSet Descriptor="Lesions detected on T2W MR" ID="Lesions">
@@ -289,7 +289,7 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
 				<State Destination="Red" Level="440.5" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:44:17.609544" SliceOffset="-11.95652695110362" ViewingMode="Default" Window="881.0"/>
 				<State Destination="Red" Level="440.5" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:44:41.578163" SliceOffset="-7.966527418404027" ViewingMode="Default" Window="881.0"/>
-				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.663666">example_looping\PgGroup3_PatientC-Rep2_Grp3- Brain-MR T2\PatientC-Rep2_MR T2-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.663666">example_looping\PgGroup3_PatientC-Rep2_Grp3- Brain-MR T2\PatientC-Rep2_MR T2-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Red" Level="440.5" LoginTime="20230321_16:40:13.224042" Orientation="Axial" ResponseTime="20230321_16:45:05.714776" SliceOffset="-7.966527418404029" ViewingMode="Default" Window="881.0"/>
 			</Image>
 			<QuestionSet Descriptor="Lesions detected on T2W MR" ID="Lesions">

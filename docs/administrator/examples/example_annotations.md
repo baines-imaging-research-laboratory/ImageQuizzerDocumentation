@@ -197,15 +197,15 @@ Results tree structure
       └─ UsersResults/
           └─ Observer1/
                ├─ PgGroup1_Patient1_Brain CT-MR/
-			   │   ├─ Patient1_CT_MarkupsLine_bainesquizline.mrk.json
-			   │   └─ Patient1_MR T1-bainesquizlabel.nrrd
+			   │   ├─ Patient1_CT_MarkupsLine_quizline.mrk.json
+			   │   └─ Patient1_MR T1-quizlabel.nrrd
                ├─ PgGroup2_Patient2_Brain CT-MR/
-			   │   ├─ Patient2_CT_MarkupsLine_bainesquizline.mrk.json
-			   │   └─ Patient2_MR T2-bainesquizlabel.nrrd
+			   │   ├─ Patient2_CT_MarkupsLine_quizline.mrk.json
+			   │   └─ Patient2_MR T2-quizlabel.nrrd
                ├─ PgGroup3_Patient3_Brain CT-MR/
-			   │   ├─ Patient3_MR T1_MarkupsLine_1_bainesquizline.mrk.json     (second measurement with '_1')
-			   │   ├─ Patient3_MR T1_MarkupsLine_bainesquizline.mrk.json       (first measurement)
-			   │   └─ Patient3_MR T2-bainesquizlabel.nrrd                      (contour label map)
+			   │   ├─ Patient3_MR T1_MarkupsLine_1_quizline.mrk.json     (second measurement with '_1')
+			   │   ├─ Patient3_MR T1_MarkupsLine_quizline.mrk.json       (first measurement)
+			   │   └─ Patient3_MR T2-quizlabel.nrrd                      (contour label map)
 			   └─ example_annotations.xml                                      (response results file)
 ```
 
@@ -222,7 +222,7 @@ Results file : example_annotations.xml
 				<DefaultDestination>Yellow</DefaultDestination>
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT1.nrrd</Path>
-				<LabelMapPath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.187094">example_annotations\PgGroup1_Patient1_Brain CT-MR\Patient1_MR T1-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.187094">example_annotations\PgGroup1_Patient1_Brain CT-MR\Patient1_MR T1-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Yellow" Level="182.72043010752674" LoginTime="20230413_14:27:37.379856" Orientation="Axial" ResponseTime="20230413_14:29:52.240166" SliceOffset="-12.60077090342297" ViewingMode="Default" Window="235.74193548387166"/>
 			</Image>
 			<Image ID="MR T2" Type="Volume">
@@ -237,7 +237,7 @@ Results file : example_annotations.xml
 				<DefaultDestination>Red</DefaultDestination>
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\CTBrain.nrrd</Path>
-				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.197123">example_annotations\PgGroup1_Patient1_Brain CT-MR\Patient1_CT_MarkupsLine_bainesquizline.mrk.json</MarkupLinePath>
+				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.197123">example_annotations\PgGroup1_Patient1_Brain CT-MR\Patient1_CT_MarkupsLine_quizline.mrk.json</MarkupLinePath>
 				<State Destination="Red" Level="-732.8337801608598" LoginTime="20230413_14:27:37.379856" Orientation="Axial" ResponseTime="20230413_14:29:52.240166" SliceOffset="-33.95762238728382" ViewingMode="Default" Window="3128.820375335129"/>
 			</Image>
 			<QuestionSet Descriptor="" ID="Create contours">
@@ -269,7 +269,7 @@ Results file : example_annotations.xml
 				<DefaultDestination>Green</DefaultDestination>
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
-				<LabelMapPath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.947709">example_annotations\PgGroup2_Patient2_Brain CT-MR\Patient2_MR T2-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.947709">example_annotations\PgGroup2_Patient2_Brain CT-MR\Patient2_MR T2-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Green" Level="298.284946236559" LoginTime="20230413_14:27:37.379856" Orientation="Axial" ResponseTime="20230413_14:30:43.018773" SliceOffset="-19.93652601650279" ViewingMode="Default" Window="839.1720430107531"/>
 			</Image>
 			<Image ID="MR T2" SegmentRequired="Y" Type="Volume">
@@ -277,7 +277,7 @@ Results file : example_annotations.xml
 				<DefaultDestination>Yellow</DefaultDestination>
 				<DefaultOrientation>Coronal</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
-				<LabelMapPath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.947709">example_annotations\PgGroup2_Patient2_Brain CT-MR\Patient2_MR T2-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.947709">example_annotations\PgGroup2_Patient2_Brain CT-MR\Patient2_MR T2-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Yellow" Level="298.284946236559" LoginTime="20230413_14:27:37.379856" Orientation="Coronal" ResponseTime="20230413_14:30:43.018773" SliceOffset="4.789432750086773" ViewingMode="Default" Window="839.1720430107531"/>
 			</Image>
 			<Image ID="CT" MinMarkupLinesRequired="1" Type="Volume">
@@ -285,7 +285,7 @@ Results file : example_annotations.xml
 				<DefaultDestination>Red</DefaultDestination>
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\CTBrain.nrrd</Path>
-				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.960705">example_annotations\PgGroup2_Patient2_Brain CT-MR\Patient2_CT_MarkupsLine_bainesquizline.mrk.json</MarkupLinePath>
+				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.960705">example_annotations\PgGroup2_Patient2_Brain CT-MR\Patient2_CT_MarkupsLine_quizline.mrk.json</MarkupLinePath>
 				<State Destination="Red" Level="-732.8337801608598" LoginTime="20230413_14:27:37.379856" Orientation="Axial" ResponseTime="20230413_14:30:43.019776" SliceOffset="-36.48562226521351" ViewingMode="Default" Window="3128.820375335129"/>
 			</Image>
 			<Image ID="CT" MinMarkupLinesRequired="1" Type="Volume">
@@ -293,7 +293,7 @@ Results file : example_annotations.xml
 				<DefaultDestination>Slice4</DefaultDestination>
 				<DefaultOrientation>Coronal</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\CTBrain.nrrd</Path>
-				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.960705">example_annotations\PgGroup2_Patient2_Brain CT-MR\Patient2_CT_MarkupsLine_bainesquizline.mrk.json</MarkupLinePath>
+				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.960705">example_annotations\PgGroup2_Patient2_Brain CT-MR\Patient2_CT_MarkupsLine_quizline.mrk.json</MarkupLinePath>
 				<State Destination="Slice4" Level="-732.8337801608598" LoginTime="20230413_14:27:37.379856" Orientation="Coronal" ResponseTime="20230413_14:30:43.019776" SliceOffset="19.175515083383083" ViewingMode="Default" Window="3128.820375335129"/>
 			</Image>
 			<QuestionSet Descriptor="" ID="Create contours">
@@ -325,8 +325,8 @@ Results file : example_annotations.xml
 				<DefaultDestination>Yellow</DefaultDestination>
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT1.nrrd</Path>
-				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.983178">example_annotations\PgGroup3_Patient3_Brain CT-MR\Patient3_MR T1_MarkupsLine_bainesquizline.mrk.json</MarkupLinePath>
-				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.986178">example_annotations\PgGroup3_Patient3_Brain CT-MR\Patient3_MR T1_MarkupsLine_1_bainesquizline.mrk.json</MarkupLinePath>
+				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.983178">example_annotations\PgGroup3_Patient3_Brain CT-MR\Patient3_MR T1_MarkupsLine_quizline.mrk.json</MarkupLinePath>
+				<MarkupLinePath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.986178">example_annotations\PgGroup3_Patient3_Brain CT-MR\Patient3_MR T1_MarkupsLine_1_quizline.mrk.json</MarkupLinePath>
 				<State Destination="Yellow" Level="182.72043010752674" LoginTime="20230413_14:27:37.379856" Orientation="Axial" ResponseTime="20230413_14:32:44.063097" SliceOffset="23.024229096577045" ViewingMode="Default" Window="235.74193548387166"/>
 			</Image>
 			<Image DisplayLabelMapID="MR-T2 Contour" ID="MR T2" SegmentRequired="Y" Type="Volume">
@@ -334,7 +334,7 @@ Results file : example_annotations.xml
 				<DefaultDestination>Green</DefaultDestination>
 				<DefaultOrientation>Axial</DefaultOrientation>
 				<Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
-				<LabelMapPath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:43.870059">example_annotations\PgGroup3_Patient3_Brain CT-MR\Patient3_MR T2-bainesquizlabel.nrrd</LabelMapPath>
+				<LabelMapPath LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:43.870059">example_annotations\PgGroup3_Patient3_Brain CT-MR\Patient3_MR T2-quizlabel.nrrd</LabelMapPath>
 				<State Destination="Green" Level="298.284946236559" LoginTime="20230413_14:27:37.379856" Orientation="Axial" ResponseTime="20230413_14:32:44.063097" SliceOffset="-3.976527885704449" ViewingMode="Default" Window="839.1720430107531"/>
 			</Image>
 			<Image ID="CT" Type="Volume">

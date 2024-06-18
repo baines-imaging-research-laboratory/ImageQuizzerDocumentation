@@ -56,7 +56,7 @@ and 'SegmentRequired' on any image of the current page must be set to 'N' or not
 
 During the merge, the function will collect all the labelmaps from the labelmap paths stored in the historical image,
 combine them and then save them to a folder for the current page. The merged labelmap filename will have
-the PageGroup#_PageID_LabelMapID-bainesquizlabel.nrrd.
+the PageGroup#_PageID_LabelMapID-quizlabel.nrrd.
 
 If the user presses the Previous button to do some modifications and then Next to come back to the page with the MergeLabelMaps attribute,
 the merge will happen again and the current merge file will be overwritten. This way the user 

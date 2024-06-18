@@ -40,7 +40,7 @@ Once the master volume is selected, a few things happen:
 
 - a labelmap file is created in the user's results folder.
     - This is located in a subfolder named with PgGroup#_PgID_PgDescriptor.
-	- File name is constructed using ImageID_ImageDescriptor-bainesquizlabel.nrrd
+	- File name is constructed using ImageID_ImageDescriptor-quizlabel.nrrd
 
 - a LabelMapPath xml element is added as a child to the Image element in the user's results xml file
 so that the administrator has a reference to the stored labelmap file.

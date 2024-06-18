@@ -13,7 +13,7 @@ The user can create a contour on images that have the Segment Editor enabled.
 
     ![select master volume](assets/contouring_selectvolume.png)
 
-    Once the master volume is selected a label map volume is created with the same master name and a suffix '-bainesquizlabel' to hold the contours created.
+    Once the master volume is selected a label map volume is created with the same master name and a suffix '-quizlabel' to hold the contours created.
 
 
 1. Open the collapsible section labelled 'Edit Selected Label Map'

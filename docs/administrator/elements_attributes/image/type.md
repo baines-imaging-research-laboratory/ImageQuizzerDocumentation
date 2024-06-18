@@ -15,6 +15,7 @@ hide:
 | **Syntax** | Type="*option*" |  |
 | **Options** | Volume | load as scalar volume object |
 |             | VolumeSequence | load 4D image as sequence volume object|
+|             | Vector | load single picture type of file |
 |             | LabelMap | load ROIs mask file on Label layer (for discrete values) |
 |             | Segmentation | load ROIs as segmentation object |
 |             | RTStruct | load DICOM ROIs as segmentation object |
@@ -43,6 +44,11 @@ to play the time series.
 	* If the volume sequence being loaded is in DICOM format, the DICOM slices for all time points must be located
 	in the same folder (no subfolders).
 
+### Vector
+
+Single picture type images should be loaded as Type="Vector". These include images formatted as PNG, BMP, JPG, JPEG, and PDF.
+Also accepted are single slice DCM images (eg. histology slice saved as a dicom image).
+
 ### Regions of interest (ROIs)
 
 By using Type="LabelMap", Type="Segmentation" or Type="RTStruct" you have the flexibility of displaying these ROI image files
@@ -64,64 +70,11 @@ ROIs stored in segmentation or RTStruct files are loaded as Type="Segmentation" 
 
 For an example of loading 4D images as Type="VolumeSequence" see the script example in [4D VolumeSequence](../../examples/example_volumesequence.md)
 
+
 ### Segmentation
 
 For an example of loading images as Type="Segmentation" see the script example in [ROI Visibility](../../examples/example_roi_visibility.md#script-example)
 
-### RTStruct
+### RTStruct - dicom format
 
-Example showing Volume and RTStruct types.
-RTStruct file contains two ROIs. Only Tumor-contour is selected to be displayed.
-
-(This script is based on a version of the TinyPatient dataset converted to DICOM format.)
-
-```
-<Session>
-	<Page ID="TinyPatient" Descriptor="DicomSeries with RTStruct">
-		<Image DicomRead="Y" Type="Volume" ID="CTSeries">
-			<DefaultDestination>Red</DefaultDestination>
-			<Layer>Background</Layer>
-			<DefaultOrientation>Axial</DefaultOrientation>
-			<Path>ImageVolumes\TinyPatient\image0000.dcm</Path>
-		</Image>
-		<Image DicomRead="Y" Type="Volume" ID="CTSeries">
-			<DefaultDestination>Yellow</DefaultDestination>
-			<Layer>Background</Layer>
-			<DefaultOrientation>Sagittal</DefaultOrientation>
-			<Path>ImageVolumes\TinyPatient\image0000.dcm</Path>
-		</Image>
-		<Image DicomRead="Y" Type="Volume" ID="CTSeries">
-			<DefaultDestination>Green</DefaultDestination>
-			<Layer>Background</Layer>
-			<DefaultOrientation>Coronal</DefaultOrientation>
-			<Path>ImageVolumes\TinyPatient\image0000.dcm</Path>
-		</Image>
-		<Image DicomRead="Y" Type="RTStruct" ID="ROI">
-			<DefaultDestination>Red</DefaultDestination>
-			<Layer>Segmentation</Layer>
-			<Path>ImageVolumes\TinyPatient\rtss.dcm</Path>
-			<ROIs ROIVisibilityCode="Select">
-			<ROI>Tumor_Contour</ROI>
-			</ROIs>
-		</Image>
-		<Image DicomRead="Y" Type="RTStruct" ID="ROI">
-			<DefaultDestination>Yellow</DefaultDestination>
-			<Layer>Segmentation</Layer>
-			<Path>ImageVolumes\TinyPatient\rtss.dcm</Path>
-			<ROIs ROIVisibilityCode="Select">
-				<ROI>Tumor_Contour</ROI>
-			</ROIs>
-		</Image>
-		<Image DicomRead="Y" Type="RTStruct" ID="ROI">
-			<DefaultDestination>Green</DefaultDestination>
-			<Layer>Segmentation</Layer>
-			<Path>ImageVolumes\TinyPatient\rtss.dcm</Path>
-			<ROIs ROIVisibilityCode="Select">
-				<ROI>Tumor_Contour</ROI>
-			</ROIs>
-		</Image>
-	</Page>
-</Session>
-```
-
-
+For an example showing Volume and RTStruct types of images see the script example in  [ROI - RTStruct](../../examples/example_rtstruct.md#script-example).

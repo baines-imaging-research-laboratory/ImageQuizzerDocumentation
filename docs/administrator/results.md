@@ -52,17 +52,17 @@ the Users folder could look like this:
 				 └─ ObserverContouringStudy
 					├─ObserverContouringStudy.xml
 					├─(PgGroup1_PageID_PageDescriptor)/
-					├    ├─imagename-bainesquizlabel.nrrd
-					├    ├─imagename_MarkupsLine_bainesquizline.nrrd
-					├    └─imagename_MarkupsLine_1_bainesquizline.mrk
+					├    ├─imagename-quizlabel.nrrd
+					├    ├─imagename_MarkupsLine_quizline.nrrd
+					├    └─imagename_MarkupsLine_1_quizline.mrk
 					├─(PgGroup2_PageID_PageDescriptor)/
-					├    ├─imagename-bainesquizlabel.nrrd
-					├    ├─imagename_MarkupsLine_bainesquizline.mrk
-					├    ├─imagename_MarkupsLine_1_bainesquizline.mrk
-					├    └─imagename_MarkupsLine_2_bainesquizline.mrk
+					├    ├─imagename-quizlabel.nrrd
+					├    ├─imagename_MarkupsLine_quizline.mrk
+					├    ├─imagename_MarkupsLine_1_quizline.mrk
+					├    └─imagename_MarkupsLine_2_quizline.mrk
 					└─(PgGroup3_PageID_PageDescriptor)/
-						 ├─imagename-bainesquizlabel.nrrd
-						 └─imagename_MarkupsLine_bainesquizline.mrk
+						 ├─imagename-quizlabel.nrrd
+						 └─imagename_MarkupsLine_quizline.mrk
 
 
 ```
@@ -88,7 +88,7 @@ which stores the relative directory path where you can find the label map mask f
 
 It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .
 
-File name is constructed using PageID_ImageID-bainesquizlabel.nrrd
+File name is constructed using PageID_ImageID-quizlabel.nrrd
 
 
 
@@ -99,7 +99,7 @@ as a child of the Image element to the results file. This element stores the rel
 can find the markup line file. This file can be viewed with a simple editor (e.g. Notepad).
 
 It is stored in a subfolder with PgGroup#_PgID_PgDescriptor .
-File name is constructed using PageID_ImageID-MarkupsLine_bainesquizline.mrk.json
+File name is constructed using PageID_ImageID-MarkupsLine_quizline.mrk.json
 
 
 

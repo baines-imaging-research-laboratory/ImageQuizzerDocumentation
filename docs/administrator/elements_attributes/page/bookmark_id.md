@@ -15,9 +15,9 @@ hide:
 | **Syntax** | BookmarkID="*string*" ||
 | **Associations** | |  |
 |  | [GoToBookmark](go_to_bookmark.md)| set on subsequent page |
-|  | [AllowMultipleResponse](allow_multiple_response.md)| |
-|  | [PageGroup](pagegroup.md) | |
-|  | [RandomizePageGroups](../session/randomize_page_groups.md) | |
+|  | [AllowMultipleResponse](allow_multiple_response.md)| see description notes |
+|  | [PageGroup](pagegroup.md) | see description notes |
+|  | [RandomizePageGroups](../session/randomize_page_groups.md) | see description notes |
 
 
 ## Description
