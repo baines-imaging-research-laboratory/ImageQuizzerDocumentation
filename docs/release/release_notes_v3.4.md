@@ -16,25 +16,20 @@ hide:
 	
 ##New Features
 
-	- v3.4.0 
-		- ButtonScriptRerunRequired 
-			- New attribute for a button type question forcing user's to rerun the associated script if revisit a page with this type of button.
-			
 		- UML diagram
 			- added to folder .../ImageQuizzerProject/Documentation
-		
-	
-##Modifications
 
-	- v3.3
 		- Response elements
-			- If a user exits but has not answered all quiz questions, an empty response element 
-			is now added to the results file.
 			- An attribute has been added to the response element describing the event that led to the
 			addition of the element.
 			
 		- Quiz validation
 			- quiz is now validated against the xml schema stored in the .../ImageQuizzer/Inputs/MasterQuiz folder
+		
+	
+##Modifications
+
+	- v3.3
 			
 		- File naming convention
 			- Changed suffix for label map and markup line file names from -bainesquizxxx to -quizxxx to allow
