@@ -244,21 +244,21 @@ Results file : example_annotations.xml
 				<Question Descriptor="Contouring Instructions" Type="InfoBox">
 					<Option>
 						In Segment Editor tab, select volume to create contours.
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.206092"/>
+						<Response Event="NextBtn" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.206092"/>
 					</Option>
 					<Option>
 						   In Edit label map dropdown, use available tools to contour region of interest.
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.206092"/>
+						<Response Event="NextBtn" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.206092"/>
 					</Option>
 				</Question>
 				<Question Descriptor="Annotations Required" Type="InfoBox">
 					<Option>
 						Segment on any image
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.206092"/>
+						<Response Event="NextBtn" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.206092"/>
 					</Option>
 					<Option>
 						One markup line on any image
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.206092"/>
+						<Response Event="NextBtn" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:29:52.206092"/>
 					</Option>
 				</Question>
 			</QuestionSet>
@@ -300,21 +300,21 @@ Results file : example_annotations.xml
 				<Question Descriptor="Contouring Instructions" Type="InfoBox">
 					<Option>
 						In Segment Editor tab, select volume to create contours.
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.964705"/>
+						<Response Event="NextBtn" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.964705"/>
 					</Option>
 					<Option>
 						   In Edit label map dropdown, use available tools to contour region of interest.
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.964705"/>
+						<Response Event="NextBtn" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.964705"/>
 					</Option>
 				</Question>
 				<Question Descriptor="Annotations Required" Type="InfoBox">
 					<Option>
 						Segment on MR-T2
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.964705"/>
+						<Response Event="NextBtn" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.964705"/>
 					</Option>
 					<Option>
 						One markup line CT
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.964705"/>
+						<Response Event="NextBtn" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:30:42.964705"/>
 					</Option>
 				</Question>
 			</QuestionSet>
@@ -348,21 +348,21 @@ Results file : example_annotations.xml
 				<Question Descriptor="Contouring Instructions" Type="InfoBox">
 					<Option>
 						In Segment Editor tab, select volume to create contours.
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.990178"/>
+						<Response Event="Finish" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.990178"/>
 					</Option>
 					<Option>
 						   In Edit label map dropdown, use available tools to contour region of interest.
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.990178"/>
+						<Response Event="Finish" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.990178"/>
 					</Option>
 				</Question>
 				<Question Descriptor="Annotations Required" Type="InfoBox">
 					<Option>
 						Segment on MR-T2
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.990178"/>
+						<Response Event="Finish" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.990178"/>
 					</Option>
 					<Option>
 						Two markup lines on MR-T1
-						<Response LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.990178"/>
+						<Response Event="Finish" LoginTime="20230413_14:27:37.379856" ResponseTime="20230413_14:32:43.990178"/>
 					</Option>
 				</Question>
 			</QuestionSet>

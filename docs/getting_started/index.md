@@ -8,6 +8,7 @@ hide:
 
 The Image Quizzer is a tool that was designed to run as a module on the 3D Slicer platform.
 Following you will find information to get the Image Quizzer installed and running on your computer.
+See also [Quick links](../about/quicklinks.md) for overview and url links.
 
 ## System Requirements
 
@@ -33,7 +34,7 @@ Download and install  <a href="https://slicer-packages.kitware.com/#collection/5
 !!! Warning
     We are using version 4.11.20210226; revision 29738
     
-	Using any other version of Slicer may have unpredictable behavior for this application.
+	Using any other version of Slicer may have unpredictable behaviour for this application.
 
 
 

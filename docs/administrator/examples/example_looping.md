@@ -145,7 +145,7 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<Question Descriptor="Total" Min="0" Type="IntegerValue">
 					<Option>
 						Enter the number of lesions detected:
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:41:06.368419">1</Response>
+						<Response Event="NextBtn" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:41:06.368419">1</Response>
 					</Option>
 				</Question>
 			</QuestionSet>
@@ -163,21 +163,21 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<Question Type="InfoBox">
 					<Option>
 						Contour and classify one lesion.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.087400"/>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.087400"/>
 					</Option>
 					<Option>
 						Use the repeat button if multiple lesions exist.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.087400"/>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.087400"/>
 					</Option>
 				</Question>
 				<Question Descriptor="Classification" Type="Radio">
 					<Option>
 						Primary
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.087400">Y</Response>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.087400">Y</Response>
 					</Option>
 					<Option>
 						Metasasis
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.087400">N</Response>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:13.087400">N</Response>
 					</Option>
 				</Question>
 			</QuestionSet>
@@ -196,21 +196,21 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<Question Type="InfoBox">
 					<Option>
 						Contour and classify one lesion.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.183927"/>
+						<Response Event="NextBtn" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.183927"/>
 					</Option>
 					<Option>
 						Use the repeat button if multiple lesions exist.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.183927"/>
+						<Response Event="NextBtn" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.183927"/>
 					</Option>
 				</Question>
 				<Question Descriptor="Classification" Type="Radio">
 					<Option>
 						Primary
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.183927">N</Response>
+						<Response Event="NextBtn" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.183927">N</Response>
 					</Option>
 					<Option>
 						Metasasis
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.183927">Y</Response>
+						<Response Event="NextBtn" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:43:44.183927">Y</Response>
 					</Option>
 				</Question>
 			</QuestionSet>
@@ -228,21 +228,21 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<Question Type="InfoBox">
 					<Option>
 						Contour and classify one lesion.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.577106"/>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.577106"/>
 					</Option>
 					<Option>
 						Use the repeat button if multiple lesions exist.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.577106"/>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.577106"/>
 					</Option>
 				</Question>
 				<Question Descriptor="Classification" Type="Radio">
 					<Option>
 						Primary
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.577106">Y</Response>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.577106">Y</Response>
 					</Option>
 					<Option>
 						Metasasis
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.577106">N</Response>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:17.577106">N</Response>
 					</Option>
 				</Question>
 			</QuestionSet>
@@ -262,21 +262,21 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<Question Type="InfoBox">
 					<Option>
 						Contour and classify one lesion.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.548221"/>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.548221"/>
 					</Option>
 					<Option>
 						Use the repeat button if multiple lesions exist.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.548221"/>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.548221"/>
 					</Option>
 				</Question>
 				<Question Descriptor="Classification" Type="Radio">
 					<Option>
 						Primary
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.548221">N</Response>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.548221">N</Response>
 					</Option>
 					<Option>
 						Metasasis
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.548221">Y</Response>
+						<Response Event="Repeat" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:44:41.548221">Y</Response>
 					</Option>
 				</Question>
 			</QuestionSet>
@@ -296,21 +296,21 @@ example_looping.xml  (The results quiz file holding the observers responses)
 				<Question Type="InfoBox">
 					<Option>
 						Contour and classify one lesion.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.681340"/>
+						<Response Event="Finish" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.681340"/>
 					</Option>
 					<Option>
 						Use the repeat button if multiple lesions exist.
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.681340"/>
+						<Response Event="Finish" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.681340"/>
 					</Option>
 				</Question>
 				<Question Descriptor="Classification" Type="Radio">
 					<Option>
 						Primary
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.681340">N</Response>
+						<Response Event="Finish" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.681340">N</Response>
 					</Option>
 					<Option>
 						Metasasis
-						<Response LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.681340">Y</Response>
+						<Response Event="Finish" LoginTime="20230321_16:40:13.224042" ResponseTime="20230321_16:45:05.681340">Y</Response>
 					</Option>
 				</Question>
 			</QuestionSet>

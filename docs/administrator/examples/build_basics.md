@@ -12,6 +12,12 @@ images and associated questions are displayed.
 This section presents a simple script example with a desciption of the resulting layout.
 It also provides tips on the development process for building and testing your script. 
 
+The quiz file is typically stored in .../ImageQuizzer/Inputs/MasterQuiz by default.
+ Within this directory, you'll also find the xml schema file ImageQuizzer.xsd, which 
+ outlines the quiz file's structural rules. During quiz launch, the system validates
+ the file against this schema. If any rules are violated, the quiz cannot be launched.
+
+
 Specifics for each element and attribute can be found in the 
 [Scripting references](../elements_attributes/index.md) section.
 

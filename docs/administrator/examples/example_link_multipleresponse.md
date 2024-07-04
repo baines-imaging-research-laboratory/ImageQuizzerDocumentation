@@ -143,23 +143,23 @@ the 3rd question was modified.
 				<Question Type="CheckBox">
 					<Option>
 						Images are linked
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:33:45.530255">Y</Response>
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:38.408172">Y</Response>
+						<Response Event="NextBtn" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:33:45.530255">Y</Response>
+						<Response Event="NextBtn" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:38.408172">Y</Response>
 					</Option>
 					<Option>
 						Images are not linked
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:33:45.530255">N</Response>
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:38.408172">N</Response>
+						<Response Event="NextBtn" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:33:45.530255">N</Response>
+						<Response Event="NextBtn" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:38.408172">N</Response>
 					</Option>
 					<Option>
 						Multiple responses allowed
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:33:45.530255">N</Response>
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:38.408172">Y</Response>
+						<Response Event="NextBtn" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:33:45.530255">N</Response>
+						<Response Event="NextBtn" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:38.408172">Y</Response>
 					</Option>
 					<Option>
 						Multiple responses not allowed
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:33:45.530255">N</Response>
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:38.408172">N</Response>
+						<Response Event="NextBtn" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:33:45.530255">N</Response>
+						<Response Event="NextBtn" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:38.408172">N</Response>
 					</Option>
 				</Question>
 			</QuestionSet>
@@ -193,24 +193,28 @@ the 3rd question was modified.
 				<Question Type="CheckBox">
 					<Option>
 						Images are linked
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:03.070559">N</Response>
+						<Response Event="Previous" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:03.070559">N</Response>
+						<Response Event="Finish" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:53.08002">N</Response>
 					</Option>
 					<Option>
 						Images are not linked
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:03.070559">Y</Response>
+						<Response Event="Previous" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:03.070559">Y</Response>
+						<Response Event="Finish" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:53.08002">Y</Response>
 					</Option>
 					<Option>
 						Multiple responses allowed
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:03.070559">N</Response>
+						<Response Event="Previous" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:03.070559">N</Response>
+						<Response Event="Finish" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:53.08002">N</Response>
 					</Option>
 					<Option>
 						Multiple responses not allowed
-						<Response LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:03.070559">N</Response>
+						<Response Event="Previous" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:03.070559">N</Response>
+						<Response Event="Finish" LoginTime="20230328_09:33:04.800754" ResponseTime="20230328_09:34:53.08002">N</Response>
 					</Option>
 				</Question>
 			</QuestionSet>
 		</Page>
-		<Login LoginTime="20230328_09:33:04.800754" LogoutTime="20230328_09:34:38.408172" QuizComplete="Y"/>
+		<Login LoginTime="20230328_09:33:04.800754" LogoutTime="20230328_09:34:53.08002" QuizComplete="Y"/>
 	</Session>
 
 ```

@@ -123,7 +123,7 @@ InfoBox:
 	<Question Descriptor="Introduction" Type="InfoBox">
 		<Option>
 			Using the Segment Editor tab, create a contour for displayed image
-			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:58:27.114871"/>
+			<Response Event="NextBtn" LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:58:27.114871"/>
 		</Option>
 	</Question>
 	
@@ -131,11 +131,11 @@ Radio
 	<Question Descriptor="Assessment" Type="Radio">
 		<Option>
 			Injury
-			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_16:00:22.706985">Y</Response>
+			<Response Event="NextBtn" LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_16:00:22.706985">Y</Response>
 		</Option>
 		<Option>
 			Recurrence
-			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_16:00:22.706985">N</Response>
+			<Response Event="NextBtn" LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_16:00:22.706985">N</Response>
 		</Option>
 	</Question>
 
@@ -147,11 +147,11 @@ CheckBox
 		</Option>
 		<Option>
 			Bulging margin
-			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:57:08.896963">Y</Response>
+			<Response Event="Finish" LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:57:08.896963">Y</Response>
 		</Option>
 		<Option>
 			Sequential enlargement
-			<Response LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:57:08.896963">N</Response>
+			<Response Event="Finish" LoginTime="20230317_15:56:40.964017" ResponseTime="20230317_15:57:08.896963">N</Response>
 		</Option>
 	</Question>
     
@@ -224,7 +224,7 @@ When the user completes the assigned quiz, a *QuizComplete="y"* attribute is add
 
 Once a user has logged in to the Image Quizzer, the attribute _UserName_ will be added 
 to the Session element
-capturing the Windows defined user name. This allows you to keep track of who the XML
+capturing the user name defined when logging in. This allows you to keep track of who the XML
 results quiz file belongs to, as long as each user has his/her own login profile.
 
 ```
