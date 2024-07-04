@@ -2477,7 +2477,7 @@
 <!-- let javascript handle toc on left sidebar -->
 
 <h1 id="release-notes">Release Notes</h1>
-<pre><code>Image Quizzer v3.4.0 - June 2024
+<pre><code>Image Quizzer v3.4.0 - July 2024
 </code></pre>
 <h2 id="requirements">Requirements</h2>
 <pre><code>3D Slicer v4.11.20210226
@@ -2485,22 +2485,35 @@ SlicerRT extension
 SlicerOpenCV extension
 </code></pre>
 <h2 id="new-features">New Features</h2>
-<pre><code>- v3.4.0 
-    - Label 1
-        - Description
+<pre><code>    - UML diagram
+        - added to folder .../ImageQuizzerProject/Documentation
 
-    - Label 2
-        - Description
+    - Response elements
+        - An attribute has been added to the response element describing the event that led to the
+        addition of the element.
+
+    - Quiz validation
+        - quiz is now validated against the xml schema stored in the .../ImageQuizzer/Inputs/MasterQuiz folder
 </code></pre>
 <h2 id="modifications">Modifications</h2>
-<pre><code>- v3.?.?
-    - Label 1
-        - Description
+<pre><code>- v3.3
+
+    - File naming convention
+        - Changed suffix for label map and markup line file names from -bainesquizxxx to -quizxxx to allow
+        for more room when estimating the length of the saved files during quiz validation to stay under the Windows
+        limit of 256 characters.
 </code></pre>
 <h2 id="fixes">Fixes</h2>
-<pre><code>- v3.?.?
-    - Label 1
-        - Description
+<pre><code>- v3.3
+
+    - Workflow fixes
+        - code refactored addressing general fixes as user moves between pages especially for Previous,
+        GoToBookmark and Repeat buttons.
+
+    - Markup Lines
+        - When a markup line was added through the Extra Tools panel, the option to display the line in all views was not
+        working properly. Also, it was not correctly linked to image when using the Extra Tools panel feature to display
+        the image in various viewing modes.
 </code></pre>
 <p><a href="https://bainesimaging.com" target="_blank">Baines Imaging Research Laboratories</a>, Verspeeten Family Cancer Centre, London Health Sciences Centre, London, ON, Canada</p>
 

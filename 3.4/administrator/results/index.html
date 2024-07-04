@@ -2777,7 +2777,7 @@ InfoBox:
     &lt;Question Descriptor=&quot;Introduction&quot; Type=&quot;InfoBox&quot;&gt;
         &lt;Option&gt;
             Using the Segment Editor tab, create a contour for displayed image
-            &lt;Response LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_15:58:27.114871&quot;/&gt;
+            &lt;Response Event=&quot;NextBtn&quot; LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_15:58:27.114871&quot;/&gt;
         &lt;/Option&gt;
     &lt;/Question&gt;
 
@@ -2785,11 +2785,11 @@ Radio
     &lt;Question Descriptor=&quot;Assessment&quot; Type=&quot;Radio&quot;&gt;
         &lt;Option&gt;
             Injury
-            &lt;Response LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_16:00:22.706985&quot;&gt;Y&lt;/Response&gt;
+            &lt;Response Event=&quot;NextBtn&quot; LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_16:00:22.706985&quot;&gt;Y&lt;/Response&gt;
         &lt;/Option&gt;
         &lt;Option&gt;
             Recurrence
-            &lt;Response LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_16:00:22.706985&quot;&gt;N&lt;/Response&gt;
+            &lt;Response Event=&quot;NextBtn&quot; LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_16:00:22.706985&quot;&gt;N&lt;/Response&gt;
         &lt;/Option&gt;
     &lt;/Question&gt;
 
@@ -2801,11 +2801,11 @@ CheckBox
         &lt;/Option&gt;
         &lt;Option&gt;
             Bulging margin
-            &lt;Response LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_15:57:08.896963&quot;&gt;Y&lt;/Response&gt;
+            &lt;Response Event=&quot;Finish&quot; LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_15:57:08.896963&quot;&gt;Y&lt;/Response&gt;
         &lt;/Option&gt;
         &lt;Option&gt;
             Sequential enlargement
-            &lt;Response LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_15:57:08.896963&quot;&gt;N&lt;/Response&gt;
+            &lt;Response Event=&quot;Finish&quot; LoginTime=&quot;20230317_15:56:40.964017&quot; ResponseTime=&quot;20230317_15:57:08.896963&quot;&gt;N&lt;/Response&gt;
         &lt;/Option&gt;
     &lt;/Question&gt;
 
@@ -2884,7 +2884,7 @@ It holds the login and logout times for the user's session. </p>
 <h3 id="username">UserName</h3>
 <p>Once a user has logged in to the Image Quizzer, the attribute <em>UserName</em> will be added 
 to the Session element
-capturing the Windows defined user name. This allows you to keep track of who the XML
+capturing the user name defined when logging in. This allows you to keep track of who the XML
 results quiz file belongs to, as long as each user has his/her own login profile.</p>
 <pre><code>&lt;Session UserName=&quot;Observer1&quot;&gt;
     &lt;Page&gt;

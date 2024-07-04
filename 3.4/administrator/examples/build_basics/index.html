@@ -2511,6 +2511,10 @@ This is where you enter XML elements and attributes that will define how the qui
 images and associated questions are displayed.</p>
 <p>This section presents a simple script example with a desciption of the resulting layout.
 It also provides tips on the development process for building and testing your script. </p>
+<p>The quiz file is typically stored in .../ImageQuizzer/Inputs/MasterQuiz by default.
+ Within this directory, you'll also find the xml schema file ImageQuizzer.xsd, which 
+ outlines the quiz file's structural rules. During quiz launch, the system validates
+ the file against this schema. If any rules are violated, the quiz cannot be launched.</p>
 <p>Specifics for each element and attribute can be found in the 
 <a href="../../elements_attributes/">Scripting references</a> section.</p>
 <div class="admonition tip">
