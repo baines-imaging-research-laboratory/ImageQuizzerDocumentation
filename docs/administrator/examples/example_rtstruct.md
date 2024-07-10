@@ -101,6 +101,7 @@ See [ROI Visibility](./example_roi_visibility.md#script-example) for more ROI se
 				<ROI>Tumor_Contour</ROI>
 			</ROIs>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 </Session>
 ```

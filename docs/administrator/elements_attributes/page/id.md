@@ -28,9 +28,10 @@ It is also used as part of the subfolder names (prefixed by the PageGroup number
  created in the User's results folder when capturing
 contours and measurement lines that the user creates during the quiz.
 
-#### Uniqueness
-The ID attribute for the Image is combined with the ID attribute
-of the Page to create a unique node name when loaded into Slicer. 
-There can be multiple Image elements within a Page with the same Path (e.g., one image
-loaded into different viewing windows). Each of these elements must
-have the same Image ID attribute. This is checked during quiz validation.
+!!!Warning "Uniqueness"
+
+	The ID attribute for the Image is combined with the ID attribute
+	of the Page to create a unique node name when loaded into Slicer. 
+	There can be multiple Image elements within a Page with the same Path (e.g., one image
+	loaded into different viewing windows). Each of these elements must
+	have the same Image ID attribute. This is checked during quiz validation.

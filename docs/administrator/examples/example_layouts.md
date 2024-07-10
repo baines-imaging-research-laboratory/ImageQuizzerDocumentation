@@ -81,6 +81,7 @@ Layout="FourUp"
 			<DefaultOrientation>Sagittal</DefaultOrientation>
 			<Path>ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\CT1\26556672</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 </Session>
 ```
@@ -106,6 +107,7 @@ Layout="SideBySideRedYellow"
 			<DefaultOrientation>Sagittal</DefaultOrientation>
 			<Path>ImageVolumes\PETCTFusion-Tutorial-Data\PETCTFusion\PET1\26558596</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 </Session>
 ```

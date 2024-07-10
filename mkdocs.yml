@@ -79,21 +79,22 @@ nav:
       - Session:
         - administrator/elements_attributes/session/index.md
         - ROIColorFile: administrator/elements_attributes/session/roi_colorfile.md
-        - EmailResultsTo: administrator/elements_attributes/session/email.md
         - RandomizePageGroups: administrator/elements_attributes/session/randomize_page_groups.md
         - ContourVisibility: administrator/elements_attributes/session/contour_visibility.md
+        - EmailResultsTo: administrator/elements_attributes/session/email.md
+        - RandomizedPageGroupIndices: administrator/elements_attributes/session/randomized_page_group_indices.md
       - Page:
         - administrator/elements_attributes/page/index.md
         - ID: administrator/elements_attributes/page/id.md
         - Descriptor: administrator/elements_attributes/page/descriptor.md
+        - LinkViews: administrator/elements_attributes/page/link_views.md
         - Layout: administrator/elements_attributes/page/layout.md
-        - Loop: administrator/elements_attributes/page/loop.md
         - PageGroup: administrator/elements_attributes/page/pagegroup.md
+        - AllowMultipleResponse: administrator/elements_attributes/page/allow_multiple_response.md
         - EnableSegmentEditor: administrator/elements_attributes/page/enable_segment_editor.md
         - SegmentRequiredOnAnyImage: administrator/elements_attributes/page/segment_required_on_any_image.md
-        - LinkViews: administrator/elements_attributes/page/link_views.md
-        - AllowMultipleResponse: administrator/elements_attributes/page/allow_multiple_response.md
         - MinMarkupLinesRequiredOnAnyImage: administrator/elements_attributes/page/min_markuplines_required_on_any_image.md
+        - Loop: administrator/elements_attributes/page/loop.md
         - UserInteractionLog: administrator/elements_attributes/page/user_interaction_log.md
         - BookmarkID: administrator/elements_attributes/page/bookmark_id.md
         - GoToBookmark: administrator/elements_attributes/page/go_to_bookmark.md
@@ -104,22 +105,22 @@ nav:
         - ID: administrator/elements_attributes/image/id.md
         - Type: administrator/elements_attributes/image/type.md
         - DicomRead: administrator/elements_attributes/image/dicom_read.md
-        - ColorTable: administrator/elements_attributes/image/color_table.md 
-        - Opacity: administrator/elements_attributes/image/opacity.md 
-        - Layer: administrator/elements_attributes/image/layer.md 
-        - DefaultDestination: administrator/elements_attributes/image/default_destination.md 
-        - DefaultOrientation: administrator/elements_attributes/image/default_orientation.md 
-        - Path: administrator/elements_attributes/image/path.md 
-        - MinMarkupLinesRequired: administrator/elements_attributes/image/min_markuplines_required.md
-        - SegmentRequired: administrator/elements_attributes/image/segment_required.md
-        - InitialSliceOffset: administrator/elements_attributes/image/initial_slice_offset.md
-        - RotateToAcquisition: administrator/elements_attributes/image/rotate_to_acquisition.md
         - LabelMapID: administrator/elements_attributes/image/labelmap_id.md
         - DisplayLabelMapID: administrator/elements_attributes/image/display_labelmap_id.md
+        - RotateToAcquisition: administrator/elements_attributes/image/rotate_to_acquisition.md
+        - ColorTable: administrator/elements_attributes/image/color_table.md 
+        - Opacity: administrator/elements_attributes/image/opacity.md 
+        - SegmentRequired: administrator/elements_attributes/image/segment_required.md
+        - MinMarkupLinesRequired: administrator/elements_attributes/image/min_markuplines_required.md
+        - InitialSliceOffset: administrator/elements_attributes/image/initial_slice_offset.md
         - MergeLabelMaps: administrator/elements_attributes/image/merge_labelmaps.md
         - ZoomFactor: administrator/elements_attributes/image/zoom_factor.md
         - PanOrigin: administrator/elements_attributes/image/pan_origin.md
         - WindowLevel: administrator/elements_attributes/image/window_level.md
+        - Layer: administrator/elements_attributes/image/layer.md 
+        - DefaultDestination: administrator/elements_attributes/image/default_destination.md 
+        - DefaultOrientation: administrator/elements_attributes/image/default_orientation.md 
+        - Path: administrator/elements_attributes/image/path.md 
         - ROIs:
           - administrator/elements_attributes/image/rois/index.md
           - ROIVisibilityCode: administrator/elements_attributes/image/rois/roi_visibility_code.md
@@ -130,8 +131,8 @@ nav:
         - Descriptor: administrator/elements_attributes/questionset/descriptor.md
         - Question:
           - administrator/elements_attributes/questionset/question/index.md
-          - Descriptor: administrator/elements_attributes/questionset/question/descriptor.md
           - Type: administrator/elements_attributes/questionset/question/type.md
+          - Descriptor: administrator/elements_attributes/questionset/question/descriptor.md
           - Min: administrator/elements_attributes/questionset/question/min.md
           - Max: administrator/elements_attributes/questionset/question/max.md
           - GroupLayout: administrator/elements_attributes/questionset/question/group_layout.md

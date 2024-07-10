@@ -72,6 +72,7 @@ The MR-T2W images are set in the foreground to show how the foreground images fo
                 <DefaultOrientation>Sagittal</DefaultOrientation>
                 <Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
         </Image>
+		<QuestionSet></QuestionSet>
     </Page>
     <Page ID="Patient 1" Descriptor="Focused View">
         <Image ID="CT" Type="Volume" ZoomFactor="1.5" PanOrigin="-1.7 -28 0" InitialSliceOffset="13">
@@ -110,6 +111,7 @@ The MR-T2W images are set in the foreground to show how the foreground images fo
                 <DefaultOrientation>Sagittal</DefaultOrientation>
                 <Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
         </Image>
+		<QuestionSet></QuestionSet>
     </Page>
 </Session>
 

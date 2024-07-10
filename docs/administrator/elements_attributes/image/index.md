@@ -19,13 +19,16 @@ hide:
 
 ## Description
 The Image element is a child of the Page element. There can be multiple images on a Page.
-Each image is assigned a viewing window
+Each image is assigned to a viewing window.
+
+The Image element is not required; however, a QuestionSet element must follow if Image elements exist.
+This QuestionSet element can be empty if you wish only to display Images on the Page.
 
 Among the many attributes allowed for the Image element, ID and Type are required.
 
-Image is not a required element. The administrator may choose to load a Page
-with no images but with Question elements only. The Page can then be used to convey
-instructions to the user or display questions that do not depend on images. 
+
+See also [Page display options](../page/index.md#page-display-options)
+
 
 
 ## Example
@@ -36,6 +39,7 @@ instructions to the user or display questions that do not depend on images.
     <Image ID="T1W" Type="Volume">
       ...
 	</Image>
+	<QuestionSet></QuestionSet>
   </Page>
 </Session>
 ```

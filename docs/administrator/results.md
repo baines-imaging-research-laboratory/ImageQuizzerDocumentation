@@ -187,7 +187,7 @@ to record the image state at that time point:
 
 ###  RandomizedPageGroupIndices
 
-The <RandomizedPageGroupIndices\> element is added to the response XML file under the <Session\> element
+The <RandomizedPageGroupIndices\> element is added to the results XML file under the <Session\> element
 if the RandomizePageGroups attribute was set to "Y" in the Session element. The
 element holds the list of integers reflecting the randomized order of Page Groups used to direct the order of display of the quiz pages.
 If this element is not present, then randomizing of pages was not done and the Image Quizzer

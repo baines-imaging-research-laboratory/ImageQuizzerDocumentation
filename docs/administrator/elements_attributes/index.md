@@ -20,6 +20,7 @@ These are linked to the details describing the available options and dependencie
 ||||||[RandomizePageGroups](session/randomize_page_groups.md)|
 ||||||[ContourVisibility](session/contour_visibility.md)|
 ||||||[EmailResultsTo](session/email.md)|
+||||||[RandomizedPageGroupIndices](session/randomized_page_group_indices.md)|
 |--|--|--|--|--|--|
 ||[Page](page/index.md)||||[ID](page/id.md)|
 ||||||[Descriptor](page/descriptor.md)|

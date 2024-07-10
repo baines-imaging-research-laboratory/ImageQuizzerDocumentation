@@ -89,6 +89,7 @@ observer study that follows.
 			<DefaultOrientation>Axial</DefaultOrientation>
 			<Path>ImageVolumes\MRBrainTumor1\MRBrainTumor1.nrrd</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 	<Page ID="PatientA" Descriptor="Grp1- Brain-MR" Layout="OneUpRedSlice" PageGroup="1">
 		<Image Type="Volume" ID="MR Followup">
@@ -97,6 +98,7 @@ observer study that follows.
 			<DefaultOrientation>Axial</DefaultOrientation>
 			<Path>ImageVolumes\MRBrainTumor1\MRBrainTumor1.nrrd</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 	<Page ID="PatientB" Descriptor="Grp2- Brain-MR" Layout="OneUpRedSlice" PageGroup="2">
 		<Image Type="Volume" ID="MR">
@@ -105,6 +107,7 @@ observer study that follows.
 			<DefaultOrientation>Axial</DefaultOrientation>
 			<Path>ImageVolumes\MRBrainTumor2\MRBrainTumor2.nrrd</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 	<Page ID="PatientC" Descriptor="Grp3- Brain-MR T1" Layout="OneUpRedSlice" PageGroup="3">
 		<Image Type="Volume" ID="MR T1">
@@ -113,6 +116,7 @@ observer study that follows.
 			<DefaultOrientation>Axial</DefaultOrientation>
 			<Path>ImageVolumes\CT-MR Brain\MRBrainT1.nrrd</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 	<Page ID="PatientC" Descriptor="Grp3- Brain-MR T2" Layout="OneUpRedSlice" PageGroup="3">
 		<Image Type="Volume" ID="MR T2">
@@ -121,6 +125,7 @@ observer study that follows.
 			<DefaultOrientation>Axial</DefaultOrientation>
 			<Path>ImageVolumes\CT-MR Brain\MRBrainT2.nrrd</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 	<Page ID="PatientC" Descriptor="Grp3- Brain-CT" Layout="OneUpRedSlice" PageGroup="3">
 		<Image Type="Volume" ID="CT">
@@ -129,6 +134,7 @@ observer study that follows.
 			<DefaultOrientation>Axial</DefaultOrientation>
 			<Path>ImageVolumes\CT-MR Brain\CTBrain.nrrd</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 	<Page ID="PatientD" Descriptor="Grp4- Brain-MR" Layout="OneUpRedSlice" PageGroup="4">
 		<Image Type="Volume" ID="CT">
@@ -137,6 +143,7 @@ observer study that follows.
 			<DefaultOrientation>Axial</DefaultOrientation>
 			<Path>ImageVolumes\MRHead\MRHead.nrrd</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 </Session>
 ```

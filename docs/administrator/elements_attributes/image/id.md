@@ -23,12 +23,13 @@ The ID attribute must be unique for each image in the Page.
 This allows for the administrator to load images into the foreground and background
 layers of one viewing window. 
 
-#### Uniqueness
-The ID attribute for the Image is combined with the ID attribute
-of the Page to create a unique node name when loaded into Slicer. 
-There can be multiple Image elements within a Page with the same Path (e.g., one image
-loaded into different viewing windows). Each of these elements must
-have the same Image ID attribute. This is checked during quiz validation.
+!!!Warning "Uniqueness"
+
+	The ID attribute for the Image is combined with the ID attribute
+	of the Page to create a unique node name when loaded into Slicer. 
+	There can be multiple Image elements within a Page with the same Path (e.g., one image
+	loaded into different viewing windows). Each of these elements must
+	have the same Image ID attribute. This is checked during quiz validation.
 
 
 
@@ -43,7 +44,7 @@ have the same Image ID attribute. This is checked during quiz validation.
 			<DefaultOrientation>Axial</DefaultOrientation>
 			<Path>ImageVolumes\Brain\BrainCT_fixed.nrrd</Path>
 		</Image>
-		<Image ID="Unregistered" Type="Volume" Opacity=".3">
+		<Image Type="Volume" ID="Unregistered" Opacity=".3">
 			<DefaultDestination>Red</DefaultDestination>
 			<Layer>Foreground</Layer>
 			<DefaultOrientation>Axial</DefaultOrientation>

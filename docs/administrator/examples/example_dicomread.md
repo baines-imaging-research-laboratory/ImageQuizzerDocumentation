@@ -68,6 +68,7 @@ From the downloaded tutorial data, extract the dataset1_TorsoCT folder to a subf
 			<DefaultOrientation>Coronal</DefaultOrientation>
 			<Path>ImageVolumes\dataset1_TorsoCT\IM-0001-0001.dcm</Path>
 		</Image>
+		<QuestionSet></QuestionSet>
 	</Page>
 </Session>
 ```

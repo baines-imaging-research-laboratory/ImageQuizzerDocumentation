@@ -33,6 +33,10 @@ The randomized PageGroup order is captured and stored in the results quiz file i
 so that the administrator knows the order in which the pages were presented for any observer and can cross-reference the displayed order 
 with the original master quiz file Pages.
 
+See also [RandomizedPageGroupIndices](../../results.md#randomizedpagegroupindices) for a description on how to force the Pages of a quiz
+to be displayed in a specific order.
+
+
 
 ## Setup
 
@@ -89,42 +93,4 @@ PatientA_Planning
 PatientA_Followup 1
 PatientB_Planning
 PatientB_Followup 1
-```
-
-## Forcing a page group order - overriding randomization
-
-There are certain instances where you may want to use a certain order for the pages that doesn't follow the sequential layout in the XML Master Quiz.
-To do this, set the RandomizePageGroups attribute to "Y" in your master quiz and add a <RandomizedPageGroupIndices> element with the 
-desired page group numbers ordered accordingly.
-
-Even though you've enabled "RandomizePageGroups" to "Y", additional randomizing will not occur.
-The quiz will use the order laid out in the "RandomizedPageGroupIndices" element.
-
-### Example
-
-```
-<Session RandomizePageGroups="Y">
-	<Page ID="Intro" Description="Instructions" PageGroup="0">
-		...
-	</Page>
-	<Page ID="PatientA" Description="Planning" PageGroup="1">
-		...
-	</Page>
-	<Page ID="PatientA" Description="FollowUp 1" PageGroup="1">
-		...
-	</Page>
-	<Page ID="PatientB" Description="Planning" PageGroup="2">
-		...
-	</Page>
-	<Page ID="PatientB" Description="FollowUp 1" PageGroup="2">
-		...
-	</Page>
-	<Page ID="PatientC" Description="Planning" PageGroup="3">
-		...
-	</Page>
-	<Page ID="PatientC" Description="FollowUp 1" PageGroup="3">
-		...
-	</Page>
-	<RandomizedPageGroupIndices>3,1,2</RandomizedPageGroupIndices>
-</Session>
 ```
