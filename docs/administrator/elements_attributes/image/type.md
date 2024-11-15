@@ -21,6 +21,7 @@ hide:
 |             | RTStruct | load DICOM ROIs as segmentation object |
 | **Dependencies** | for 4D volumes | see VolumeSequence notes below |
 |  | for Segmentation or RTStruct  | see Segmentation and RTStruct notes below |
+|  | <[Layer](layer.md)\>| restrictions for each Type option notes below|
 
 
 
@@ -32,7 +33,7 @@ The Type attribute for an Image element defines how to load the image or region 
 
 2D or 3D images can be loaded as a scalar volume using Type="Volume".
 4D images are loaded using Type="VolumeSequence". This will activate the sequence controls
-to play the time series.
+to play the time series. These types can be assigned to the 'Foreground' or 'Background' Layer element.
 
 !!! Note "VolumeSequence"
 
@@ -47,21 +48,27 @@ to play the time series.
 ### Vector
 
 Single picture type images should be loaded as Type="Vector". These include images formatted as PNG, BMP, JPG, JPEG, and PDF.
-Also accepted are single slice DCM images (eg. histology slice saved as a dicom image).
-
-### Regions of interest (ROIs)
+Also accepted are single slice DCM images (eg. histology slice saved as a dicom image). This type can be assigned to the
+ only to the 'Background' Layer element.
+ 
+### LabelMap, Segmentation and RTStruct
 
 By using Type="LabelMap", Type="Segmentation" or Type="RTStruct" you have the flexibility of displaying these ROI image files
 layered over the images that were loaded into the background and foreground. 
 
-ROIs can be stored in a variety of formats. 
-ROIs stored as discrete values (mask) are loaded as Type="LabelMap".
-ROIs stored in segmentation or RTStruct files are loaded as Type="Segmentation" or Type="RTStruct" respectively.
+#### Regions of interest (ROIs)
+
+ROIs can be stored in a variety of image file formats. 
+
+!!! note "LabelMap"
+	* Image files have ROIs stored as discrete values (mask) are loaded as Type="LabelMap".
+	* This type must be assigned to Layer="Label"
 
 !!! note "Segmentation and RTStruct"
+	* ROIs stored in segmentation or RTStruct files are loaded as Type="Segmentation" or Type="RTStruct" respectively. 
 	* Segmentation and RTStruct type images must have an [ROIs](rois/index.md) element defined.
 	* ROIs stored in an RTStruct file must also have the DICOM="Y" attribute set in the Image element.
-
+	* These types must be assigned to the Layer="Segmentation".
 
 
 ## Examples

@@ -20,6 +20,7 @@ hide:
 
 A QuestionSet element contains one or more Question elements. 
 QuestionSet is a required element and it must follow all Image elements if they exist.
+The QuestionSet element can be empty if you want the user to only see only images.
 
 
 There can be more than one question set element for a page. If so, when the user presses the Next button,

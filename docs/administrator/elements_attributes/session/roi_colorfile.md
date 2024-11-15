@@ -21,6 +21,11 @@ The ROIColorFile attribute gives the administrator the ability to assign specifi
 when the user is contouring in the segment editor. This can be useful when you want to restrict the user to
 a specific set of ROI's and have each ROI categorized by color.
 
+!!! Note
+	The color file is only applied when creating label maps (when using the segment editor) or if
+	a label map is loaded as an xml image element (Type="LabelMap") . It does not extend to loading Segmentation or 
+	RTStruct types of image elements.
+
 ## Setup
 
 To activate this feature, the administrator must create a .txt file in an editor using the syntax shown below.
@@ -35,6 +40,15 @@ Syntax for each line in the text file. **NB. The roi# cannot be 0** :
 roi# roi_name red green blue alpha
 ```
 
+
+Typically, the table is arranged with roi index numbers beginning at 1, with each subsequent entry having consecutive indices.
+While it's possible to start with a different index number, if a user manually inputs a number into the spin box that isn't present in the color file, 
+the system will automatically change the number to '0' (erase mode). Additionally, if the numbers aren't consecutive, the spin box for
+selecting the contour label index may freeze on label '0', requiring the user to press the color bar to establish a valid index entry.
+
+Empty lines are not acceptable. A line beginning with '#' can be used as a comment line.
+
+
 ## Example
 
 ### Setup
@@ -45,8 +59,8 @@ the same directory as the XML for this quiz (PIRADS_SegmentationStudy.xml).
 
 !!! tip
     In this example, these files are being placed in the default directory used by 
-    Image Quizzer for the master quiz. This saves the user from having to browse to a 
-	different directory.
+    Image Quizzer for the master quiz. Having the quiz and color file in the MasterQuiz
+	directory saves the user from having to navigate through file explorer to locate the quiz.
 
 ```
 .
@@ -80,7 +94,8 @@ PiRadsStudy_colors.txt
 
 ```
 
-###Usage
+
+##Usage
 
 To activate the color file popup in the Segment Editor, the user must press on the label's color bar.
 

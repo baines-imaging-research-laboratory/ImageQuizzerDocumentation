@@ -6,6 +6,8 @@ hide:
 
 #Release Notes
 	Image Quizzer v3.4.0 - July 2024
+				  v3.4.1 - July 2024
+				  v3.4.2 - November 2024
 	
 
 ##Requirements
@@ -29,6 +31,10 @@ hide:
 	
 ##Modifications
 
+	- v3.4.2
+		- Disable floating segmentation toolset
+			- User will no longer be able to undock the segmentation tool set which was previously enabled using space bar.
+
 	- v3.4.1
 		- QuestionSet elements
 			- As a result of the fix to the XMLSchema validation, each Page on the Quiz must have a QuestionSet element.
@@ -43,6 +49,22 @@ hide:
 			
 			
 ##Fixes
+	- v3.4.2
+		- ROIColorFile with indices not beginning with '1'
+			If an ROI Color file is set up with the first index not equal to '1' the color spin box for segment editing
+			will default to the	first label index number defined in the ROI Color table. If the user tries to 
+			enter a label number into the spin box that is not defined in the ROI Color table, the system will
+			automatically change the index to '0' (erase mode).
+			
+		- Viewing window not locked down in TwoOverTwo layout for the User Interaction lockdown feature
+			On a Page with layout=TwoOverTwo and UserInteractionLog="Y", the top right (window 4) viewing window was not 
+			locked for zoom and pan. (Red, Green and Yellow viewing windows were properly locked down). By adding an
+			observer that captures when the layout changes, the app now locks down all 4 windows.
+			
+		- UserInteractionLog events not recorded
+			The first Page that requested a user interaction log (UserInteractionLog="Y") was not being initialized 
+			properly and therefore some initial events were not being recorded.
+			
 	- v3.4.1
 		- fix XMLSchema which wasn't validating the quiz during quiz launch the same way that Notepad++ would validate it.
 			Notepad++ would allow for a Page with only Image elements and no QuestionSet elements. Validation through the
