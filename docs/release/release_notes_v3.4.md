@@ -23,7 +23,7 @@ hide:
 
 		- Response elements
 			- An attribute has been added to the response element describing the event that led to the
-			addition of the element.
+			addition of this element.
 			
 		- Quiz validation
 			- quiz is now validated against the xml schema stored in  .../ImageQuizzer/Inputs/MasterQuiz/ImageQuizzer.xsd
@@ -37,7 +37,7 @@ hide:
 
 	- v3.4.1
 		- QuestionSet elements
-			- As a result of the fix to the XMLSchema validation, each Page on the Quiz must have a QuestionSet element.
+			- As a result of the addition of the XMLSchema validation, each Page on the Quiz must have a QuestionSet element.
 			There can be multiple QuestionSets and they can be empty (no Question elements). If there are Image elements on the
 			Page, the QuestionSet element must follow the Image elements.
 			

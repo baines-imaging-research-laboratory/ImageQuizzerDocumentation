@@ -22,9 +22,9 @@ when the user is contouring in the segment editor. This can be useful when you w
 a specific set of ROI's and have each ROI categorized by color.
 
 !!! Note
-	The color file is only applied when creating label maps (when using the segment editor) or if
-	a label map is loaded as an xml image element (Type="LabelMap") . It does not extend to loading Segmentation or 
-	RTStruct types of image elements.
+	The ROI color file settings are applicable solely to label maps, which when creating contours with the segment editor these
+	color options are displayed, or when a label map is imported as an XML image element in the Master Quiz file with Type="LabelMap." 
+	These settings do not apply to Segmentation or RTStruct types of image elements.
 
 ## Setup
 
