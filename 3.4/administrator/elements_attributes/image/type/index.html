@@ -1566,9 +1566,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#labelmap-segmentation-and-rtstruct" class="md-nav__link">
+    LabelMap, Segmentation and RTStruct
+  </a>
+  
+    <nav class="md-nav" aria-label="LabelMap, Segmentation and RTStruct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#regions-of-interest-rois" class="md-nav__link">
     Regions of interest (ROIs)
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2527,9 +2540,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#labelmap-segmentation-and-rtstruct" class="md-nav__link">
+    LabelMap, Segmentation and RTStruct
+  </a>
+  
+    <nav class="md-nav" aria-label="LabelMap, Segmentation and RTStruct">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#regions-of-interest-rois" class="md-nav__link">
     Regions of interest (ROIs)
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2664,6 +2690,11 @@
 <td>for Segmentation or RTStruct</td>
 <td>see Segmentation and RTStruct notes below</td>
 </tr>
+<tr>
+<td></td>
+<td>&lt;<a href="../layer/">Layer</a>></td>
+<td>restrictions for each Type option notes below</td>
+</tr>
 </tbody>
 </table>
 <h2 id="description">Description</h2>
@@ -2671,7 +2702,7 @@
 <h3 id="images-volumes">Images volumes</h3>
 <p>2D or 3D images can be loaded as a scalar volume using Type="Volume".
 4D images are loaded using Type="VolumeSequence". This will activate the sequence controls
-to play the time series.</p>
+to play the time series. These types can be assigned to the 'Foreground' or 'Background' Layer element.</p>
 <div class="admonition note">
 <p class="admonition-title">VolumeSequence</p>
 <ul>
@@ -2689,18 +2720,27 @@ in the same folder (no subfolders).</p>
 </div>
 <h3 id="vector">Vector</h3>
 <p>Single picture type images should be loaded as Type="Vector". These include images formatted as PNG, BMP, JPG, JPEG, and PDF.
-Also accepted are single slice DCM images (eg. histology slice saved as a dicom image).</p>
-<h3 id="regions-of-interest-rois">Regions of interest (ROIs)</h3>
+Also accepted are single slice DCM images (eg. histology slice saved as a dicom image). This type can be assigned to the
+ only to the 'Background' Layer element.</p>
+<h3 id="labelmap-segmentation-and-rtstruct">LabelMap, Segmentation and RTStruct</h3>
 <p>By using Type="LabelMap", Type="Segmentation" or Type="RTStruct" you have the flexibility of displaying these ROI image files
 layered over the images that were loaded into the background and foreground. </p>
-<p>ROIs can be stored in a variety of formats. 
-ROIs stored as discrete values (mask) are loaded as Type="LabelMap".
-ROIs stored in segmentation or RTStruct files are loaded as Type="Segmentation" or Type="RTStruct" respectively.</p>
+<h4 id="regions-of-interest-rois">Regions of interest (ROIs)</h4>
+<p>ROIs can be stored in a variety of image file formats. </p>
+<div class="admonition note">
+<p class="admonition-title">LabelMap</p>
+<ul>
+<li>Image files have ROIs stored as discrete values (mask) are loaded as Type="LabelMap".</li>
+<li>This type must be assigned to Layer="Label"</li>
+</ul>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Segmentation and RTStruct</p>
 <ul>
+<li>ROIs stored in segmentation or RTStruct files are loaded as Type="Segmentation" or Type="RTStruct" respectively. </li>
 <li>Segmentation and RTStruct type images must have an <a href="../rois/">ROIs</a> element defined.</li>
 <li>ROIs stored in an RTStruct file must also have the DICOM="Y" attribute set in the Image element.</li>
+<li>These types must be assigned to the Layer="Segmentation".</li>
 </ul>
 </div>
 <h2 id="examples">Examples</h2>
