@@ -1938,6 +1938,10 @@
         
           
         
+          
+        
+          
+        
       
       
         
@@ -2024,6 +2028,34 @@
     <li class="md-nav__item">
       <a href="elements_attributes/questionset/question/group_layout/" class="md-nav__link">
         GroupLayout
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="elements_attributes/questionset/question/button_custom_color_on/" class="md-nav__link">
+        ButtonCustomColorOn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="elements_attributes/questionset/question/button_toggle_color_off/" class="md-nav__link">
+        ButtonToggleColorOff
       </a>
     </li>
   
@@ -2432,6 +2464,7 @@ It can be created using a simple editor like Notepad.</p>
 Once the basic building blocks are in place, you can customize the quiz adding in more features.</p>
 <h2 id="building-and-testing-your-script">Building and testing your script</h2>
 <p>See the documentation for <a href="examples/build_basics/">Quiz building basics</a> for details on the quiz setup.</p>
+<p>The <a href="elements_attributes/">Scripting references table</a> can be a useful tool to quickly access the documentation for each element/attribute.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>When building your quiz, the administrator creates and makes changes to the original XML file.
@@ -2440,10 +2473,10 @@ When a quiz session is first started, a copy of this <em>master</em> quiz file, 
 ready to record the session responses. This is known throughout the documentation as the <strong>results</strong> quiz file.</p>
 <p>After your initial test run of the quiz, if you edit the master quiz XML file,
 <strong>you must delete the copy of the quiz in the user's results folder</strong> before you run your next test.
-Otherwise, your changes will not be implemented.</p>
+Failing to do so will prevent your changes from being applied during the next test run.</p>
 <p>The process operates in such a way that when the Begin button is pressed to start a session, 
 the Image Quizzer examines the user's results folder to determine the presence of an existing results quiz.
-If one exists, the software assumes the user is going to resume the quiz and opens this pre-existing file
+If a <em>results quiz file</em> exists, the software assumes the user is going to resume the quiz and opens this pre-existing file
 which will not have your new modifications. If one does not exist, the updated master quiz is duplicated into the 
 user's results folder.</p>
 </div>
