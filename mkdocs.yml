@@ -136,6 +136,8 @@ nav:
           - Min: administrator/elements_attributes/questionset/question/min.md
           - Max: administrator/elements_attributes/questionset/question/max.md
           - GroupLayout: administrator/elements_attributes/questionset/question/group_layout.md
+          - ButtonCustomColorOn: administrator/elements_attributes/questionset/question/button_custom_color_on.md
+          - ButtonToggleColorOff: administrator/elements_attributes/questionset/question/button_toggle_color_off.md
           - Option: administrator/elements_attributes/questionset/question/option.md
     - Quiz results: administrator/results.md
     - Preprocessing utilities: administrator/preprocessing.md

@@ -24,5 +24,4 @@ It will define the upper boundary allowed for the numeric input.
 
 ## Example
 
-!!! todo
-    Connect to example for Question Types
+See [Question Types](../../../examples/example_question_type.md) for examples.

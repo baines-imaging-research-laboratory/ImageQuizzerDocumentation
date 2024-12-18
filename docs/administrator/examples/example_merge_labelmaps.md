@@ -10,7 +10,7 @@ This is useful when you want the user to answer quiz questions for each ROI seen
 and then have all the ROI's for that image displayed on a subsequent page.
 
 Merging can only be done in conjunction with the Loop="Y" attribute for a page. In order for the 
-merge to happen, there are a number of conditions that must be met. See [Merge LabelMaps](../elements_attributes/image/merge_labelmaps.md) in the
+merge to happen, there are a number of conditions that must be met. See [MergeLabelMaps](../elements_attributes/image/merge_labelmaps.md) in the
 scripting elements and attributes section for more details on the dependencies.
 
 

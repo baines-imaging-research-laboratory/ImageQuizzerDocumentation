@@ -19,6 +19,8 @@ Once the basic building blocks are in place, you can customize the quiz adding i
 
 See the documentation for [Quiz building basics](examples/build_basics.md) for details on the quiz setup.
 
+The [Scripting references table]( elements_attributes/index.md) can be a useful tool to quickly access the documentation for each element/attribute.
+
 !!! warning
 
     When building your quiz, the administrator creates and makes changes to the original XML file.
@@ -28,11 +30,11 @@ See the documentation for [Quiz building basics](examples/build_basics.md) for d
 
     After your initial test run of the quiz, if you edit the master quiz XML file,
 	**you must delete the copy of the quiz in the user's results folder** before you run your next test.
-	Otherwise, your changes will not be implemented.
+	Failing to do so will prevent your changes from being applied during the next test run.
 	
 	The process operates in such a way that when the Begin button is pressed to start a session, 
 	the Image Quizzer examines the user's results folder to determine the presence of an existing results quiz.
-	If one exists, the software assumes the user is going to resume the quiz and opens this pre-existing file
+	If a *results quiz file* exists, the software assumes the user is going to resume the quiz and opens this pre-existing file
 	which will not have your new modifications. If one does not exist, the updated master quiz is duplicated into the 
 	user's results folder.
 	

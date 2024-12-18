@@ -66,5 +66,7 @@ These are linked to the details describing the available options and dependencie
 ||||||[Min](questionset/question/min.md)|
 ||||||[Max](questionset/question/max.md)|
 ||||||[GroupLayout](questionset/question/group_layout.md)|
+||||||[ButtonCustomColorOn](questionset/question/button_custom_color_on.md)|
+||||||[ButtonToggleColorOff](questionset/question/button_toggle_color_off.md)|
 |||||[Option](questionset/question/option.md)||
 
