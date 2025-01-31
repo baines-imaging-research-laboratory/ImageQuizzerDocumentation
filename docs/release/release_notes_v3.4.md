@@ -8,7 +8,7 @@ hide:
 	Image Quizzer v3.4.0 - July 2024
 				  v3.4.1 - July 2024
 				  v3.4.2 - November 2024
-				  v3.4.3 - 
+				  v3.4.3 - January 2025
 	
 
 ##Requirements
@@ -63,6 +63,10 @@ hide:
 			associated with one segmentation type of file. Now, the administrator has more flexibility
 			to load different segmentation files for the same image that is being displayed in different
 			viewing windows.
+			
+		- Styling
+			- general look of quiz enhanced with larger fonts and styling
+			
 
 	- v3.4.2
 		- Disable floating segmentation toolset

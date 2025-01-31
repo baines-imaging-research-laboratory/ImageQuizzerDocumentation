@@ -13,6 +13,16 @@ The module runs on the 3D Slicer platform. It enables medical image review and c
 A study administrator can customize a script defining the appearance and flow of the study using a simple eXtensible Markup Language (XML) editor. No programming skills are required.
 The tool can be run from any computer, enabling the observer to perform the study at their convenience with no supervision.    
 
+##
+
+
+##
+
+##### See also:
+
+[Image Quizzer Overview](about/quicklinks.md#Overview)
+
+[Getting Started](getting_started/index.md) - for installation and testing
 
 <!--
 saving for copy/paste tree symbols
